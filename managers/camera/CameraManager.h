@@ -1,0 +1,23 @@
+#ifndef CAMERA_MANAGER_H
+#define CAMERA_MANAGER_H
+
+#include "../../component/primitive/invisible/camera/BaseCamera.h"
+#include <map>
+#include <memory>
+
+class CameraManager {
+public:
+    CameraManager() = default;
+    ~CameraManager() = default;
+
+    size_t addCamera(const std::shared_ptr<BaseCamera>& camera);
+    void setActiveCamera(size_t id);
+    std::shared_ptr<BaseCamera> getActiveCamera() const;
+
+private:
+    std::map<size_t, std::shared_ptr<BaseCamera>> m_cameras;
+    size_t m_activeCameraId = 0;
+    size_t m_cameraCounter = 0;
+};
+
+#endif // CAMERA_MANAGER_H
