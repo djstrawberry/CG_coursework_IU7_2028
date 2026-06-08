@@ -1,10 +1,10 @@
 CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/ObjectCommand.cpp \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/ObjectCommand.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../BaseCommand.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../vector/Vec3.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../vector/../concepts/concepts.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../BaseCommand.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../vector/../concepts/concepts.h \
  /usr/include/c++/16/concepts /usr/include/c++/16/bits/version.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -150,9 +150,9 @@ CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o: \
  /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../vector/Vec3.hpp \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../vector/../exceptions/vector/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../vector/../exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
@@ -173,7 +173,7 @@ CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o: \
  /usr/include/c++/16/tr1/poly_hermite.tcc \
  /usr/include/c++/16/tr1/poly_laguerre.tcc \
  /usr/include/c++/16/tr1/riemann_zeta.tcc \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../materials/Material.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../materials/Material.h \
  /usr/include/c++/16/memory /usr/include/c++/16/bits/stl_tempbuf.h \
  /usr/include/c++/16/bits/stl_uninitialized.h \
  /usr/include/c++/16/bits/stl_raw_storage_iter.h \
@@ -193,21 +193,21 @@ CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o: \
  /usr/include/c++/16/bits/ranges_algobase.h \
  /usr/include/c++/16/pstl/glue_memory_defs.h \
  /usr/include/c++/16/pstl/execution_defs.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../managers/ManagerProvider.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../managers/scene/SceneManager.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../managers/scene/../../scene/Scene.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../managers/scene/../../scene/../component/BaseObject.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../managers/scene/../../scene/../component/../visitors/BaseVisitor.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../managers/ManagerProvider.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../managers/scene/SceneManager.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../managers/scene/../../scene/Scene.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../managers/scene/../../scene/../component/BaseObject.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../managers/scene/../../scene/../component/../visitors/BaseVisitor.h \
  /usr/include/c++/16/map /usr/include/c++/16/bits/stl_tree.h \
  /usr/include/c++/16/bits/node_handle.h \
  /usr/include/c++/16/bits/stl_map.h \
  /usr/include/c++/16/bits/stl_multimap.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../component/primitive/visible/model/celestial/CelestialBody.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../component/primitive/visible/model/celestial/../BaseModel.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../component/primitive/visible/model/celestial/../../VisibleObject.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../component/primitive/visible/model/celestial/../../../Primitive.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../component/primitive/visible/model/celestial/../impl/SphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../component/primitive/visible/model/celestial/CelestialBody.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../component/primitive/visible/model/celestial/../BaseModel.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../component/primitive/visible/model/celestial/../../VisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../component/primitive/visible/model/celestial/../../../Primitive.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../component/primitive/visible/model/celestial/../impl/SphereImpl.h \
  /usr/include/c++/16/vector /usr/include/c++/16/bits/stl_vector.h \
  /usr/include/c++/16/bits/stl_bvector.h \
  /usr/include/c++/16/bits/vector.tcc \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h

@@ -1,5 +1,5 @@
-/home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/moc_plane.cpp: /home/anechka/PlanetSystemDesigner_Qt_Project/qt/inc/plane.h \
-  /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/moc_predefs.h \
+/home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/moc_plane.cpp: /home/anechka/CG_coursework_IU7_2028/qt/inc/plane.h \
+  /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -445,6 +445,7 @@
   /usr/include/qt6/QtGui/qkeysequence.h \
   /usr/include/qt6/QtGui/qpaintdevice.h \
   /usr/include/qt6/QtGui/qpalette.h \
+  /usr/include/qt6/QtGui/qpen.h \
   /usr/include/qt6/QtGui/qpixelformat.h \
   /usr/include/qt6/QtGui/qpixmap.h \
   /usr/include/qt6/QtGui/qpolygon.h \
@@ -456,7 +457,9 @@
   /usr/include/qt6/QtGui/qtguiglobal.h \
   /usr/include/qt6/QtGui/qtransform.h \
   /usr/include/qt6/QtGui/qwindowdefs.h \
+  /usr/include/qt6/QtWidgets/QGraphicsScene \
   /usr/include/qt6/QtWidgets/QWidget \
+  /usr/include/qt6/QtWidgets/qgraphicsscene.h \
   /usr/include/qt6/QtWidgets/qsizepolicy.h \
   /usr/include/qt6/QtWidgets/qtwidgets-config.h \
   /usr/include/qt6/QtWidgets/qtwidgetsexports.h \

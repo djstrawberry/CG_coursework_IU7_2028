@@ -1,6 +1,6 @@
 CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/main.cpp \
- /usr/include/stdc-predef.h /usr/include/qt6/QtWidgets/QApplication \
+ /home/anechka/CG_coursework_IU7_2028/main.cpp /usr/include/stdc-predef.h \
+ /usr/include/qt6/QtWidgets/QApplication \
  /usr/include/qt6/QtWidgets/qapplication.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
@@ -365,7 +365,7 @@ CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o: \
  /usr/include/qt6/QtCore/qvarlengtharray.h \
  /usr/include/qt6/QtCore/qalloc.h \
  /usr/include/qt6/QtGui/qguiapplication_platform.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/inc/mainwindow.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/inc/mainwindow.h \
  /usr/include/qt6/QtWidgets/QMainWindow \
  /usr/include/qt6/QtWidgets/qmainwindow.h \
  /usr/include/qt6/QtWidgets/qwidget.h /usr/include/qt6/QtGui/qaction.h \
@@ -388,6 +388,9 @@ CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o: \
  /usr/include/qt6/QtWidgets/qframe.h /usr/include/qt6/QtGui/qpicture.h \
  /usr/include/qt6/QtCore/qiodevice.h \
  /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/inc/plane.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/inc/plane.h \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtCore/QPoint \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/inc/../../facade/Facade.h
+ /usr/include/qt6/QtWidgets/QGraphicsScene \
+ /usr/include/qt6/QtWidgets/qgraphicsscene.h \
+ /usr/include/qt6/QtGui/qpen.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/inc/../../facade/Facade.h

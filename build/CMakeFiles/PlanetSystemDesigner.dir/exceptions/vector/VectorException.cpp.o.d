@@ -1,8 +1,8 @@
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/vector/VectorException.cpp \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/vector/VectorException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/vector/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/bits/version.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

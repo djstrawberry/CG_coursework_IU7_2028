@@ -1,8 +1,8 @@
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/scene/SceneException.cpp \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/scene/SceneException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/scene/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/scene/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/bits/version.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

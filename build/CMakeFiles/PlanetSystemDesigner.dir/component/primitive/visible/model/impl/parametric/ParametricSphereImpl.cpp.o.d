@@ -1,10 +1,10 @@
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/../SphereImpl.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/../../../../../../vector/Vec3.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/../../../../../../vector/../concepts/concepts.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/../SphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/../../../../../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/../../../../../../vector/../concepts/concepts.h \
  /usr/include/c++/16/concepts /usr/include/c++/16/bits/version.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -150,9 +150,9 @@ CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/param
  /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/../../../../../../vector/Vec3.hpp \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/../../../../../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/../../../../../../vector/../exceptions/vector/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/../../../../../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/../../../../../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/../../../../../../vector/../exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
@@ -173,7 +173,7 @@ CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/param
  /usr/include/c++/16/tr1/poly_hermite.tcc \
  /usr/include/c++/16/tr1/poly_laguerre.tcc \
  /usr/include/c++/16/tr1/riemann_zeta.tcc \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/../../../../../../materials/Material.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/../../../../../../materials/Material.h \
  /usr/include/c++/16/memory /usr/include/c++/16/bits/stl_tempbuf.h \
  /usr/include/c++/16/bits/stl_uninitialized.h \
  /usr/include/c++/16/bits/stl_raw_storage_iter.h \

@@ -1,7 +1,7 @@
 CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/ManagerProvider.cpp \
+ /home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/ManagerProvider.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.h \
  /usr/include/c++/16/memory /usr/include/c++/16/bits/memoryfwd.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -160,22 +160,22 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: \
  /usr/include/c++/16/bits/ranges_algobase.h \
  /usr/include/c++/16/pstl/glue_memory_defs.h \
  /usr/include/c++/16/pstl/execution_defs.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/CameraManager.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/../../component/primitive/invisible/camera/BaseCamera.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/../../component/primitive/invisible/camera/../InvisibleObject.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/../../component/primitive/invisible/camera/../../Primitive.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/../../component/primitive/invisible/camera/../../../BaseObject.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/../../component/primitive/invisible/camera/../../../../visitors/BaseVisitor.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/../../component/primitive/invisible/camera/../../../../vector/Vec3.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/../../component/primitive/invisible/camera/../../../../vector/../concepts/concepts.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/BaseCamera.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../InvisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../Primitive.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../../BaseObject.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../../../visitors/BaseVisitor.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../../../vector/../concepts/concepts.h \
  /usr/include/c++/16/utility /usr/include/c++/16/bits/stl_relops.h \
  /usr/include/c++/16/bits/intcmp.h /usr/include/c++/16/iostream \
  /usr/include/c++/16/ostream /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/../../component/primitive/invisible/camera/../../../../vector/Vec3.hpp \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
@@ -200,9 +200,9 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: \
  /usr/include/c++/16/bits/node_handle.h \
  /usr/include/c++/16/bits/stl_map.h \
  /usr/include/c++/16/bits/stl_multimap.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/scene/SceneManager.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/scene/../../scene/Scene.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/DrawManager.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../scene/Scene.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.h \
  /usr/include/qt6/QtGui/QPainter /usr/include/qt6/QtGui/qpainter.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
  /usr/include/c++/16/cstdint \

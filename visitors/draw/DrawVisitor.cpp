@@ -1,4 +1,5 @@
 #include "DrawVisitor.h"
+#include <cmath>
 
 DrawVisitor::DrawVisitor(std::shared_ptr<BaseProjectionStrategy> projStrategy,
                          std::shared_ptr<BaseCoordinateConvertStrategy> convertStrategy,
@@ -30,7 +31,10 @@ void DrawVisitor::visit(std::shared_ptr<SphereImpl> sphere) const
     if (!projected.empty())
     {
         Vec3<double> screenCenter = projected[0];
-        double radius = sphere->getRadius();
+        double distance = screenCenter.getZ();
+        double fov = m_camera->getFov();
+        double scale = 1.0 / (2.0 * std::tan(fov * M_PI / 360.0));
+        double radius = (sphere->getRadius() / distance) * scale * (height / 2.0);
         Material mat = sphere->getMaterial();
         
         m_painter->drawFilledCircle(

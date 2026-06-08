@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anechka/PlanetSystemDesigner_Qt_Project
+CMAKE_SOURCE_DIR = /home/anechka/CG_coursework_IU7_2028
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anechka/PlanetSystemDesigner_Qt_Project/build
+CMAKE_BINARY_DIR = /home/anechka/CG_coursework_IU7_2028/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles /home/anechka/PlanetSystemDesigner_Qt_Project/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anechka/CG_coursework_IU7_2028/build/CMakeFiles /home/anechka/CG_coursework_IU7_2028/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anechka/CG_coursework_IU7_2028/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

@@ -20,24 +20,21 @@ events:
     names:
       - "uname"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/bin/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/uname"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/uname"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/uname"
       - "/home/anechka/.local/bin/uname"
       - "/home/anechka/bin/uname"
       - "/usr/local/bin/uname"
     found: "/usr/bin/uname"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -70,23 +67,20 @@ events:
       - "make"
       - "smake"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gmake"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gmake"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/gmake"
       - "/home/anechka/.local/bin/gmake"
       - "/home/anechka/bin/gmake"
       - "/usr/local/bin/gmake"
     found: "/usr/bin/gmake"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -120,23 +114,20 @@ events:
       - "icx"
       - "clang++"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/c++"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/c++"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/c++"
       - "/home/anechka/.local/bin/c++"
       - "/home/anechka/bin/c++"
       - "/usr/local/bin/c++"
     found: "/usr/bin/c++"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -168,8 +159,7 @@ events:
     found: "/usr/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -194,7 +184,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        /home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/4.3.0/CompilerIdCXX/a.out
+        /home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/4.3.0/CompilerIdCXX/a.out
       
   -
     kind: "find-v1"
@@ -217,16 +207,14 @@ events:
       - "ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/ar"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -252,16 +240,14 @@ events:
       - "ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -287,16 +273,14 @@ events:
       - "strip"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/strip"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -322,16 +306,14 @@ events:
       - "ld"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/ld"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -357,16 +339,14 @@ events:
       - "nm"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/nm"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -392,16 +372,14 @@ events:
       - "objdump"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/objdump"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -427,16 +405,14 @@ events:
       - "objcopy"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/objcopy"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -462,16 +438,14 @@ events:
       - "readelf"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/readelf"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -497,23 +471,20 @@ events:
       - "dlltool"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
     searched_directories:
       - "/usr/bin/dlltool"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/dlltool"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/dlltool"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/dlltool"
       - "/home/anechka/.local/bin/dlltool"
       - "/home/anechka/bin/dlltool"
       - "/usr/local/bin/dlltool"
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -539,16 +510,14 @@ events:
       - "addr2line"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
     found: "/usr/bin/addr2line"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -574,23 +543,20 @@ events:
       - "tapi"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
     searched_directories:
       - "/usr/bin/tapi"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/tapi"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/tapi"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/tapi"
       - "/home/anechka/.local/bin/tapi"
       - "/home/anechka/bin/tapi"
       - "/usr/local/bin/tapi"
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -619,35 +585,30 @@ events:
       - "gcc-ar"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
     searched_directories:
       - "/usr/bin/gcc-ar-16.1"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16.1"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16.1"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/gcc-ar-16.1"
       - "/home/anechka/.local/bin/gcc-ar-16.1"
       - "/home/anechka/bin/gcc-ar-16.1"
       - "/usr/local/bin/gcc-ar-16.1"
       - "/usr/bin/gcc-ar-16"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar-16"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar-16"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/gcc-ar-16"
       - "/home/anechka/.local/bin/gcc-ar-16"
       - "/home/anechka/bin/gcc-ar-16"
       - "/usr/local/bin/gcc-ar-16"
       - "/usr/bin/gcc-ar16"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ar16"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ar16"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/gcc-ar16"
       - "/home/anechka/.local/bin/gcc-ar16"
       - "/home/anechka/bin/gcc-ar16"
       - "/usr/local/bin/gcc-ar16"
     found: "/usr/bin/gcc-ar"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -676,35 +637,30 @@ events:
       - "gcc-ranlib"
     candidate_directories:
       - "/usr/bin/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
     searched_directories:
       - "/usr/bin/gcc-ranlib-16.1"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16.1"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16.1"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/gcc-ranlib-16.1"
       - "/home/anechka/.local/bin/gcc-ranlib-16.1"
       - "/home/anechka/bin/gcc-ranlib-16.1"
       - "/usr/local/bin/gcc-ranlib-16.1"
       - "/usr/bin/gcc-ranlib-16"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib-16"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib-16"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/gcc-ranlib-16"
       - "/home/anechka/.local/bin/gcc-ranlib-16"
       - "/home/anechka/bin/gcc-ranlib-16"
       - "/usr/local/bin/gcc-ranlib-16"
       - "/usr/bin/gcc-ranlib16"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/gcc-ranlib16"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/gcc-ranlib16"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/gcc-ranlib16"
       - "/home/anechka/.local/bin/gcc-ranlib16"
       - "/home/anechka/bin/gcc-ranlib16"
       - "/usr/local/bin/gcc-ranlib16"
     found: "/usr/bin/gcc-ranlib"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -718,8 +674,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-IuTbqE"
-      binary: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-IuTbqE"
+      source: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-OhsHxQ"
+      binary: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-OhsHxQ"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -730,13 +686,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-IuTbqE'
+        Change Dir: '/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-OhsHxQ'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cbaf2/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_cbaf2.dir/build.make CMakeFiles/cmTC_cbaf2.dir/build
-        gmake[1]: Entering directory '/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-IuTbqE'
-        Building CXX object CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o
-        /usr/bin/c++   -v -o CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_24273/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_24273.dir/build.make CMakeFiles/cmTC_24273.dir/build
+        gmake[1]: Entering directory '/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-OhsHxQ'
+        Building CXX object CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
@@ -746,8 +702,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 16.1.1 20260515 (Red Hat 16.1.1-2) (GCC) 
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_cbaf2.dir/'
-         /usr/libexec/gcc/x86_64-redhat-linux/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_cbaf2.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/cc2YSiKM.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_24273.dir/'
+         /usr/libexec/gcc/x86_64-redhat-linux/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_24273.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/ccHd75oL.s
         GNU C++20 (GCC) version 16.1.1 20260515 (Red Hat 16.1.1-2) (x86_64-redhat-linux)
         	compiled by GNU C version 16.1.1 20260515 (Red Hat 16.1.1-2), GMP version 6.3.0, MPFR version 4.2.2, MPC version 1.4.1, isl version isl-0.24-GMP
         
@@ -764,14 +720,14 @@ events:
          /usr/include
         End of search list.
         Compiler executable checksum: f7f3cb99b253d13f382d2bbd7f6c1fbf
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_cbaf2.dir/'
-         as -v --64 -o CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc2YSiKM.s
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_24273.dir/'
+         as -v --64 -o CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccHd75oL.s
         GNU assembler version 2.46 (x86_64-redhat-linux) using BFD version version 2.46-3.fc44
         COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_cbaf2
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbaf2.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_24273
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24273.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/usr/bin/c++
         COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper
@@ -784,14 +740,14 @@ events:
         gcc version 16.1.1 20260515 (Red Hat 16.1.1-2) (GCC) 
         COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/
         LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cbaf2' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_cbaf2.'
-         /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0SvxpH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_cbaf2 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_24273' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_24273.'
+         /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRzlqGx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_24273 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
         collect2 version 16.1.1 20260515 (Red Hat 16.1.1-2)
-        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0SvxpH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_cbaf2 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
+        /usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRzlqGx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_24273 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o
         GNU ld version 2.46-3.fc44
-        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cbaf2' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_cbaf2.'
-        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_cbaf2
-        gmake[1]: Leaving directory '/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-IuTbqE'
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_24273' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_24273.'
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_24273
+        gmake[1]: Leaving directory '/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-OhsHxQ'
         
       exitCode: 0
   -
@@ -830,13 +786,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
-        ignore line: [Change Dir: '/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-IuTbqE']
+        ignore line: [Change Dir: '/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-OhsHxQ']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cbaf2/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_cbaf2.dir/build.make CMakeFiles/cmTC_cbaf2.dir/build]
-        ignore line: [gmake[1]: Entering directory '/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-IuTbqE']
-        ignore line: [Building CXX object CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o]
-        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_24273/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_24273.dir/build.make CMakeFiles/cmTC_24273.dir/build]
+        ignore line: [gmake[1]: Entering directory '/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-OhsHxQ']
+        ignore line: [Building CXX object CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
@@ -846,8 +802,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 16.1.1 20260515 (Red Hat 16.1.1-2) (GCC) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_cbaf2.dir/']
-        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_cbaf2.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/cc2YSiKM.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_24273.dir/']
+        ignore line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_24273.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -mtls-dialect=gnu2 -version -o /tmp/ccHd75oL.s]
         ignore line: [GNU C++20 (GCC) version 16.1.1 20260515 (Red Hat 16.1.1-2) (x86_64-redhat-linux)]
         ignore line: [	compiled by GNU C version 16.1.1 20260515 (Red Hat 16.1.1-2)  GMP version 6.3.0  MPFR version 4.2.2  MPC version 1.4.1  isl version isl-0.24-GMP]
         ignore line: []
@@ -864,14 +820,14 @@ events:
         ignore line: [ /usr/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: f7f3cb99b253d13f382d2bbd7f6c1fbf]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_cbaf2.dir/']
-        ignore line: [ as -v --64 -o CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc2YSiKM.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_24273.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccHd75oL.s]
         ignore line: [GNU assembler version 2.46 (x86_64-redhat-linux) using BFD version version 2.46-3.fc44]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_cbaf2]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbaf2.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_24273]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24273.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/usr/bin/c++]
         ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper]
@@ -884,13 +840,13 @@ events:
         ignore line: [gcc version 16.1.1 20260515 (Red Hat 16.1.1-2) (GCC) ]
         ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/16/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/]
         ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/16/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/16/../../../:/lib/:/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_cbaf2' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_cbaf2.']
-        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0SvxpH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_cbaf2 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_24273' '-foffload-options=-l_GCC_stdc++' '-foffload-options=-l_GCC_m' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-mtls-dialect=gnu2' '-dumpdir' 'cmTC_24273.']
+        link line: [ /usr/libexec/gcc/x86_64-redhat-linux/16/collect2 -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRzlqGx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_24273 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
           arg [/usr/libexec/gcc/x86_64-redhat-linux/16/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/cc0SvxpH.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccRzlqGx.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-latomic_asneeded] ==> ignore
@@ -906,7 +862,7 @@ events:
           arg [-dynamic-linker] ==> ignore
           arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_cbaf2] ==> ignore
+          arg [cmTC_24273] ==> ignore
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o]
@@ -918,7 +874,7 @@ events:
           arg [-L/lib] ==> dir [/lib]
           arg [-L/usr/lib] ==> dir [/usr/lib]
           arg [-v] ==> ignore
-          arg [CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc_s] ==> lib [gcc_s]
@@ -930,7 +886,7 @@ events:
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/crtend.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/crtend.o]
           arg [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o] ==> obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
         ignore line: [collect2 version 16.1.1 20260515 (Red Hat 16.1.1-2)]
-        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/cc0SvxpH.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_cbaf2 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_cbaf2.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
+        ignore line: [/usr/bin/ld -plugin /usr/libexec/gcc/x86_64-redhat-linux/16/liblto_plugin.so -plugin-opt=/usr/libexec/gcc/x86_64-redhat-linux/16/lto-wrapper -plugin-opt=-fresolution=/tmp/ccRzlqGx.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-latomic_asneeded -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_24273 /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/16/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/16 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/16/../../.. -L/lib -L/usr/lib -v CMakeFiles/cmTC_24273.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -latomic_asneeded -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o /usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crtn.o]
         linker tool for 'CXX': /usr/bin/ld
         collapse obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
         collapse obj [/usr/lib/gcc/x86_64-redhat-linux/16/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
@@ -974,8 +930,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-jYQZk8"
-      binary: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-jYQZk8"
+      source: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-SumVTA"
+      binary: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-SumVTA"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -986,17 +942,17 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-jYQZk8'
+        Change Dir: '/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-SumVTA'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_85c64/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_85c64.dir/build.make CMakeFiles/cmTC_85c64.dir/build
-        gmake[1]: Entering directory '/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-jYQZk8'
-        Building CXX object CMakeFiles/cmTC_85c64.dir/src.cxx.o
-        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_85c64.dir/src.cxx.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-jYQZk8/src.cxx
-        Linking CXX executable cmTC_85c64
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_85c64.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_85c64.dir/src.cxx.o -o cmTC_85c64
-        gmake[1]: Leaving directory '/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-jYQZk8'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_13929/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_13929.dir/build.make CMakeFiles/cmTC_13929.dir/build
+        gmake[1]: Entering directory '/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-SumVTA'
+        Building CXX object CMakeFiles/cmTC_13929.dir/src.cxx.o
+        /usr/bin/c++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++20 -o CMakeFiles/cmTC_13929.dir/src.cxx.o -c /home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-SumVTA/src.cxx
+        Linking CXX executable cmTC_13929
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_13929.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_13929.dir/src.cxx.o -o cmTC_13929
+        gmake[1]: Leaving directory '/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-SumVTA'
         
       exitCode: 0
   -
@@ -1015,8 +971,8 @@ events:
     checks:
       - "Performing Test HAVE_STDATOMIC"
     directories:
-      source: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-023W9X"
-      binary: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-023W9X"
+      source: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-J5pFDP"
+      binary: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-J5pFDP"
     cmakeVariables:
       CMAKE_CXX_FLAGS: ""
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -1027,17 +983,17 @@ events:
       variable: "HAVE_STDATOMIC"
       cached: true
       stdout: |
-        Change Dir: '/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-023W9X'
+        Change Dir: '/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-J5pFDP'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_efac0/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_efac0.dir/build.make CMakeFiles/cmTC_efac0.dir/build
-        gmake[1]: Entering directory '/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-023W9X'
-        Building CXX object CMakeFiles/cmTC_efac0.dir/src.cxx.o
-        /usr/bin/c++ -DHAVE_STDATOMIC  -std=gnu++20 -o CMakeFiles/cmTC_efac0.dir/src.cxx.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-023W9X/src.cxx
-        Linking CXX executable cmTC_efac0
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_efac0.dir/link.txt --verbose=1
-        /usr/bin/c++ CMakeFiles/cmTC_efac0.dir/src.cxx.o -o cmTC_efac0
-        gmake[1]: Leaving directory '/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/CMakeScratch/TryCompile-023W9X'
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_26651/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_26651.dir/build.make CMakeFiles/cmTC_26651.dir/build
+        gmake[1]: Entering directory '/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-J5pFDP'
+        Building CXX object CMakeFiles/cmTC_26651.dir/src.cxx.o
+        /usr/bin/c++ -DHAVE_STDATOMIC  -std=gnu++20 -o CMakeFiles/cmTC_26651.dir/src.cxx.o -c /home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-J5pFDP/src.cxx
+        Linking CXX executable cmTC_26651
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26651.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_26651.dir/src.cxx.o -o cmTC_26651
+        gmake[1]: Leaving directory '/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/CMakeScratch/TryCompile-J5pFDP'
         
       exitCode: 0
   -
@@ -1091,99 +1047,67 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/Qt6CoreToolsConfig.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/Qt6CoreToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/qt6coretools-config.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/qt6coretools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6CoreTools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6CoreTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/qt6coretools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/qt6coretools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/Qt6CoreTools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/Qt6CoreTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/qt6coretools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/qt6coretools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/Qt6CoreTools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/Qt6CoreTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/qt6coretools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/qt6coretools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/Qt6CoreToolsConfig.cmake"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/Qt6CoreToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/qt6coretools-config.cmake"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/qt6coretools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib64/cps/Qt6CoreTools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib64/cps/Qt6CoreTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib64/cps/qt6coretools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib64/cps/qt6coretools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/Qt6CoreTools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib/cps/Qt6CoreTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/qt6coretools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib/cps/qt6coretools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/Qt6CoreTools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/share/cps/Qt6CoreTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/qt6coretools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/Qt6CoreToolsConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/qt6coretools-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib64/cps/Qt6CoreTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib64/cps/qt6coretools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/Qt6CoreTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/qt6coretools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/Qt6CoreTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/qt6coretools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/share/cps/qt6coretools.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -1320,8 +1244,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -1381,35 +1304,35 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/Qt6CoreConfig.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/Qt6CoreConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/qt6core-config.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/qt6core-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6Core.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6Core.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/qt6core.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/qt6core.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Core.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Core.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/qt6core.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/qt6core.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/Qt6Core.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/Qt6Core.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/qt6core.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/qt6core.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -1434,8 +1357,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -1476,8 +1398,7 @@ events:
     names:
       - "GL/gl.h"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
@@ -1498,8 +1419,7 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/GL/gl.h"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/GL/gl.h"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/GL/gl.h"
       - "/home/anechka/.local/bin/GL/gl.h"
       - "/home/anechka/bin/GL/gl.h"
       - "/usr/local/bin/GL/gl.h"
@@ -1509,8 +1429,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -1553,8 +1472,7 @@ events:
     names:
       - "GL/glx.h"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
@@ -1572,8 +1490,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/GL/glx.h"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/GL/glx.h"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/GL/glx.h"
       - "/home/anechka/.local/bin/GL/glx.h"
       - "/home/anechka/bin/GL/glx.h"
       - "/usr/local/bin/GL/glx.h"
@@ -1583,8 +1500,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -1627,8 +1543,7 @@ events:
     names:
       - "EGL/egl.h"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
@@ -1646,8 +1561,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/EGL/egl.h"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/EGL/egl.h"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/EGL/egl.h"
       - "/home/anechka/.local/bin/EGL/egl.h"
       - "/home/anechka/bin/EGL/egl.h"
       - "/usr/local/bin/EGL/egl.h"
@@ -1657,8 +1571,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -1701,8 +1614,7 @@ events:
     names:
       - "GLES2/gl2.h"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
@@ -1720,8 +1632,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/GLES2/gl2.h"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/GLES2/gl2.h"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/GLES2/gl2.h"
       - "/home/anechka/.local/bin/GLES2/gl2.h"
       - "/home/anechka/bin/GLES2/gl2.h"
       - "/usr/local/bin/GLES2/gl2.h"
@@ -1731,8 +1642,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -1775,8 +1685,7 @@ events:
     names:
       - "GLES3/gl3.h"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
@@ -1794,8 +1703,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/GLES3/gl3.h"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/GLES3/gl3.h"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/GLES3/gl3.h"
       - "/home/anechka/.local/bin/GLES3/gl3.h"
       - "/home/anechka/bin/GLES3/gl3.h"
       - "/usr/local/bin/GLES3/gl3.h"
@@ -1805,8 +1713,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -1849,8 +1756,7 @@ events:
     names:
       - "GL/xmesa.h"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
@@ -1871,8 +1777,7 @@ events:
       - "/usr/openwin/share/include/"
       - "/opt/graphics/OpenGL/include/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/GL/xmesa.h"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/GL/xmesa.h"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/GL/xmesa.h"
       - "/home/anechka/.local/bin/GL/xmesa.h"
       - "/home/anechka/bin/GL/xmesa.h"
       - "/usr/local/bin/GL/xmesa.h"
@@ -1895,8 +1800,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -1939,8 +1843,7 @@ events:
     names:
       - "GL/glu.h"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
@@ -1958,8 +1861,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/GL/glu.h"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/GL/glu.h"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/GL/glu.h"
       - "/home/anechka/.local/bin/GL/glu.h"
       - "/home/anechka/bin/GL/glu.h"
       - "/usr/local/bin/GL/glu.h"
@@ -1979,8 +1881,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -2023,8 +1924,7 @@ events:
     names:
       - "OpenGL"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2038,8 +1938,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2048,8 +1947,7 @@ events:
     found: "/usr/lib64/libOpenGL.so"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -2092,8 +1990,7 @@ events:
     names:
       - "GLX"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2107,8 +2004,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2117,8 +2013,7 @@ events:
     found: "/usr/lib64/libGLX.so"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -2161,8 +2056,7 @@ events:
     names:
       - "EGL"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2176,8 +2070,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2186,8 +2079,7 @@ events:
     found: "/usr/lib64/libEGL.so"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -2230,8 +2122,7 @@ events:
     names:
       - "GLESv2"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2245,8 +2136,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2255,8 +2145,7 @@ events:
     found: "/usr/lib64/libGLESv2.so"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -2300,8 +2189,7 @@ events:
       - "GLESv3"
       - "GLESv2"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2315,8 +2203,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2329,8 +2216,7 @@ events:
       - "/lib/"
       - "/opt/"
       - "/usr/lib64/X11/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2339,8 +2225,7 @@ events:
     found: "/usr/lib64/libGLESv2.so"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -2384,8 +2269,7 @@ events:
       - "GLU"
       - "MesaGLU"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2399,8 +2283,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2413,8 +2296,7 @@ events:
       - "/lib/"
       - "/opt/"
       - "/usr/lib64/X11/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2430,8 +2312,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -2472,8 +2353,7 @@ events:
     names:
       - "vulkan/vulkan.h"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
@@ -2491,8 +2371,7 @@ events:
       - "/opt/"
       - "/usr/include/X11/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/vulkan/vulkan.h"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/vulkan/vulkan.h"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/vulkan/vulkan.h"
       - "/home/anechka/.local/bin/vulkan/vulkan.h"
       - "/home/anechka/bin/vulkan/vulkan.h"
       - "/usr/local/bin/vulkan/vulkan.h"
@@ -2502,8 +2381,7 @@ events:
     found: "/usr/include/"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -2544,8 +2422,7 @@ events:
     names:
       - "vulkan"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2559,8 +2436,7 @@ events:
       - "/opt/"
       - "/usr/lib64/X11/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/usr/local/bin/"
       - "/usr/bin/"
       - "/usr/local/lib64/"
@@ -2569,8 +2445,7 @@ events:
     found: "/usr/lib64/libvulkan.so"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -2611,8 +2486,7 @@ events:
     names:
       - "glslc"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
@@ -2635,8 +2509,7 @@ events:
       - "/opt/sbin/"
       - "/opt/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/glslc"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/glslc"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/glslc"
       - "/home/anechka/.local/bin/glslc"
       - "/home/anechka/bin/glslc"
       - "/usr/local/bin/glslc"
@@ -2661,8 +2534,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -2701,8 +2573,7 @@ events:
     names:
       - "glslangValidator"
     candidate_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/"
       - "/home/anechka/.local/bin/"
       - "/home/anechka/bin/"
       - "/usr/local/bin/"
@@ -2725,8 +2596,7 @@ events:
       - "/opt/sbin/"
       - "/opt/"
     searched_directories:
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/glslangValidator"
-      - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/glslangValidator"
+      - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin/glslangValidator"
       - "/home/anechka/.local/bin/glslangValidator"
       - "/home/anechka/bin/glslangValidator"
       - "/usr/local/bin/glslangValidator"
@@ -2751,8 +2621,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -2818,99 +2687,67 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/Qt6GuiToolsConfig.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/Qt6GuiToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/qt6guitools-config.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/qt6guitools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6GuiTools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6GuiTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/qt6guitools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/qt6guitools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/Qt6GuiTools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/Qt6GuiTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/qt6guitools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/qt6guitools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/Qt6GuiTools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/Qt6GuiTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/qt6guitools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/qt6guitools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/Qt6GuiToolsConfig.cmake"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/Qt6GuiToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/qt6guitools-config.cmake"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/qt6guitools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib64/cps/Qt6GuiTools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib64/cps/Qt6GuiTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib64/cps/qt6guitools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib64/cps/qt6guitools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/Qt6GuiTools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib/cps/Qt6GuiTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/qt6guitools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib/cps/qt6guitools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/Qt6GuiTools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/share/cps/Qt6GuiTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/qt6guitools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/Qt6GuiToolsConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/qt6guitools-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib64/cps/Qt6GuiTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib64/cps/qt6guitools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/Qt6GuiTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/qt6guitools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/Qt6GuiTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/qt6guitools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/share/cps/qt6guitools.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -3047,8 +2884,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -3119,99 +2955,67 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/Qt6DBusToolsConfig.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/Qt6DBusToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/qt6dbustools-config.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/qt6dbustools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6DBusTools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6DBusTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/qt6dbustools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/qt6dbustools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/Qt6DBusTools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/Qt6DBusTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/qt6dbustools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/qt6dbustools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/Qt6DBusTools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/Qt6DBusTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/qt6dbustools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/qt6dbustools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/Qt6DBusToolsConfig.cmake"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/Qt6DBusToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/qt6dbustools-config.cmake"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/qt6dbustools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib64/cps/Qt6DBusTools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib64/cps/Qt6DBusTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib64/cps/qt6dbustools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib64/cps/qt6dbustools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/Qt6DBusTools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib/cps/Qt6DBusTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/qt6dbustools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib/cps/qt6dbustools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/Qt6DBusTools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/share/cps/Qt6DBusTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/qt6dbustools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/Qt6DBusToolsConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/qt6dbustools-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib64/cps/Qt6DBusTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib64/cps/qt6dbustools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/Qt6DBusTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/qt6dbustools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/Qt6DBusTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/qt6dbustools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/share/cps/qt6dbustools.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -3348,8 +3152,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -3417,35 +3220,35 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/Qt6DBusConfig.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/Qt6DBusConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/qt6dbus-config.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/qt6dbus-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6DBus.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6DBus.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/qt6dbus.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/qt6dbus.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/Qt6DBus.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/Qt6DBus.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/qt6dbus.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/qt6dbus.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/Qt6DBus.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/Qt6DBus.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/qt6dbus.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/qt6dbus.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -3470,8 +3273,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -3531,35 +3333,35 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/Qt6GuiConfig.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/Qt6GuiConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/qt6gui-config.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/qt6gui-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6Gui.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6Gui.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/qt6gui.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/qt6gui.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Gui.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Gui.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/qt6gui.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/qt6gui.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/Qt6Gui.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/Qt6Gui.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/qt6gui.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/qt6gui.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -3584,8 +3386,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -3651,99 +3452,67 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/Qt6WidgetsToolsConfig.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/Qt6WidgetsToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/qt6widgetstools-config.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/qt6widgetstools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6WidgetsTools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6WidgetsTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/qt6widgetstools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/qt6widgetstools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/Qt6WidgetsTools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/Qt6WidgetsTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/qt6widgetstools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/qt6widgetstools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/Qt6WidgetsTools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/Qt6WidgetsTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/qt6widgetstools.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/qt6widgetstools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/Qt6WidgetsToolsConfig.cmake"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/Qt6WidgetsToolsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/qt6widgetstools-config.cmake"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/qt6widgetstools-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib64/cps/Qt6WidgetsTools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib64/cps/Qt6WidgetsTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib64/cps/qt6widgetstools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib64/cps/qt6widgetstools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/Qt6WidgetsTools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib/cps/Qt6WidgetsTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/qt6widgetstools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib/cps/qt6widgetstools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/Qt6WidgetsTools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/share/cps/Qt6WidgetsTools.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/qt6widgetstools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/Qt6WidgetsToolsConfig.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/qt6widgetstools-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib64/cps/Qt6WidgetsTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib64/cps/qt6widgetstools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/Qt6WidgetsTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/qt6widgetstools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/Qt6WidgetsTools.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/qt6widgetstools.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/share/cps/qt6widgetstools.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -3880,8 +3649,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -3941,35 +3709,35 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/Qt6WidgetsConfig.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/Qt6WidgetsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/qt6widgets-config.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/qt6widgets-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6Widgets.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6Widgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/qt6widgets.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/qt6widgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Widgets.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/Qt6Widgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/qt6widgets.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/qt6widgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/Qt6Widgets.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/Qt6Widgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/qt6widgets.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/qt6widgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -3994,8 +3762,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -4063,35 +3830,35 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/Qt6OpenGLConfig.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/Qt6OpenGLConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/qt6opengl-config.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/qt6opengl-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6OpenGL.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6OpenGL.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/qt6opengl.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/qt6opengl.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/Qt6OpenGL.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/Qt6OpenGL.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/qt6opengl.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/qt6opengl.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/Qt6OpenGL.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/Qt6OpenGL.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/qt6opengl.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/qt6opengl.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -4116,8 +3883,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -4177,35 +3943,35 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/Qt6OpenGLWidgetsConfig.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/Qt6OpenGLWidgetsConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/qt6openglwidgets-config.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/qt6openglwidgets-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6OpenGLWidgets.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6OpenGLWidgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/qt6openglwidgets.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/qt6openglwidgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/Qt6OpenGLWidgets.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/Qt6OpenGLWidgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/qt6openglwidgets.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/qt6openglwidgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/Qt6OpenGLWidgets.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/Qt6OpenGLWidgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/qt6openglwidgets.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/qt6openglwidgets.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -4222,8 +3988,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"
@@ -4297,99 +4062,67 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/Qt6Config.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/qt6-config.cmake"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/Qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib64/cps/qt6.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib64/cps/qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/Qt6.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/Qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/lib/cps/qt6.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/lib/cps/qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/Qt6.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/Qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/pkgRedirects/share/cps/qt6.cps"
+        path: "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/pkgRedirects/share/cps/qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/Qt6Config.cmake"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/Qt6Config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/qt6-config.cmake"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/qt6-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib64/cps/Qt6.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib64/cps/Qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib64/cps/qt6.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib64/cps/qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/Qt6.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib/cps/Qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/lib/cps/qt6.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/lib/cps/qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/Qt6.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/share/cps/Qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand/share/cps/qt6.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/Qt6Config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/qt6-config.cmake"
-        mode: "config"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib64/cps/Qt6.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib64/cps/qt6.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/Qt6.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/lib/cps/qt6.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/Qt6.cps"
-        mode: "cps"
-        reason: "no_exist"
-      -
-        path: "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli/share/cps/qt6.cps"
+        path: "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/share/cps/qt6.cps"
         mode: "cps"
         reason: "no_exist"
       -
@@ -4718,8 +4451,7 @@ events:
       version: "6.11.1"
     search_context:
       ENV{PATH}:
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/debugCommand"
-        - "/home/anechka/.config/Code/User/globalStorage/github.copilot-chat/copilotCli"
+        - "/usr/share/cursor/resources/app/node_modules/@vscode/ripgrep/bin"
         - "/home/anechka/.local/bin"
         - "/home/anechka/bin"
         - "/usr/local/bin"

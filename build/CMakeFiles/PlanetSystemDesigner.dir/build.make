@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anechka/PlanetSystemDesigner_Qt_Project
+CMAKE_SOURCE_DIR = /home/anechka/CG_coursework_IU7_2028
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anechka/PlanetSystemDesigner_Qt_Project/build
+CMAKE_BINARY_DIR = /home/anechka/CG_coursework_IU7_2028/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PlanetSystemDesigner.dir/depend.make
@@ -72,9 +72,9 @@ include CMakeFiles/PlanetSystemDesigner.dir/flags.make
 PlanetSystemDesigner_autogen/timestamp: /usr/lib64/qt6/libexec/moc
 PlanetSystemDesigner_autogen/timestamp: /usr/lib64/qt6/libexec/uic
 PlanetSystemDesigner_autogen/timestamp: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target PlanetSystemDesigner"
-	/usr/bin/cmake -E cmake_autogen /home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/PlanetSystemDesigner_autogen.dir/AutogenInfo.json ""
-	/usr/bin/cmake -E touch /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target PlanetSystemDesigner"
+	/usr/bin/cmake -E cmake_autogen /home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/PlanetSystemDesigner_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E touch /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/timestamp
 
 CMakeFiles/PlanetSystemDesigner.dir/codegen:
 .PHONY : CMakeFiles/PlanetSystemDesigner.dir/codegen
@@ -82,464 +82,464 @@ CMakeFiles/PlanetSystemDesigner.dir/codegen:
 CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
 CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o: PlanetSystemDesigner_autogen/mocs_compilation.cpp
 CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o -c /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/mocs_compilation.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/mocs_compilation.cpp > CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/mocs_compilation.cpp > CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/mocs_compilation.cpp -o CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/mocs_compilation.cpp -o CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/main.cpp
+CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o: /home/anechka/CG_coursework_IU7_2028/main.cpp
 CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o -c /home/anechka/CG_coursework_IU7_2028/main.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/main.cpp > CMakeFiles/PlanetSystemDesigner.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/main.cpp > CMakeFiles/PlanetSystemDesigner.dir/main.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/main.cpp -o CMakeFiles/PlanetSystemDesigner.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/main.cpp -o CMakeFiles/PlanetSystemDesigner.dir/main.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/facade/Facade.cpp
+CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o: /home/anechka/CG_coursework_IU7_2028/facade/Facade.cpp
 CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/facade/Facade.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o -c /home/anechka/CG_coursework_IU7_2028/facade/Facade.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/facade/Facade.cpp > CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/facade/Facade.cpp > CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/facade/Facade.cpp -o CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/facade/Facade.cpp -o CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/ObjectCommand.cpp
+CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o: /home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.cpp
 CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/ObjectCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o -c /home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/ObjectCommand.cpp > CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.cpp > CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/ObjectCommand.cpp -o CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.cpp -o CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/CameraCommand.cpp
+CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o: /home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.cpp
 CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/CameraCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o -c /home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/CameraCommand.cpp > CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.cpp > CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/CameraCommand.cpp -o CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.cpp -o CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/component/BaseObject.cpp
+CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o: /home/anechka/CG_coursework_IU7_2028/component/BaseObject.cpp
 CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/component/BaseObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o -c /home/anechka/CG_coursework_IU7_2028/component/BaseObject.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/component/BaseObject.cpp > CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/component/BaseObject.cpp > CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/component/BaseObject.cpp -o CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/component/BaseObject.cpp -o CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/component/composite/Composite.cpp
+CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o: /home/anechka/CG_coursework_IU7_2028/component/composite/Composite.cpp
 CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/component/composite/Composite.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o -c /home/anechka/CG_coursework_IU7_2028/component/composite/Composite.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/component/composite/Composite.cpp > CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/component/composite/Composite.cpp > CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/component/composite/Composite.cpp -o CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/component/composite/Composite.cpp -o CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/CelestialBody.cpp
+CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.o: /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/CelestialBody.cpp
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/CelestialBody.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.o -c /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/CelestialBody.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/CelestialBody.cpp > CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/CelestialBody.cpp > CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/CelestialBody.cpp -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/CelestialBody.cpp -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp
+CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.o: /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.o -c /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp > CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp > CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp
+CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.o: /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.o -c /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp > CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp > CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/camera/CameraAdapter.cpp
+CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.o: /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/CameraAdapter.cpp
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/camera/CameraAdapter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.o -c /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/CameraAdapter.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/camera/CameraAdapter.cpp > CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/CameraAdapter.cpp > CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/camera/CameraAdapter.cpp -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/CameraAdapter.cpp -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/camera/default/DefaultCamera.cpp
+CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o: /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/default/DefaultCamera.cpp
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/camera/default/DefaultCamera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o -c /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/default/DefaultCamera.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/camera/default/DefaultCamera.cpp > CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/default/DefaultCamera.cpp > CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/camera/default/DefaultCamera.cpp -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/default/DefaultCamera.cpp -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/visitors/draw/DrawVisitor.cpp
+CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o: /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp
 CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/visitors/draw/DrawVisitor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o -c /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/visitors/draw/DrawVisitor.cpp > CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp > CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/visitors/draw/DrawVisitor.cpp -o CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp -o CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/scene/Scene.cpp
+CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o: /home/anechka/CG_coursework_IU7_2028/scene/Scene.cpp
 CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/scene/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o -c /home/anechka/CG_coursework_IU7_2028/scene/Scene.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/scene/Scene.cpp > CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/scene/Scene.cpp > CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/scene/Scene.cpp -o CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/scene/Scene.cpp -o CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/managers/ManagerProvider.cpp
+CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: /home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.cpp
 CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/managers/ManagerProvider.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o -c /home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/managers/ManagerProvider.cpp > CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.cpp > CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/managers/ManagerProvider.cpp -o CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.cpp -o CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/DrawManager.cpp
+CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: /home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.cpp
 CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/DrawManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o -c /home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/DrawManager.cpp > CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.cpp > CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/DrawManager.cpp -o CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.cpp -o CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/CameraManager.cpp
+CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.o: /home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.cpp
 CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/CameraManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.o -c /home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/CameraManager.cpp > CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.cpp > CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/CameraManager.cpp -o CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.cpp -o CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/managers/scene/SceneManager.cpp
+CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o: /home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.cpp
 CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/managers/scene/SceneManager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o -c /home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/managers/scene/SceneManager.cpp > CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.cpp > CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/managers/scene/SceneManager.cpp -o CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.cpp -o CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/QtDrawFactory.cpp
+CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o: /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/QtDrawFactory.cpp
 CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/QtDrawFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o -c /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/QtDrawFactory.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/QtDrawFactory.cpp > CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/QtDrawFactory.cpp > CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/QtDrawFactory.cpp -o CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/QtDrawFactory.cpp -o CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/products/QtPainter.cpp
+CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o: /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.cpp
 CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/products/QtPainter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o -c /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/products/QtPainter.cpp > CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.cpp > CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/products/QtPainter.cpp -o CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.cpp -o CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/projection/default/DefaultProjectionStrategy.cpp
+CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o: /home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.cpp
 CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/projection/default/DefaultProjectionStrategy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o -c /home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/projection/default/DefaultProjectionStrategy.cpp > CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.cpp > CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/projection/default/DefaultProjectionStrategy.cpp -o CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.cpp -o CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp
+CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o: /home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp
 CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o -c /home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp > CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp > CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp -o CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp -o CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/BaseException.cpp
+CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o: /home/anechka/CG_coursework_IU7_2028/exceptions/BaseException.cpp
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/BaseException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o -c /home/anechka/CG_coursework_IU7_2028/exceptions/BaseException.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/BaseException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/exceptions/BaseException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/BaseException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/exceptions/BaseException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/camera/CameraException.cpp
+CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.o: /home/anechka/CG_coursework_IU7_2028/exceptions/camera/CameraException.cpp
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/camera/CameraException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.o -c /home/anechka/CG_coursework_IU7_2028/exceptions/camera/CameraException.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/camera/CameraException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/exceptions/camera/CameraException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/camera/CameraException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/exceptions/camera/CameraException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/composite/CompositeException.cpp
+CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o: /home/anechka/CG_coursework_IU7_2028/exceptions/composite/CompositeException.cpp
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/composite/CompositeException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o -c /home/anechka/CG_coursework_IU7_2028/exceptions/composite/CompositeException.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/composite/CompositeException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/exceptions/composite/CompositeException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/composite/CompositeException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/exceptions/composite/CompositeException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/BaseManagerException.cpp
+CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o: /home/anechka/CG_coursework_IU7_2028/exceptions/managers/BaseManagerException.cpp
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/BaseManagerException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o -c /home/anechka/CG_coursework_IU7_2028/exceptions/managers/BaseManagerException.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/BaseManagerException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/exceptions/managers/BaseManagerException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/BaseManagerException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/exceptions/managers/BaseManagerException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/camera/CameraManagerException.cpp
+CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o: /home/anechka/CG_coursework_IU7_2028/exceptions/managers/camera/CameraManagerException.cpp
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/camera/CameraManagerException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o -c /home/anechka/CG_coursework_IU7_2028/exceptions/managers/camera/CameraManagerException.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/camera/CameraManagerException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/exceptions/managers/camera/CameraManagerException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/camera/CameraManagerException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/exceptions/managers/camera/CameraManagerException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/matrix/MatrixException.cpp
+CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o: /home/anechka/CG_coursework_IU7_2028/exceptions/matrix/MatrixException.cpp
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/matrix/MatrixException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o -c /home/anechka/CG_coursework_IU7_2028/exceptions/matrix/MatrixException.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/matrix/MatrixException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/exceptions/matrix/MatrixException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/matrix/MatrixException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/exceptions/matrix/MatrixException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/model/ModelException.cpp
+CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o: /home/anechka/CG_coursework_IU7_2028/exceptions/model/ModelException.cpp
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/model/ModelException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o -c /home/anechka/CG_coursework_IU7_2028/exceptions/model/ModelException.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/model/ModelException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/exceptions/model/ModelException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/model/ModelException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/exceptions/model/ModelException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/scene/SceneException.cpp
+CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o: /home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.cpp
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/scene/SceneException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o -c /home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/scene/SceneException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/scene/SceneException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/vector/VectorException.cpp
+CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.o: /home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.cpp
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/vector/VectorException.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.o -c /home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/vector/VectorException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.cpp > CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/vector/VectorException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.cpp -o CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/mainwindow.cpp
+CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: /home/anechka/CG_coursework_IU7_2028/qt/src/mainwindow.cpp
 CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o -c /home/anechka/CG_coursework_IU7_2028/qt/src/mainwindow.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/mainwindow.cpp > CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/qt/src/mainwindow.cpp > CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/mainwindow.cpp -o CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/qt/src/mainwindow.cpp -o CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.s
 
 CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/flags.make
-CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o: /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/plane.cpp
+CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o: /home/anechka/CG_coursework_IU7_2028/qt/src/plane.cpp
 CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o: CMakeFiles/PlanetSystemDesigner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o -c /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/plane.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o -MF CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o.d -o CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o -c /home/anechka/CG_coursework_IU7_2028/qt/src/plane.cpp
 
 CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/plane.cpp > CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anechka/CG_coursework_IU7_2028/qt/src/plane.cpp > CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.i
 
 CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/plane.cpp -o CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anechka/CG_coursework_IU7_2028/qt/src/plane.cpp -o CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.s
 
 # Object files for target PlanetSystemDesigner
 PlanetSystemDesigner_OBJECTS = \
@@ -623,7 +623,7 @@ PlanetSystemDesigner: /usr/lib64/libGLX.so
 PlanetSystemDesigner: /usr/lib64/libOpenGL.so
 PlanetSystemDesigner: /usr/lib64/libQt6Core.so.6.11.1
 PlanetSystemDesigner: CMakeFiles/PlanetSystemDesigner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable PlanetSystemDesigner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable PlanetSystemDesigner"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PlanetSystemDesigner.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -635,6 +635,6 @@ CMakeFiles/PlanetSystemDesigner.dir/clean:
 .PHONY : CMakeFiles/PlanetSystemDesigner.dir/clean
 
 CMakeFiles/PlanetSystemDesigner.dir/depend: PlanetSystemDesigner_autogen/timestamp
-	cd /home/anechka/PlanetSystemDesigner_Qt_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anechka/PlanetSystemDesigner_Qt_Project /home/anechka/PlanetSystemDesigner_Qt_Project /home/anechka/PlanetSystemDesigner_Qt_Project/build /home/anechka/PlanetSystemDesigner_Qt_Project/build /home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/PlanetSystemDesigner.dir/DependInfo.cmake "--color=$(COLOR)" PlanetSystemDesigner
+	cd /home/anechka/CG_coursework_IU7_2028/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anechka/CG_coursework_IU7_2028 /home/anechka/CG_coursework_IU7_2028 /home/anechka/CG_coursework_IU7_2028/build /home/anechka/CG_coursework_IU7_2028/build /home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/PlanetSystemDesigner.dir/DependInfo.cmake "--color=$(COLOR)" PlanetSystemDesigner
 .PHONY : CMakeFiles/PlanetSystemDesigner.dir/depend
 

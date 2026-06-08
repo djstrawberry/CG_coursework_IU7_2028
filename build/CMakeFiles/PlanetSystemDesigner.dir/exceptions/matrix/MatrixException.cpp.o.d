@@ -1,8 +1,8 @@
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/matrix/MatrixException.cpp \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/matrix/MatrixException.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/matrix/MatrixException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/matrix/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/matrix/MatrixException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/matrix/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/bits/version.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

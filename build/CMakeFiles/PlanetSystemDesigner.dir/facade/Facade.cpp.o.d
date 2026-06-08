@@ -1,7 +1,7 @@
 CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/facade/Facade.cpp \
+ /home/anechka/CG_coursework_IU7_2028/facade/Facade.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/facade/Facade.h \
+ /home/anechka/CG_coursework_IU7_2028/facade/Facade.h \
  /usr/include/c++/16/memory /usr/include/c++/16/bits/memoryfwd.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -160,4 +160,4 @@ CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o: \
  /usr/include/c++/16/bits/ranges_algobase.h \
  /usr/include/c++/16/pstl/glue_memory_defs.h \
  /usr/include/c++/16/pstl/execution_defs.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/facade/../commands/BaseCommand.h
+ /home/anechka/CG_coursework_IU7_2028/facade/../commands/BaseCommand.h

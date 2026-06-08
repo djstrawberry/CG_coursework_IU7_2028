@@ -1,8 +1,8 @@
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/BaseManagerException.cpp \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/managers/BaseManagerException.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/BaseManagerException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/managers/BaseManagerException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/managers/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/bits/version.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

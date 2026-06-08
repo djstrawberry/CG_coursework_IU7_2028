@@ -1,10 +1,10 @@
 CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/CameraCommand.cpp \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/CameraCommand.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/../BaseCommand.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/../../vector/Vec3.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/../../vector/../concepts/concepts.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/../BaseCommand.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/../../vector/../concepts/concepts.h \
  /usr/include/c++/16/concepts /usr/include/c++/16/bits/version.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -150,9 +150,9 @@ CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o: \
  /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/../../vector/Vec3.hpp \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/../../vector/../exceptions/vector/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/../../vector/../exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
@@ -173,7 +173,7 @@ CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o: \
  /usr/include/c++/16/tr1/poly_hermite.tcc \
  /usr/include/c++/16/tr1/poly_laguerre.tcc \
  /usr/include/c++/16/tr1/riemann_zeta.tcc \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/../../managers/ManagerProvider.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/../../managers/ManagerProvider.h \
  /usr/include/c++/16/memory /usr/include/c++/16/bits/stl_tempbuf.h \
  /usr/include/c++/16/bits/stl_uninitialized.h \
  /usr/include/c++/16/bits/stl_raw_storage_iter.h \
@@ -193,12 +193,12 @@ CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o: \
  /usr/include/c++/16/bits/ranges_algobase.h \
  /usr/include/c++/16/pstl/glue_memory_defs.h \
  /usr/include/c++/16/pstl/execution_defs.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/../../managers/camera/CameraManager.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/../../managers/camera/../../component/primitive/invisible/camera/BaseCamera.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/../../managers/camera/../../component/primitive/invisible/camera/../InvisibleObject.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/../../managers/camera/../../component/primitive/invisible/camera/../../Primitive.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/../../managers/camera/../../component/primitive/invisible/camera/../../../BaseObject.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/../../managers/camera/../../component/primitive/invisible/camera/../../../../visitors/BaseVisitor.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/../../managers/camera/CameraManager.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/../../managers/camera/../../component/primitive/invisible/camera/BaseCamera.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/../../managers/camera/../../component/primitive/invisible/camera/../InvisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/../../managers/camera/../../component/primitive/invisible/camera/../../Primitive.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/../../managers/camera/../../component/primitive/invisible/camera/../../../BaseObject.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/../../managers/camera/../../component/primitive/invisible/camera/../../../../visitors/BaseVisitor.h \
  /usr/include/c++/16/map /usr/include/c++/16/bits/stl_tree.h \
  /usr/include/c++/16/bits/node_handle.h \
  /usr/include/c++/16/bits/stl_map.h \

@@ -1,8 +1,8 @@
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/composite/CompositeException.cpp \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/composite/CompositeException.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/composite/CompositeException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/composite/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/composite/CompositeException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/composite/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/bits/version.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

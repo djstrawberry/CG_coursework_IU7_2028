@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/anechka/PlanetSystemDesigner_Qt_Project/build/cmake_install.cmake"
+		"/home/anechka/CG_coursework_IU7_2028/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anechka/PlanetSystemDesigner_Qt_Project
+CMAKE_SOURCE_DIR = /home/anechka/CG_coursework_IU7_2028
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anechka/PlanetSystemDesigner_Qt_Project/build
+CMAKE_BINARY_DIR = /home/anechka/CG_coursework_IU7_2028/build
 
 # Utility rule file for PlanetSystemDesigner_autogen.
 
@@ -71,9 +71,9 @@ CMakeFiles/PlanetSystemDesigner_autogen: PlanetSystemDesigner_autogen/timestamp
 PlanetSystemDesigner_autogen/timestamp: /usr/lib64/qt6/libexec/moc
 PlanetSystemDesigner_autogen/timestamp: /usr/lib64/qt6/libexec/uic
 PlanetSystemDesigner_autogen/timestamp: CMakeFiles/PlanetSystemDesigner_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target PlanetSystemDesigner"
-	/usr/bin/cmake -E cmake_autogen /home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/PlanetSystemDesigner_autogen.dir/AutogenInfo.json ""
-	/usr/bin/cmake -E touch /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target PlanetSystemDesigner"
+	/usr/bin/cmake -E cmake_autogen /home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/PlanetSystemDesigner_autogen.dir/AutogenInfo.json ""
+	/usr/bin/cmake -E touch /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/timestamp
 
 CMakeFiles/PlanetSystemDesigner_autogen.dir/codegen:
 .PHONY : CMakeFiles/PlanetSystemDesigner_autogen.dir/codegen
@@ -92,6 +92,6 @@ CMakeFiles/PlanetSystemDesigner_autogen.dir/clean:
 .PHONY : CMakeFiles/PlanetSystemDesigner_autogen.dir/clean
 
 CMakeFiles/PlanetSystemDesigner_autogen.dir/depend:
-	cd /home/anechka/PlanetSystemDesigner_Qt_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anechka/PlanetSystemDesigner_Qt_Project /home/anechka/PlanetSystemDesigner_Qt_Project /home/anechka/PlanetSystemDesigner_Qt_Project/build /home/anechka/PlanetSystemDesigner_Qt_Project/build /home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/PlanetSystemDesigner_autogen.dir/DependInfo.cmake "--color=$(COLOR)" PlanetSystemDesigner_autogen
+	cd /home/anechka/CG_coursework_IU7_2028/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anechka/CG_coursework_IU7_2028 /home/anechka/CG_coursework_IU7_2028 /home/anechka/CG_coursework_IU7_2028/build /home/anechka/CG_coursework_IU7_2028/build /home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/PlanetSystemDesigner_autogen.dir/DependInfo.cmake "--color=$(COLOR)" PlanetSystemDesigner_autogen
 .PHONY : CMakeFiles/PlanetSystemDesigner_autogen.dir/depend
 

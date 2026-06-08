@@ -1,7 +1,7 @@
 CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/DrawManager.cpp \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/DrawManager.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.h \
  /usr/include/c++/16/memory /usr/include/c++/16/bits/memoryfwd.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -332,37 +332,37 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: \
  /usr/include/qt6/QtGui/qfont.h /usr/include/qt6/QtCore/qendian.h \
  /usr/include/qt6/QtGui/qfontvariableaxis.h \
  /usr/include/qt6/QtGui/qfontmetrics.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/projection/creators/ProjectionStrategyCreator.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/projection/creators/../../../concepts/concepts.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/projection/creators/../BaseProjectionStrategy.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/CameraImpl.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/ProjectionStrategyCreator.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../concepts/concepts.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../BaseProjectionStrategy.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/CameraImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../vector/Vec3.h \
  /usr/include/c++/16/iostream /usr/include/c++/16/ostream \
  /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../vector/Vec3.hpp \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../vector/../exceptions/vector/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../vector/../exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/projection/creators/../../../component/primitive/visible/model/impl/SphereImpl.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/projection/creators/../../../component/primitive/visible/model/impl/../../../../../materials/Material.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/projection/creators/../default/DefaultProjectionStrategy.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/projection/creators/ProjectionStrategyCreator.hpp \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/conversion/creator/ConvertCoordsStrategyCreator.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/conversion/creator/../BaseCoordinateConvertStrategy.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/conversion/creator/../default/DefaultConvertCoordinatesStrategy.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../strategies/conversion/creator/ConvertCoordsStrategyCreator.hpp \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../visitors/creators/VisitorCreator.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../visitors/creators/../../factories/draw/products/BasePainter.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../visitors/creators/../draw/DrawVisitor.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../visitors/creators/../draw/../BaseVisitor.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../../visitors/creators/VisitorCreator.hpp \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../ManagerProvider.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../camera/CameraManager.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../camera/../../component/primitive/invisible/camera/BaseCamera.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../camera/../../component/primitive/invisible/camera/../InvisibleObject.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../camera/../../component/primitive/invisible/camera/../../Primitive.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../camera/../../component/primitive/invisible/camera/../../../BaseObject.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../scene/SceneManager.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/../scene/../../scene/Scene.h
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/visible/model/impl/SphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/visible/model/impl/../../../../../materials/Material.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../default/DefaultProjectionStrategy.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/ProjectionStrategyCreator.hpp \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/conversion/creator/ConvertCoordsStrategyCreator.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/conversion/creator/../BaseCoordinateConvertStrategy.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/conversion/creator/../default/DefaultConvertCoordinatesStrategy.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/conversion/creator/ConvertCoordsStrategyCreator.hpp \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/VisitorCreator.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/../../factories/draw/products/BasePainter.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/../draw/DrawVisitor.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/../draw/../BaseVisitor.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/VisitorCreator.hpp \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../ManagerProvider.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../camera/CameraManager.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../camera/../../component/primitive/invisible/camera/BaseCamera.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../camera/../../component/primitive/invisible/camera/../InvisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../camera/../../component/primitive/invisible/camera/../../Primitive.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../camera/../../component/primitive/invisible/camera/../../../BaseObject.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../scene/SceneManager.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../scene/../../scene/Scene.h

@@ -1,10 +1,10 @@
 CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp \
+ /home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/default/DefaultConvertCoordinatesStrategy.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/default/../BaseCoordinateConvertStrategy.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/default/../../../vector/Vec3.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/default/../../../vector/../concepts/concepts.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/DefaultConvertCoordinatesStrategy.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/../BaseCoordinateConvertStrategy.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/../../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/../../../vector/../concepts/concepts.h \
  /usr/include/c++/16/concepts /usr/include/c++/16/bits/version.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -150,9 +150,9 @@ CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvert
  /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/default/../../../vector/Vec3.hpp \
- /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/default/../../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/default/../../../vector/../exceptions/vector/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/../../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/../../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/../../../vector/../exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \

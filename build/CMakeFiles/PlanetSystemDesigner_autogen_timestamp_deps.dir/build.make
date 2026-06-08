@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anechka/PlanetSystemDesigner_Qt_Project
+CMAKE_SOURCE_DIR = /home/anechka/CG_coursework_IU7_2028
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anechka/PlanetSystemDesigner_Qt_Project/build
+CMAKE_BINARY_DIR = /home/anechka/CG_coursework_IU7_2028/build
 
 # Utility rule file for PlanetSystemDesigner_autogen_timestamp_deps.
 
@@ -81,6 +81,6 @@ CMakeFiles/PlanetSystemDesigner_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/PlanetSystemDesigner_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/PlanetSystemDesigner_autogen_timestamp_deps.dir/depend:
-	cd /home/anechka/PlanetSystemDesigner_Qt_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anechka/PlanetSystemDesigner_Qt_Project /home/anechka/PlanetSystemDesigner_Qt_Project /home/anechka/PlanetSystemDesigner_Qt_Project/build /home/anechka/PlanetSystemDesigner_Qt_Project/build /home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/PlanetSystemDesigner_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)" PlanetSystemDesigner_autogen_timestamp_deps
+	cd /home/anechka/CG_coursework_IU7_2028/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anechka/CG_coursework_IU7_2028 /home/anechka/CG_coursework_IU7_2028 /home/anechka/CG_coursework_IU7_2028/build /home/anechka/CG_coursework_IU7_2028/build /home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/PlanetSystemDesigner_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)" PlanetSystemDesigner_autogen_timestamp_deps
 .PHONY : CMakeFiles/PlanetSystemDesigner_autogen_timestamp_deps.dir/depend
 

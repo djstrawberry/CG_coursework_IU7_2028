@@ -1,8 +1,8 @@
 CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/mocs_compilation.cpp \
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/moc_mainwindow.cpp \
- /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/mainwindow.h \
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/moc_mainwindow.cpp \
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/mainwindow.h \
  /usr/include/qt6/QtWidgets/QMainWindow \
  /usr/include/qt6/QtWidgets/qmainwindow.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -377,14 +377,17 @@ CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilatio
  /usr/include/qt6/QtWidgets/qlabel.h /usr/include/qt6/QtWidgets/qframe.h \
  /usr/include/qt6/QtGui/qpicture.h /usr/include/qt6/QtCore/qiodevice.h \
  /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/plane.h \
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/plane.h \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtCore/QPoint \
- /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/../../facade/Facade.h \
+ /usr/include/qt6/QtWidgets/QGraphicsScene \
+ /usr/include/qt6/QtWidgets/qgraphicsscene.h \
+ /usr/include/qt6/QtGui/qpen.h \
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/../../facade/Facade.h \
  /usr/include/qt6/QtGui/qtextcursor.h \
- /usr/include/qt6/QtGui/qtextformat.h /usr/include/qt6/QtGui/qpen.h \
+ /usr/include/qt6/QtGui/qtextformat.h \
  /usr/include/qt6/QtGui/qtextoption.h \
  /usr/include/qt6/QtCore/qtmochelpers.h \
  /usr/include/qt6/QtCore/qtmocconstants.h \
  /usr/include/qt6/QtCore/q20algorithm.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/moc_plane.cpp \
- /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/plane.h
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/moc_plane.cpp \
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/plane.h

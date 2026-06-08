@@ -1,8 +1,8 @@
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/camera/CameraException.cpp \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/camera/CameraException.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/camera/CameraException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/camera/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/camera/CameraException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/camera/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/bits/version.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

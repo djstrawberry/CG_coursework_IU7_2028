@@ -1,16 +1,16 @@
 {
-	"BUILD_DIR" : "/home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen",
-	"CMAKE_BINARY_DIR" : "/home/anechka/PlanetSystemDesigner_Qt_Project/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/anechka/PlanetSystemDesigner_Qt_Project/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/anechka/PlanetSystemDesigner_Qt_Project",
+	"BUILD_DIR" : "/home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen",
+	"CMAKE_BINARY_DIR" : "/home/anechka/CG_coursework_IU7_2028/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/anechka/CG_coursework_IU7_2028/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/anechka/CG_coursework_IU7_2028",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/anechka/PlanetSystemDesigner_Qt_Project/CMakeLists.txt",
-		"/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/4.3.0/CMakeSystem.cmake",
+		"/home/anechka/CG_coursework_IU7_2028/CMakeLists.txt",
+		"/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/4.3.0/CMakeSystem.cmake",
 		"/usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/usr/share/cmake/Modules/Platform/Linux-Initialize.cmake",
-		"/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/4.3.0/CMakeCXXCompiler.cmake",
+		"/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/4.3.0/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake/Modules/CMakeGenericSystem.cmake",
 		"/usr/share/cmake/Modules/CMakeInitializeConfigs.cmake",
@@ -484,346 +484,346 @@
 		"/usr/lib64/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsAdditionalTargetInfo.cmake",
 		"/usr/lib64/cmake/Qt6OpenGLWidgets/Qt6OpenGLWidgetsVersionlessAliasTargets.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/anechka/PlanetSystemDesigner_Qt_Project",
+	"CMAKE_SOURCE_DIR" : "/home/anechka/CG_coursework_IU7_2028",
 	"CROSS_CONFIG" : false,
-	"DEP_FILE" : "/home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/deps",
+	"DEP_FILE" : "/home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "PlanetSystemDesigner_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/commands/BaseCommand.h",
+			"/home/anechka/CG_coursework_IU7_2028/commands/BaseCommand.h",
 			"MU",
 			"4YNQ5GLRLQ/moc_BaseCommand.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/CameraCommand.h",
+			"/home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.h",
 			"MU",
 			"XT75BVE6DQ/moc_CameraCommand.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/ObjectCommand.h",
+			"/home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.h",
 			"MU",
 			"GFKIAHM5DR/moc_ObjectCommand.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/BaseObject.h",
+			"/home/anechka/CG_coursework_IU7_2028/component/BaseObject.h",
 			"MU",
 			"DR7QEPC7UT/moc_BaseObject.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/composite/Composite.h",
+			"/home/anechka/CG_coursework_IU7_2028/component/composite/Composite.h",
 			"MU",
 			"BLKPZ53IVT/moc_Composite.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/Primitive.h",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/Primitive.h",
 			"MU",
 			"ZGNBMLVMHH/moc_Primitive.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/InvisibleObject.h",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/InvisibleObject.h",
 			"MU",
 			"SCMKF4KEYR/moc_InvisibleObject.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/camera/BaseCamera.h",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/BaseCamera.h",
 			"MU",
 			"REMZ6DIYHS/moc_BaseCamera.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/camera/CameraAdapter.h",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/CameraAdapter.h",
 			"MU",
 			"REMZ6DIYHS/moc_CameraAdapter.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/camera/default/DefaultCamera.h",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/default/DefaultCamera.h",
 			"MU",
 			"UURM326HCM/moc_DefaultCamera.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/camera/impl/CameraImpl.h",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/impl/CameraImpl.h",
 			"MU",
 			"U3435DB4NW/moc_CameraImpl.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/VisibleObject.h",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/VisibleObject.h",
 			"MU",
 			"VEBKST2OLT/moc_VisibleObject.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/BaseModel.h",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/BaseModel.h",
 			"MU",
 			"FUS6IOD62N/moc_BaseModel.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/CelestialBody.h",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/CelestialBody.h",
 			"MU",
 			"KW55W3PXG4/moc_CelestialBody.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/SphereImpl.h",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/SphereImpl.h",
 			"MU",
 			"63DZSM4NJT/moc_SphereImpl.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h",
 			"MU",
 			"WS7UGNWXWL/moc_ParametricSphereImpl.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h",
 			"MU",
 			"QJ5AJDWWV5/moc_TessellatedSphereImpl.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/concepts/concepts.h",
+			"/home/anechka/CG_coursework_IU7_2028/concepts/concepts.h",
 			"MU",
 			"YJBRIMTAWZ/moc_concepts.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/BaseException.h",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/BaseException.h",
 			"MU",
 			"RHBJBCZP5P/moc_BaseException.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/camera/CameraException.h",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/camera/CameraException.h",
 			"MU",
 			"D73Z2RQUFW/moc_CameraException.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/composite/CompositeException.h",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/composite/CompositeException.h",
 			"MU",
 			"AS73A3W3L7/moc_CompositeException.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/BaseManagerException.h",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/managers/BaseManagerException.h",
 			"MU",
 			"H2W24KO4UO/moc_BaseManagerException.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/camera/CameraManagerException.h",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/managers/camera/CameraManagerException.h",
 			"MU",
 			"4H7Y7LXKGM/moc_CameraManagerException.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/matrix/MatrixException.h",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/matrix/MatrixException.h",
 			"MU",
 			"FQWGK3LBGC/moc_MatrixException.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/model/ModelException.h",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/model/ModelException.h",
 			"MU",
 			"ELSDOVP75J/moc_ModelException.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/scene/SceneException.h",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.h",
 			"MU",
 			"C5EJGOCP36/moc_SceneException.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/vector/VectorException.h",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.h",
 			"MU",
 			"Y5AL3SNBJS/moc_VectorException.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/facade/Facade.h",
+			"/home/anechka/CG_coursework_IU7_2028/facade/Facade.h",
 			"MU",
 			"J3EJN7RB7I/moc_Facade.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/BaseDrawFactory.h",
+			"/home/anechka/CG_coursework_IU7_2028/factories/draw/BaseDrawFactory.h",
 			"MU",
 			"HT2QTBDCUJ/moc_BaseDrawFactory.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/DrawFactoryCreator.h",
+			"/home/anechka/CG_coursework_IU7_2028/factories/draw/DrawFactoryCreator.h",
 			"MU",
 			"HT2QTBDCUJ/moc_DrawFactoryCreator.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/products/BasePainter.h",
+			"/home/anechka/CG_coursework_IU7_2028/factories/draw/products/BasePainter.h",
 			"MU",
 			"RDEP7JRSVA/moc_BasePainter.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/QtDrawFactory.h",
+			"/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/QtDrawFactory.h",
 			"MU",
 			"JD6UWA67YU/moc_QtDrawFactory.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/products/QtPainter.h",
+			"/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.h",
 			"MU",
 			"4ZVXMKQAFO/moc_QtPainter.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/managers/ManagerProvider.h",
+			"/home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.h",
 			"MU",
 			"DWVBZFKGEL/moc_ManagerProvider.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/CameraManager.h",
+			"/home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.h",
 			"MU",
 			"VJVJAQEK5L/moc_CameraManager.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/DrawManager.h",
+			"/home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.h",
 			"MU",
 			"SB7IFSQIF7/moc_DrawManager.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/managers/scene/SceneManager.h",
+			"/home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.h",
 			"MU",
 			"X4OAFAMXW6/moc_SceneManager.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/materials/Material.h",
+			"/home/anechka/CG_coursework_IU7_2028/materials/Material.h",
 			"MU",
 			"AWE2RNY4VD/moc_Material.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/qt/inc/mainwindow.h",
+			"/home/anechka/CG_coursework_IU7_2028/qt/inc/mainwindow.h",
 			"MU",
 			"KVXSJM6DYM/moc_mainwindow.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/qt/inc/plane.h",
+			"/home/anechka/CG_coursework_IU7_2028/qt/inc/plane.h",
 			"MU",
 			"KVXSJM6DYM/moc_plane.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/scene/Scene.h",
+			"/home/anechka/CG_coursework_IU7_2028/scene/Scene.h",
 			"MU",
 			"QSLIUTEOWB/moc_Scene.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/BaseCoordinateConvertStrategy.h",
+			"/home/anechka/CG_coursework_IU7_2028/strategies/conversion/BaseCoordinateConvertStrategy.h",
 			"MU",
 			"FRP6XYTODU/moc_BaseCoordinateConvertStrategy.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/creator/ConvertCoordsStrategyCreator.h",
+			"/home/anechka/CG_coursework_IU7_2028/strategies/conversion/creator/ConvertCoordsStrategyCreator.h",
 			"MU",
 			"HUNAFP4RTU/moc_ConvertCoordsStrategyCreator.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/creator/ConvertCoordsStrategyCreator.hpp",
+			"/home/anechka/CG_coursework_IU7_2028/strategies/conversion/creator/ConvertCoordsStrategyCreator.hpp",
 			"MU",
 			"HUNAFP4RTU/moc_ConvertCoordsStrategyCreator_hpp.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/default/DefaultConvertCoordinatesStrategy.h",
+			"/home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/DefaultConvertCoordinatesStrategy.h",
 			"MU",
 			"O2HWIP6BKY/moc_DefaultConvertCoordinatesStrategy.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/strategies/projection/BaseProjectionStrategy.h",
+			"/home/anechka/CG_coursework_IU7_2028/strategies/projection/BaseProjectionStrategy.h",
 			"MU",
 			"F6JQPSGSC5/moc_BaseProjectionStrategy.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/strategies/projection/creators/ProjectionStrategyCreator.h",
+			"/home/anechka/CG_coursework_IU7_2028/strategies/projection/creators/ProjectionStrategyCreator.h",
 			"MU",
 			"KDYCEUMTNE/moc_ProjectionStrategyCreator.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/strategies/projection/creators/ProjectionStrategyCreator.hpp",
+			"/home/anechka/CG_coursework_IU7_2028/strategies/projection/creators/ProjectionStrategyCreator.hpp",
 			"MU",
 			"KDYCEUMTNE/moc_ProjectionStrategyCreator_hpp.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/strategies/projection/default/DefaultProjectionStrategy.h",
+			"/home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.h",
 			"MU",
 			"Q2WBJVDLBS/moc_DefaultProjectionStrategy.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/vector/Vec3.h",
+			"/home/anechka/CG_coursework_IU7_2028/vector/Vec3.h",
 			"MU",
 			"EFITGCF6GF/moc_Vec3.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/vector/Vec3.hpp",
+			"/home/anechka/CG_coursework_IU7_2028/vector/Vec3.hpp",
 			"MU",
 			"EFITGCF6GF/moc_Vec3_hpp.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/visitors/BaseVisitor.h",
+			"/home/anechka/CG_coursework_IU7_2028/visitors/BaseVisitor.h",
 			"MU",
 			"PMMC4NDAE7/moc_BaseVisitor.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/visitors/creators/VisitorCreator.h",
+			"/home/anechka/CG_coursework_IU7_2028/visitors/creators/VisitorCreator.h",
 			"MU",
 			"DVCZ2NGCGY/moc_VisitorCreator.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/visitors/creators/VisitorCreator.hpp",
+			"/home/anechka/CG_coursework_IU7_2028/visitors/creators/VisitorCreator.hpp",
 			"MU",
 			"DVCZ2NGCGY/moc_VisitorCreator_hpp.cpp",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/visitors/draw/DrawVisitor.h",
+			"/home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.h",
 			"MU",
 			"EWRW257UVJ/moc_DrawVisitor.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -842,7 +842,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/anechka/PlanetSystemDesigner_Qt_Project",
+		"/home/anechka/CG_coursework_IU7_2028",
 		"/usr/include/qt6/QtCore",
 		"/usr/include/qt6",
 		"/usr/lib64/qt6/mkspecs/linux-g++",
@@ -877,172 +877,160 @@
 		"-E",
 		"/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 6,
-	"PARSE_CACHE_FILE" : "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/PlanetSystemDesigner_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/PlanetSystemDesigner_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib64/qt6/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib64/qt6/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 11,
-	"SETTINGS_FILE" : "/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/PlanetSystemDesigner_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/PlanetSystemDesigner_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/commands/camera/CameraCommand.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/commands/object/ObjectCommand.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/BaseObject.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/component/BaseObject.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/composite/Composite.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/component/composite/Composite.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/camera/CameraAdapter.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/CameraAdapter.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/invisible/camera/default/DefaultCamera.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/default/DefaultCamera.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/CelestialBody.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/CelestialBody.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/BaseException.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/BaseException.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/camera/CameraException.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/camera/CameraException.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/composite/CompositeException.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/composite/CompositeException.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/BaseManagerException.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/managers/BaseManagerException.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/camera/CameraManagerException.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/managers/camera/CameraManagerException.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/matrix/MatrixException.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/matrix/MatrixException.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/model/ModelException.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/model/ModelException.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/scene/SceneException.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/vector/VectorException.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.cpp",
+			"MU",
+			null
+		],
+		[ "/home/anechka/CG_coursework_IU7_2028/facade/Facade.cpp", "MU", null ],
+		[
+			"/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/QtDrawFactory.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/facade/Facade.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.cpp",
+			"MU",
+			null
+		],
+		[ "/home/anechka/CG_coursework_IU7_2028/main.cpp", "MU", null ],
+		[
+			"/home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/QtDrawFactory.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/products/QtPainter.cpp",
-			"MU",
-			null
-		],
-		[ "/home/anechka/PlanetSystemDesigner_Qt_Project/main.cpp", "MU", null ],
-		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/managers/ManagerProvider.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/managers/camera/CameraManager.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/managers/draw/DrawManager.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/qt/src/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[ "/home/anechka/CG_coursework_IU7_2028/qt/src/plane.cpp", "MU", null ],
+		[ "/home/anechka/CG_coursework_IU7_2028/scene/Scene.cpp", "MU", null ],
+		[
+			"/home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/managers/scene/SceneManager.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/mainwindow.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/plane.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/scene/Scene.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/strategies/projection/default/DefaultProjectionStrategy.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/anechka/PlanetSystemDesigner_Qt_Project/visitors/draw/DrawVisitor.cpp",
+			"/home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp",
 			"MU",
 			null
 		]

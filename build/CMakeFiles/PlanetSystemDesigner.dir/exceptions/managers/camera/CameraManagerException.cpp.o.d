@@ -1,9 +1,9 @@
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/camera/CameraManagerException.cpp \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/managers/camera/CameraManagerException.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/camera/CameraManagerException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/camera/../BaseManagerException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/exceptions/managers/camera/../../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/managers/camera/CameraManagerException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/managers/camera/../BaseManagerException.h \
+ /home/anechka/CG_coursework_IU7_2028/exceptions/managers/camera/../../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/bits/version.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

@@ -1,12 +1,12 @@
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/CelestialBody.cpp \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/CelestialBody.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/CelestialBody.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/../BaseModel.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/../../VisibleObject.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/../../../Primitive.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/../../../../BaseObject.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/../../../../../visitors/BaseVisitor.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/CelestialBody.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../BaseModel.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../VisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../../Primitive.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../../../BaseObject.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../../../../visitors/BaseVisitor.h \
  /usr/include/c++/16/memory /usr/include/c++/16/bits/memoryfwd.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -165,16 +165,16 @@ CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/
  /usr/include/c++/16/bits/ranges_algobase.h \
  /usr/include/c++/16/pstl/glue_memory_defs.h \
  /usr/include/c++/16/pstl/execution_defs.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/../../../../../vector/Vec3.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/../../../../../vector/../concepts/concepts.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../../../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../../../../vector/../concepts/concepts.h \
  /usr/include/c++/16/utility /usr/include/c++/16/bits/stl_relops.h \
  /usr/include/c++/16/bits/intcmp.h /usr/include/c++/16/iostream \
  /usr/include/c++/16/ostream /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/../../../../../vector/Vec3.hpp \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/../../../../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/../../../../../vector/../exceptions/vector/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../../../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../../../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../../../../vector/../exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
@@ -199,8 +199,8 @@ CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/
  /usr/include/c++/16/bits/node_handle.h \
  /usr/include/c++/16/bits/stl_map.h \
  /usr/include/c++/16/bits/stl_multimap.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/../impl/SphereImpl.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/component/primitive/visible/model/celestial/../impl/../../../../../materials/Material.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../impl/SphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../impl/../../../../../materials/Material.h \
  /usr/include/c++/16/vector /usr/include/c++/16/bits/stl_vector.h \
  /usr/include/c++/16/bits/stl_bvector.h \
  /usr/include/c++/16/bits/vector.tcc

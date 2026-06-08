@@ -1,7 +1,7 @@
 CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/plane.cpp \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/plane.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/../inc/plane.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/plane.h \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtWidgets/qwidget.h \
  /usr/include/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
@@ -361,25 +361,33 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o: \
  /usr/include/qt6/QtGui/qfontvariableaxis.h \
  /usr/include/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/qt6/QtGui/qcursor.h /usr/include/qt6/QtGui/qbitmap.h \
- /usr/include/qt6/QtCore/QPoint \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/../../managers/ManagerProvider.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/../../managers/draw/DrawManager.h \
+ /usr/include/qt6/QtCore/QPoint /usr/include/qt6/QtWidgets/QGraphicsScene \
+ /usr/include/qt6/QtWidgets/qgraphicsscene.h \
+ /usr/include/qt6/QtGui/qpen.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/ManagerProvider.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/draw/DrawManager.h \
  /usr/include/qt6/QtGui/QPainter /usr/include/qt6/QtGui/qpainter.h \
- /usr/include/qt6/QtGui/qtextoption.h /usr/include/qt6/QtGui/qpen.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/../../managers/camera/CameraManager.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/../../managers/camera/../../component/primitive/invisible/camera/BaseCamera.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../InvisibleObject.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../Primitive.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../BaseObject.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../visitors/BaseVisitor.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/Vec3.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/../concepts/concepts.h \
+ /usr/include/qt6/QtGui/qtextoption.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/CameraManager.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/BaseCamera.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../InvisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../Primitive.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../BaseObject.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../visitors/BaseVisitor.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/../concepts/concepts.h \
  /usr/include/c++/16/iostream \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/Vec3.hpp \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/../BaseException.h \
- /usr/include/c++/16/source_location /usr/include/qt6/QtGui/QMouseEvent \
- /usr/include/qt6/QtGui/qevent.h /usr/include/qt6/QtCore/qcoreevent.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/../BaseException.h \
+ /usr/include/c++/16/source_location \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/DrawFactoryCreator.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/BaseDrawFactory.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/products/BasePainter.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/QtDrawFactory.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/products/QtPainter.h \
+ /usr/include/qt6/QtGui/QMouseEvent /usr/include/qt6/QtGui/qevent.h \
+ /usr/include/qt6/QtCore/qcoreevent.h \
  /usr/include/qt6/QtCore/qbasictimer.h \
  /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
  /usr/include/qt6/QtCore/qeventloop.h \
@@ -398,4 +406,5 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o: \
  /usr/include/qt6/QtCore/qcoreapplication.h \
  /usr/include/qt6/QtCore/qcoreapplication_platform.h \
  /usr/include/qt6/QtGui/qinputmethod.h /usr/include/qt6/QtCore/qlocale.h \
- /usr/include/qt6/QtGui/qguiapplication_platform.h
+ /usr/include/qt6/QtGui/qguiapplication_platform.h \
+ /usr/include/qt6/QtGui/QResizeEvent

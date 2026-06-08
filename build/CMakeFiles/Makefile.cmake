@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/anechka/PlanetSystemDesigner_Qt_Project/CMakeLists.txt"
+  "/home/anechka/CG_coursework_IU7_2028/CMakeLists.txt"
   "CMakeFiles/4.3.0/CMakeCXXCompiler.cmake"
   "CMakeFiles/4.3.0/CMakeSystem.cmake"
   "/usr/lib64/cmake/Qt6/FindWrapAtomic.cmake"

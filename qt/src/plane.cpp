@@ -2,25 +2,53 @@
 #include "../../managers/ManagerProvider.h"
 #include "../../managers/draw/DrawManager.h"
 #include "../../managers/camera/CameraManager.h"
+#include "../../factories/draw/DrawFactoryCreator.h"
+#include "../../factories/draw/products/BasePainter.h"
+#include "../../factories/draw/qt/products/QtPainter.h"
 #include <QPainter>
 #include <QMouseEvent>
+#include <QResizeEvent>
 #include <cmath>
 
 Plane::Plane(QWidget *parent) : QWidget(parent) {
     setMinimumSize(400, 400);
-    // Dark Space theme background styling
     setAttribute(Qt::WA_OpaquePaintEvent);
+
+    m_scene = std::make_shared<QGraphicsScene>();
+    m_scene->setSceneRect(0, 0, width(), height());
+
+    auto painter = ApplicationDrawFactoryCreator::createPainter(m_scene);
+    m_painter = std::shared_ptr<BasePainter>(std::move(painter));
+    ManagerProvider::getDrawManager()->setPainter(m_painter);
+    updatePainterSize();
+}
+
+void Plane::updatePainterSize() {
+    if (!m_painter || !m_scene)
+        return;
+
+    m_scene->setSceneRect(0, 0, width(), height());
+
+    if (auto* qtPainter = dynamic_cast<QtPainter*>(m_painter.get())) {
+        qtPainter->setWidth(static_cast<size_t>(width()));
+        qtPainter->setHeight(static_cast<size_t>(height()));
+    }
+}
+
+void Plane::resizeEvent(QResizeEvent *event) {
+    QWidget::resizeEvent(event);
+    updatePainterSize();
 }
 
 void Plane::paintEvent(QPaintEvent *event) {
     (void)event;
     QPainter painter(this);
-    
-    // Draw Space canvas background
+
     painter.fillRect(rect(), QColor(10, 10, 15));
 
-    // Delegate painting pipeline orchestration to DrawManager
+    updatePainterSize();
     ManagerProvider::getDrawManager()->draw();
+    m_scene->render(&painter);
 }
 
 void Plane::mousePressEvent(QMouseEvent *event) {

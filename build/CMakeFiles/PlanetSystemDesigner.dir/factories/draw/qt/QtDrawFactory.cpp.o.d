@@ -1,11 +1,11 @@
 CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o: \
- /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/QtDrawFactory.cpp \
+ /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/QtDrawFactory.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/QtDrawFactory.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/../BaseDrawFactory.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/../products/BasePainter.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/../products/../../../vector/Vec3.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/../products/../../../vector/../concepts/concepts.h \
+ /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/QtDrawFactory.h \
+ /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/../BaseDrawFactory.h \
+ /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/../products/BasePainter.h \
+ /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/../products/../../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/../products/../../../vector/../concepts/concepts.h \
  /usr/include/c++/16/concepts /usr/include/c++/16/bits/version.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -151,9 +151,9 @@ CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o: \
  /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/../products/../../../vector/Vec3.hpp \
- /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/../products/../../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/../products/../../../vector/../exceptions/vector/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/../products/../../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/../products/../../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/../products/../../../vector/../exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
@@ -353,4 +353,4 @@ CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/QtDrawFactory.cpp.o: \
  /usr/include/qt6/QtCore/qline.h /usr/include/qt6/QtGui/qpixmap.h \
  /usr/include/qt6/QtCore/qshareddata.h /usr/include/qt6/QtGui/qfont.h \
  /usr/include/qt6/QtCore/qendian.h /usr/include/qt6/QtGui/qpen.h \
- /home/anechka/PlanetSystemDesigner_Qt_Project/factories/draw/qt/products/QtPainter.h
+ /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.h

@@ -1,7 +1,7 @@
-/home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/moc_mainwindow.cpp: /home/anechka/PlanetSystemDesigner_Qt_Project/qt/inc/mainwindow.h \
-  /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner_autogen/moc_predefs.h \
-  /home/anechka/PlanetSystemDesigner_Qt_Project/facade/Facade.h \
-  /home/anechka/PlanetSystemDesigner_Qt_Project/qt/inc/plane.h \
+/home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/moc_mainwindow.cpp: /home/anechka/CG_coursework_IU7_2028/qt/inc/mainwindow.h \
+  /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/moc_predefs.h \
+  /home/anechka/CG_coursework_IU7_2028/facade/Facade.h \
+  /home/anechka/CG_coursework_IU7_2028/qt/inc/plane.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -451,6 +451,7 @@
   /usr/include/qt6/QtGui/qkeysequence.h \
   /usr/include/qt6/QtGui/qpaintdevice.h \
   /usr/include/qt6/QtGui/qpalette.h \
+  /usr/include/qt6/QtGui/qpen.h \
   /usr/include/qt6/QtGui/qpicture.h \
   /usr/include/qt6/QtGui/qpixelformat.h \
   /usr/include/qt6/QtGui/qpixmap.h \
@@ -466,6 +467,7 @@
   /usr/include/qt6/QtGui/qvalidator.h \
   /usr/include/qt6/QtGui/qwindowdefs.h \
   /usr/include/qt6/QtWidgets/QDoubleSpinBox \
+  /usr/include/qt6/QtWidgets/QGraphicsScene \
   /usr/include/qt6/QtWidgets/QLabel \
   /usr/include/qt6/QtWidgets/QMainWindow \
   /usr/include/qt6/QtWidgets/QPushButton \
@@ -473,6 +475,7 @@
   /usr/include/qt6/QtWidgets/qabstractbutton.h \
   /usr/include/qt6/QtWidgets/qabstractspinbox.h \
   /usr/include/qt6/QtWidgets/qframe.h \
+  /usr/include/qt6/QtWidgets/qgraphicsscene.h \
   /usr/include/qt6/QtWidgets/qlabel.h \
   /usr/include/qt6/QtWidgets/qmainwindow.h \
   /usr/include/qt6/QtWidgets/qpushbutton.h \
