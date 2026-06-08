@@ -353,4 +353,21 @@ CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o: 
  /usr/include/qt6/QtCore/qline.h /usr/include/qt6/QtGui/qpixmap.h \
  /usr/include/qt6/QtCore/qshareddata.h /usr/include/qt6/QtGui/qfont.h \
  /usr/include/qt6/QtCore/qendian.h /usr/include/qt6/QtGui/qpen.h \
- /usr/include/qt6/QtGui/QPen /usr/include/qt6/QtGui/QBrush
+ /usr/include/qt6/QtGui/QPen /usr/include/qt6/QtGui/QBrush \
+ /usr/include/qt6/QtWidgets/QGraphicsPixmapItem \
+ /usr/include/qt6/QtWidgets/qgraphicsitem.h \
+ /usr/include/qt6/QtCore/qvariant.h /usr/include/qt6/QtCore/qdebug.h \
+ /usr/include/qt6/QtCore/qtextstream.h \
+ /usr/include/qt6/QtCore/qcontiguouscache.h /usr/include/c++/16/climits \
+ /usr/include/qt6/QtCore/qsharedpointer.h \
+ /usr/include/qt6/QtCore/qsharedpointer_impl.h /usr/include/c++/16/set \
+ /usr/include/c++/16/bits/stl_set.h \
+ /usr/include/c++/16/bits/stl_multiset.h \
+ /usr/include/c++/16/unordered_set \
+ /usr/include/c++/16/bits/unordered_set.h /usr/include/qt6/QtCore/qmap.h \
+ /usr/include/qt6/QtCore/qshareddata_impl.h \
+ /usr/include/qt6/QtCore/qset.h /usr/include/qt6/QtCore/qhash.h \
+ /usr/include/qt6/QtCore/qvarlengtharray.h \
+ /usr/include/qt6/QtCore/qalloc.h /usr/include/qt6/QtGui/qpainterpath.h \
+ /usr/include/qt6/QtGui/QImage /usr/include/qt6/QtGui/QPixmap \
+ /usr/include/qt6/QtGui/QPolygonF /usr/include/qt6/QtGui/QRadialGradient

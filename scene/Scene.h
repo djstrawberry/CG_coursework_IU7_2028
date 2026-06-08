@@ -13,7 +13,8 @@ public:
     void removeObject(size_t id);
     std::shared_ptr<BaseObject> getObject(size_t id);
 
-    auto getObjects() { return m_objects; }
+    auto& getObjects() { return m_objects; }
+    const std::map<size_t, std::shared_ptr<BaseObject>>& getObjects() const { return m_objects; }
     void clear() { m_objects.clear(); }
 
 private:

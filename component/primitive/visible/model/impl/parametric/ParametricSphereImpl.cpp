@@ -18,7 +18,10 @@ double ParametricSphereImpl::getRadius() const { return m_radius; }
 void ParametricSphereImpl::setRadius(double r) { m_radius = r; generateMesh(); }
 
 Vec3<double> ParametricSphereImpl::getCenter() const { return m_center; }
-void ParametricSphereImpl::setCenter(const Vec3<double>& c) { m_center = c; }
+void ParametricSphereImpl::setCenter(const Vec3<double>& c) {
+    m_center = c;
+    generateMesh();
+}
 
 void ParametricSphereImpl::setMaterial(const Material& m) { m_material = m; }
 Material ParametricSphereImpl::getMaterial() const { return m_material; }

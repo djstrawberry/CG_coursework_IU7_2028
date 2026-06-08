@@ -3,6 +3,8 @@
 
 #include "../../scene/Scene.h"
 #include "../../visitors/BaseVisitor.h"
+#include "../../vector/Vec3.h"
+#include <map>
 #include <memory>
 
 class SceneManager {
@@ -15,6 +17,8 @@ public:
     std::shared_ptr<BaseObject> getObject(size_t id);
 
     void accept(std::shared_ptr<BaseVisitor> visitor);
+    const std::map<size_t, std::shared_ptr<BaseObject>>& getObjects() const;
+    Vec3<double> getPrimaryLightPosition() const;
 
 private:
     std::shared_ptr<Scene> m_scene;

@@ -199,4 +199,10 @@ CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o: \
  /usr/include/c++/16/vector /usr/include/c++/16/bits/stl_vector.h \
  /usr/include/c++/16/bits/stl_bvector.h \
  /usr/include/c++/16/bits/vector.tcc \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/conversion/BaseCoordinateConvertStrategy.h
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/conversion/BaseCoordinateConvertStrategy.h \
+ /usr/include/c++/16/algorithm /usr/include/c++/16/bits/stl_algo.h \
+ /usr/include/c++/16/bits/algorithmfwd.h \
+ /usr/include/c++/16/bits/stl_heap.h \
+ /usr/include/c++/16/bits/uniform_int_dist.h \
+ /usr/include/c++/16/bits/ranges_algo.h \
+ /usr/include/c++/16/pstl/glue_algorithm_defs.h /usr/include/c++/16/array

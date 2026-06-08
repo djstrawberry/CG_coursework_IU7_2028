@@ -40,5 +40,8 @@ public:
     double getOrbitAngle() const;
     void setOrbitAngle(double angle);
 
+    Vec3<double> getBaseCenter() const;
+    void setBaseCenter(const Vec3<double>& center);
+
     void updatePosition();
 };

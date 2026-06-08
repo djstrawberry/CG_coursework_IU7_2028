@@ -38,13 +38,19 @@ void DrawManager::draw()
     auto projStrategy = DefaultProjectionStrategyCreator::create();
     auto convertStrategy = DefaultConvertCoordinatesStrategyCreator::create();
 
+    auto sceneManager = ManagerProvider::getSceneManager();
+    const Vec3<double> lightSourcePos = sceneManager->getPrimaryLightPosition();
+
     auto drawVisitor = DrawVisitorCreator::create(
         std::move(projStrategy),
         std::move(convertStrategy),
         m_painter,
-        activeCamImpl
+        activeCamImpl,
+        m_lightColor,
+        lightSourcePos
     );
 
-    auto sceneManager = ManagerProvider::getSceneManager();
+    drawVisitor->beginScene();
     sceneManager->accept(drawVisitor);
+    drawVisitor->flushScene();
 }

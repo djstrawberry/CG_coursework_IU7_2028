@@ -111,12 +111,11 @@ Vec3<double> TessellatedSphereImpl::getCenter() const {
 }
 
 void TessellatedSphereImpl::setCenter(const Vec3<double>& c) {
+    const Vec3<double> offset = c - m_center;
     m_center = c;
-    Vec3 offset = c - m_center;
     for (auto& v : m_vertices) {
         v = v + offset;
     }
-    m_center = c;
 }
 
 void TessellatedSphereImpl::setMaterial(const Material& material) {

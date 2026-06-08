@@ -196,4 +196,13 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o: \
  /usr/include/c++/16/bits/stl_tree.h \
  /usr/include/c++/16/bits/node_handle.h \
  /usr/include/c++/16/bits/stl_map.h \
- /usr/include/c++/16/bits/stl_multimap.h
+ /usr/include/c++/16/bits/stl_multimap.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/CelestialBody.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/../BaseModel.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/../../VisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/../../../Primitive.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/../impl/SphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/../impl/../../../../../materials/Material.h \
+ /usr/include/c++/16/vector /usr/include/c++/16/bits/stl_vector.h \
+ /usr/include/c++/16/bits/stl_bvector.h \
+ /usr/include/c++/16/bits/vector.tcc

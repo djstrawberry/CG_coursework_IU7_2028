@@ -13,4 +13,7 @@ public:
 
     virtual void visit(std::shared_ptr<CameraImpl> camera) const = 0;
     virtual void visit(std::shared_ptr<SphereImpl> sphere) const = 0;
+
+    virtual void beginScene() const {}
+    virtual void flushScene() const {}
 };

@@ -8,6 +8,7 @@ CelestialBody::CelestialBody(const std::string& name, std::shared_ptr<SphereImpl
     if (!m_impl) {
         throw std::invalid_argument("Celestial body implementation cannot be null!");
     }
+    m_baseCenter = m_impl->getCenter();
 }
 
 std::string CelestialBody::getName() const {
@@ -53,6 +54,15 @@ double CelestialBody::getOrbitAngle() const {
 void CelestialBody::setOrbitAngle(double angle) {
     m_orbitAngle = angle;
     updatePosition();  
+}
+
+Vec3<double> CelestialBody::getBaseCenter() const {
+    return m_baseCenter;
+}
+
+void CelestialBody::setBaseCenter(const Vec3<double>& center) {
+    m_baseCenter = center;
+    updatePosition();
 }
 
 Vec3<double> CelestialBody::getCenter() const noexcept {

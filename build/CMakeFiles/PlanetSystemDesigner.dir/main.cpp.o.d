@@ -388,9 +388,19 @@ CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o: \
  /usr/include/qt6/QtWidgets/qframe.h /usr/include/qt6/QtGui/qpicture.h \
  /usr/include/qt6/QtCore/qiodevice.h \
  /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
+ /usr/include/qt6/QtCore/QTimer /usr/include/qt6/QtCore/qtimer.h \
+ /usr/include/qt6/QtCore/QElapsedTimer \
+ /usr/include/qt6/QtCore/qelapsedtimer.h \
  /home/anechka/CG_coursework_IU7_2028/qt/inc/plane.h \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtCore/QPoint \
  /usr/include/qt6/QtWidgets/QGraphicsScene \
  /usr/include/qt6/QtWidgets/qgraphicsscene.h \
  /usr/include/qt6/QtGui/qpen.h \
- /home/anechka/CG_coursework_IU7_2028/qt/inc/../../facade/Facade.h
+ /home/anechka/CG_coursework_IU7_2028/qt/inc/../../facade/Facade.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/inc/../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/inc/../../vector/../concepts/concepts.h \
+ /usr/include/c++/16/iostream \
+ /home/anechka/CG_coursework_IU7_2028/qt/inc/../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/qt/inc/../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/inc/../../vector/../exceptions/vector/../BaseException.h \
+ /usr/include/c++/16/source_location

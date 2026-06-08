@@ -376,12 +376,26 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qlabel.h /usr/include/qt6/QtWidgets/qframe.h \
  /usr/include/qt6/QtGui/qpicture.h /usr/include/qt6/QtCore/qiodevice.h \
  /usr/include/qt6/QtGui/qtextdocument.h /usr/include/qt6/QtCore/qurl.h \
+ /usr/include/qt6/QtCore/QTimer /usr/include/qt6/QtCore/qtimer.h \
+ /usr/include/qt6/QtCore/qbasictimer.h \
+ /usr/include/qt6/QtCore/qabstracteventdispatcher.h \
+ /usr/include/qt6/QtCore/qeventloop.h \
+ /usr/include/qt6/QtCore/qdeadlinetimer.h \
+ /usr/include/qt6/QtCore/QElapsedTimer \
+ /usr/include/qt6/QtCore/qelapsedtimer.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/plane.h \
  /usr/include/qt6/QtWidgets/QWidget /usr/include/qt6/QtCore/QPoint \
  /usr/include/qt6/QtWidgets/QGraphicsScene \
  /usr/include/qt6/QtWidgets/qgraphicsscene.h \
  /usr/include/qt6/QtGui/qpen.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../facade/Facade.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../vector/../concepts/concepts.h \
+ /usr/include/c++/16/iostream \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../vector/../exceptions/vector/../BaseException.h \
+ /usr/include/c++/16/source_location \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/ManagerProvider.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/CameraManager.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/BaseCamera.h \
@@ -389,13 +403,6 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../Primitive.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../BaseObject.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../visitors/BaseVisitor.h \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/Vec3.h \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/../concepts/concepts.h \
- /usr/include/c++/16/iostream \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/Vec3.hpp \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/../BaseException.h \
- /usr/include/c++/16/source_location \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/SceneManager.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../scene/Scene.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/draw/DrawManager.h \
@@ -409,6 +416,10 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../commands/object/../../materials/Material.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../commands/camera/CameraCommand.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../commands/camera/../BaseCommand.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/CelestialBody.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/../BaseModel.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/../../VisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/../impl/SphereImpl.h \
  /usr/include/qt6/QtWidgets/QVBoxLayout \
  /usr/include/qt6/QtWidgets/qboxlayout.h \
  /usr/include/qt6/QtWidgets/qlayout.h \
@@ -422,4 +433,4 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qcolordialog.h \
  /usr/include/qt6/QtWidgets/qdialog.h \
  /usr/include/qt6/QtWidgets/QGroupBox \
- /usr/include/qt6/QtWidgets/qgroupbox.h
+ /usr/include/qt6/QtWidgets/qgroupbox.h /usr/include/qt6/QtCore/QString
