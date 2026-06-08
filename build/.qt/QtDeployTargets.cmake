@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_PlanetSystemDesigner_FILE /home/anechka/PlanetSystemDesigner_Qt_Project/build/PlanetSystemDesigner)
+set(__QT_DEPLOY_TARGET_PlanetSystemDesigner_TYPE EXECUTABLE)

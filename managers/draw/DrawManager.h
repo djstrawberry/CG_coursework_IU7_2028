@@ -1,19 +1,22 @@
-#ifndef DRAW_MANAGER_H
-#define DRAW_MANAGER_H
+#pragma once
 
 #include <memory>
 #include <QPainter>
 
-class DrawManager {
+class BasePainter;
+class BaseVisitor;
+
+class DrawManager
+{
+private:
+    std::shared_ptr<BasePainter> m_painter;
+    float m_lightColor[4] = {1.0f, 0.9f, 0.4f, 1.0f};
+
 public:
-    DrawManager();
+    DrawManager() = default;
     ~DrawManager() = default;
 
+    void setPainter(std::shared_ptr<BasePainter> painter);
     void setLightColor(float r, float g, float b, float intensity);
-    void draw(QPainter* painter, int width, int height);
-
-private:
-    float m_lightColor[4]; // R, G, B, Intensity
+    void draw();
 };
-
-#endif // DRAW_MANAGER_H

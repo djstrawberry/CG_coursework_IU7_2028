@@ -1,26 +1,26 @@
 #include "BaseObject.h"
 
-typename BaseObject::iterator BaseObject::begin()
+typename BaseObject::iterator BaseObject::begin() noexcept
 {
     return iterator();
 }
 
-typename BaseObject::iterator BaseObject::end()
+typename BaseObject::iterator BaseObject::end() noexcept
 {
     return iterator();
 }
 
-typename BaseObject::const_iterator BaseObject::begin() const
+typename BaseObject::const_iterator BaseObject::begin() const noexcept
 {
     return const_iterator();
 }
 
-typename BaseObject::const_iterator BaseObject::end() const
+typename BaseObject::const_iterator BaseObject::end() const noexcept
 {
     return const_iterator();
 }
 
-bool BaseObject::add(std::shared_ptr<BaseObject>) 
+bool BaseObject::add(const std::shared_ptr<BaseObject>&) 
 { 
     return false;
 }
@@ -37,7 +37,7 @@ std::shared_ptr<BaseObject> BaseObject::getObject(size_t id) const
     return nullptr;
 }
 
-Vec3 BaseObject::getCenter() const noexcept
+Vec3<double> BaseObject::getCenter() const noexcept
 {
     return { 0, 0, 0 }; 
 }

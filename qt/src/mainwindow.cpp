@@ -4,6 +4,7 @@
 #include "../../managers/scene/SceneManager.h"
 #include "../../managers/draw/DrawManager.h"
 #include "../../component/primitive/invisible/camera/CameraAdapter.h"
+#include "../../component/primitive/invisible/camera/default/DefaultCamera.h"
 #include "../../commands/object/ObjectCommand.h"
 #include "../../commands/camera/CameraCommand.h"
 #include <QVBoxLayout>
@@ -13,23 +14,24 @@
 #include <QGroupBox>
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), m_facade(std::make_shared<Facade>()) {
+    : QMainWindow(parent), m_facade(std::make_shared<Facade>())
+{
     setupUI();
     initializeScene();
 }
 
-void MainWindow::setupUI() {
+void MainWindow::setupUI()
+{
     QWidget* centralWidget = new QWidget(this);
     QHBoxLayout* mainLayout = new QHBoxLayout(centralWidget);
 
     m_viewport = new Plane(this);
-    mainLayout->addWidget(m_viewport, 3); // Allocate remaining size to scene viewport
+    mainLayout->addWidget(m_viewport, 3);
 
-    // Right-hand control side panel
     QWidget* controlPanel = new QWidget(this);
     QVBoxLayout* controlLayout = new QVBoxLayout(controlPanel);
 
-    // Group 1: Star parameters
+    // Star parameters
     QGroupBox* starGroup = new QGroupBox("Central Star (Sphere)", this);
     QFormLayout* starForm = new QFormLayout(starGroup);
 
@@ -55,7 +57,7 @@ void MainWindow::setupUI() {
 
     controlLayout->addWidget(starGroup);
 
-    // Group 2: Material Parameters
+    // Material parameters
     QGroupBox* materialGroup = new QGroupBox("Material Settings", this);
     QFormLayout* materialForm = new QFormLayout(materialGroup);
 
@@ -76,7 +78,7 @@ void MainWindow::setupUI() {
 
     controlLayout->addWidget(materialGroup);
 
-    // Group 3: Lighting and Utility Controls
+    // Lighting
     QGroupBox* lightGroup = new QGroupBox("Illumination Color", this);
     QVBoxLayout* lightBoxLayout = new QVBoxLayout(lightGroup);
     m_lightColorPickerBtn = new QPushButton("Pick Light Color", this);
@@ -88,9 +90,9 @@ void MainWindow::setupUI() {
 
     mainLayout->addWidget(controlPanel, 1);
     setCentralWidget(centralWidget);
-    setWindowTitle("Planet System Designer [C++ / Qt6 CAD]");
+    setWindowTitle("Planet System Designer");
 
-    // Hook signals to slots
+    // Signals
     connect(m_starRadiusBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
     connect(m_starPosXBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
     connect(m_starPosYBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
@@ -104,24 +106,33 @@ void MainWindow::setupUI() {
     connect(m_resetCameraBtn, &QPushButton::clicked, this, &MainWindow::onCameraResetPressed);
 }
 
-void MainWindow::initializeScene() {
-    // 1) Set up system Camera
-    auto camera = std::make_shared<CameraAdapter>(Vec3<double>(0.0, 15.0, 30.0), Vec3<double>(0.0, 0.0, 0.0), 60.0);
+void MainWindow::initializeScene()
+{
+    // Создаём CameraImpl
+    auto cameraImpl = std::make_shared<DefaultCameraImpl>();
+    cameraImpl->setPosition({0.0, 15.0, 30.0});
+    cameraImpl->setTarget({0.0, 0.0, 0.0});
+    cameraImpl->setFov(60.0);
+    
+    // Создаём камеру через адаптер
+    auto camera = std::make_shared<CameraAdapter>(cameraImpl);
     ManagerProvider::getCameraManager()->addCamera(camera);
 
-    // 2) Hook initial Star
-    onStarParamsChanged(); 
+    // Начальная звезда
+    onStarParamsChanged();
 }
 
-void MainWindow::onStarParamsChanged() {
-    // Clean old star and rebuild
-    ManagerProvider::getSceneManager()->removeObject(0); // Assumed Slot 0
+void MainWindow::onStarParamsChanged()
+{
+    ManagerProvider::getSceneManager()->removeObject(0);
 
     Material mat;
-    mat.r = 1.0f; mat.g = 0.75f; mat.b = 0.15f; // Golden Sun yellow
-    mat.ambient = m_matAmbientBox->value();
-    mat.diffuse = m_matDiffuseBox->value();
-    mat.specular = m_matSpecularBox->value();
+    mat.r = 1.0f;
+    mat.g = 0.75f;
+    mat.b = 0.15f;
+    mat.ambient = static_cast<float>(m_matAmbientBox->value());
+    mat.diffuse = static_cast<float>(m_matDiffuseBox->value());
+    mat.specular = static_cast<float>(m_matSpecularBox->value());
 
     auto addCmd = std::make_shared<AddCelestialBodyCommand>(
         "Central Star",
@@ -131,28 +142,37 @@ void MainWindow::onStarParamsChanged() {
     );
 
     m_facade->execute(addCmd);
-    m_viewport->update(); // Forces widget projection repaint
+    m_viewport->update();
 }
 
-void MainWindow::onLightColorChanged() {
+void MainWindow::onLightColorChanged()
+{
     QColor color = QColorDialog::getColor(Qt::yellow, this, "Pick Ambient Solar Light Color");
-    if (color.isValid()) {
+    if (color.isValid())
+    {
         ManagerProvider::getDrawManager()->setLightColor(
-            color.redF(),
-            color.greenF(),
-            color.blueF(),
+            static_cast<float>(color.redF()),
+            static_cast<float>(color.greenF()),
+            static_cast<float>(color.blueF()),
             1.0f
         );
         m_viewport->update();
     }
 }
 
-void MainWindow::onCameraResetPressed() {
-    auto resetCmd = std::make_shared<SetActiveCameraDetailsCommand>(
-        Vec3<double>(0.0, 15.0, 30.0),
-        Vec3<double>(0.0, 0.0, 0.0),
-        60.0
-    );
-    m_facade->execute(resetCmd);
+void MainWindow::onCameraResetPressed()
+{
+    auto cameraManager = ManagerProvider::getCameraManager();
+    auto activeCam = cameraManager->getActiveCamera();
+    if (activeCam)
+    {
+        auto impl = activeCam->getImpl();
+        if (impl)
+        {
+            impl->setPosition({0.0, 15.0, 30.0});
+            impl->setTarget({0.0, 0.0, 0.0});
+            impl->setFov(60.0);
+        }
+    }
     m_viewport->update();
 }

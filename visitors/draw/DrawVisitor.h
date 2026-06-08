@@ -1,27 +1,28 @@
-#ifndef DRAW_VISITOR_H
-#define DRAW_VISITOR_H
+#pragma once
 
 #include "../BaseVisitor.h"
+#include "../../../factories/draw/products/BasePainter.h"
+#include "../../../strategies/projection/BaseProjectionStrategy.h"
+#include "../../../strategies/conversion/BaseCoordinateConvertStrategy.h"
+#include "../../../component/primitive/invisible/camera/impl/CameraImpl.h"
 #include <memory>
-#include <QPainter>
 
-class BaseCamera;
+class DrawVisitor : public BaseVisitor
+{
+private:
+    std::shared_ptr<BasePainter> m_painter;
+    std::shared_ptr<CameraImpl> m_camera;
+    std::shared_ptr<BaseProjectionStrategy> m_projStrategy;
+    std::shared_ptr<BaseCoordinateConvertStrategy> m_convertStrategy;
 
-class DrawVisitor : public BaseVisitor {
 public:
-    DrawVisitor(QPainter* painter, std::shared_ptr<BaseCamera> activeCamera, int width, int height, const float lightColor[4]);
+    DrawVisitor() = delete;
+    DrawVisitor(std::shared_ptr<BaseProjectionStrategy> projStrategy,
+                std::shared_ptr<BaseCoordinateConvertStrategy> convertStrategy,
+                std::shared_ptr<BasePainter> painter,
+                std::shared_ptr<CameraImpl> camera);
     ~DrawVisitor() override = default;
 
-    void visitCelestialBody(CelestialBody& body) override;
-    void visitComposite(Composite& comp) override;
-    void visitCamera(BaseCamera& camera) override;
-
-private:
-    QPainter* m_painter;
-    std::shared_ptr<BaseCamera> m_camera;
-    int m_viewportWidth;
-    int m_viewportHeight;
-    float m_lightColor[4];
+    void visit(std::shared_ptr<CameraImpl> camera) const override;
+    void visit(std::shared_ptr<SphereImpl> sphere) const override;
 };
-
-#endif // DRAW_VISITOR_H

@@ -20,7 +20,7 @@ void Plane::paintEvent(QPaintEvent *event) {
     painter.fillRect(rect(), QColor(10, 10, 15));
 
     // Delegate painting pipeline orchestration to DrawManager
-    ManagerProvider::getDrawManager()->draw(&painter, width(), height());
+    ManagerProvider::getDrawManager()->draw();
 }
 
 void Plane::mousePressEvent(QMouseEvent *event) {
@@ -38,8 +38,8 @@ void Plane::mouseMoveEvent(QMouseEvent *event) {
             
             // Standard spherical rotate coordinates mapping on active viewports
             double radius = pos.length();
-            double theta = std::atan2(pos.z, pos.x);
-            double phi = std::acos(pos.y / radius);
+            double theta = std::atan2(pos.getZ(), pos.getX());
+            double phi = std::acos(pos.getY() / radius);
 
             theta -= dx * 0.01;
             phi += dy * 0.01;

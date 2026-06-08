@@ -3,6 +3,7 @@
 #include "../visitors/BaseVisitor.h"
 #include "../vector/Vec3.h"
 #include <memory>
+#include <map>
 
 class BaseObject;
 using mapObjects = std::map<size_t, std::shared_ptr<BaseObject>>;
@@ -26,7 +27,7 @@ public:
     virtual const_iterator end() const noexcept;
 
     virtual void accept(std::shared_ptr<BaseVisitor> visitor) = 0;
-    virtual std::shared_ptr<BaseObject> clone() = 0;
+    virtual std::shared_ptr<BaseObject> clone() const = 0;
 
     virtual bool isComposite() const noexcept = 0;
     virtual bool isVisible() const noexcept = 0;
@@ -35,5 +36,5 @@ public:
     virtual bool remove(const size_t id) noexcept;
 
     virtual std::shared_ptr<BaseObject> getObject(const size_t id) const;
-    virtual Vec3 getCenter() const noexcept
-}
+    virtual Vec3<double> getCenter() const noexcept;
+};

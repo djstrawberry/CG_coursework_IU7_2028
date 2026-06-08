@@ -2,7 +2,7 @@
 
 #include "../BaseModel.h"
 #include "../impl/SphereImpl.h"
-#include "../../../../../Vector/Vec3.h"
+#include "../../../../../vector/Vec3.h"
 #include <string>
 
 class CelestialBody final: public BaseModel {
@@ -12,7 +12,7 @@ private:
     double m_orbitRadius = 0.0;
     double m_orbitSpeed = 0.0;
     double m_orbitAngle = 0.0;
-    Vec3 m_baseCenter;
+    Vec3<double> m_baseCenter;
     std::shared_ptr<SphereImpl> m_impl;
 
 public:
@@ -23,7 +23,7 @@ public:
     void accept(std::shared_ptr<BaseVisitor> visitor) override;
     std::shared_ptr<BaseObject> clone() const override;
     std::shared_ptr<SphereImpl> getImpl() const override;
-    Vec3 getCenter() const noexcept override;
+    Vec3<double> getCenter() const noexcept override;
 
     std::string getName() const;
     void setName(const std::string& name);

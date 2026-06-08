@@ -3,7 +3,7 @@
 #include <map>
 #include <array>
 
-TessellatedSphereImpl::TessellatedSphereImpl(double radius, const Vec3& center, int subdivisions)
+TessellatedSphereImpl::TessellatedSphereImpl(double radius, const Vec3<double>& center, size_t subdivisions)
     : m_radius(radius), m_center(center), m_subdivisions(subdivisions) {
     createBaseIcosahedron();
     for (int i = 0; i < m_subdivisions; ++i) {
@@ -12,7 +12,7 @@ TessellatedSphereImpl::TessellatedSphereImpl(double radius, const Vec3& center, 
     normalizeToSphere();
 }
 
-std::shared_ptr<SphereImpl> TessellatedSphereImpl::clone() {
+std::shared_ptr<SphereImpl> TessellatedSphereImpl::clone() const {
     auto cloned = std::make_shared<TessellatedSphereImpl>(m_radius, m_center, m_subdivisions);
     cloned->m_material = m_material;
     cloned->m_vertices = m_vertices;
@@ -23,14 +23,14 @@ std::shared_ptr<SphereImpl> TessellatedSphereImpl::clone() {
 void TessellatedSphereImpl::createBaseIcosahedron() {
     const double t = (1.0 + std::sqrt(5.0)) / 2.0;  // Tak nado
     
-    std::array<Vec3, 12> baseVerts = {{
+    std::array<Vec3<double>, 12> baseVerts = {{
         {-1,  t,  0}, {1,  t,  0}, {-1, -t,  0}, {1, -t,  0},
         {0, -1,  t}, {0,  1,  t}, {0, -1, -t}, {0,  1, -t},
         {t,  0, -1}, {t,  0,  1}, {-t,  0, -1}, {-t,  0,  1}
     }};
     
     for (const auto& v : baseVerts) {
-        Vec3 normalized = v.normalized();
+        Vec3<double> normalized = v.normalized();
         m_vertices.push_back(normalized * m_radius + m_center);
     }
     
@@ -57,7 +57,7 @@ void TessellatedSphereImpl::createBaseIcosahedron() {
 }
 
 void TessellatedSphereImpl::subdivideOnce() {
-    std::vector<Vec3> newVertices = m_vertices;
+    std::vector<Vec3<double>> newVertices = m_vertices;
     std::vector<std::pair<size_t, size_t>> newEdges;
     std::map<std::pair<size_t, size_t>, size_t> midpointCache;
     
@@ -69,7 +69,7 @@ void TessellatedSphereImpl::subdivideOnce() {
             return it->second;
         }
         
-        Vec3 mid = (m_vertices[a] + m_vertices[b]) * 0.5;
+        Vec3<double> mid = (m_vertices[a] + m_vertices[b]) * 0.5;
         size_t newIdx = newVertices.size();
         newVertices.push_back(mid);
         midpointCache[key] = newIdx;
@@ -91,8 +91,8 @@ void TessellatedSphereImpl::subdivideOnce() {
 
 void TessellatedSphereImpl::normalizeToSphere() {
     for (auto& vertex : m_vertices) {
-        Vec3 direction = vertex - m_center;
-        direction.normalize();
+        Vec3<double> direction = vertex - m_center;
+        direction.normalized();
         vertex = m_center + direction * m_radius;
     }
 }
@@ -106,11 +106,11 @@ void TessellatedSphereImpl::setRadius(double r) {
     generateMesh(); 
 }
 
-Vec3 TessellatedSphereImpl::getCenter() const {
+Vec3<double> TessellatedSphereImpl::getCenter() const {
     return m_center;
 }
 
-void TessellatedSphereImpl::setCenter(const Vec3& c) {
+void TessellatedSphereImpl::setCenter(const Vec3<double>& c) {
     m_center = c;
     Vec3 offset = c - m_center;
     for (auto& v : m_vertices) {
@@ -140,11 +140,11 @@ void TessellatedSphereImpl::setResolution(int slices, int stacks) {
     generateMesh();
 }
 
-const std::vector<Vec3>& TessellatedSphereImpl::getVertices() {
+const std::vector<Vec3<double>>& TessellatedSphereImpl::getVertices() {
     return m_vertices;
 }
 
-const std::vector<Vec3>& TessellatedSphereImpl::getVertices() const {
+const std::vector<Vec3<double>>& TessellatedSphereImpl::getVertices() const {
     return m_vertices;
 }
 

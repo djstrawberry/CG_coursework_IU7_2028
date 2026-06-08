@@ -16,7 +16,7 @@ std::shared_ptr<BaseObject> SceneManager::getObject(size_t id) {
     return m_scene->getObject(id);
 }
 
-void SceneManager::acceptVisitor(std::shared_ptr<BaseVisitor> visitor) {
+void SceneManager::accept(std::shared_ptr<BaseVisitor> visitor) {
     for (auto& [id, obj] : m_scene->getObjects()) {
         if (obj) {
             obj->accept(visitor);

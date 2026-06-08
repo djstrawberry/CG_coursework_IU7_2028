@@ -1,38 +1,51 @@
-#ifndef VEC3_H
-#define VEC3_H
+#pragma once
 
-#include <cmath>
+#include "../concepts/concepts.h"
+#include <iostream>
 
-template <typename T>
-class Vec3 {
+template <ConvertibleToDouble T>
+class Vec3
+{
+private:
+    T m_x, m_y, m_z;
+
 public:
-    T x, y, z;
+    Vec3();
+    Vec3(T x, T y, T z);
+    explicit Vec3(T val);
 
-    Vec3() : x(0), y(0), z(0) {}
-    Vec3(T x, T y, T z) : x(x), y(y), z(z) {}
+    ~Vec3() = default;
 
-    Vec3 operator+(const Vec3& other) const { return Vec3(x + other.x, y + other.y, z + other.z); }
-    Vec3 operator-(const Vec3& other) const { return Vec3(x - other.x, y - other.y, z - other.z); }
-    Vec3 operator*(T scalar) const { return Vec3(x * scalar, y * scalar, z * scalar); }
-    Vec3 operator/(T scalar) const { return Vec3(x / scalar, y / scalar, z / scalar); }
+    T getX() const noexcept;
+    T getY() const noexcept;
+    T getZ() const noexcept;
 
-    T dot(const Vec3& other) const { return x * other.x + y * other.y + z * other.z; }
-    
-    Vec3 cross(const Vec3& other) const {
-        return Vec3(
-            y * other.z - z * other.y,
-            z * other.x - x * other.z,
-            x * other.y - y * other.x
-        );
-    }
+    void setX(const T &x) noexcept;
+    void setY(const T &y) noexcept;
+    void setZ(const T &z) noexcept;
 
-    T length() const { return std::sqrt(x * x + y * y + z * z); }
-    
-    Vec3 normalized() const {
-        T len = length();
-        if (len == 0) return Vec3();
-        return *this / len;
-    }
+    Vec3 operator+(const Vec3 &other) const noexcept;
+    Vec3 operator-(const Vec3 &other) const noexcept;
+    Vec3 operator*(const T &scalar) const noexcept;
+    Vec3 operator/(const T &scalar) const;
+    Vec3 operator*(const Vec3 &other) const noexcept;
+
+    T dot(const Vec3 &other) const noexcept;
+    Vec3 cross(const Vec3 &other) const noexcept;
+    T length() const noexcept;
+    Vec3 normalized() const;
+
+    bool operator==(const Vec3 &other) const;
+    bool operator!=(const Vec3 &other) const;
+
+    static Vec3 zero();
+    static Vec3 one();
+    static Vec3 up();
+    static Vec3 right();
+    static Vec3 forward();
 };
 
-#endif // VEC3_H
+template <ConvertibleToDouble T>
+Vec3<T> operator*(T scalar, const Vec3<T> &vec);
+
+#include "Vec3.hpp"

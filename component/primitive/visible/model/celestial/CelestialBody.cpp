@@ -55,8 +55,8 @@ void CelestialBody::setOrbitAngle(double angle) {
     updatePosition();  
 }
 
-Vec3 CelestialBody::getCenter() const noexcept {
-    return m_impl ? m_impl->getCenter() : Vec3{};
+Vec3<double> CelestialBody::getCenter() const noexcept {
+    return m_impl ? m_impl->getCenter() : Vec3<double>{};
 }
 
 std::shared_ptr<SphereImpl> CelestialBody::getImpl() const {
@@ -69,7 +69,7 @@ void CelestialBody::accept(std::shared_ptr<BaseVisitor> visitor) {
     }
 }
 
-std::shared_ptr<BaseObject> CelestialBody::clone() {
+std::shared_ptr<BaseObject> CelestialBody::clone() const {
     auto cloned = std::make_shared<CelestialBody>(m_name, m_impl->clone());
     cloned->m_material = m_material;
     cloned->m_orbitRadius = m_orbitRadius;
@@ -83,8 +83,8 @@ void CelestialBody::updatePosition() {
     if (!m_impl || m_orbitRadius <= 0.0) return;
 
     double rad = m_orbitAngle * M_PI / 180.0;
-    double newX = m_baseCenter.x + m_orbitRadius * std::cos(rad);
-    double newZ = m_baseCenter.z + m_orbitRadius * std::sin(rad);
+    double newX = m_baseCenter.getX() + m_orbitRadius * std::cos(rad);
+    double newZ = m_baseCenter.getZ() + m_orbitRadius * std::sin(rad);
 
-    m_impl->setCenter(Vec3(newX, m_baseCenter.y, newZ));
+    m_impl->setCenter(Vec3<double>(newX, m_baseCenter.getY(), newZ));
 }

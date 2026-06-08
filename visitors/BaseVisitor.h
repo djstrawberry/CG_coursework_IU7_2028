@@ -1,18 +1,16 @@
-#ifndef BASE_VISITOR_H
-#define BASE_VISITOR_H
+#pragma once
 
-class CelestialBody;
-class Composite;
-class BaseCamera;
+#include <memory>
 
-class BaseVisitor {
+class CameraImpl;
+class SphereImpl;
+
+class BaseVisitor
+{
 public:
     BaseVisitor() = default;
     virtual ~BaseVisitor() = default;
 
-    virtual void visitCelestialBody(CelestialBody& body) = 0;
-    virtual void visitComposite(Composite& comp) = 0;
-    virtual void visitCamera(BaseCamera& camera) = 0;
+    virtual void visit(std::shared_ptr<CameraImpl> camera) const = 0;
+    virtual void visit(std::shared_ptr<SphereImpl> sphere) const = 0;
 };
-
-#endif // BASE_VISITOR_H

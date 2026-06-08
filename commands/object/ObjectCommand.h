@@ -1,17 +1,16 @@
-#ifndef OBJECT_COMMAND_H
-#define OBJECT_COMMAND_H
+#pragma once
 
 #include "../BaseCommand.h"
 #include "../../vector/Vec3.h"
-#include "../../component/primitive/visible/model/impl/SphereImpl.h"
+#include "../../materials/Material.h"
 #include <string>
 #include <memory>
 
 class AddCelestialBodyCommand : public BaseCommand {
 public:
-    AddCelestialBodyCommand(const std::string& name, double radius, const Vec3<double>& center, const Material& material);
+    AddCelestialBodyCommand(const std::string& name, double radius, 
+                            const Vec3<double>& center, const Material& material);
     ~AddCelestialBodyCommand() override = default;
-
     void execute() override;
 
 private:
@@ -25,7 +24,6 @@ class SetCelestialMaterialCommand : public BaseCommand {
 public:
     SetCelestialMaterialCommand(size_t objectId, const Material& mat);
     ~SetCelestialMaterialCommand() override = default;
-
     void execute() override;
 
 private:
@@ -35,16 +33,12 @@ private:
 
 class TransformCelestialCommand : public BaseCommand {
 public:
-    TransformCelestialCommand(size_t id, const Vec3<double>& translation, const Vec3<double>& scale, const Vec3<double>& rot);
+    TransformCelestialCommand(size_t id, double orbitRadius, double orbitSpeed);
     ~TransformCelestialCommand() override = default;
-
     void execute() override;
 
 private:
     size_t m_id;
-    Vec3<double> m_translation;
-    Vec3<double> m_scale;
-    Vec3<double> m_rotation;
+    double m_orbitRadius;
+    double m_orbitSpeed;
 };
-
-#endif // OBJECT_COMMAND_H

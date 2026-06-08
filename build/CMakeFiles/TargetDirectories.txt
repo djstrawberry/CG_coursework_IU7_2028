@@ -1,0 +1,5 @@
+/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/PlanetSystemDesigner.dir
+/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/edit_cache.dir
+/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/rebuild_cache.dir
+/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/PlanetSystemDesigner_autogen_timestamp_deps.dir
+/home/anechka/PlanetSystemDesigner_Qt_Project/build/CMakeFiles/PlanetSystemDesigner_autogen.dir

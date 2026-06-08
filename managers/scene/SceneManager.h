@@ -14,7 +14,7 @@ public:
     void removeObject(size_t id);
     std::shared_ptr<BaseObject> getObject(size_t id);
 
-    void acceptVisitor(std::shared_ptr<BaseVisitor> visitor);
+    void accept(std::shared_ptr<BaseVisitor> visitor);
 
 private:
     std::shared_ptr<Scene> m_scene;

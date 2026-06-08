@@ -8,4 +8,4 @@ public:
     ~Primitive() override = default;
 
     bool isComposite() const noexcept override { return false; }
-}
+};

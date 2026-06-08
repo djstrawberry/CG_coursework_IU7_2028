@@ -1,31 +1,50 @@
 #include "DrawManager.h"
+#include "../../strategies/projection/creators/ProjectionStrategyCreator.h"
+#include "../../strategies/conversion/creator/ConvertCoordsStrategyCreator.h"
+#include "../../visitors/creators/VisitorCreator.h"
 #include "../ManagerProvider.h"
-#include "../camera/CameraManager.h"
-#include "../scene/SceneManager.h"
-#include "../../visitors/draw/DrawVisitor.h"
+#include "../camera/CameraManager.h"     
+#include "../scene/SceneManager.h"       
 
-DrawManager::DrawManager() {
-    // Soft off-yellow central star light color preset
-    m_lightColor[0] = 1.0f;
-    m_lightColor[1] = 0.9f;
-    m_lightColor[2] = 0.4f;
-    m_lightColor[3] = 1.0f; // Intensity scale factor
+void DrawManager::setPainter(std::shared_ptr<BasePainter> painter)
+{
+    m_painter = std::move(painter);
 }
 
-void DrawManager::setLightColor(float r, float g, float b, float intensity) {
+void DrawManager::setLightColor(float r, float g, float b, float intensity)
+{
     m_lightColor[0] = r;
     m_lightColor[1] = g;
     m_lightColor[2] = b;
     m_lightColor[3] = intensity;
 }
 
-void DrawManager::draw(QPainter* painter, int width, int height) {
+void DrawManager::draw()
+{
+    if (!m_painter)
+        return;
+
+    m_painter->clear();
+
     auto cameraManager = ManagerProvider::getCameraManager();
+    auto activeCam = cameraManager->getActiveCamera();
+    if (!activeCam)
+        return;
+
+    auto activeCamImpl = activeCam->getImpl();
+    if (!activeCamImpl)
+        return;
+
+    auto projStrategy = DefaultProjectionStrategyCreator::create();
+    auto convertStrategy = DefaultConvertCoordinatesStrategyCreator::create();
+
+    auto drawVisitor = DrawVisitorCreator::create(
+        std::move(projStrategy),
+        std::move(convertStrategy),
+        m_painter,
+        activeCamImpl
+    );
+
     auto sceneManager = ManagerProvider::getSceneManager();
-
-    auto activeCamera = cameraManager->getActiveCamera();
-    if (!activeCamera) return;
-
-    auto drawVisitor = std::make_shared<DrawVisitor>(painter, activeCamera, width, height, m_lightColor);
-    sceneManager->acceptVisitor(drawVisitor);
+    sceneManager->accept(drawVisitor);
 }

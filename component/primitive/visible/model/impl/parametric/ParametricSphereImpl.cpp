@@ -1,12 +1,12 @@
 #include "ParametricSphereImpl.h"
 #include <cmath>
 
-ParametricSphereImpl::ParametricSphereImpl(double radius, const Vec3& center, size_t slices, size_t stacks)
+ParametricSphereImpl::ParametricSphereImpl(double radius, const Vec3<double>& center, size_t slices, size_t stacks)
     : m_radius(radius), m_center(center), m_slices(slices), m_stacks(stacks) {
     generateMesh();
 }
 
-std::shared_ptr<SphereImpl> ParametricSphereImpl::clone() {
+std::shared_ptr<SphereImpl> ParametricSphereImpl::clone() const {
     auto cloned = std::make_shared<ParametricSphereImpl>(m_radius, m_center, m_slices, m_stacks);
     cloned->m_material = m_material;
     cloned->m_vertices = m_vertices;
@@ -17,8 +17,8 @@ std::shared_ptr<SphereImpl> ParametricSphereImpl::clone() {
 double ParametricSphereImpl::getRadius() const { return m_radius; }
 void ParametricSphereImpl::setRadius(double r) { m_radius = r; generateMesh(); }
 
-Vec3 ParametricSphereImpl::getCenter() const { return m_center; }
-void ParametricSphereImpl::setCenter(const Vec3& c) { m_center = c; }
+Vec3<double> ParametricSphereImpl::getCenter() const { return m_center; }
+void ParametricSphereImpl::setCenter(const Vec3<double>& c) { m_center = c; }
 
 void ParametricSphereImpl::setMaterial(const Material& m) { m_material = m; }
 Material ParametricSphereImpl::getMaterial() const { return m_material; }
@@ -27,8 +27,8 @@ size_t ParametricSphereImpl::getSlices() const { return m_slices; }
 size_t ParametricSphereImpl::getStacks() const { return m_stacks; }
 void ParametricSphereImpl::setResolution(int s, int t) { m_slices = s; m_stacks = t; generateMesh(); }
 
-const std::vector<Vec3>& ParametricSphereImpl::getVertices() { return m_vertices; }
-const std::vector<Vec3>& ParametricSphereImpl::getVertices() const { return m_vertices; }
+const std::vector<Vec3<double>>& ParametricSphereImpl::getVertices() { return m_vertices; }
+const std::vector<Vec3<double>>& ParametricSphereImpl::getVertices() const { return m_vertices; }
 
 const std::vector<std::pair<size_t, size_t>>& ParametricSphereImpl::getEdges() { return m_edges; }
 const std::vector<std::pair<size_t, size_t>>& ParametricSphereImpl::getEdges() const { return m_edges; }
@@ -51,7 +51,7 @@ void ParametricSphereImpl::generateMesh() {
             double y = m_radius * cosPhi;
             double z = m_radius * cosTheta * sinPhi;
 
-            m_vertices.emplace_back(m_center.x + x, m_center.y + y, m_center.z + z);
+            m_vertices.emplace_back(m_center.getX() + x, m_center.getY() + y, m_center.getZ() + z);
         }
     }
 
