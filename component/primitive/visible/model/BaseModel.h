@@ -5,8 +5,10 @@
 
 class BaseModel : public VisibleObject {
 public:
-    BaseModel() = default;
+    BaseModel(std::shared_ptr<SphereImpl> impl) : m_impl(std::move(impl)) {}
     ~BaseModel() override = default;
 
-    virtual std::shared_ptr<SphereImpl> getImpl() const = 0;
+    virtual std::shared_ptr<SphereImpl> getImpl() const { return m_impl; };
+protected:
+    std::shared_ptr<SphereImpl> m_impl;
 };

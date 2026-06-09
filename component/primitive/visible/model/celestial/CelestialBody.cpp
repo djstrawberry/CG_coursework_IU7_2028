@@ -3,7 +3,7 @@
 #include <cmath>
 
 CelestialBody::CelestialBody(const std::string& name, std::shared_ptr<SphereImpl> impl) 
-    : m_impl(std::move(impl)), m_name(std::move(name))
+    :  BaseModel(std::move(impl)), m_name(std::move(name))
 {
     if (!m_impl) {
         throw std::invalid_argument("Celestial body implementation cannot be null!");

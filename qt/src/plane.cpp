@@ -86,3 +86,14 @@ void Plane::mouseMoveEvent(QMouseEvent *event) {
         m_lastMousePos = event->pos();
     }
 }
+
+void Plane::wheelEvent(QWheelEvent* event)
+{
+    double delta = event->angleDelta().y() / 120.0;
+    auto cameraManager = ManagerProvider::getCameraManager();
+    auto camera = cameraManager->getActiveCamera();
+    if (camera) {
+        camera->zoom(delta * 2.0);  // или camera->getImpl()->zoom(delta)
+        update();  // Перерисовать
+    }
+}

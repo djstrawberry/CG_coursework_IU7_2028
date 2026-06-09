@@ -12,8 +12,8 @@ private:
     double m_orbitRadius = 0.0;
     double m_orbitSpeed = 0.0;
     double m_orbitAngle = 0.0;
+    double m_orbitInclination = 0.0;
     Vec3<double> m_baseCenter;
-    std::shared_ptr<SphereImpl> m_impl;
 
 public:
     CelestialBody() = delete;

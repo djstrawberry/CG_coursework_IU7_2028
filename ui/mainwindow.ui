@@ -7,11 +7,11 @@
     <x>0</x>
     <y>0</y>
     <width>1100</width>
-    <height>800</height>
+    <height>913</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Planet System Designer — ГРЕМИНI ED.</string>
+   <string>Planet System Designer</string>
   </property>
   <property name="styleSheet">
    <string notr="true">
@@ -138,18 +138,16 @@
     <property name="bottomMargin">
      <number>12</number>
     </property>
-    
     <item>
      <widget class="QGraphicsView" name="graphicsView">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-       <horstretch>0</horstretch>
+        <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
      </widget>
     </item>
-    
     <item>
      <widget class="QWidget" name="panelContainer" native="true">
       <property name="minimumSize">
@@ -168,64 +166,104 @@
        <property name="spacing">
         <number>10</number>
        </property>
-       <property name="margin">
+       <property name="margin" stdset="0">
         <number>0</number>
        </property>
-       
        <item>
         <widget class="QGroupBox" name="group_star">
          <property name="title">
-          <string>★ CENTRAL STAR DATA</string>
+          <string>ЗВЕЗДА</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_star">
-          <item row="0" column="0">
-           <widget class="QLabel" name="label_1"><property name="text"><string>Radius:</string></property></widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QDoubleSpinBox" name="spinBox_starRadius"/>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Z:</string>
+            </property>
+           </widget>
           </item>
           <item row="1" column="0">
-           <widget class="QLabel" name="label_2"><property name="text"><string>X Pos:</string></property></widget>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>X:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Y:</string>
+            </property>
+           </widget>
           </item>
           <item row="1" column="1">
            <widget class="QDoubleSpinBox" name="spinBox_starX"/>
           </item>
-          <item row="2" column="0">
-           <widget class="QLabel" name="label_3"><property name="text"><string>Y Pos:</string></property></widget>
-          </item>
           <item row="2" column="1">
            <widget class="QDoubleSpinBox" name="spinBox_starY"/>
           </item>
-          <item row="3" column="0">
-           <widget class="QLabel" name="label_4"><property name="text"><string>Z Pos:</string></property></widget>
+          <item row="0" column="1">
+           <widget class="QDoubleSpinBox" name="spinBox_starRadius"/>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_1">
+            <property name="text">
+             <string>Радиус:</string>
+            </property>
+           </widget>
           </item>
           <item row="3" column="1">
            <widget class="QDoubleSpinBox" name="spinBox_starZ"/>
           </item>
+          <item row="4" column="1">
+           <widget class="QPushButton" name="button_pickColor">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Цвет света:</string>
+            </property>
+           </widget>
+          </item>
          </layout>
         </widget>
        </item>
-       
        <item>
         <widget class="QGroupBox" name="group_material">
          <property name="title">
-          <string>⬧ MATERIAL PROPERTIES</string>
+          <string>МАТЕРИАЛ</string>
          </property>
          <layout class="QGridLayout" name="gridLayout_material">
           <item row="0" column="0">
-           <widget class="QLabel" name="label_5"><property name="text"><string>Ambient:</string></property></widget>
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Ambient:</string>
+            </property>
+           </widget>
           </item>
           <item row="0" column="1">
            <widget class="QDoubleSpinBox" name="spinBox_matAmbient"/>
           </item>
           <item row="1" column="0">
-           <widget class="QLabel" name="label_6"><property name="text"><string>Diffuse:</string></property></widget>
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>Diffuse:</string>
+            </property>
+           </widget>
           </item>
           <item row="1" column="1">
            <widget class="QDoubleSpinBox" name="spinBox_matDiffuse"/>
           </item>
           <item row="2" column="0">
-           <widget class="QLabel" name="label_7"><property name="text"><string>Specular:</string></property></widget>
+           <widget class="QLabel" name="label_7">
+            <property name="text">
+             <string>Specular:</string>
+            </property>
+           </widget>
           </item>
           <item row="2" column="1">
            <widget class="QDoubleSpinBox" name="spinBox_matSpecular"/>
@@ -233,146 +271,128 @@
          </layout>
         </widget>
        </item>
-       
        <item>
         <widget class="QGroupBox" name="group_planets">
          <property name="title">
-          <string>🪐 ORBITAL BODIES</string>
+          <string>ПЛАНЕТЫ</string>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_planets">
           <item>
            <layout class="QGridLayout" name="gridLayout_planetParams">
-            <item row="0" column="0">
-             <widget class="QLabel" name="label_8"><property name="text"><string>Radius:</string></property></widget>
-             </item>
-            <item row="0" column="1">
-             <widget class="QDoubleSpinBox" name="spinBox_planetRadius"/>
-            </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="label_9"><property name="text"><string>Orbit Radius:</string></property></widget>
-            </item>
             <item row="1" column="1">
              <widget class="QDoubleSpinBox" name="spinBox_planetOrbitRadius"/>
             </item>
-            <item row="2" column="0">
-             <widget class="QLabel" name="label_10"><property name="text"><string>Orbit Angle:</string></property></widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QDoubleSpinBox" name="spinBox_planetOrbitAngle"/>
-            </item>
-            <item row="3" column="0">
-             <widget class="QLabel" name="label_11"><property name="text"><string>Orbit Speed:</string></property></widget>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_9">
+              <property name="text">
+               <string>Радиус орбиты:</string>
+              </property>
+             </widget>
             </item>
             <item row="3" column="1">
              <widget class="QDoubleSpinBox" name="spinBox_planetOrbitSpeed"/>
             </item>
-            <item row="4" column="0">
-             <widget class="QLabel" name="label_12"><property name="text"><string>Color R:</string></property></widget>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_8">
+              <property name="text">
+               <string>Радиус планеты:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_11">
+              <property name="text">
+               <string>Скорость движения:</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QDoubleSpinBox" name="spinBox_planetOrbitAngle"/>
+            </item>
+            <item row="0" column="1">
+             <widget class="QDoubleSpinBox" name="spinBox_planetRadius"/>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_10">
+              <property name="text">
+               <string>Начальное положение:</string>
+              </property>
+             </widget>
             </item>
             <item row="4" column="1">
-             <widget class="QDoubleSpinBox" name="spinBox_planetColorR"/>
+             <widget class="QPushButton" name="button_pickPlanetColor">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
             </item>
-            <item row="5" column="0">
-             <widget class="QLabel" name="label_13"><property name="text"><string>Color G:</string></property></widget>
-            </item>
-            <item row="5" column="1">
-             <widget class="QDoubleSpinBox" name="spinBox_planetColorG"/>
-            </item>
-            <item row="6" column="0">
-             <widget class="QLabel" name="label_14"><property name="text"><string>Color B:</string></property></widget>
-            </item>
-            <item row="6" column="1">
-             <widget class="QDoubleSpinBox" name="spinBox_planetColorB"/>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_12">
+              <property name="text">
+               <string>Цвет планеты:</string>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_planetCount">
             <item>
-             <widget class="QLabel" name="label_planetCount">
+             <widget class="QPushButton" name="button_addPlanet">
               <property name="text">
-               <string>PLANETS: 0</string>
-              </property>
-              <property name="font">
-               <font>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
+               <string>+ ДОБАВИТЬ</string>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QPushButton" name="button_addPlanet">
+             <widget class="QPushButton" name="button_removePlanet">
               <property name="text">
-               <string>+ Add Planet</string>
+               <string>— УДАЛИТЬ</string>
               </property>
              </widget>
             </item>
            </layout>
           </item>
           <item>
-           <widget class="QPushButton" name="button_removePlanet">
+           <widget class="QLabel" name="label_planetCount">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <pointsize>-1</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
             <property name="text">
-             <string>— Remove Last Planet</string>
+             <string>ПЛАНЕТ: 0</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignmentFlag::AlignCenter</set>
             </property>
            </widget>
           </item>
          </layout>
         </widget>
        </item>
-       
-       <item>
-        <widget class="QGroupBox" name="group_lighting">
-         <property name="title">
-          <string>💡 SYSTEM LIGHTING</string>
-         </property>
-         <layout class="QHBoxLayout" name="horizontalLayout_lighting">
-          <item>
-           <widget class="QLabel" name="label_15">
-            <property name="text">
-             <string>Ambiance Color:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="button_pickColor">
-            <property name="text">
-             <string>🌈 Pick Color...</string>
-            </property>
-           </widget>
-           </item>
-         </layout>
-        </widget>
-       </item>
-       
        <item>
         <widget class="QGroupBox" name="group_view">
          <property name="title">
-          <string>↻ VIEW CONTROL</string>
+          <string>ВИД</string>
          </property>
          <layout class="QHBoxLayout" name="horizontalLayout_view">
           <item>
-           <widget class="QLabel" name="label_16">
-            <property name="text">
-             <string>Actions:</string>
-            </property>
-           </widget>
-          </item>
-          <item>
            <widget class="QPushButton" name="button_resetView">
             <property name="text">
-             <string>👁 Reset Camera &amp; Scene</string>
+             <string>ВЕРНУТЬ КАМЕРУ КАК БЫЛО</string>
             </property>
            </widget>
           </item>
          </layout>
         </widget>
        </item>
-       
        <item>
         <spacer name="verticalSpacer">
          <property name="orientation">
-          <enum>Qt::Vertical</enum>
+          <enum>Qt::Orientation::Vertical</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>

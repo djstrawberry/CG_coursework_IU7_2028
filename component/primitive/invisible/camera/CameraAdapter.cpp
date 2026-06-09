@@ -2,7 +2,7 @@
 #include "impl/CameraImpl.h"
 
 CameraAdapter::CameraAdapter(std::shared_ptr<CameraImpl> impl)
-    : m_impl(std::move(impl)) {
+    : BaseCamera(std::move(impl)) {
     if (!m_impl)
         throw std::invalid_argument("Camera implementation cannot be null!");
 }

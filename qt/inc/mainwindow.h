@@ -45,6 +45,9 @@ private:
     void setupUI();
     void initializeScene();
     void startOrbitAnimation();
+    void onPlanetColorClicked();
+    void updatePlanetColorButton();
+    void updateLightColorButton();
     Vec3<double> getStarCenter() const;
     void syncPlanetOrbitCenters(const Vec3<double>& starCenter);
 
@@ -53,6 +56,10 @@ private:
     Plane* m_viewport;
     std::shared_ptr<Facade> m_facade;
     std::vector<size_t> m_planetIds;
+
+    QPushButton* m_planetColorButton;
+    QColor m_currentPlanetColor;
+    QColor m_currentLightColor = QColor(255, 230, 102);
 
     QDoubleSpinBox* m_starRadiusBox;
     QDoubleSpinBox* m_starPosXBox;

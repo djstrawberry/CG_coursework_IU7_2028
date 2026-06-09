@@ -15,10 +15,22 @@ void Scene::removeObject(size_t id) {
     m_objects.erase(id);
 }
 
-std::shared_ptr<BaseObject> Scene::getObject(size_t id) {
-    auto it = m_objects.find(id);
-    if (it != m_objects.end()) {
-        return it->second;
-    }
-    return nullptr;
+Scene::iterator Scene::getObject(size_t id) {
+    return m_objects.find(id);
+}
+
+Scene::iterator Scene::end() {
+    return m_objects.end();
+}
+
+std::map<size_t, std::shared_ptr<BaseObject>>& Scene::getObjects() { 
+    return m_objects; 
+}
+
+const std::map<size_t, std::shared_ptr<BaseObject>>& Scene::getObjects() const { 
+    return m_objects; 
+}
+
+void Scene::clear() { 
+    m_objects.clear(); 
 }

@@ -14,7 +14,11 @@ void SceneManager::removeObject(size_t id) {
 }
 
 std::shared_ptr<BaseObject> SceneManager::getObject(size_t id) {
-    return m_scene->getObject(id);
+    auto it = m_scene->getObject(id);
+    if (it != m_scene->end()) {
+        return it->second; 
+    }
+    return nullptr;
 }
 
 void SceneManager::accept(std::shared_ptr<BaseVisitor> visitor) {

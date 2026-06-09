@@ -35,14 +35,16 @@ public:
     QVBoxLayout *verticalLayout_sidebar;
     QGroupBox *group_star;
     QGridLayout *gridLayout_star;
-    QLabel *label_1;
-    QDoubleSpinBox *spinBox_starRadius;
-    QLabel *label_2;
-    QDoubleSpinBox *spinBox_starX;
-    QLabel *label_3;
-    QDoubleSpinBox *spinBox_starY;
     QLabel *label_4;
+    QLabel *label_2;
+    QLabel *label_3;
+    QDoubleSpinBox *spinBox_starX;
+    QDoubleSpinBox *spinBox_starY;
+    QDoubleSpinBox *spinBox_starRadius;
+    QLabel *label_1;
     QDoubleSpinBox *spinBox_starZ;
+    QPushButton *button_pickColor;
+    QLabel *label;
     QGroupBox *group_material;
     QGridLayout *gridLayout_material;
     QLabel *label_5;
@@ -54,31 +56,22 @@ public:
     QGroupBox *group_planets;
     QVBoxLayout *verticalLayout_planets;
     QGridLayout *gridLayout_planetParams;
-    QLabel *label_8;
-    QDoubleSpinBox *spinBox_planetRadius;
-    QLabel *label_9;
     QDoubleSpinBox *spinBox_planetOrbitRadius;
-    QLabel *label_10;
-    QDoubleSpinBox *spinBox_planetOrbitAngle;
-    QLabel *label_11;
+    QLabel *label_9;
     QDoubleSpinBox *spinBox_planetOrbitSpeed;
+    QLabel *label_8;
+    QLabel *label_11;
+    QDoubleSpinBox *spinBox_planetOrbitAngle;
+    QDoubleSpinBox *spinBox_planetRadius;
+    QLabel *label_10;
+    QPushButton *button_pickPlanetColor;
     QLabel *label_12;
-    QDoubleSpinBox *spinBox_planetColorR;
-    QLabel *label_13;
-    QDoubleSpinBox *spinBox_planetColorG;
-    QLabel *label_14;
-    QDoubleSpinBox *spinBox_planetColorB;
     QHBoxLayout *horizontalLayout_planetCount;
-    QLabel *label_planetCount;
     QPushButton *button_addPlanet;
     QPushButton *button_removePlanet;
-    QGroupBox *group_lighting;
-    QHBoxLayout *horizontalLayout_lighting;
-    QLabel *label_15;
-    QPushButton *button_pickColor;
+    QLabel *label_planetCount;
     QGroupBox *group_view;
     QHBoxLayout *horizontalLayout_view;
-    QLabel *label_16;
     QPushButton *button_resetView;
     QSpacerItem *verticalSpacer;
 
@@ -86,7 +79,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(1100, 800);
+        MainWindow->resize(1100, 913);
         MainWindow->setStyleSheet(QString::fromUtf8("\n"
 "    /* \320\223\320\273\320\276\320\261\320\260\320\273\321\214\320\275\321\213\320\271 \321\201\321\202\320\270\320\273\321\214 \320\272\320\276\321\201\320\274\320\270\321\207\320\265\321\201\320\272\320\276\320\263\320\276 \320\270\320\275\321\202\320\265\321\200\321\204\320\265\320\271\321\201\320\260 */\n"
 "    QMainWindow {\n"
@@ -225,45 +218,55 @@ public:
         group_star->setObjectName("group_star");
         gridLayout_star = new QGridLayout(group_star);
         gridLayout_star->setObjectName("gridLayout_star");
-        label_1 = new QLabel(group_star);
-        label_1->setObjectName("label_1");
+        label_4 = new QLabel(group_star);
+        label_4->setObjectName("label_4");
 
-        gridLayout_star->addWidget(label_1, 0, 0, 1, 1);
-
-        spinBox_starRadius = new QDoubleSpinBox(group_star);
-        spinBox_starRadius->setObjectName("spinBox_starRadius");
-
-        gridLayout_star->addWidget(spinBox_starRadius, 0, 1, 1, 1);
+        gridLayout_star->addWidget(label_4, 3, 0, 1, 1);
 
         label_2 = new QLabel(group_star);
         label_2->setObjectName("label_2");
 
         gridLayout_star->addWidget(label_2, 1, 0, 1, 1);
 
-        spinBox_starX = new QDoubleSpinBox(group_star);
-        spinBox_starX->setObjectName("spinBox_starX");
-
-        gridLayout_star->addWidget(spinBox_starX, 1, 1, 1, 1);
-
         label_3 = new QLabel(group_star);
         label_3->setObjectName("label_3");
 
         gridLayout_star->addWidget(label_3, 2, 0, 1, 1);
+
+        spinBox_starX = new QDoubleSpinBox(group_star);
+        spinBox_starX->setObjectName("spinBox_starX");
+
+        gridLayout_star->addWidget(spinBox_starX, 1, 1, 1, 1);
 
         spinBox_starY = new QDoubleSpinBox(group_star);
         spinBox_starY->setObjectName("spinBox_starY");
 
         gridLayout_star->addWidget(spinBox_starY, 2, 1, 1, 1);
 
-        label_4 = new QLabel(group_star);
-        label_4->setObjectName("label_4");
+        spinBox_starRadius = new QDoubleSpinBox(group_star);
+        spinBox_starRadius->setObjectName("spinBox_starRadius");
 
-        gridLayout_star->addWidget(label_4, 3, 0, 1, 1);
+        gridLayout_star->addWidget(spinBox_starRadius, 0, 1, 1, 1);
+
+        label_1 = new QLabel(group_star);
+        label_1->setObjectName("label_1");
+
+        gridLayout_star->addWidget(label_1, 0, 0, 1, 1);
 
         spinBox_starZ = new QDoubleSpinBox(group_star);
         spinBox_starZ->setObjectName("spinBox_starZ");
 
         gridLayout_star->addWidget(spinBox_starZ, 3, 1, 1, 1);
+
+        button_pickColor = new QPushButton(group_star);
+        button_pickColor->setObjectName("button_pickColor");
+
+        gridLayout_star->addWidget(button_pickColor, 4, 1, 1, 1);
+
+        label = new QLabel(group_star);
+        label->setObjectName("label");
+
+        gridLayout_star->addWidget(label, 4, 0, 1, 1);
 
 
         verticalLayout_sidebar->addWidget(group_star);
@@ -311,131 +314,91 @@ public:
         verticalLayout_planets->setObjectName("verticalLayout_planets");
         gridLayout_planetParams = new QGridLayout();
         gridLayout_planetParams->setObjectName("gridLayout_planetParams");
-        label_8 = new QLabel(group_planets);
-        label_8->setObjectName("label_8");
+        spinBox_planetOrbitRadius = new QDoubleSpinBox(group_planets);
+        spinBox_planetOrbitRadius->setObjectName("spinBox_planetOrbitRadius");
 
-        gridLayout_planetParams->addWidget(label_8, 0, 0, 1, 1);
-
-        spinBox_planetRadius = new QDoubleSpinBox(group_planets);
-        spinBox_planetRadius->setObjectName("spinBox_planetRadius");
-
-        gridLayout_planetParams->addWidget(spinBox_planetRadius, 0, 1, 1, 1);
+        gridLayout_planetParams->addWidget(spinBox_planetOrbitRadius, 1, 1, 1, 1);
 
         label_9 = new QLabel(group_planets);
         label_9->setObjectName("label_9");
 
         gridLayout_planetParams->addWidget(label_9, 1, 0, 1, 1);
 
-        spinBox_planetOrbitRadius = new QDoubleSpinBox(group_planets);
-        spinBox_planetOrbitRadius->setObjectName("spinBox_planetOrbitRadius");
+        spinBox_planetOrbitSpeed = new QDoubleSpinBox(group_planets);
+        spinBox_planetOrbitSpeed->setObjectName("spinBox_planetOrbitSpeed");
 
-        gridLayout_planetParams->addWidget(spinBox_planetOrbitRadius, 1, 1, 1, 1);
+        gridLayout_planetParams->addWidget(spinBox_planetOrbitSpeed, 3, 1, 1, 1);
 
-        label_10 = new QLabel(group_planets);
-        label_10->setObjectName("label_10");
+        label_8 = new QLabel(group_planets);
+        label_8->setObjectName("label_8");
 
-        gridLayout_planetParams->addWidget(label_10, 2, 0, 1, 1);
-
-        spinBox_planetOrbitAngle = new QDoubleSpinBox(group_planets);
-        spinBox_planetOrbitAngle->setObjectName("spinBox_planetOrbitAngle");
-
-        gridLayout_planetParams->addWidget(spinBox_planetOrbitAngle, 2, 1, 1, 1);
+        gridLayout_planetParams->addWidget(label_8, 0, 0, 1, 1);
 
         label_11 = new QLabel(group_planets);
         label_11->setObjectName("label_11");
 
         gridLayout_planetParams->addWidget(label_11, 3, 0, 1, 1);
 
-        spinBox_planetOrbitSpeed = new QDoubleSpinBox(group_planets);
-        spinBox_planetOrbitSpeed->setObjectName("spinBox_planetOrbitSpeed");
+        spinBox_planetOrbitAngle = new QDoubleSpinBox(group_planets);
+        spinBox_planetOrbitAngle->setObjectName("spinBox_planetOrbitAngle");
 
-        gridLayout_planetParams->addWidget(spinBox_planetOrbitSpeed, 3, 1, 1, 1);
+        gridLayout_planetParams->addWidget(spinBox_planetOrbitAngle, 2, 1, 1, 1);
+
+        spinBox_planetRadius = new QDoubleSpinBox(group_planets);
+        spinBox_planetRadius->setObjectName("spinBox_planetRadius");
+
+        gridLayout_planetParams->addWidget(spinBox_planetRadius, 0, 1, 1, 1);
+
+        label_10 = new QLabel(group_planets);
+        label_10->setObjectName("label_10");
+
+        gridLayout_planetParams->addWidget(label_10, 2, 0, 1, 1);
+
+        button_pickPlanetColor = new QPushButton(group_planets);
+        button_pickPlanetColor->setObjectName("button_pickPlanetColor");
+
+        gridLayout_planetParams->addWidget(button_pickPlanetColor, 4, 1, 1, 1);
 
         label_12 = new QLabel(group_planets);
         label_12->setObjectName("label_12");
 
         gridLayout_planetParams->addWidget(label_12, 4, 0, 1, 1);
 
-        spinBox_planetColorR = new QDoubleSpinBox(group_planets);
-        spinBox_planetColorR->setObjectName("spinBox_planetColorR");
-
-        gridLayout_planetParams->addWidget(spinBox_planetColorR, 4, 1, 1, 1);
-
-        label_13 = new QLabel(group_planets);
-        label_13->setObjectName("label_13");
-
-        gridLayout_planetParams->addWidget(label_13, 5, 0, 1, 1);
-
-        spinBox_planetColorG = new QDoubleSpinBox(group_planets);
-        spinBox_planetColorG->setObjectName("spinBox_planetColorG");
-
-        gridLayout_planetParams->addWidget(spinBox_planetColorG, 5, 1, 1, 1);
-
-        label_14 = new QLabel(group_planets);
-        label_14->setObjectName("label_14");
-
-        gridLayout_planetParams->addWidget(label_14, 6, 0, 1, 1);
-
-        spinBox_planetColorB = new QDoubleSpinBox(group_planets);
-        spinBox_planetColorB->setObjectName("spinBox_planetColorB");
-
-        gridLayout_planetParams->addWidget(spinBox_planetColorB, 6, 1, 1, 1);
-
 
         verticalLayout_planets->addLayout(gridLayout_planetParams);
 
         horizontalLayout_planetCount = new QHBoxLayout();
         horizontalLayout_planetCount->setObjectName("horizontalLayout_planetCount");
-        label_planetCount = new QLabel(group_planets);
-        label_planetCount->setObjectName("label_planetCount");
-        QFont font;
-        font.setBold(true);
-        label_planetCount->setFont(font);
-
-        horizontalLayout_planetCount->addWidget(label_planetCount);
-
         button_addPlanet = new QPushButton(group_planets);
         button_addPlanet->setObjectName("button_addPlanet");
 
         horizontalLayout_planetCount->addWidget(button_addPlanet);
 
-
-        verticalLayout_planets->addLayout(horizontalLayout_planetCount);
-
         button_removePlanet = new QPushButton(group_planets);
         button_removePlanet->setObjectName("button_removePlanet");
 
-        verticalLayout_planets->addWidget(button_removePlanet);
+        horizontalLayout_planetCount->addWidget(button_removePlanet);
+
+
+        verticalLayout_planets->addLayout(horizontalLayout_planetCount);
+
+        label_planetCount = new QLabel(group_planets);
+        label_planetCount->setObjectName("label_planetCount");
+        QFont font;
+        font.setFamilies({QString::fromUtf8("Segoe UI")});
+        font.setBold(true);
+        label_planetCount->setFont(font);
+        label_planetCount->setAlignment(Qt::AlignmentFlag::AlignCenter);
+
+        verticalLayout_planets->addWidget(label_planetCount);
 
 
         verticalLayout_sidebar->addWidget(group_planets);
-
-        group_lighting = new QGroupBox(panelContainer);
-        group_lighting->setObjectName("group_lighting");
-        horizontalLayout_lighting = new QHBoxLayout(group_lighting);
-        horizontalLayout_lighting->setObjectName("horizontalLayout_lighting");
-        label_15 = new QLabel(group_lighting);
-        label_15->setObjectName("label_15");
-
-        horizontalLayout_lighting->addWidget(label_15);
-
-        button_pickColor = new QPushButton(group_lighting);
-        button_pickColor->setObjectName("button_pickColor");
-
-        horizontalLayout_lighting->addWidget(button_pickColor);
-
-
-        verticalLayout_sidebar->addWidget(group_lighting);
 
         group_view = new QGroupBox(panelContainer);
         group_view->setObjectName("group_view");
         horizontalLayout_view = new QHBoxLayout(group_view);
         horizontalLayout_view->setObjectName("horizontalLayout_view");
-        label_16 = new QLabel(group_view);
-        label_16->setObjectName("label_16");
-
-        horizontalLayout_view->addWidget(label_16);
-
         button_resetView = new QPushButton(group_view);
         button_resetView->setObjectName("button_resetView");
 
@@ -460,33 +423,30 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Planet System Designer \342\200\224 \320\223\320\240\320\225\320\234\320\230\320\235I ED.", nullptr));
-        group_star->setTitle(QCoreApplication::translate("MainWindow", "\342\230\205 CENTRAL STAR DATA", nullptr));
-        label_1->setText(QCoreApplication::translate("MainWindow", "Radius:", nullptr));
-        label_2->setText(QCoreApplication::translate("MainWindow", "X Pos:", nullptr));
-        label_3->setText(QCoreApplication::translate("MainWindow", "Y Pos:", nullptr));
-        label_4->setText(QCoreApplication::translate("MainWindow", "Z Pos:", nullptr));
-        group_material->setTitle(QCoreApplication::translate("MainWindow", "\342\254\247 MATERIAL PROPERTIES", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "Planet System Designer", nullptr));
+        group_star->setTitle(QCoreApplication::translate("MainWindow", "\320\227\320\222\320\225\320\227\320\224\320\220", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "Z:", nullptr));
+        label_2->setText(QCoreApplication::translate("MainWindow", "X:", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "Y:", nullptr));
+        label_1->setText(QCoreApplication::translate("MainWindow", "\320\240\320\260\320\264\320\270\321\203\321\201:", nullptr));
+        button_pickColor->setText(QString());
+        label->setText(QCoreApplication::translate("MainWindow", "\320\246\320\262\320\265\321\202 \321\201\320\262\320\265\321\202\320\260:", nullptr));
+        group_material->setTitle(QCoreApplication::translate("MainWindow", "\320\234\320\220\320\242\320\225\320\240\320\230\320\220\320\233", nullptr));
         label_5->setText(QCoreApplication::translate("MainWindow", "Ambient:", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "Diffuse:", nullptr));
         label_7->setText(QCoreApplication::translate("MainWindow", "Specular:", nullptr));
-        group_planets->setTitle(QCoreApplication::translate("MainWindow", "\360\237\252\220 ORBITAL BODIES", nullptr));
-        label_8->setText(QCoreApplication::translate("MainWindow", "Radius:", nullptr));
-        label_9->setText(QCoreApplication::translate("MainWindow", "Orbit Radius:", nullptr));
-        label_10->setText(QCoreApplication::translate("MainWindow", "Orbit Angle:", nullptr));
-        label_11->setText(QCoreApplication::translate("MainWindow", "Orbit Speed:", nullptr));
-        label_12->setText(QCoreApplication::translate("MainWindow", "Color R:", nullptr));
-        label_13->setText(QCoreApplication::translate("MainWindow", "Color G:", nullptr));
-        label_14->setText(QCoreApplication::translate("MainWindow", "Color B:", nullptr));
-        label_planetCount->setText(QCoreApplication::translate("MainWindow", "PLANETS: 0", nullptr));
-        button_addPlanet->setText(QCoreApplication::translate("MainWindow", "+ Add Planet", nullptr));
-        button_removePlanet->setText(QCoreApplication::translate("MainWindow", "\342\200\224 Remove Last Planet", nullptr));
-        group_lighting->setTitle(QCoreApplication::translate("MainWindow", "\360\237\222\241 SYSTEM LIGHTING", nullptr));
-        label_15->setText(QCoreApplication::translate("MainWindow", "Ambiance Color:", nullptr));
-        button_pickColor->setText(QCoreApplication::translate("MainWindow", "\360\237\214\210 Pick Color...", nullptr));
-        group_view->setTitle(QCoreApplication::translate("MainWindow", "\342\206\273 VIEW CONTROL", nullptr));
-        label_16->setText(QCoreApplication::translate("MainWindow", "Actions:", nullptr));
-        button_resetView->setText(QCoreApplication::translate("MainWindow", "\360\237\221\201 Reset Camera & Scene", nullptr));
+        group_planets->setTitle(QCoreApplication::translate("MainWindow", "\320\237\320\233\320\220\320\235\320\225\320\242\320\253", nullptr));
+        label_9->setText(QCoreApplication::translate("MainWindow", "\320\240\320\260\320\264\320\270\321\203\321\201 \320\276\321\200\320\261\320\270\321\202\321\213:", nullptr));
+        label_8->setText(QCoreApplication::translate("MainWindow", "\320\240\320\260\320\264\320\270\321\203\321\201 \320\277\320\273\320\260\320\275\320\265\321\202\321\213:", nullptr));
+        label_11->setText(QCoreApplication::translate("MainWindow", "\320\241\320\272\320\276\321\200\320\276\321\201\321\202\321\214 \320\264\320\262\320\270\320\266\320\265\320\275\320\270\321\217:", nullptr));
+        label_10->setText(QCoreApplication::translate("MainWindow", "\320\235\320\260\321\207\320\260\320\273\321\214\320\275\320\276\320\265 \320\277\320\276\320\273\320\276\320\266\320\265\320\275\320\270\320\265:", nullptr));
+        button_pickPlanetColor->setText(QString());
+        label_12->setText(QCoreApplication::translate("MainWindow", "\320\246\320\262\320\265\321\202 \320\277\320\273\320\260\320\275\320\265\321\202\321\213:", nullptr));
+        button_addPlanet->setText(QCoreApplication::translate("MainWindow", "+ \320\224\320\236\320\221\320\220\320\222\320\230\320\242\320\254", nullptr));
+        button_removePlanet->setText(QCoreApplication::translate("MainWindow", "\342\200\224 \320\243\320\224\320\220\320\233\320\230\320\242\320\254", nullptr));
+        label_planetCount->setText(QCoreApplication::translate("MainWindow", "\320\237\320\233\320\220\320\235\320\225\320\242: 0", nullptr));
+        group_view->setTitle(QCoreApplication::translate("MainWindow", "\320\222\320\230\320\224", nullptr));
+        button_resetView->setText(QCoreApplication::translate("MainWindow", "\320\222\320\225\320\240\320\235\320\243\320\242\320\254 \320\232\320\220\320\234\320\225\320\240\320\243 \320\232\320\220\320\232 \320\221\320\253\320\233\320\236", nullptr));
     } // retranslateUi
 
 };

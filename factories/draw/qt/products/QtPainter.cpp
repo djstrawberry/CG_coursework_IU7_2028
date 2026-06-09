@@ -212,36 +212,21 @@ void QtPainter::drawShadedDisc(double x, double y, double radius,
 void QtPainter::drawGlow(double x, double y, double radius,
                          int r, int g, int b, float intensity)
 {
-    // Корона свечения должна быть гораздо шире самой звезды (например, в 4-5 раз)
-    double glowRadius = radius * 4.5; 
+    double glowRadius = radius * 4.5;
 
-    // Создаем радиальный градиент с центром в точке (x, y)
     QRadialGradient gradient(QPointF(x, y), glowRadius);
 
-    // Считаем базовую альфу на основе интенсивности
     int baseAlpha = std::clamp(static_cast<int>(intensity * 255.0f), 0, 255);
-    int coronaAlpha = std::clamp(static_cast<int>(intensity * 180.0f), 0, 255);
-    int outerAlpha = std::clamp(static_cast<int>(intensity * 45.0f), 0, 255);
+    int midAlpha  = std::clamp(static_cast<int>(intensity * 140.0f), 0, 255);
+    int lowAlpha  = std::clamp(static_cast<int>(intensity * 50.0f), 0, 255);
 
-    // СТРОИМ РЕАЛИСТИЧНЫЙ ПРОФИЛЬ ЗВЕЗДЫ:
-    
-    // 1. Центр ядра: ослепительно белый свет (эффект HDR/переэкспозиции)
-    gradient.setColorAt(0.0, QColor(255, 255, 240, baseAlpha));
-    
-    // 2. Граница физического ядра: переход в яркий каноничный цвет (например, жёлтый)
-    gradient.setColorAt(0.15, QColor(r, g, b, baseAlpha));
-    
-    // 3. Внутренняя корона: горячий оранжевый/золотой плавный спад
-    // Если звезда жёлтая (255, 255, 0), то подмешиваем красивый оранжевый оттенок
-    gradient.setColorAt(0.35, QColor(255, 130, 0, coronaAlpha));
-    
-    // 4. Внешняя разреженная мантия: угасающий красновато-оранжевый ореол
-    gradient.setColorAt(0.65, QColor(230, 60, 0, outerAlpha));
-    
-    // 5. Полный уход в прозрачность на границе радиуса свечения
-    gradient.setColorAt(1.0, QColor(0, 0, 0, 0));
+    // ВСЕ цвета строятся из переданных (r, g, b):
+    gradient.setColorAt(0.0,  QColor(255, 255, 255, baseAlpha));               // белая сердцевина
+    gradient.setColorAt(0.15, QColor(r, g, b, baseAlpha));                     // твой цвет
+    gradient.setColorAt(0.40, QColor(r, g, b, midAlpha));                      // он же, прозрачнее
+    gradient.setColorAt(0.70, QColor(r * 0.5, g * 0.5, b * 0.5, lowAlpha));   // потемневший
+    gradient.setColorAt(1.0,  QColor(0, 0, 0, 0));                             // прозрачный край
 
-    // Отрисовываем встроенными средствами Qt. Никаких попиксельных циклов!
     m_scene->addEllipse(x - glowRadius, y - glowRadius, glowRadius * 2, glowRadius * 2,
                         Qt::NoPen, QBrush(gradient));
 }

@@ -123,6 +123,22 @@ void DrawVisitor::collectSphere(const std::shared_ptr<SphereImpl>& sphere) const
 
     m_convertStrategy->convertPoint(projected, width, height);
 
+    double aspectRatio = static_cast<double>(width) / static_cast<double>(height);
+
+    if (aspectRatio > 1.0) {
+        // Окно шире — сжимаем по X и центрируем:
+        double offsetX = width * (1.0 - 1.0 / aspectRatio) / 2.0;
+        for (auto& p : projected) {
+            p = Vec3<double>(p.getX() / aspectRatio + offsetX, p.getY(), p.getZ());
+        }
+    } else {
+        // Окно выше — сжимаем по Y и центрируем:
+        double offsetY = height * (1.0 - aspectRatio) / 2.0;
+        for (auto& p : projected) {
+            p = Vec3<double>(p.getX(), p.getY() * aspectRatio + offsetY, p.getZ());
+        }
+    }
+
     const auto& vertices = sphere->getVertices();
     if (vertices.empty() || projected.size() != vertices.size())
         return;

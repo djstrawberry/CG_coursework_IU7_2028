@@ -3,14 +3,11 @@
 // Adapter (интерфейс)	BaseCamera
 // ConAdapter (конкретный адаптер)	CameraAdapter
 // BaseAdaptee (интерфейс адаптируемого)	CameraImpl
-// ConAdaptee (конкретная реализация)	PerspectiveCameraImpl
-// adaptee->specificRequest()	m_impl->rotate() / m_impl->zoom()
+// ConAdaptee (конкретная реализация)	DefaultCameraImpl
 
 #include "BaseCamera.h"
 
 class CameraAdapter final: public BaseCamera {
-private:
-    std::shared_ptr<CameraImpl> m_impl;
 public:
     CameraAdapter() = delete;
     explicit CameraAdapter(std::shared_ptr<CameraImpl> impl);

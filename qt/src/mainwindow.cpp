@@ -1,5 +1,5 @@
 #include "../inc/mainwindow.h"
-#include "ui_mainwindow.h" // Подключаем сгенерированный класс интерфейса
+#include "ui_mainwindow.h"
 #include "../../managers/ManagerProvider.h"
 #include "../../managers/camera/CameraManager.h"
 #include "../../managers/scene/SceneManager.h"
@@ -17,19 +17,18 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , m_facade(std::make_shared<Facade>())
-    , ui(new Ui::MainWindow) // Инициализируем указатель на UI
+    , ui(new Ui::MainWindow)
 {
-    // Инициализируем компоненты формы из mainwindow.ui
     ui->setupUi(this);
 
-    // 1. Динамически подменяем заглушку QGraphicsView на твой кастомный класс Plane
+    // Подменяем заглушку QGraphicsView на Plane
     m_viewport = new Plane(this);
     int viewIndex = ui->horizontalLayout_main->indexOf(ui->graphicsView);
     ui->horizontalLayout_main->removeWidget(ui->graphicsView);
     ui->graphicsView->deleteLater(); 
-    ui->horizontalLayout_main->insertWidget(viewIndex, m_viewport, 3); // Возвращаем stretch = 3, как было в коде
+    ui->horizontalLayout_main->insertWidget(viewIndex, m_viewport, 3);
 
-    // 2. Связываем твои внутренние указатели с космическими виджетами из нового UI дизайна
+    // Связываем виджеты
     m_starRadiusBox         = ui->spinBox_starRadius;
     m_starPosXBox           = ui->spinBox_starX;
     m_starPosYBox           = ui->spinBox_starY;
@@ -43,9 +42,9 @@ MainWindow::MainWindow(QWidget *parent)
     m_planetOrbitRadiusBox  = ui->spinBox_planetOrbitRadius;
     m_planetOrbitAngleBox   = ui->spinBox_planetOrbitAngle;
     m_planetOrbitSpeedBox   = ui->spinBox_planetOrbitSpeed;
-    m_planetColorRBox       = ui->spinBox_planetColorR;
-    m_planetColorGBox       = ui->spinBox_planetColorG;
-    m_planetColorBBox       = ui->spinBox_planetColorB;
+
+    m_planetColorButton     = ui->button_pickPlanetColor;
+    m_lightColorPickerBtn = ui->button_pickColor;
 
     m_planetCountLabel      = ui->label_planetCount;
 
@@ -54,11 +53,13 @@ MainWindow::MainWindow(QWidget *parent)
     m_lightColorPickerBtn   = ui->button_pickColor;
     m_resetCameraBtn        = ui->button_resetView;
 
-    // 3. Вызываем методы настройки диапазонов значений и связывания сигналов
+    // Начальный цвет планеты
+    m_currentPlanetColor = QColor(51, 128, 230);  // Синий
+    updatePlanetColorButton();
+    updateLightColorButton();
+
     setupWidgetLimits();
     setupConnections();
-
-    // 4. Инициализируем сцену
     initializeScene();
 }
 
@@ -69,7 +70,6 @@ MainWindow::~MainWindow()
 
 void MainWindow::setupWidgetLimits()
 {
-    // Диапазоны параметров центральной звезды
     m_starRadiusBox->setRange(1.0, 50.0);
     m_starRadiusBox->setValue(8.0);
     m_starPosXBox->setRange(-100.0, 100.0);
@@ -79,7 +79,6 @@ void MainWindow::setupWidgetLimits()
     m_starPosZBox->setRange(-100.0, 100.0);
     m_starPosZBox->setValue(0.0);
 
-    // Диапазоны параметров материалов
     m_matAmbientBox->setRange(0.0, 1.0);
     m_matAmbientBox->setValue(0.3);
     m_matDiffuseBox->setRange(0.0, 1.0);
@@ -87,7 +86,6 @@ void MainWindow::setupWidgetLimits()
     m_matSpecularBox->setRange(0.0, 1.0);
     m_matSpecularBox->setValue(0.5);
 
-    // Диапазоны параметров орбитальных тел (планет)
     m_planetRadiusBox->setRange(0.5, 20.0);
     m_planetRadiusBox->setValue(2.0);
     m_planetOrbitRadiusBox->setRange(5.0, 100.0);
@@ -97,18 +95,10 @@ void MainWindow::setupWidgetLimits()
     m_planetOrbitSpeedBox->setRange(1.0, 180.0);
     m_planetOrbitSpeedBox->setValue(25.0);
     m_planetOrbitSpeedBox->setSuffix(" deg/s");
-    // Диапазоны каналов цвета планет
-    m_planetColorRBox->setRange(0.0, 1.0);
-    m_planetColorRBox->setValue(0.2);
-    m_planetColorGBox->setRange(0.0, 1.0);
-    m_planetColorGBox->setValue(0.5);
-    m_planetColorBBox->setRange(0.0, 1.0);
-    m_planetColorBBox->setValue(0.9);
 }
 
 void MainWindow::setupConnections()
 {
-    // Подключаем изменение параметров звезды и материалов к слоту обновления
     connect(m_starRadiusBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
     connect(m_starPosXBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
     connect(m_starPosYBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
@@ -118,11 +108,38 @@ void MainWindow::setupConnections()
     connect(m_matDiffuseBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
     connect(m_matSpecularBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
 
-    // Кнопки действий
     connect(m_lightColorPickerBtn, &QPushButton::clicked, this, &MainWindow::onLightColorChanged);
+    connect(m_planetColorButton, &QPushButton::clicked, this, &MainWindow::onPlanetColorClicked);
     connect(m_addPlanetBtn, &QPushButton::clicked, this, &MainWindow::onAddPlanetPressed);
     connect(m_removePlanetBtn, &QPushButton::clicked, this, &MainWindow::onRemovePlanetPressed);
     connect(m_resetCameraBtn, &QPushButton::clicked, this, &MainWindow::onCameraResetPressed);
+}
+
+void MainWindow::updatePlanetColorButton()
+{
+    m_planetColorButton->setStyleSheet(
+        QString("background-color: rgb(%1, %2, %3); color: white; font-weight: bold;")
+            .arg(m_currentPlanetColor.red())
+            .arg(m_currentPlanetColor.green())
+            .arg(m_currentPlanetColor.blue())
+    );
+}
+
+void MainWindow::updateLightColorButton()
+{
+    m_lightColorPickerBtn->setStyleSheet(
+        "background-color: rgb(255, 230, 102); color: black; font-weight: bold;"
+    );
+}
+
+void MainWindow::onPlanetColorClicked()
+{
+    QColor color = QColorDialog::getColor(m_currentPlanetColor, this, "Pick Planet Color");
+    if (color.isValid())
+    {
+        m_currentPlanetColor = color;
+        updatePlanetColorButton();
+    }
 }
 
 void MainWindow::initializeScene()
@@ -173,14 +190,18 @@ void MainWindow::syncPlanetOrbitCenters(const Vec3<double>& starCenter)
 
 void MainWindow::onStarParamsChanged()
 {
+    // Берём ТЕКУЩИЙ цвет освещения (тот что выбрал пользователь):
+    QColor lightColor = m_currentLightColor.isValid() ? m_currentLightColor : QColor(255, 230, 102);
+    
     Material mat;
-    mat.r = 1.0f;
-    mat.g = 0.75f;
-    mat.b = 0.15f;
+    mat.r = static_cast<float>(lightColor.redF());
+    mat.g = static_cast<float>(lightColor.greenF());
+    mat.b = static_cast<float>(lightColor.blueF());
     mat.ambient = static_cast<float>(m_matAmbientBox->value());
     mat.diffuse = static_cast<float>(m_matDiffuseBox->value());
     mat.specular = static_cast<float>(m_matSpecularBox->value());
     mat.luminous = true;
+    // ...
 
     const Vec3<double> starCenter = getStarCenter();
     const double starRadius = m_starRadiusBox->value();
@@ -199,12 +220,13 @@ void MainWindow::onStarParamsChanged()
     syncPlanetOrbitCenters(starCenter);
     m_viewport->update();
 }
+
 void MainWindow::onAddPlanetPressed()
 {
     Material mat;
-    mat.r = static_cast<float>(m_planetColorRBox->value());
-    mat.g = static_cast<float>(m_planetColorGBox->value());
-    mat.b = static_cast<float>(m_planetColorBBox->value());
+    mat.r = static_cast<float>(m_currentPlanetColor.redF());
+    mat.g = static_cast<float>(m_currentPlanetColor.greenF());
+    mat.b = static_cast<float>(m_currentPlanetColor.blueF());
     mat.ambient = 0.15f;
     mat.diffuse = 0.85f;
     mat.specular = 0.45f;
@@ -243,15 +265,24 @@ void MainWindow::onRemovePlanetPressed()
 
 void MainWindow::onLightColorChanged()
 {
-    QColor color = QColorDialog::getColor(Qt::yellow, this, "Pick Ambient Solar Light Color");
+    QColor color = QColorDialog::getColor(m_currentLightColor, this, "Pick Ambient Solar Light Color");
     if (color.isValid())
     {
+        m_currentLightColor = color;  // ← Сохраняем!
+        
         ManagerProvider::getDrawManager()->setLightColor(
             static_cast<float>(color.redF()),
             static_cast<float>(color.greenF()),
             static_cast<float>(color.blueF()),
             1.0f
         );
+        
+        m_lightColorPickerBtn->setStyleSheet(
+            QString("background-color: rgb(%1, %2, %3); color: black; font-weight: bold;")
+                .arg(color.red()).arg(color.green()).arg(color.blue())
+        );
+        
+        onStarParamsChanged();  // ← Обновляем звезду с новым цветом!
         m_viewport->update();
     }
 }
