@@ -202,10 +202,11 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: \
  /usr/include/c++/16/bits/stl_multimap.h \
  /home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.h \
  /home/anechka/CG_coursework_IU7_2028/managers/scene/../../scene/Scene.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../materials/Material.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.h \
- /usr/include/qt6/QtGui/QPainter /usr/include/qt6/QtGui/qpainter.h \
- /usr/include/qt6/QtGui/qtguiglobal.h /usr/include/qt6/QtCore/qglobal.h \
- /usr/include/c++/16/cstdint \
+ /usr/include/c++/16/array /usr/include/qt6/QtGui/QPainter \
+ /usr/include/qt6/QtGui/qpainter.h /usr/include/qt6/QtGui/qtguiglobal.h \
+ /usr/include/qt6/QtCore/qglobal.h /usr/include/c++/16/cstdint \
  /usr/lib/gcc/x86_64-redhat-linux/16/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/bits/stdint-least.h /usr/include/assert.h \
@@ -270,8 +271,7 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: \
  /usr/include/c++/16/bits/hashtable_policy.h /usr/include/c++/16/vector \
  /usr/include/c++/16/bits/stl_vector.h \
  /usr/include/c++/16/bits/stl_bvector.h \
- /usr/include/c++/16/bits/vector.tcc /usr/include/c++/16/array \
- /usr/include/c++/16/bits/binders.h \
+ /usr/include/c++/16/bits/vector.tcc /usr/include/c++/16/bits/binders.h \
  /usr/include/qt6/QtCore/qtmetamacros.h /usr/include/qt6/QtCore/qrect.h \
  /usr/include/qt6/QtCore/qcheckedint_impl.h \
  /usr/include/qt6/QtCore/qhashfunctions.h \

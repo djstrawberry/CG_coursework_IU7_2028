@@ -1,5 +1,6 @@
 #pragma once
 
+#include <array>
 #include <memory>
 #include <QPainter>
 
@@ -10,7 +11,7 @@ class DrawManager
 {
 private:
     std::shared_ptr<BasePainter> m_painter;
-    float m_lightColor[4] = {1.0f, 0.9f, 0.4f, 1.0f};
+    std::vector<float> m_lightColor = {1.0f, 0.9f, 0.4f, 1.0f};
 
 public:
     DrawManager() = default;
@@ -18,6 +19,6 @@ public:
 
     void setPainter(std::shared_ptr<BasePainter> painter);
     void setLightColor(float r, float g, float b, float intensity);
-    const float* getLightColor() const noexcept { return m_lightColor; }
+    std::vector<float> getLightColor() const noexcept { return m_lightColor; }
     void draw();
 };

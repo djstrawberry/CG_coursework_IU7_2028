@@ -49,7 +49,7 @@ Vec3<double> CameraAdapter::getCenter() const noexcept {
 
 void CameraAdapter::accept(std::shared_ptr<BaseVisitor> visitor) {
     if (visitor)
-        visitor->visit(m_impl);
+        visitor->visit(*this);
 }
 
 std::shared_ptr<BaseObject> CameraAdapter::clone() const {

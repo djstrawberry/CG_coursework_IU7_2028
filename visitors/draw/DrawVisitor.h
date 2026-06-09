@@ -41,7 +41,7 @@ private:
     std::shared_ptr<CameraImpl> m_camera;
     std::shared_ptr<BaseProjectionStrategy> m_projStrategy;
     std::shared_ptr<BaseCoordinateConvertStrategy> m_convertStrategy;
-    const float* m_lightColor = nullptr;
+    std::vector<float> m_lightColor;
     Vec3<double> m_lightSourcePos;
 
     mutable std::vector<GlowPass> m_glowPasses;
@@ -54,6 +54,21 @@ private:
                          int& r, int& g, int& b) const;
 
     void collectSphere(const std::shared_ptr<SphereImpl>& sphere) const;
+    void renderGlowPasses() const;
+    void renderTrianglePasses() const;
+    void correctAspectRatio(std::vector<Vec3<double>>& projected, size_t width, size_t height) const;
+    std::pair<Vec3<double>, double> computeScreenCenterAndRadius(
+        const std::vector<Vec3<double>>& projected, double sphereRadius) const;
+    void addGlowPass(const Vec3<double>& screenCenter, double screenRadius,
+                     const Material& mat, const float* light) const;
+    void processTriangle(const std::vector<Vec3<double>>& projected,
+                         const std::vector<Vec3<double>>& vertices,
+                         const Vec3<double>& center, const Vec3<double>& camPos,
+                         const Material& mat, size_t i0, size_t i1, size_t i2) const;
+    void processAllTriangles(const std::vector<Vec3<double>>& projected,
+                             const std::vector<Vec3<double>>& vertices,
+                             const Vec3<double>& center, const Vec3<double>& camPos,
+                             const Material& mat, size_t slices, size_t stacks) const;
 
 public:
     DrawVisitor() = delete;
@@ -61,13 +76,14 @@ public:
                 std::shared_ptr<BaseCoordinateConvertStrategy> convertStrategy,
                 std::shared_ptr<BasePainter> painter,
                 std::shared_ptr<CameraImpl> camera,
-                const float* lightColor,
+                std::vector<float> lightColor,
                 const Vec3<double>& lightSourcePos);
     ~DrawVisitor() override = default;
 
     void beginScene() const override;
     void flushScene() const override;
 
-    void visit(std::shared_ptr<CameraImpl> camera) const override;
-    void visit(std::shared_ptr<SphereImpl> sphere) const override;
+    void visit(const CelestialBody& body) const override;
+    void visit(const CameraAdapter& camera) const override;
+    void visit(const Composite& composite) const override;
 };

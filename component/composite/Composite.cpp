@@ -83,6 +83,9 @@ Vec3<double> Composite::getCenter() const noexcept {
 
 
 void Composite::accept(std::shared_ptr<BaseVisitor> visitor) {
+    if (!visitor)
+        return;
+    visitor->visit(*this);
     for (auto& [id, child] : m_objects) {
         child->accept(visitor);
     }

@@ -192,10 +192,7 @@ CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o: \
  /usr/include/c++/16/bits/ranges_uninitialized.h \
  /usr/include/c++/16/bits/ranges_algobase.h \
  /usr/include/c++/16/pstl/glue_memory_defs.h \
- /usr/include/c++/16/pstl/execution_defs.h /usr/include/c++/16/cstdint \
- /usr/lib/gcc/x86_64-redhat-linux/16/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
- /usr/include/bits/stdint-least.h \
+ /usr/include/c++/16/pstl/execution_defs.h \
  /home/anechka/CG_coursework_IU7_2028/commands/object/../../managers/ManagerProvider.h \
  /home/anechka/CG_coursework_IU7_2028/commands/object/../../managers/scene/SceneManager.h \
  /home/anechka/CG_coursework_IU7_2028/commands/object/../../managers/scene/../../scene/Scene.h \

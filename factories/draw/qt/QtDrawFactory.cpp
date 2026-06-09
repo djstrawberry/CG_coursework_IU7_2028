@@ -6,5 +6,8 @@ QtDrawFactory::QtDrawFactory(std::shared_ptr<QGraphicsScene> scene) : m_scene(sc
 
 std::unique_ptr<BasePainter> QtDrawFactory::createPainter()
 {
-    return std::make_unique<QtPainter>(m_scene.lock());
+    auto scenePtr = m_scene.lock();
+    if (!scenePtr)
+        throw std::runtime_error("congrats! you have nullptr");
+    return std::make_unique<QtPainter>(scenePtr);
 }

@@ -1,6 +1,6 @@
 #include "DefaultConvertCoordinatesStrategy.h"
 
-void DefaultConvertCoordinateStrategy::convertPoint(std::vector<Vec3<double>> &vertices, const size_t width,
+void DefaultConvertCoordinatesStrategy::convertPoint(std::vector<Vec3<double>> &vertices, const size_t width,
                                                     const size_t height)
 {
     size_t centerX = static_cast<size_t>(width / 2.0);

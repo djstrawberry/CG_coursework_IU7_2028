@@ -27,4 +27,4 @@ public:
 #include "ConvertCoordsStrategyCreator.hpp"
 
 using DefaultConvertCoordinatesStrategyCreator =
-    ConvertCoordinatesStrategyCreator<BaseCoordinateConvertStrategy, DefaultConvertCoordinateStrategy>;
+    ConvertCoordinatesStrategyCreator<BaseCoordinateConvertStrategy, DefaultConvertCoordinatesStrategy>;

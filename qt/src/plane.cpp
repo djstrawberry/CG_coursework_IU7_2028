@@ -2,7 +2,7 @@
 #include "../../managers/ManagerProvider.h"
 #include "../../managers/draw/DrawManager.h"
 #include "../../managers/camera/CameraManager.h"
-#include "../../factories/draw/DrawFactoryCreator.h"
+#include "../../factories/draw/qt/QtDrawFactory.h"
 #include "../../factories/draw/products/BasePainter.h"
 #include "../../factories/draw/qt/products/QtPainter.h"
 #include <QPainter>
@@ -17,8 +17,9 @@ Plane::Plane(QWidget *parent) : QWidget(parent) {
     m_scene = std::make_shared<QGraphicsScene>();
     m_scene->setSceneRect(0, 0, width(), height());
 
-    auto painter = ApplicationDrawFactoryCreator::createPainter(m_scene);
-    m_painter = std::shared_ptr<BasePainter>(std::move(painter));
+    auto factory = std::make_shared<QtDrawFactory>(m_scene);
+    auto painter = factory->createPainter();
+    m_painter = std::unique_ptr<BasePainter>(std::move(painter));
     ManagerProvider::getDrawManager()->setPainter(m_painter);
     updatePainterSize();
 }

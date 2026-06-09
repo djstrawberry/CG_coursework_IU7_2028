@@ -84,7 +84,6 @@ set(PROJECT_SOURCES
     
     # Factories - Draw
     factories/draw/BaseDrawFactory.h
-    factories/draw/DrawFactoryCreator.h
     factories/draw/products/BasePainter.h
     factories/draw/qt/QtDrawFactory.h
     factories/draw/qt/QtDrawFactory.cpp

@@ -1,5 +1,4 @@
-#ifndef BASE_COMMAND_H
-#define BASE_COMMAND_H
+#pragma once
 
 class BaseCommand {
 public:
@@ -9,4 +8,3 @@ public:
     virtual void execute() = 0;
 };
 
-#endif // BASE_COMMAND_H

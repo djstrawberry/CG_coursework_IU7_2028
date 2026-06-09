@@ -75,7 +75,7 @@ std::shared_ptr<SphereImpl> CelestialBody::getImpl() const {
 
 void CelestialBody::accept(std::shared_ptr<BaseVisitor> visitor) {
     if (visitor) {
-        visitor->visit(m_impl);  
+        visitor->visit(*this);  
     }
 }
 

@@ -36,6 +36,6 @@ using DrawVisitorCreator = VisitorCreator<
     std::shared_ptr<BaseCoordinateConvertStrategy>,
     std::shared_ptr<BasePainter>,
     std::shared_ptr<CameraImpl>,
-    const float*,
+    std::vector<float>,
     Vec3<double>
 >;

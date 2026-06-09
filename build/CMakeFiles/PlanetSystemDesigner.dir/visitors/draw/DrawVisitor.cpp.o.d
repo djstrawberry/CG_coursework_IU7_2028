@@ -200,6 +200,19 @@ CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o: \
  /usr/include/c++/16/bits/stl_bvector.h \
  /usr/include/c++/16/bits/vector.tcc \
  /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/conversion/BaseCoordinateConvertStrategy.h \
+ /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/celestial/CelestialBody.h \
+ /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/celestial/../BaseModel.h \
+ /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/celestial/../../VisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/celestial/../../../Primitive.h \
+ /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/celestial/../../../../BaseObject.h \
+ /usr/include/c++/16/map /usr/include/c++/16/bits/stl_tree.h \
+ /usr/include/c++/16/bits/node_handle.h \
+ /usr/include/c++/16/bits/stl_map.h \
+ /usr/include/c++/16/bits/stl_multimap.h \
+ /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/invisible/camera/CameraAdapter.h \
+ /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/invisible/camera/BaseCamera.h \
+ /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/invisible/camera/../InvisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/composite/Composite.h \
  /usr/include/c++/16/algorithm /usr/include/c++/16/bits/stl_algo.h \
  /usr/include/c++/16/bits/algorithmfwd.h \
  /usr/include/c++/16/bits/stl_heap.h \

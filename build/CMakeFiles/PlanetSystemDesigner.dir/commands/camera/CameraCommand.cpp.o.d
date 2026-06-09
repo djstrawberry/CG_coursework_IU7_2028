@@ -172,9 +172,8 @@ CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o: \
  /usr/include/c++/16/tr1/modified_bessel_func.tcc \
  /usr/include/c++/16/tr1/poly_hermite.tcc \
  /usr/include/c++/16/tr1/poly_laguerre.tcc \
- /usr/include/c++/16/tr1/riemann_zeta.tcc \
- /home/anechka/CG_coursework_IU7_2028/commands/camera/../../managers/ManagerProvider.h \
- /usr/include/c++/16/memory /usr/include/c++/16/bits/stl_tempbuf.h \
+ /usr/include/c++/16/tr1/riemann_zeta.tcc /usr/include/c++/16/memory \
+ /usr/include/c++/16/bits/stl_tempbuf.h \
  /usr/include/c++/16/bits/stl_uninitialized.h \
  /usr/include/c++/16/bits/stl_raw_storage_iter.h \
  /usr/include/c++/16/bits/align.h /usr/include/c++/16/bits/unique_ptr.h \
@@ -193,6 +192,7 @@ CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o: \
  /usr/include/c++/16/bits/ranges_algobase.h \
  /usr/include/c++/16/pstl/glue_memory_defs.h \
  /usr/include/c++/16/pstl/execution_defs.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/camera/../../managers/ManagerProvider.h \
  /home/anechka/CG_coursework_IU7_2028/commands/camera/../../managers/camera/CameraManager.h \
  /home/anechka/CG_coursework_IU7_2028/commands/camera/../../managers/camera/../../component/primitive/invisible/camera/BaseCamera.h \
  /home/anechka/CG_coursework_IU7_2028/commands/camera/../../managers/camera/../../component/primitive/invisible/camera/../InvisibleObject.h \

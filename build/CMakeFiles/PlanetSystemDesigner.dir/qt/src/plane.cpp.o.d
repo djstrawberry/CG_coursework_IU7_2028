@@ -381,10 +381,9 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/VectorException.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/DrawFactoryCreator.h \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/BaseDrawFactory.h \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/products/BasePainter.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/QtDrawFactory.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/../BaseDrawFactory.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/../products/BasePainter.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/products/QtPainter.h \
  /usr/include/qt6/QtGui/QMouseEvent /usr/include/qt6/QtGui/qevent.h \
  /usr/include/qt6/QtCore/qcoreevent.h \
