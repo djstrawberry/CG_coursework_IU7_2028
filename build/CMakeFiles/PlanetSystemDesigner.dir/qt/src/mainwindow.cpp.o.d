@@ -396,6 +396,35 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../vector/../exceptions/vector/VectorException.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../vector/../exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location \
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/ui_mainwindow.h \
+ /usr/include/qt6/QtCore/QVariant /usr/include/qt6/QtWidgets/QApplication \
+ /usr/include/qt6/QtWidgets/qapplication.h \
+ /usr/include/qt6/QtCore/qcoreapplication.h \
+ /usr/include/qt6/QtCore/qcoreevent.h \
+ /usr/include/qt6/QtCore/qnativeinterface.h \
+ /usr/include/qt6/QtCore/qcoreapplication_platform.h \
+ /usr/include/qt6/QtGui/qguiapplication.h \
+ /usr/include/qt6/QtGui/qinputmethod.h \
+ /usr/include/qt6/QtGui/qguiapplication_platform.h \
+ /usr/include/qt6/QtWidgets/QDoubleSpinBox \
+ /usr/include/qt6/QtWidgets/QGraphicsView \
+ /usr/include/qt6/QtWidgets/qgraphicsview.h \
+ /usr/include/qt6/QtGui/qpainter.h /usr/include/qt6/QtGui/qtextoption.h \
+ /usr/include/qt6/QtWidgets/qscrollarea.h \
+ /usr/include/qt6/QtWidgets/qabstractscrollarea.h \
+ /usr/include/qt6/QtWidgets/QGridLayout \
+ /usr/include/qt6/QtWidgets/qgridlayout.h \
+ /usr/include/qt6/QtWidgets/qlayout.h \
+ /usr/include/qt6/QtWidgets/qlayoutitem.h \
+ /usr/include/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/qt6/QtWidgets/QGroupBox \
+ /usr/include/qt6/QtWidgets/qgroupbox.h \
+ /usr/include/qt6/QtWidgets/QHBoxLayout /usr/include/qt6/QtWidgets/QLabel \
+ /usr/include/qt6/QtWidgets/QMainWindow \
+ /usr/include/qt6/QtWidgets/QPushButton \
+ /usr/include/qt6/QtWidgets/QSpacerItem \
+ /usr/include/qt6/QtWidgets/QVBoxLayout \
+ /usr/include/qt6/QtWidgets/QWidget \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/ManagerProvider.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/CameraManager.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/BaseCamera.h \
@@ -406,8 +435,7 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/SceneManager.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../scene/Scene.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/draw/DrawManager.h \
- /usr/include/qt6/QtGui/QPainter /usr/include/qt6/QtGui/qpainter.h \
- /usr/include/qt6/QtGui/qtextoption.h \
+ /usr/include/qt6/QtGui/QPainter \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/invisible/camera/CameraAdapter.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/invisible/camera/default/DefaultCamera.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/invisible/camera/default/../impl/CameraImpl.h \
@@ -421,16 +449,7 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/../../VisibleObject.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/../impl/SphereImpl.h \
  /usr/include/qt6/QtWidgets/QVBoxLayout \
- /usr/include/qt6/QtWidgets/qboxlayout.h \
- /usr/include/qt6/QtWidgets/qlayout.h \
- /usr/include/qt6/QtWidgets/qlayoutitem.h \
- /usr/include/qt6/QtWidgets/qgridlayout.h \
  /usr/include/qt6/QtWidgets/QHBoxLayout \
- /usr/include/qt6/QtWidgets/QFormLayout \
- /usr/include/qt6/QtWidgets/qformlayout.h \
- /usr/include/qt6/QtWidgets/QLayout \
  /usr/include/qt6/QtWidgets/QColorDialog \
  /usr/include/qt6/QtWidgets/qcolordialog.h \
- /usr/include/qt6/QtWidgets/qdialog.h \
- /usr/include/qt6/QtWidgets/QGroupBox \
- /usr/include/qt6/QtWidgets/qgroupbox.h /usr/include/qt6/QtCore/QString
+ /usr/include/qt6/QtWidgets/qdialog.h /usr/include/qt6/QtCore/QString

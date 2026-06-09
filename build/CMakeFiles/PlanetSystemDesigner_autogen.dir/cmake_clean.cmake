@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/PlanetSystemDesigner_autogen"
+  "PlanetSystemDesigner_autogen/include/ui/ui_mainwindow.h"
   "PlanetSystemDesigner_autogen/mocs_compilation.cpp"
   "PlanetSystemDesigner_autogen/timestamp"
 )

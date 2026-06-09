@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/ui)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets OpenGLWidgets)
 
@@ -129,6 +130,7 @@ set(PROJECT_SOURCES
     qt/src/mainwindow.cpp
     qt/inc/plane.h
     qt/src/plane.cpp
+    ui/mainwindow.ui
 )
 
 qt_add_executable(PlanetSystemDesigner ${PROJECT_SOURCES})

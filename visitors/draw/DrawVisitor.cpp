@@ -17,16 +17,13 @@ int clampChannel(double value)
 bool isFrontFacing(const Vec3<double>& v0,
                    const Vec3<double>& v1,
                    const Vec3<double>& v2,
-                   const Vec3<double>& camPos)
+                   const Vec3<double>& camPos,
+                   const Vec3<double>& sphereCenter)
 {
-    const Vec3<double> edge1 = v1 - v0;
-    const Vec3<double> edge2 = v2 - v0;
-    Vec3<double> normal = edge1.cross(edge2);
-    if (normal.length() < 1e-9)
-        return false;
-
-    normal = normal.normalized();
     const Vec3<double> triCenter = (v0 + v1 + v2) / 3.0;
+    // Истинная нормаль сферы направлена от центра планеты наружу
+    const Vec3<double> normal = (triCenter - sphereCenter).normalized();
+    // Проверяем, смотрит ли полигон на камеру
     return normal.dot(camPos - triCenter) > 0.0;
 }
 
@@ -117,7 +114,6 @@ void DrawVisitor::collectSphere(const std::shared_ptr<SphereImpl>& sphere) const
     const Material mat = sphere->getMaterial();
     const Vec3<double> center = sphere->getCenter();
     const Vec3<double> camPos = m_camera->getPosition();
-
     const float* light = m_lightColor ? m_lightColor : kDefaultLight;
 
     std::vector<Vec3<double>> projected;
@@ -143,10 +139,9 @@ void DrawVisitor::collectSphere(const std::shared_ptr<SphereImpl>& sphere) const
     }
     if (visibleCount == 0)
         return;
-
+    
     const Vec3<double> screenCenter(sumX / static_cast<double>(visibleCount),
                                     sumY / static_cast<double>(visibleCount), 0.0);
-
     double screenRadius = 0.0;
     for (size_t i = 0; i < projected.size(); ++i) {
         if (projected[i].getZ() <= 0.0)
@@ -177,33 +172,36 @@ void DrawVisitor::collectSphere(const std::shared_ptr<SphereImpl>& sphere) const
 
     const size_t slices = sphere->getSlices();
     const size_t stacks = sphere->getStacks();
-
     auto tryAddTriangle = [&](size_t i0, size_t i1, size_t i2) {
         if (i0 >= projected.size() || i1 >= projected.size() || i2 >= projected.size())
             return;
         if (projected[i0].getZ() <= 0.0 || projected[i1].getZ() <= 0.0 || projected[i2].getZ() <= 0.0)
             return;
-        if (!isFrontFacing(vertices[i0], vertices[i1], vertices[i2], camPos))
+        
+        // 1. Передаём глобальные координаты камеры и центр планеты
+        if (!isFrontFacing(vertices[i0], vertices[i1], vertices[i2], camPos, center))
             return;
 
+        // 2. Идеальные нормали от центра к вершине
         Vec3<double> n0 = (vertices[i0] - center).normalized();
         Vec3<double> n1 = (vertices[i1] - center).normalized();
         Vec3<double> n2 = (vertices[i2] - center).normalized();
+
+        // 3. Векторы взгляда в мировых координатах
         Vec3<double> v0 = (camPos - vertices[i0]).normalized();
         Vec3<double> v1 = (camPos - vertices[i1]).normalized();
         Vec3<double> v2 = (camPos - vertices[i2]).normalized();
 
-        Vec3<double> l0;
-        Vec3<double> l1;
-        Vec3<double> l2;
+        // 4. Векторы освещения в мировых координатах
+        Vec3<double> l0, l1, l2;
         if (mat.luminous) {
-            l0 = l1 = l2 = (camPos - center).normalized();
+            Vec3<double> camDir = (camPos - center).normalized();
+            l0 = l1 = l2 = camDir;
         } else {
             l0 = (m_lightSourcePos - vertices[i0]).normalized();
             l1 = (m_lightSourcePos - vertices[i1]).normalized();
             l2 = (m_lightSourcePos - vertices[i2]).normalized();
         }
-
         int r0 = 0, g0 = 0, b0 = 0;
         int r1 = 0, g1 = 0, b1 = 0;
         int r2 = 0, g2 = 0, b2 = 0;

@@ -1,4 +1,5 @@
 #include "../inc/mainwindow.h"
+#include "ui_mainwindow.h" // Подключаем сгенерированный класс интерфейса
 #include "../../managers/ManagerProvider.h"
 #include "../../managers/camera/CameraManager.h"
 #include "../../managers/scene/SceneManager.h"
@@ -10,140 +11,104 @@
 #include "../../component/primitive/visible/model/celestial/CelestialBody.h"
 #include <QVBoxLayout>
 #include <QHBoxLayout>
-#include <QFormLayout>
 #include <QColorDialog>
-#include <QGroupBox>
 #include <QString>
 
 MainWindow::MainWindow(QWidget *parent)
-    : QMainWindow(parent), m_facade(std::make_shared<Facade>())
+    : QMainWindow(parent)
+    , m_facade(std::make_shared<Facade>())
+    , ui(new Ui::MainWindow) // Инициализируем указатель на UI
 {
-    setupUI();
+    // Инициализируем компоненты формы из mainwindow.ui
+    ui->setupUi(this);
+
+    // 1. Динамически подменяем заглушку QGraphicsView на твой кастомный класс Plane
+    m_viewport = new Plane(this);
+    int viewIndex = ui->horizontalLayout_main->indexOf(ui->graphicsView);
+    ui->horizontalLayout_main->removeWidget(ui->graphicsView);
+    ui->graphicsView->deleteLater(); 
+    ui->horizontalLayout_main->insertWidget(viewIndex, m_viewport, 3); // Возвращаем stretch = 3, как было в коде
+
+    // 2. Связываем твои внутренние указатели с космическими виджетами из нового UI дизайна
+    m_starRadiusBox         = ui->spinBox_starRadius;
+    m_starPosXBox           = ui->spinBox_starX;
+    m_starPosYBox           = ui->spinBox_starY;
+    m_starPosZBox           = ui->spinBox_starZ;
+
+    m_matAmbientBox         = ui->spinBox_matAmbient;
+    m_matDiffuseBox         = ui->spinBox_matDiffuse;
+    m_matSpecularBox        = ui->spinBox_matSpecular;
+
+    m_planetRadiusBox       = ui->spinBox_planetRadius;
+    m_planetOrbitRadiusBox  = ui->spinBox_planetOrbitRadius;
+    m_planetOrbitAngleBox   = ui->spinBox_planetOrbitAngle;
+    m_planetOrbitSpeedBox   = ui->spinBox_planetOrbitSpeed;
+    m_planetColorRBox       = ui->spinBox_planetColorR;
+    m_planetColorGBox       = ui->spinBox_planetColorG;
+    m_planetColorBBox       = ui->spinBox_planetColorB;
+
+    m_planetCountLabel      = ui->label_planetCount;
+
+    m_addPlanetBtn          = ui->button_addPlanet;
+    m_removePlanetBtn       = ui->button_removePlanet;
+    m_lightColorPickerBtn   = ui->button_pickColor;
+    m_resetCameraBtn        = ui->button_resetView;
+
+    // 3. Вызываем методы настройки диапазонов значений и связывания сигналов
+    setupWidgetLimits();
+    setupConnections();
+
+    // 4. Инициализируем сцену
     initializeScene();
 }
 
-void MainWindow::setupUI()
+MainWindow::~MainWindow()
 {
-    QWidget* centralWidget = new QWidget(this);
-    QHBoxLayout* mainLayout = new QHBoxLayout(centralWidget);
+    delete ui;
+}
 
-    m_viewport = new Plane(this);
-    mainLayout->addWidget(m_viewport, 3);
-
-    QWidget* controlPanel = new QWidget(this);
-    QVBoxLayout* controlLayout = new QVBoxLayout(controlPanel);
-
-    // Star parameters
-    QGroupBox* starGroup = new QGroupBox("Central Star (Sphere)", this);
-    QFormLayout* starForm = new QFormLayout(starGroup);
-
-    m_starRadiusBox = new QDoubleSpinBox(this);
+void MainWindow::setupWidgetLimits()
+{
+    // Диапазоны параметров центральной звезды
     m_starRadiusBox->setRange(1.0, 50.0);
     m_starRadiusBox->setValue(8.0);
-    starForm->addRow("Radius:", m_starRadiusBox);
-
-    m_starPosXBox = new QDoubleSpinBox(this);
     m_starPosXBox->setRange(-100.0, 100.0);
     m_starPosXBox->setValue(0.0);
-    starForm->addRow("X Pos:", m_starPosXBox);
-
-    m_starPosYBox = new QDoubleSpinBox(this);
     m_starPosYBox->setRange(-100.0, 100.0);
     m_starPosYBox->setValue(0.0);
-    starForm->addRow("Y Pos:", m_starPosYBox);
-
-    m_starPosZBox = new QDoubleSpinBox(this);
     m_starPosZBox->setRange(-100.0, 100.0);
     m_starPosZBox->setValue(0.0);
-    starForm->addRow("Z Pos:", m_starPosZBox);
 
-    controlLayout->addWidget(starGroup);
-
-    // Material parameters
-    QGroupBox* materialGroup = new QGroupBox("Material Settings", this);
-    QFormLayout* materialForm = new QFormLayout(materialGroup);
-
-    m_matAmbientBox = new QDoubleSpinBox(this);
+    // Диапазоны параметров материалов
     m_matAmbientBox->setRange(0.0, 1.0);
     m_matAmbientBox->setValue(0.3);
-    materialForm->addRow("Ambient:", m_matAmbientBox);
-
-    m_matDiffuseBox = new QDoubleSpinBox(this);
     m_matDiffuseBox->setRange(0.0, 1.0);
     m_matDiffuseBox->setValue(0.8);
-    materialForm->addRow("Diffuse:", m_matDiffuseBox);
-
-    m_matSpecularBox = new QDoubleSpinBox(this);
     m_matSpecularBox->setRange(0.0, 1.0);
     m_matSpecularBox->setValue(0.5);
-    materialForm->addRow("Specular:", m_matSpecularBox);
 
-    controlLayout->addWidget(materialGroup);
-
-    QGroupBox* planetGroup = new QGroupBox("Planets", this);
-    QFormLayout* planetForm = new QFormLayout(planetGroup);
-
-    m_planetRadiusBox = new QDoubleSpinBox(this);
+    // Диапазоны параметров орбитальных тел (планет)
     m_planetRadiusBox->setRange(0.5, 20.0);
     m_planetRadiusBox->setValue(2.0);
-    planetForm->addRow("Radius:", m_planetRadiusBox);
-
-    m_planetOrbitRadiusBox = new QDoubleSpinBox(this);
     m_planetOrbitRadiusBox->setRange(5.0, 100.0);
     m_planetOrbitRadiusBox->setValue(20.0);
-    planetForm->addRow("Orbit Radius:", m_planetOrbitRadiusBox);
-
-    m_planetOrbitAngleBox = new QDoubleSpinBox(this);
     m_planetOrbitAngleBox->setRange(0.0, 360.0);
     m_planetOrbitAngleBox->setValue(0.0);
-    planetForm->addRow("Orbit Angle:", m_planetOrbitAngleBox);
-
-    m_planetOrbitSpeedBox = new QDoubleSpinBox(this);
     m_planetOrbitSpeedBox->setRange(1.0, 180.0);
     m_planetOrbitSpeedBox->setValue(25.0);
     m_planetOrbitSpeedBox->setSuffix(" deg/s");
-    planetForm->addRow("Orbit Speed:", m_planetOrbitSpeedBox);
-
-    m_planetColorRBox = new QDoubleSpinBox(this);
+    // Диапазоны каналов цвета планет
     m_planetColorRBox->setRange(0.0, 1.0);
     m_planetColorRBox->setValue(0.2);
-    planetForm->addRow("Color R:", m_planetColorRBox);
-
-    m_planetColorGBox = new QDoubleSpinBox(this);
     m_planetColorGBox->setRange(0.0, 1.0);
     m_planetColorGBox->setValue(0.5);
-    planetForm->addRow("Color G:", m_planetColorGBox);
-
-    m_planetColorBBox = new QDoubleSpinBox(this);
     m_planetColorBBox->setRange(0.0, 1.0);
     m_planetColorBBox->setValue(0.9);
-    planetForm->addRow("Color B:", m_planetColorBBox);
+}
 
-    m_planetCountLabel = new QLabel("Planets: 0", this);
-    planetForm->addRow(m_planetCountLabel);
-
-    m_addPlanetBtn = new QPushButton("Add Planet", this);
-    m_removePlanetBtn = new QPushButton("Remove Last Planet", this);
-    planetForm->addRow(m_addPlanetBtn);
-    planetForm->addRow(m_removePlanetBtn);
-
-    controlLayout->addWidget(planetGroup);
-
-    // Lighting
-    QGroupBox* lightGroup = new QGroupBox("Illumination Color", this);
-    QVBoxLayout* lightBoxLayout = new QVBoxLayout(lightGroup);
-    m_lightColorPickerBtn = new QPushButton("Pick Light Color", this);
-    lightBoxLayout->addWidget(m_lightColorPickerBtn);
-    controlLayout->addWidget(lightGroup);
-
-    m_resetCameraBtn = new QPushButton("Reset Viewports", this);
-    controlLayout->addWidget(m_resetCameraBtn);
-
-    mainLayout->addWidget(controlPanel, 1);
-    setCentralWidget(centralWidget);
-    setWindowTitle("Planet System Designer");
-
-    // Signals
+void MainWindow::setupConnections()
+{
+    // Подключаем изменение параметров звезды и материалов к слоту обновления
     connect(m_starRadiusBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
     connect(m_starPosXBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
     connect(m_starPosYBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
@@ -153,6 +118,7 @@ void MainWindow::setupUI()
     connect(m_matDiffuseBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
     connect(m_matSpecularBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
 
+    // Кнопки действий
     connect(m_lightColorPickerBtn, &QPushButton::clicked, this, &MainWindow::onLightColorChanged);
     connect(m_addPlanetBtn, &QPushButton::clicked, this, &MainWindow::onAddPlanetPressed);
     connect(m_removePlanetBtn, &QPushButton::clicked, this, &MainWindow::onRemovePlanetPressed);
@@ -161,19 +127,15 @@ void MainWindow::setupUI()
 
 void MainWindow::initializeScene()
 {
-    // Создаём CameraImpl
     auto cameraImpl = std::make_shared<DefaultCameraImpl>();
     cameraImpl->setPosition({0.0, 15.0, 30.0});
     cameraImpl->setTarget({0.0, 0.0, 0.0});
     cameraImpl->setFov(60.0);
     
-    // Создаём камеру через адаптер
     auto camera = std::make_shared<CameraAdapter>(cameraImpl);
     ManagerProvider::getCameraManager()->addCamera(camera);
-
     ManagerProvider::getDrawManager()->setLightColor(1.0f, 0.9f, 0.4f, 1.0f);
 
-    // Начальная звезда
     onStarParamsChanged();
     startOrbitAnimation();
 }
@@ -222,8 +184,8 @@ void MainWindow::onStarParamsChanged()
 
     const Vec3<double> starCenter = getStarCenter();
     const double starRadius = m_starRadiusBox->value();
-
     auto sceneManager = ManagerProvider::getSceneManager();
+
     if (sceneManager->getObject(kStarObjectId)) {
         m_facade->execute(std::make_shared<UpdateCelestialBodyCommand>(
             kStarObjectId, starRadius, starCenter, mat
@@ -237,7 +199,6 @@ void MainWindow::onStarParamsChanged()
     syncPlanetOrbitCenters(starCenter);
     m_viewport->update();
 }
-
 void MainWindow::onAddPlanetPressed()
 {
     Material mat;
@@ -264,7 +225,7 @@ void MainWindow::onAddPlanetPressed()
 
     m_facade->execute(addPlanetCmd);
     m_planetIds.push_back(addPlanetCmd->getAssignedId());
-    m_planetCountLabel->setText(QString("Planets: %1").arg(m_planetIds.size()));
+    m_planetCountLabel->setText(QString("PLANETS: %1").arg(m_planetIds.size()));
     m_viewport->update();
 }
 
@@ -276,7 +237,7 @@ void MainWindow::onRemovePlanetPressed()
     const size_t planetId = m_planetIds.back();
     m_facade->execute(std::make_shared<RemoveCelestialBodyCommand>(planetId));
     m_planetIds.pop_back();
-    m_planetCountLabel->setText(QString("Planets: %1").arg(m_planetIds.size()));
+    m_planetCountLabel->setText(QString("PLANETS: %1").arg(m_planetIds.size()));
     m_viewport->update();
 }
 

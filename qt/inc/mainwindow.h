@@ -14,12 +14,21 @@
 #include "../../facade/Facade.h"
 #include "../../vector/Vec3.h"
 
+QT_BEGIN_NAMESPACE
+
+namespace Ui
+{
+    class MainWindow;
+}
+
+QT_END_NAMESPACE
+
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
     MainWindow(QWidget *parent = nullptr);
-    ~MainWindow() override = default;
+    ~MainWindow() override;
 
 private slots:
     void onStarParamsChanged();
@@ -30,6 +39,9 @@ private slots:
     void onOrbitTick();
 
 private:
+    Ui::MainWindow *ui;
+    void setupConnections();
+    void setupWidgetLimits();
     void setupUI();
     void initializeScene();
     void startOrbitAnimation();
