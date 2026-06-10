@@ -629,18 +629,6 @@
 			null
 		],
 		[
-			"/home/anechka/CG_coursework_IU7_2028/exceptions/matrix/MatrixException.h",
-			"MU",
-			"FQWGK3LBGC/moc_MatrixException.cpp",
-			null
-		],
-		[
-			"/home/anechka/CG_coursework_IU7_2028/exceptions/model/ModelException.h",
-			"MU",
-			"ELSDOVP75J/moc_ModelException.cpp",
-			null
-		],
-		[
 			"/home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.h",
 			"MU",
 			"C5EJGOCP36/moc_SceneException.cpp",
@@ -951,16 +939,6 @@
 		],
 		[
 			"/home/anechka/CG_coursework_IU7_2028/exceptions/managers/camera/CameraManagerException.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/anechka/CG_coursework_IU7_2028/exceptions/matrix/MatrixException.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/anechka/CG_coursework_IU7_2028/exceptions/model/ModelException.cpp",
 			"MU",
 			null
 		],

@@ -29,8 +29,6 @@ PlanetSystemDesigner: \
   CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o \
-  CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o \
-  CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/exceptions/vector/VectorException.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o \
@@ -168,10 +166,6 @@ CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/BaseManagerException.cpp.o:
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.o:
-
-CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o:
-
-CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o:
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o:
 

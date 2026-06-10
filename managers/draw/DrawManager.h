@@ -19,6 +19,6 @@ public:
 
     void setPainter(std::shared_ptr<BasePainter> painter);
     void setLightColor(float r, float g, float b, float intensity);
-    std::vector<float> getLightColor() const noexcept { return m_lightColor; }
+    std::vector<float> getLightColor() const noexcept;
     void draw();
 };

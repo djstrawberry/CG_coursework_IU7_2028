@@ -21,14 +21,12 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    // Подменяем заглушку QGraphicsView на Plane
     m_viewport = new Plane(this);
     int viewIndex = ui->horizontalLayout_main->indexOf(ui->graphicsView);
     ui->horizontalLayout_main->removeWidget(ui->graphicsView);
     ui->graphicsView->deleteLater(); 
     ui->horizontalLayout_main->insertWidget(viewIndex, m_viewport, 3);
 
-    // Связываем виджеты
     m_starRadiusBox         = ui->spinBox_starRadius;
     m_starPosXBox           = ui->spinBox_starX;
     m_starPosYBox           = ui->spinBox_starY;
@@ -53,8 +51,7 @@ MainWindow::MainWindow(QWidget *parent)
     m_lightColorPickerBtn   = ui->button_pickColor;
     m_resetCameraBtn        = ui->button_resetView;
 
-    // Начальный цвет планеты
-    m_currentPlanetColor = QColor(51, 128, 230);  // Синий
+    m_currentPlanetColor = QColor(51, 128, 230);  // BLUE
     updatePlanetColorButton();
     updateLightColorButton();
 
@@ -190,7 +187,6 @@ void MainWindow::syncPlanetOrbitCenters(const Vec3<double>& starCenter)
 
 void MainWindow::onStarParamsChanged()
 {
-    // Берём ТЕКУЩИЙ цвет освещения (тот что выбрал пользователь):
     QColor lightColor = m_currentLightColor.isValid() ? m_currentLightColor : QColor(255, 230, 102);
     
     Material mat;
@@ -282,7 +278,7 @@ void MainWindow::onLightColorChanged()
                 .arg(color.red()).arg(color.green()).arg(color.blue())
         );
         
-        onStarParamsChanged();  // ← Обновляем звезду с новым цветом!
+        onStarParamsChanged(); 
         m_viewport->update();
     }
 }

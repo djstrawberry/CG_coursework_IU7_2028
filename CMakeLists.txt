@@ -115,10 +115,6 @@ set(PROJECT_SOURCES
     exceptions/managers/BaseManagerException.cpp
     exceptions/managers/camera/CameraManagerException.h
     exceptions/managers/camera/CameraManagerException.cpp
-    exceptions/matrix/MatrixException.h
-    exceptions/matrix/MatrixException.cpp
-    exceptions/model/ModelException.h
-    exceptions/model/ModelException.cpp
     exceptions/scene/SceneException.h
     exceptions/scene/SceneException.cpp
     exceptions/vector/VectorException.h

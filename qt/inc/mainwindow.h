@@ -1,5 +1,4 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#pragma once
 
 #include <QMainWindow>
 #include <QPushButton>
@@ -88,4 +87,3 @@ private:
     QElapsedTimer m_frameTimer;
 };
 
-#endif // MAINWINDOW_H

@@ -1,5 +1,4 @@
-#ifndef SCENE_MANAGER_H
-#define SCENE_MANAGER_H
+#pragma once
 
 #include "../../scene/Scene.h"
 #include "../../visitors/BaseVisitor.h"
@@ -31,5 +30,3 @@ public:
 private:
     std::shared_ptr<Scene> m_scene;
 };
-
-#endif // SCENE_MANAGER_H

@@ -515,54 +515,6 @@ exceptions/managers/camera/CameraManagerException.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/exceptions/managers/camera/CameraManagerException.cpp.s
 .PHONY : exceptions/managers/camera/CameraManagerException.cpp.s
 
-exceptions/matrix/MatrixException.o: exceptions/matrix/MatrixException.cpp.o
-.PHONY : exceptions/matrix/MatrixException.o
-
-# target to build an object file
-exceptions/matrix/MatrixException.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.o
-.PHONY : exceptions/matrix/MatrixException.cpp.o
-
-exceptions/matrix/MatrixException.i: exceptions/matrix/MatrixException.cpp.i
-.PHONY : exceptions/matrix/MatrixException.i
-
-# target to preprocess a source file
-exceptions/matrix/MatrixException.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.i
-.PHONY : exceptions/matrix/MatrixException.cpp.i
-
-exceptions/matrix/MatrixException.s: exceptions/matrix/MatrixException.cpp.s
-.PHONY : exceptions/matrix/MatrixException.s
-
-# target to generate assembly for a file
-exceptions/matrix/MatrixException.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/exceptions/matrix/MatrixException.cpp.s
-.PHONY : exceptions/matrix/MatrixException.cpp.s
-
-exceptions/model/ModelException.o: exceptions/model/ModelException.cpp.o
-.PHONY : exceptions/model/ModelException.o
-
-# target to build an object file
-exceptions/model/ModelException.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.o
-.PHONY : exceptions/model/ModelException.cpp.o
-
-exceptions/model/ModelException.i: exceptions/model/ModelException.cpp.i
-.PHONY : exceptions/model/ModelException.i
-
-# target to preprocess a source file
-exceptions/model/ModelException.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.i
-.PHONY : exceptions/model/ModelException.cpp.i
-
-exceptions/model/ModelException.s: exceptions/model/ModelException.cpp.s
-.PHONY : exceptions/model/ModelException.s
-
-# target to generate assembly for a file
-exceptions/model/ModelException.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/exceptions/model/ModelException.cpp.s
-.PHONY : exceptions/model/ModelException.cpp.s
-
 exceptions/scene/SceneException.o: exceptions/scene/SceneException.cpp.o
 .PHONY : exceptions/scene/SceneException.o
 
@@ -1003,12 +955,6 @@ help:
 	@echo "... exceptions/managers/camera/CameraManagerException.o"
 	@echo "... exceptions/managers/camera/CameraManagerException.i"
 	@echo "... exceptions/managers/camera/CameraManagerException.s"
-	@echo "... exceptions/matrix/MatrixException.o"
-	@echo "... exceptions/matrix/MatrixException.i"
-	@echo "... exceptions/matrix/MatrixException.s"
-	@echo "... exceptions/model/ModelException.o"
-	@echo "... exceptions/model/ModelException.i"
-	@echo "... exceptions/model/ModelException.s"
 	@echo "... exceptions/scene/SceneException.o"
 	@echo "... exceptions/scene/SceneException.i"
 	@echo "... exceptions/scene/SceneException.s"

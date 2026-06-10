@@ -19,6 +19,10 @@ void DrawManager::setLightColor(float r, float g, float b, float intensity)
     m_lightColor[3] = intensity;
 }
 
+std::vector<float>  DrawManager::getLightColor() const noexcept { 
+    return m_lightColor; 
+}
+
 void DrawManager::draw()
 {
     if (!m_painter)

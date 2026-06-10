@@ -10,128 +10,10 @@
 #include <cmath>
 #include <vector>
 
-namespace {
-
-std::vector<double> buildGaussianKernel(int radius, double sigma)
-{
-    std::vector<double> kernel(static_cast<size_t>(2 * radius + 1));
-    double sum = 0.0;
-    for (int i = -radius; i <= radius; ++i) {
-        const double value = std::exp(-(static_cast<double>(i * i)) / (2.0 * sigma * sigma));
-        kernel[static_cast<size_t>(i + radius)] = value;
-        sum += value;
-    }
-    for (double& value : kernel)
-        value /= sum;
-    return kernel;
-}
-
 int clampByte(double value)
 {
     return static_cast<int>(std::clamp(value, 0.0, 255.0));
 }
-
-QImage gaussianBlur(const QImage& source, double sigma)
-{
-    const int width = source.width();
-    const int height = source.height();
-    const int radius = std::max(1, static_cast<int>(std::ceil(sigma * 3.0)));
-    const auto kernel = buildGaussianKernel(radius, sigma);
-
-    QImage temp(width, height, QImage::Format_ARGB32_Premultiplied);
-    QImage result(width, height, QImage::Format_ARGB32_Premultiplied);
-
-    for (int y = 0; y < height; ++y) {
-        for (int x = 0; x < width; ++x) {
-            double red = 0.0;
-            double green = 0.0;
-            double blue = 0.0;
-            double alpha = 0.0;
-            for (int i = -radius; i <= radius; ++i) {
-                const int sampleX = std::clamp(x + i, 0, width - 1);
-                const QColor color = source.pixelColor(sampleX, y);
-                const double weight = kernel[static_cast<size_t>(i + radius)];
-                red += color.red() * weight;
-                green += color.green() * weight;
-                blue += color.blue() * weight;
-                alpha += color.alpha() * weight;
-            }
-            temp.setPixelColor(x, y, QColor(clampByte(red), clampByte(green), clampByte(blue), clampByte(alpha)));
-        }
-    }
-
-    for (int y = 0; y < height; ++y) {
-        for (int x = 0; x < width; ++x) {
-            double red = 0.0;
-            double green = 0.0;
-            double blue = 0.0;
-            double alpha = 0.0;
-            for (int i = -radius; i <= radius; ++i) {
-                const int sampleY = std::clamp(y + i, 0, height - 1);
-                const QColor color = temp.pixelColor(x, sampleY);
-                const double weight = kernel[static_cast<size_t>(i + radius)];
-                red += color.red() * weight;
-                green += color.green() * weight;
-                blue += color.blue() * weight;
-                alpha += color.alpha() * weight;
-            }
-            result.setPixelColor(x, y, QColor(clampByte(red), clampByte(green), clampByte(blue), clampByte(alpha)));
-        }
-    }
-
-    return result;
-}
-
-QImage buildEmissiveField(int size, double coreRadius, int r, int g, int b, float intensity)
-{
-    QImage image(size, size, QImage::Format_ARGB32_Premultiplied);
-    image.fill(Qt::transparent);
-
-    const double center = size / 2.0;
-    const double coronaScale = coreRadius * 2.4;
-
-    for (int py = 0; py < size; ++py) {
-        for (int px = 0; px < size; ++px) {
-            const double dx = px - center;
-            const double dy = py - center;
-            const double dist = std::sqrt(dx * dx + dy * dy);
-
-            double radiance = 0.0;
-            if (dist <= coreRadius) {
-                const double normalized = dist / std::max(coreRadius, 1e-6);
-                radiance = intensity * (1.2 - 0.2 * normalized * normalized);
-            } else {
-                const double delta = (dist - coreRadius) / std::max(coronaScale, 1e-6);
-                radiance = intensity * std::exp(-2.8 * delta * delta);
-            }
-
-            const int alpha = clampByte(radiance * 255.0);
-            if (alpha <= 0)
-                continue;
-
-            image.setPixelColor(px, py, QColor(r, g, b, alpha));
-        }
-    }
-
-    return image;
-}
-
-void compositeBloom(QImage& base, const QImage& bloom)
-{
-    for (int y = 0; y < base.height(); ++y) {
-        for (int x = 0; x < base.width(); ++x) {
-            const QColor source = base.pixelColor(x, y);
-            const QColor blurred = bloom.pixelColor(x, y);
-            const int red = clampByte(source.red() + blurred.red() * 0.75);
-            const int green = clampByte(source.green() + blurred.green() * 0.75);
-            const int blue = clampByte(source.blue() + blurred.blue() * 0.75);
-            const int alpha = clampByte(source.alpha() + blurred.alpha() * 0.75);
-            base.setPixelColor(x, y, QColor(red, green, blue, alpha));
-        }
-    }
-}
-
-} // namespace
 
 QtPainter::QtPainter(std::shared_ptr<QGraphicsScene> scene) :
     m_scene(std::move(scene))
@@ -220,12 +102,11 @@ void QtPainter::drawGlow(double x, double y, double radius,
     int midAlpha  = std::clamp(static_cast<int>(intensity * 140.0f), 0, 255);
     int lowAlpha  = std::clamp(static_cast<int>(intensity * 50.0f), 0, 255);
 
-    // ВСЕ цвета строятся из переданных (r, g, b):
-    gradient.setColorAt(0.0,  QColor(255, 255, 255, baseAlpha));               // белая сердцевина
-    gradient.setColorAt(0.15, QColor(r, g, b, baseAlpha));                     // твой цвет
-    gradient.setColorAt(0.40, QColor(r, g, b, midAlpha));                      // он же, прозрачнее
-    gradient.setColorAt(0.70, QColor(r * 0.5, g * 0.5, b * 0.5, lowAlpha));   // потемневший
-    gradient.setColorAt(1.0,  QColor(0, 0, 0, 0));                             // прозрачный край
+    gradient.setColorAt(0.0,  QColor(255, 255, 255, baseAlpha));               
+    gradient.setColorAt(0.15, QColor(r, g, b, baseAlpha));                     
+    gradient.setColorAt(0.40, QColor(r, g, b, midAlpha));                     
+    gradient.setColorAt(0.70, QColor(r * 0.5, g * 0.5, b * 0.5, lowAlpha));   
+    gradient.setColorAt(1.0,  QColor(0, 0, 0, 0));                           
 
     m_scene->addEllipse(x - glowRadius, y - glowRadius, glowRadius * 2, glowRadius * 2,
                         Qt::NoPen, QBrush(gradient));

@@ -1,5 +1,4 @@
-#ifndef FACADE_H
-#define FACADE_H
+#pragma onces
 
 #include <memory>
 
@@ -12,5 +11,3 @@ public:
 
     void execute(std::shared_ptr<BaseCommand> command);
 };
-
-#endif // FACADE_H

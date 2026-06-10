@@ -1,8 +1,6 @@
 #include "DefaultProjectionStrategy.h"
 #include <cmath>
 
-namespace {
-
 bool projectPoint(const Vec3<double>& point,
                   const Vec3<double>& camPos,
                   const Vec3<double>& forward,
@@ -23,8 +21,6 @@ bool projectPoint(const Vec3<double>& point,
     out.setZ(camZ);
     return true;
 }
-
-} // namespace
 
 void DefaultProjectionStrategy::project(std::shared_ptr<const SphereImpl> sphere,
                                         std::shared_ptr<const CameraImpl> camera,

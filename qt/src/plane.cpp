@@ -65,7 +65,6 @@ void Plane::mouseMoveEvent(QMouseEvent *event) {
         if (camera) {
             Vec3<double> pos = camera->getPosition();
             
-            // Standard spherical rotate coordinates mapping on active viewports
             double radius = pos.length();
             double theta = std::atan2(pos.getZ(), pos.getX());
             double phi = std::acos(pos.getY() / radius);
@@ -73,7 +72,6 @@ void Plane::mouseMoveEvent(QMouseEvent *event) {
             theta -= dx * 0.01;
             phi += dy * 0.01;
 
-            // Restrict vertical look to prevent camera flipping
             phi = std::clamp(phi, 0.1, M_PI - 0.1);
 
             double newX = radius * std::sin(phi) * std::cos(theta);
@@ -81,7 +79,7 @@ void Plane::mouseMoveEvent(QMouseEvent *event) {
             double newZ = radius * std::sin(phi) * std::sin(theta);
 
             camera->setPosition(Vec3<double>(newX, newY, newZ));
-            update(); // Retrigger rendering
+            update(); 
         }
 
         m_lastMousePos = event->pos();
@@ -94,7 +92,7 @@ void Plane::wheelEvent(QWheelEvent* event)
     auto cameraManager = ManagerProvider::getCameraManager();
     auto camera = cameraManager->getActiveCamera();
     if (camera) {
-        camera->zoom(delta * 2.0);  // или camera->getImpl()->zoom(delta)
-        update();  // Перерисовать
+        camera->zoom(delta * 2.0);  
+        update(); 
     }
 }

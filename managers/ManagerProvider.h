@@ -1,5 +1,4 @@
-#ifndef MANAGER_PROVIDER_H
-#define MANAGER_PROVIDER_H
+#pragma once
 
 #include <memory>
 
@@ -13,5 +12,3 @@ public:
     static std::shared_ptr<SceneManager> getSceneManager();
     static std::shared_ptr<DrawManager> getDrawManager();
 };
-
-#endif // MANAGER_PROVIDER_H

@@ -1,5 +1,4 @@
-#ifndef CAMERA_MANAGER_H
-#define CAMERA_MANAGER_H
+#pragma once
 
 #include "../../component/primitive/invisible/camera/BaseCamera.h"
 #include <map>
@@ -21,5 +20,3 @@ private:
     size_t m_activeCameraId = 0;
     size_t m_cameraCounter = 0;
 };
-
-#endif // CAMERA_MANAGER_H

@@ -1,5 +1,4 @@
-#ifndef PLANE_H
-#define PLANE_H
+#pragma once
 
 #include <QWidget>
 #include <QPoint>
@@ -29,5 +28,3 @@ private:
     std::shared_ptr<QGraphicsScene> m_scene;
     std::shared_ptr<BasePainter> m_painter;
 };
-
-#endif // PLANE_H

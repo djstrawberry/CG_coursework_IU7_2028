@@ -43,10 +43,6 @@
  /home/anechka/CG_coursework_IU7_2028/exceptions/managers/BaseManagerException.h
  /home/anechka/CG_coursework_IU7_2028/exceptions/managers/camera/CameraManagerException.cpp
  /home/anechka/CG_coursework_IU7_2028/exceptions/managers/camera/CameraManagerException.h
- /home/anechka/CG_coursework_IU7_2028/exceptions/matrix/MatrixException.cpp
- /home/anechka/CG_coursework_IU7_2028/exceptions/matrix/MatrixException.h
- /home/anechka/CG_coursework_IU7_2028/exceptions/model/ModelException.cpp
- /home/anechka/CG_coursework_IU7_2028/exceptions/model/ModelException.h
  /home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.cpp
  /home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.h
  /home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.cpp
