@@ -52,6 +52,7 @@ PlanetSystemDesigner_autogen/timestamp: \
 	/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/QtDrawFactory.h \
 	/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.cpp \
 	/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.h \
+	/home/anechka/CG_coursework_IU7_2028/factories/sphere/SphereFactory.h \
 	/home/anechka/CG_coursework_IU7_2028/main.cpp \
 	/home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.cpp \
 	/home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.h \
@@ -78,6 +79,11 @@ PlanetSystemDesigner_autogen/timestamp: \
 	/home/anechka/CG_coursework_IU7_2028/strategies/projection/creators/ProjectionStrategyCreator.hpp \
 	/home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.cpp \
 	/home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.h \
+	/home/anechka/CG_coursework_IU7_2028/strategies/render/BaseRenderStrategy.h \
+	/home/anechka/CG_coursework_IU7_2028/strategies/render/creators/RenderStrategyCreator.h \
+	/home/anechka/CG_coursework_IU7_2028/strategies/render/creators/RenderStrategyCreator.hpp \
+	/home/anechka/CG_coursework_IU7_2028/strategies/render/default/DefaultRenderStrategy.cpp \
+	/home/anechka/CG_coursework_IU7_2028/strategies/render/default/DefaultRenderStrategy.h \
 	/home/anechka/CG_coursework_IU7_2028/vector/Vec3.h \
 	/home/anechka/CG_coursework_IU7_2028/vector/Vec3.hpp \
 	/home/anechka/CG_coursework_IU7_2028/visitors/BaseVisitor.h \

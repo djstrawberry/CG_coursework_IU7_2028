@@ -24,6 +24,7 @@ PlanetSystemDesigner: \
   CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o \
+  CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrategy.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/exceptions/camera/CameraException.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/exceptions/composite/CompositeException.cpp.o \
@@ -156,6 +157,8 @@ CMakeFiles/PlanetSystemDesigner.dir/factories/draw/qt/products/QtPainter.cpp.o:
 CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o:
 
 CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o:
+
+CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrategy.cpp.o:
 
 CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o:
 

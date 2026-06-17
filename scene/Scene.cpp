@@ -1,7 +1,7 @@
 #include "Scene.h"
 
-std::shared_ptr<Scene> Scene::getInstance() {
-    static auto instance = std::shared_ptr<Scene>(new Scene());
+Scene& Scene::getInstance() noexcept {
+    static Scene instance;
     return instance;
 }
 

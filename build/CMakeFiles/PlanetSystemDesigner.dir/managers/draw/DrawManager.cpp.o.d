@@ -355,8 +355,12 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/conversion/creator/../BaseCoordinateConvertStrategy.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/conversion/creator/../default/DefaultConvertCoordinatesStrategy.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/conversion/creator/ConvertCoordsStrategyCreator.hpp \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/render/creators/RenderStrategyCreator.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/render/creators/../BaseRenderStrategy.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/render/creators/../default/DefaultRenderStrategy.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/render/creators/../default/../../../factories/draw/products/BasePainter.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/render/creators/RenderStrategyCreator.hpp \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/VisitorCreator.h \
- /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/../../factories/draw/products/BasePainter.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/../draw/DrawVisitor.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/../draw/../BaseVisitor.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/VisitorCreator.hpp \
@@ -367,4 +371,7 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../camera/../../component/primitive/invisible/camera/../../Primitive.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../camera/../../component/primitive/invisible/camera/../../../BaseObject.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../scene/SceneManager.h \
- /home/anechka/CG_coursework_IU7_2028/managers/draw/../scene/../../scene/Scene.h
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../scene/../../scene/Scene.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../scene/../../factories/sphere/SphereFactory.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../scene/../../factories/sphere/../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../scene/../../factories/sphere/../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h

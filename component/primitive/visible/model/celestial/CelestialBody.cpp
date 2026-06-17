@@ -3,11 +3,12 @@
 #include <cmath>
 
 CelestialBody::CelestialBody(const std::string& name, std::shared_ptr<SphereImpl> impl) 
-    :  BaseModel(std::move(impl)), m_name(std::move(name))
+    : m_name(std::move(name))
 {
-    if (!m_impl) {
+    if (!impl) {
         throw std::invalid_argument("Celestial body implementation cannot be null!");
     }
+    m_impl = std::move(impl); 
     m_baseCenter = m_impl->getCenter();
 }
 
@@ -65,17 +66,29 @@ void CelestialBody::setBaseCenter(const Vec3<double>& center) {
     updatePosition();
 }
 
+// CelestialBody.cpp:
+void CelestialBody::setRadius(double r) {
+    if (m_impl) {
+        m_impl->setRadius(r);
+        m_impl->generateMesh();
+    }
+}
+
+void CelestialBody::setCenter(const Vec3<double>& c) {
+    if (m_impl) {
+        m_impl->setCenter(c);
+        m_impl->generateMesh();
+    }
+    m_baseCenter = c;
+}
+
 Vec3<double> CelestialBody::getCenter() const noexcept {
     return m_impl ? m_impl->getCenter() : Vec3<double>{};
 }
 
-std::shared_ptr<SphereImpl> CelestialBody::getImpl() const {
-    return m_impl;
-}
-
 void CelestialBody::accept(std::shared_ptr<BaseVisitor> visitor) {
     if (visitor) {
-        visitor->visit(*this);  
+        visitor->visit(*m_impl);  
     }
 }
 

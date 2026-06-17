@@ -1,22 +1,26 @@
 #include "SceneManager.h"
 #include "../../component/primitive/visible/model/celestial/CelestialBody.h"
 #include "../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h"
+#include "../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h"
 
-SceneManager::SceneManager() {
-    m_scene = Scene::getInstance();
+
+SceneManager::SceneManager() : m_scene(Scene::getInstance()) {}
+
+void SceneManager::setSphereFactory(std::shared_ptr<SphereFactory> factory) {
+    m_sphereFactory = std::move(factory);
 }
 
 size_t SceneManager::addObject(const std::shared_ptr<BaseObject>& obj) {
-    return m_scene->addObject(obj);
+    return m_scene.addObject(obj);
 }
 
 void SceneManager::removeObject(size_t id) {
-    m_scene->removeObject(id);
+    m_scene.removeObject(id);
 }
 
 std::shared_ptr<BaseObject> SceneManager::getObject(size_t id) {
-    auto it = m_scene->getObject(id);
-    if (it != m_scene->end()) {
+    auto it = m_scene.getObject(id);
+    if (it != m_scene.end()) {
         return it->second; 
     }
     return nullptr;
@@ -33,7 +37,7 @@ void SceneManager::setOrbitCenter(size_t id, const Vec3<double> &orbitCenter)
 
 size_t SceneManager::addCelestialBody(const std::string &name, double radius, const Vec3<double> &center, const Material &material)
 {
-    auto sphereImpl = std::make_shared<ParametricSphereImpl>(radius, center, 32, 32);
+    auto sphereImpl = m_sphereFactory->createSphere(radius, center);
     auto body = std::make_shared<CelestialBody>(name, sphereImpl);
     Material mat = material;
     mat.luminous = true;
@@ -52,7 +56,7 @@ size_t SceneManager::addPlanet(const std::string &name, double radius, const Vec
         orbitCenter.getZ() + orbitRadius * std::sin(rad)
     );
 
-    auto sphereImpl = std::make_shared<ParametricSphereImpl>(radius, initialPos, 24, 24);
+    auto sphereImpl = m_sphereFactory->createSphere(radius, initialPos);
     auto body = std::make_shared<CelestialBody>(name, sphereImpl);
     Material mat = material;
     mat.luminous = false;
@@ -65,17 +69,16 @@ size_t SceneManager::addPlanet(const std::string &name, double radius, const Vec
     return addObject(body);
 }
 
-void SceneManager::updateCelestialBody(size_t id, double radius, const Vec3<double> &center, const Material &material)
+void SceneManager::updateCelestialBody(size_t id, double radius, const Vec3<double>& center, const Material& material)
 {
     auto obj = getObject(id);
     auto body = std::dynamic_pointer_cast<CelestialBody>(obj);
     if (!body) return;
-    auto impl = body->getImpl();
-    if (!impl) return;
-    impl->setRadius(radius);
-    impl->setCenter(center);
+
     body->setMaterial(material);
     body->setBaseCenter(center);
+    body->setRadius(radius);
+    body->setCenter(center);
 }
 
 void SceneManager::advanceOrbits(double deltaSeconds)
@@ -114,7 +117,7 @@ void SceneManager::transformCelestial(size_t id, double orbitRadius, double orbi
 }
 
 void SceneManager::accept(std::shared_ptr<BaseVisitor> visitor) {
-    for (auto& [id, obj] : m_scene->getObjects()) {
+    for (auto& [id, obj] : m_scene.getObjects()) {
         if (obj) {
             obj->accept(visitor);
         }
@@ -122,11 +125,11 @@ void SceneManager::accept(std::shared_ptr<BaseVisitor> visitor) {
 }
 
 const std::map<size_t, std::shared_ptr<BaseObject>>& SceneManager::getObjects() const {
-    return m_scene->getObjects();
+    return m_scene.getObjects();
 }
 
 Vec3<double> SceneManager::getPrimaryLightPosition() const {
-    for (const auto& [id, obj] : m_scene->getObjects()) {
+    for (const auto& [id, obj] : m_scene.getObjects()) {
         auto body = std::dynamic_pointer_cast<CelestialBody>(obj);
         if (body && body->getMaterial().luminous) {
             return body->getCenter();

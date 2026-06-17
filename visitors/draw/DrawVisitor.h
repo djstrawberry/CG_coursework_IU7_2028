@@ -4,6 +4,7 @@
 #include "../../../factories/draw/products/BasePainter.h"
 #include "../../../strategies/projection/BaseProjectionStrategy.h"
 #include "../../../strategies/conversion/BaseCoordinateConvertStrategy.h"
+#include "../../../strategies/render/BaseRenderStrategy.h"
 #include "../../../component/primitive/invisible/camera/impl/CameraImpl.h"
 #include "../../../materials/Material.h"
 #include "../../../vector/Vec3.h"
@@ -41,6 +42,7 @@ private:
     std::shared_ptr<CameraImpl> m_camera;
     std::shared_ptr<BaseProjectionStrategy> m_projStrategy;
     std::shared_ptr<BaseCoordinateConvertStrategy> m_convertStrategy;
+    std::shared_ptr<BaseRenderStrategy> m_renderStrategy;
     std::vector<float> m_lightColor;
     Vec3<double> m_lightSourcePos;
 
@@ -53,7 +55,7 @@ private:
                          const Vec3<double>& lightDir,
                          int& r, int& g, int& b) const;
 
-    void collectSphere(const std::shared_ptr<SphereImpl>& sphere) const;
+    void collectSphere(const SphereImpl& sphere) const;
     void renderGlowPasses() const;
     void renderTrianglePasses() const;
     void correctAspectRatio(std::vector<Vec3<double>>& projected, size_t width, size_t height) const;
@@ -74,16 +76,16 @@ public:
     DrawVisitor() = delete;
     DrawVisitor(std::shared_ptr<BaseProjectionStrategy> projStrategy,
                 std::shared_ptr<BaseCoordinateConvertStrategy> convertStrategy,
+                std::shared_ptr<BaseRenderStrategy> renderStrategy,
                 std::shared_ptr<BasePainter> painter,
                 std::shared_ptr<CameraImpl> camera,
                 std::vector<float> lightColor,
                 const Vec3<double>& lightSourcePos);
     ~DrawVisitor() override = default;
 
-    void beginScene() const override;
-    void flushScene() const override;
+    void beginScene() const;
+    void flushScene() const;
 
-    void visit(const CelestialBody& body) const override;
-    void visit(const CameraAdapter& camera) const override;
-    void visit(const Composite& composite) const override;
+    void visit(CameraImpl& camera) const override;
+    void visit(SphereImpl& sphere) const override;
 };

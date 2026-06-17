@@ -13,8 +13,6 @@ public:
     explicit CameraAdapter(std::shared_ptr<CameraImpl> impl);
     ~CameraAdapter() override = default;
 
-    std::shared_ptr<CameraImpl> getImpl() const noexcept override;
-
     Vec3<double> getPosition() const override;
     void setPosition(const Vec3<double>& pos) override;
 

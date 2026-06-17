@@ -671,6 +671,12 @@
 			null
 		],
 		[
+			"/home/anechka/CG_coursework_IU7_2028/factories/sphere/SphereFactory.h",
+			"MU",
+			"SSLJ632X73/moc_SphereFactory.cpp",
+			null
+		],
+		[
 			"/home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.h",
 			"MU",
 			"DWVBZFKGEL/moc_ManagerProvider.cpp",
@@ -764,6 +770,30 @@
 			"/home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.h",
 			"MU",
 			"Q2WBJVDLBS/moc_DefaultProjectionStrategy.cpp",
+			null
+		],
+		[
+			"/home/anechka/CG_coursework_IU7_2028/strategies/render/BaseRenderStrategy.h",
+			"MU",
+			"XEHHCNA7LY/moc_BaseRenderStrategy.cpp",
+			null
+		],
+		[
+			"/home/anechka/CG_coursework_IU7_2028/strategies/render/creators/RenderStrategyCreator.h",
+			"MU",
+			"7TCRVS3VLX/moc_RenderStrategyCreator.cpp",
+			null
+		],
+		[
+			"/home/anechka/CG_coursework_IU7_2028/strategies/render/creators/RenderStrategyCreator.hpp",
+			"MU",
+			"7TCRVS3VLX/moc_RenderStrategyCreator_hpp.cpp",
+			null
+		],
+		[
+			"/home/anechka/CG_coursework_IU7_2028/strategies/render/default/DefaultRenderStrategy.h",
+			"MU",
+			"YUU7K2MPMP/moc_DefaultRenderStrategy.cpp",
 			null
 		],
 		[
@@ -998,6 +1028,11 @@
 		],
 		[
 			"/home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/anechka/CG_coursework_IU7_2028/strategies/render/default/DefaultRenderStrategy.cpp",
 			"MU",
 			null
 		],

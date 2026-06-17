@@ -22,7 +22,6 @@ public:
 
     void accept(std::shared_ptr<BaseVisitor> visitor) override;
     std::shared_ptr<BaseObject> clone() const override;
-    std::shared_ptr<SphereImpl> getImpl() const override;
     Vec3<double> getCenter() const noexcept override;
 
     std::string getName() const;
@@ -42,6 +41,9 @@ public:
 
     Vec3<double> getBaseCenter() const;
     void setBaseCenter(const Vec3<double>& center);
+
+    void setRadius(double r);
+    void setCenter(const Vec3<double>& c);
 
     void updatePosition();
 };

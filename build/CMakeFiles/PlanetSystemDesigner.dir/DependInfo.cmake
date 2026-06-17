@@ -39,6 +39,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/anechka/CG_coursework_IU7_2028/scene/Scene.cpp" "CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o" "gcc" "CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o.d"
   "/home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp" "CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o" "gcc" "CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o.d"
   "/home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.cpp" "CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o" "gcc" "CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o.d"
+  "/home/anechka/CG_coursework_IU7_2028/strategies/render/default/DefaultRenderStrategy.cpp" "CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrategy.cpp.o" "gcc" "CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrategy.cpp.o.d"
   "/home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp" "CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o" "gcc" "CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o.d"
   "" "PlanetSystemDesigner" "gcc" "CMakeFiles/PlanetSystemDesigner.dir/link.d"
   )

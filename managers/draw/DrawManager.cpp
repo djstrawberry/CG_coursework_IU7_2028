@@ -1,6 +1,8 @@
 #include "DrawManager.h"
 #include "../../strategies/projection/creators/ProjectionStrategyCreator.h"
 #include "../../strategies/conversion/creator/ConvertCoordsStrategyCreator.h"
+#include "../../strategies/render/creators/RenderStrategyCreator.h"
+#include "../../component/primitive/invisible/camera/impl/CameraImpl.h"
 #include "../../visitors/creators/VisitorCreator.h"
 #include "../ManagerProvider.h"
 #include "../camera/CameraManager.h"     
@@ -9,6 +11,11 @@
 void DrawManager::setPainter(std::shared_ptr<BasePainter> painter)
 {
     m_painter = std::move(painter);
+}
+
+void DrawManager::setCameraImpl(std::shared_ptr<CameraImpl> impl)
+{
+    m_cameraImpl = impl;
 }
 
 void DrawManager::setLightColor(float r, float g, float b, float intensity)
@@ -35,26 +42,25 @@ void DrawManager::draw()
     if (!activeCam)
         return;
 
-    auto activeCamImpl = activeCam->getImpl();
-    if (!activeCamImpl)
-        return;
-
     auto projStrategy = DefaultProjectionStrategyCreator::create();
     auto convertStrategy = DefaultConvertCoordinatesStrategyCreator::create();
+    auto renderStrategy = DefaultRenderStrategyCreator::create();
 
     auto sceneManager = ManagerProvider::getSceneManager();
     const Vec3<double> lightSourcePos = sceneManager->getPrimaryLightPosition();
 
+    renderStrategy->beginScene();
+
     auto drawVisitor = DrawVisitorCreator::create(
         std::move(projStrategy),
         std::move(convertStrategy),
+        renderStrategy,
         m_painter,
-        activeCamImpl,
+        m_cameraImpl,
         m_lightColor,
         lightSourcePos
     );
 
-    drawVisitor->beginScene();
     sceneManager->accept(drawVisitor);
-    drawVisitor->flushScene();
+    renderStrategy->flushScene(m_painter);
 }

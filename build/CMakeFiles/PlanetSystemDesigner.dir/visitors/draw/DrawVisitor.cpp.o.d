@@ -200,6 +200,7 @@ CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o: \
  /usr/include/c++/16/bits/stl_bvector.h \
  /usr/include/c++/16/bits/vector.tcc \
  /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/conversion/BaseCoordinateConvertStrategy.h \
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/render/BaseRenderStrategy.h \
  /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/celestial/CelestialBody.h \
  /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/celestial/../BaseModel.h \
  /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/celestial/../../VisibleObject.h \

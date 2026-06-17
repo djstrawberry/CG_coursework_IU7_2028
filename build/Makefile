@@ -875,6 +875,30 @@ strategies/projection/default/DefaultProjectionStrategy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.s
 .PHONY : strategies/projection/default/DefaultProjectionStrategy.cpp.s
 
+strategies/render/default/DefaultRenderStrategy.o: strategies/render/default/DefaultRenderStrategy.cpp.o
+.PHONY : strategies/render/default/DefaultRenderStrategy.o
+
+# target to build an object file
+strategies/render/default/DefaultRenderStrategy.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrategy.cpp.o
+.PHONY : strategies/render/default/DefaultRenderStrategy.cpp.o
+
+strategies/render/default/DefaultRenderStrategy.i: strategies/render/default/DefaultRenderStrategy.cpp.i
+.PHONY : strategies/render/default/DefaultRenderStrategy.i
+
+# target to preprocess a source file
+strategies/render/default/DefaultRenderStrategy.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrategy.cpp.i
+.PHONY : strategies/render/default/DefaultRenderStrategy.cpp.i
+
+strategies/render/default/DefaultRenderStrategy.s: strategies/render/default/DefaultRenderStrategy.cpp.s
+.PHONY : strategies/render/default/DefaultRenderStrategy.s
+
+# target to generate assembly for a file
+strategies/render/default/DefaultRenderStrategy.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrategy.cpp.s
+.PHONY : strategies/render/default/DefaultRenderStrategy.cpp.s
+
 visitors/draw/DrawVisitor.o: visitors/draw/DrawVisitor.cpp.o
 .PHONY : visitors/draw/DrawVisitor.o
 
@@ -1000,6 +1024,9 @@ help:
 	@echo "... strategies/projection/default/DefaultProjectionStrategy.o"
 	@echo "... strategies/projection/default/DefaultProjectionStrategy.i"
 	@echo "... strategies/projection/default/DefaultProjectionStrategy.s"
+	@echo "... strategies/render/default/DefaultRenderStrategy.o"
+	@echo "... strategies/render/default/DefaultRenderStrategy.i"
+	@echo "... strategies/render/default/DefaultRenderStrategy.s"
 	@echo "... visitors/draw/DrawVisitor.o"
 	@echo "... visitors/draw/DrawVisitor.i"
 	@echo "... visitors/draw/DrawVisitor.s"

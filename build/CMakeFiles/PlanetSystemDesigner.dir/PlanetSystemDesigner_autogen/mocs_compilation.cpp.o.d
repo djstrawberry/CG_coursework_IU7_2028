@@ -402,5 +402,4 @@ CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilatio
  /usr/include/qt6/QtCore/qtmochelpers.h \
  /usr/include/qt6/QtCore/qtmocconstants.h \
  /usr/include/qt6/QtCore/q20algorithm.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/moc_plane.cpp \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/plane.h
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/moc_plane.cpp

@@ -127,11 +127,11 @@ Material TessellatedSphereImpl::getMaterial() const {
 }
 
 size_t TessellatedSphereImpl::getSlices() const {
-    return 0;  
+    return static_cast<size_t>(1 << (m_subdivisions + 1));
 }
 
 size_t TessellatedSphereImpl::getStacks() const {
-    return 0;
+    return static_cast<size_t>(1 << m_subdivisions);      
 }
 
 void TessellatedSphereImpl::setResolution(int slices, int stacks) {

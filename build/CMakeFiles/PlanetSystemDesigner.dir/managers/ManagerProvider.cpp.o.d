@@ -160,22 +160,20 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: \
  /usr/include/c++/16/bits/ranges_algobase.h \
  /usr/include/c++/16/pstl/glue_memory_defs.h \
  /usr/include/c++/16/pstl/execution_defs.h \
- /home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.h \
- /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/BaseCamera.h \
- /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../InvisibleObject.h \
- /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../Primitive.h \
- /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../../BaseObject.h \
- /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../../../visitors/BaseVisitor.h \
- /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../../../vector/Vec3.h \
- /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../../../vector/../concepts/concepts.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../scene/Scene.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../scene/../component/BaseObject.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../scene/../component/../visitors/BaseVisitor.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../scene/../component/../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../scene/../component/../vector/../concepts/concepts.h \
  /usr/include/c++/16/utility /usr/include/c++/16/bits/stl_relops.h \
  /usr/include/c++/16/bits/intcmp.h /usr/include/c++/16/iostream \
  /usr/include/c++/16/ostream /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../../../vector/Vec3.hpp \
- /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../scene/../component/../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../scene/../component/../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../scene/../component/../vector/../exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
@@ -200,9 +198,18 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: \
  /usr/include/c++/16/bits/node_handle.h \
  /usr/include/c++/16/bits/stl_map.h \
  /usr/include/c++/16/bits/stl_multimap.h \
- /home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.h \
- /home/anechka/CG_coursework_IU7_2028/managers/scene/../../scene/Scene.h \
  /home/anechka/CG_coursework_IU7_2028/managers/scene/../../materials/Material.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../factories/sphere/SphereFactory.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/SphereImpl.h \
+ /usr/include/c++/16/vector /usr/include/c++/16/bits/stl_vector.h \
+ /usr/include/c++/16/bits/stl_bvector.h \
+ /usr/include/c++/16/bits/vector.tcc \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/BaseCamera.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../InvisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../Primitive.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.h \
  /usr/include/c++/16/array /usr/include/qt6/QtGui/QPainter \
  /usr/include/qt6/QtGui/qpainter.h /usr/include/qt6/QtGui/qtguiglobal.h \
@@ -268,10 +275,8 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: \
  /usr/include/c++/16/unordered_map \
  /usr/include/c++/16/bits/unordered_map.h \
  /usr/include/c++/16/bits/hashtable.h \
- /usr/include/c++/16/bits/hashtable_policy.h /usr/include/c++/16/vector \
- /usr/include/c++/16/bits/stl_vector.h \
- /usr/include/c++/16/bits/stl_bvector.h \
- /usr/include/c++/16/bits/vector.tcc /usr/include/c++/16/bits/binders.h \
+ /usr/include/c++/16/bits/hashtable_policy.h \
+ /usr/include/c++/16/bits/binders.h \
  /usr/include/qt6/QtCore/qtmetamacros.h /usr/include/qt6/QtCore/qrect.h \
  /usr/include/qt6/QtCore/qcheckedint_impl.h \
  /usr/include/qt6/QtCore/qhashfunctions.h \

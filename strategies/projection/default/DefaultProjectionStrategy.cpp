@@ -22,18 +22,14 @@ bool projectPoint(const Vec3<double>& point,
     return true;
 }
 
-void DefaultProjectionStrategy::project(std::shared_ptr<const SphereImpl> sphere,
-                                        std::shared_ptr<const CameraImpl> camera,
-                                        std::vector<Vec3<double>>& projected)
+void DefaultProjectionStrategy::project(const SphereImpl& sphere,
+                         const CameraImpl& camera, std::vector<Vec3<double>> &projected)
 {
     projected.clear();
 
-    if (!sphere || !camera)
-        return;
-
-    Vec3<double> camPos = camera->getPosition();
-    Vec3<double> camTarget = camera->getTarget();
-    double fov = camera->getFov();
+    Vec3<double> camPos = camera.getPosition();
+    Vec3<double> camTarget = camera.getTarget();
+    double fov = camera.getFov();
 
     Vec3<double> forward = (camTarget - camPos).normalized();
     Vec3<double> worldUp = Vec3<double>::up();
@@ -44,7 +40,7 @@ void DefaultProjectionStrategy::project(std::shared_ptr<const SphereImpl> sphere
 
     double scale = 1.0 / (2.0 * std::tan(fov * M_PI / 360.0));
 
-    const auto& vertices = sphere->getVertices();
+    const auto& vertices = sphere.getVertices();
     if (!vertices.empty()) {
         projected.reserve(vertices.size());
         for (const auto& vertex : vertices) {
@@ -57,7 +53,7 @@ void DefaultProjectionStrategy::project(std::shared_ptr<const SphereImpl> sphere
         return;
     }
 
-    Vec3<double> center = sphere->getCenter();
+    Vec3<double> center = sphere.getCenter();
     Vec3<double> point;
     if (projectPoint(center, camPos, forward, right, up, scale, point))
         projected.push_back(point);

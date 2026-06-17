@@ -7,10 +7,6 @@ CameraAdapter::CameraAdapter(std::shared_ptr<CameraImpl> impl)
         throw std::invalid_argument("Camera implementation cannot be null!");
 }
 
-std::shared_ptr<CameraImpl> CameraAdapter::getImpl() const noexcept {
-    return m_impl;
-}
-
 Vec3<double> CameraAdapter::getPosition() const {
     return m_impl->getPosition();
 }
@@ -49,7 +45,7 @@ Vec3<double> CameraAdapter::getCenter() const noexcept {
 
 void CameraAdapter::accept(std::shared_ptr<BaseVisitor> visitor) {
     if (visitor)
-        visitor->visit(*this);
+        visitor->visit(*m_impl);
 }
 
 std::shared_ptr<BaseObject> CameraAdapter::clone() const {

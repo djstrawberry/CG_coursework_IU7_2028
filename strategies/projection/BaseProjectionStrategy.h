@@ -13,6 +13,6 @@ public:
     BaseProjectionStrategy() = default;
     virtual ~BaseProjectionStrategy() = default;
 
-    virtual void project(std::shared_ptr<const SphereImpl> sphere,
-                         std::shared_ptr<const CameraImpl> camera, std::vector<Vec3<double>> &projected) = 0;
+    virtual void project(const SphereImpl& sphere,
+                         const CameraImpl& camera, std::vector<Vec3<double>> &projected) = 0;
 };

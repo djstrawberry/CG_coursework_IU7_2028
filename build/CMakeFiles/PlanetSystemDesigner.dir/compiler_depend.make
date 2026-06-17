@@ -54,6 +54,7 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
   /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/QtDrawFactory.h \
   /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.cpp \
   /home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.h \
+  /home/anechka/CG_coursework_IU7_2028/factories/sphere/SphereFactory.h \
   /home/anechka/CG_coursework_IU7_2028/main.cpp \
   /home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.cpp \
   /home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.h \
@@ -80,6 +81,11 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
   /home/anechka/CG_coursework_IU7_2028/strategies/projection/creators/ProjectionStrategyCreator.hpp \
   /home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.cpp \
   /home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.h \
+  /home/anechka/CG_coursework_IU7_2028/strategies/render/BaseRenderStrategy.h \
+  /home/anechka/CG_coursework_IU7_2028/strategies/render/creators/RenderStrategyCreator.h \
+  /home/anechka/CG_coursework_IU7_2028/strategies/render/creators/RenderStrategyCreator.hpp \
+  /home/anechka/CG_coursework_IU7_2028/strategies/render/default/DefaultRenderStrategy.cpp \
+  /home/anechka/CG_coursework_IU7_2028/strategies/render/default/DefaultRenderStrategy.h \
   /home/anechka/CG_coursework_IU7_2028/ui/mainwindow.ui \
   /home/anechka/CG_coursework_IU7_2028/vector/Vec3.h \
   /home/anechka/CG_coursework_IU7_2028/vector/Vec3.hpp \
@@ -1830,10 +1836,12 @@ CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o: /home/a
   /home/anechka/CG_coursework_IU7_2028/component/primitive/Primitive.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/VisibleObject.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/BaseModel.h \
-  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/SphereImpl.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/CelestialBody.h \
-  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
   /home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/SphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/factories/sphere/SphereFactory.h \
   /home/anechka/CG_coursework_IU7_2028/visitors/BaseVisitor.h \
   /home/anechka/CG_coursework_IU7_2028/component/BaseObject.h \
   /home/anechka/CG_coursework_IU7_2028/scene/Scene.h \
@@ -6138,6 +6146,16 @@ CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o: /home/anechka/CG_coursework_IU7_
 
 CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: /home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.cpp \
   /home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/Primitive.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/InvisibleObject.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/BaseCamera.h \
+  /home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.h \
+  /home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/SphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/factories/sphere/SphereFactory.h \
+  /home/anechka/CG_coursework_IU7_2028/materials/Material.h \
   /home/anechka/CG_coursework_IU7_2028/concepts/concepts.h \
   /home/anechka/CG_coursework_IU7_2028/exceptions/BaseException.h \
   /home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.h \
@@ -6145,12 +6163,6 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: /home/anechk
   /home/anechka/CG_coursework_IU7_2028/vector/Vec3.hpp \
   /home/anechka/CG_coursework_IU7_2028/visitors/BaseVisitor.h \
   /home/anechka/CG_coursework_IU7_2028/component/BaseObject.h \
-  /home/anechka/CG_coursework_IU7_2028/component/primitive/Primitive.h \
-  /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/InvisibleObject.h \
-  /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/BaseCamera.h \
-  /home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.h \
-  /home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.h \
-  /home/anechka/CG_coursework_IU7_2028/materials/Material.h \
   /home/anechka/CG_coursework_IU7_2028/scene/Scene.h \
   /home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.h \
   /usr/include/alloca.h \
@@ -6930,7 +6942,11 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: /home/anech
   /home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.h \
   /home/anechka/CG_coursework_IU7_2028/strategies/projection/creators/ProjectionStrategyCreator.h \
   /home/anechka/CG_coursework_IU7_2028/strategies/projection/creators/ProjectionStrategyCreator.hpp \
+  /home/anechka/CG_coursework_IU7_2028/strategies/render/BaseRenderStrategy.h \
   /home/anechka/CG_coursework_IU7_2028/factories/draw/products/BasePainter.h \
+  /home/anechka/CG_coursework_IU7_2028/strategies/render/default/DefaultRenderStrategy.h \
+  /home/anechka/CG_coursework_IU7_2028/strategies/render/creators/RenderStrategyCreator.h \
+  /home/anechka/CG_coursework_IU7_2028/strategies/render/creators/RenderStrategyCreator.hpp \
   /home/anechka/CG_coursework_IU7_2028/visitors/BaseVisitor.h \
   /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.h \
   /home/anechka/CG_coursework_IU7_2028/visitors/creators/VisitorCreator.h \
@@ -6941,6 +6957,9 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: /home/anech
   /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/InvisibleObject.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/BaseCamera.h \
   /home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/factories/sphere/SphereFactory.h \
   /home/anechka/CG_coursework_IU7_2028/scene/Scene.h \
   /home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.h \
   /home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.h \
@@ -7426,9 +7445,11 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o: /home/ane
   /home/anechka/CG_coursework_IU7_2028/component/primitive/Primitive.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/VisibleObject.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/BaseModel.h \
-  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/SphereImpl.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/CelestialBody.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/SphereImpl.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/factories/sphere/SphereFactory.h \
   /home/anechka/CG_coursework_IU7_2028/materials/Material.h \
   /home/anechka/CG_coursework_IU7_2028/concepts/concepts.h \
   /home/anechka/CG_coursework_IU7_2028/exceptions/BaseException.h \
@@ -7723,7 +7744,6 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: /home/anechka/CG_co
   /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/default/DefaultCamera.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/VisibleObject.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/BaseModel.h \
-  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/SphereImpl.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/CelestialBody.h \
   /home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.h \
   /home/anechka/CG_coursework_IU7_2028/visitors/BaseVisitor.h \
@@ -7733,6 +7753,10 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: /home/anechka/CG_co
   /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/BaseCamera.h \
   /home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.h \
   /home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/SphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/factories/sphere/SphereFactory.h \
   /home/anechka/CG_coursework_IU7_2028/materials/Material.h \
   /home/anechka/CG_coursework_IU7_2028/scene/Scene.h \
   /home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.h \
@@ -9704,6 +9728,294 @@ CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProject
   /usr/lib/gcc/x86_64-redhat-linux/16/include/stdarg.h \
   /usr/lib/gcc/x86_64-redhat-linux/16/include/stddef.h
 
+CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrategy.cpp.o: /home/anechka/CG_coursework_IU7_2028/strategies/render/default/DefaultRenderStrategy.cpp \
+  /home/anechka/CG_coursework_IU7_2028/concepts/concepts.h \
+  /home/anechka/CG_coursework_IU7_2028/exceptions/BaseException.h \
+  /home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.h \
+  /home/anechka/CG_coursework_IU7_2028/vector/Vec3.h \
+  /home/anechka/CG_coursework_IU7_2028/vector/Vec3.hpp \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/impl/CameraImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/SphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/factories/draw/products/BasePainter.h \
+  /home/anechka/CG_coursework_IU7_2028/materials/Material.h \
+  /home/anechka/CG_coursework_IU7_2028/strategies/render/BaseRenderStrategy.h \
+  /home/anechka/CG_coursework_IU7_2028/strategies/render/default/DefaultRenderStrategy.h \
+  /usr/include/alloca.h \
+  /usr/include/asm-generic/bitsperlong.h \
+  /usr/include/asm-generic/errno-base.h \
+  /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/asm-generic/types.h \
+  /usr/include/asm/bitsperlong.h \
+  /usr/include/asm/errno.h \
+  /usr/include/asm/posix_types.h \
+  /usr/include/asm/posix_types_64.h \
+  /usr/include/asm/types.h \
+  /usr/include/bits/atomic_wide_counter.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/cpu-set.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/errno.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
+  /usr/include/bits/locale.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-macros.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
+  /usr/include/bits/pthread_stack_min-dynamic.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/sched.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/setjmp.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/bits/stdio_lim.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/time.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/timex.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/types/FILE.h \
+  /usr/include/bits/types/__FILE.h \
+  /usr/include/bits/types/__fpos64_t.h \
+  /usr/include/bits/types/__fpos_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/bits/types/__mbstate_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/cookie_io_functions_t.h \
+  /usr/include/bits/types/error_t.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/mbstate_t.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/struct_FILE.h \
+  /usr/include/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/bits/types/struct_itimerspec.h \
+  /usr/include/bits/types/struct_sched_param.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_tm.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/types/wint_t.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/wchar.h \
+  /usr/include/bits/wctype-wchar.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/c++/16/algorithm \
+  /usr/include/c++/16/backward/auto_ptr.h \
+  /usr/include/c++/16/backward/binders.h \
+  /usr/include/c++/16/bit \
+  /usr/include/c++/16/bits/algorithmfwd.h \
+  /usr/include/c++/16/bits/align.h \
+  /usr/include/c++/16/bits/alloc_traits.h \
+  /usr/include/c++/16/bits/allocated_ptr.h \
+  /usr/include/c++/16/bits/allocator.h \
+  /usr/include/c++/16/bits/atomic_base.h \
+  /usr/include/c++/16/bits/atomic_lockfree_defines.h \
+  /usr/include/c++/16/bits/atomic_wait.h \
+  /usr/include/c++/16/bits/basic_ios.h \
+  /usr/include/c++/16/bits/basic_ios.tcc \
+  /usr/include/c++/16/bits/basic_string.h \
+  /usr/include/c++/16/bits/basic_string.tcc \
+  /usr/include/c++/16/bits/char_traits.h \
+  /usr/include/c++/16/bits/charconv.h \
+  /usr/include/c++/16/bits/concept_check.h \
+  /usr/include/c++/16/bits/cpp_type_traits.h \
+  /usr/include/c++/16/bits/cxxabi_forced.h \
+  /usr/include/c++/16/bits/cxxabi_init_exception.h \
+  /usr/include/c++/16/bits/erase_if.h \
+  /usr/include/c++/16/bits/exception.h \
+  /usr/include/c++/16/bits/exception_defines.h \
+  /usr/include/c++/16/bits/exception_ptr.h \
+  /usr/include/c++/16/bits/functexcept.h \
+  /usr/include/c++/16/bits/functional_hash.h \
+  /usr/include/c++/16/bits/hash_bytes.h \
+  /usr/include/c++/16/bits/intcmp.h \
+  /usr/include/c++/16/bits/invoke.h \
+  /usr/include/c++/16/bits/ios_base.h \
+  /usr/include/c++/16/bits/istream.tcc \
+  /usr/include/c++/16/bits/iterator_concepts.h \
+  /usr/include/c++/16/bits/locale_classes.h \
+  /usr/include/c++/16/bits/locale_classes.tcc \
+  /usr/include/c++/16/bits/locale_facets.h \
+  /usr/include/c++/16/bits/locale_facets.tcc \
+  /usr/include/c++/16/bits/localefwd.h \
+  /usr/include/c++/16/bits/max_size_type.h \
+  /usr/include/c++/16/bits/memory_resource.h \
+  /usr/include/c++/16/bits/memoryfwd.h \
+  /usr/include/c++/16/bits/move.h \
+  /usr/include/c++/16/bits/nested_exception.h \
+  /usr/include/c++/16/bits/new_allocator.h \
+  /usr/include/c++/16/bits/new_except.h \
+  /usr/include/c++/16/bits/new_throw.h \
+  /usr/include/c++/16/bits/ostream.h \
+  /usr/include/c++/16/bits/ostream.tcc \
+  /usr/include/c++/16/bits/ostream_insert.h \
+  /usr/include/c++/16/bits/ostream_print.h \
+  /usr/include/c++/16/bits/postypes.h \
+  /usr/include/c++/16/bits/predefined_ops.h \
+  /usr/include/c++/16/bits/ptr_traits.h \
+  /usr/include/c++/16/bits/range_access.h \
+  /usr/include/c++/16/bits/ranges_algo.h \
+  /usr/include/c++/16/bits/ranges_algobase.h \
+  /usr/include/c++/16/bits/ranges_base.h \
+  /usr/include/c++/16/bits/ranges_cmp.h \
+  /usr/include/c++/16/bits/ranges_uninitialized.h \
+  /usr/include/c++/16/bits/ranges_util.h \
+  /usr/include/c++/16/bits/refwrap.h \
+  /usr/include/c++/16/bits/requires_hosted.h \
+  /usr/include/c++/16/bits/shared_ptr.h \
+  /usr/include/c++/16/bits/shared_ptr_atomic.h \
+  /usr/include/c++/16/bits/shared_ptr_base.h \
+  /usr/include/c++/16/bits/specfun.h \
+  /usr/include/c++/16/bits/std_abs.h \
+  /usr/include/c++/16/bits/stdexcept_except.h \
+  /usr/include/c++/16/bits/stdexcept_throw.h \
+  /usr/include/c++/16/bits/stdexcept_throwfwd.h \
+  /usr/include/c++/16/bits/stl_algo.h \
+  /usr/include/c++/16/bits/stl_algobase.h \
+  /usr/include/c++/16/bits/stl_bvector.h \
+  /usr/include/c++/16/bits/stl_construct.h \
+  /usr/include/c++/16/bits/stl_function.h \
+  /usr/include/c++/16/bits/stl_heap.h \
+  /usr/include/c++/16/bits/stl_iterator.h \
+  /usr/include/c++/16/bits/stl_iterator_base_funcs.h \
+  /usr/include/c++/16/bits/stl_iterator_base_types.h \
+  /usr/include/c++/16/bits/stl_pair.h \
+  /usr/include/c++/16/bits/stl_raw_storage_iter.h \
+  /usr/include/c++/16/bits/stl_relops.h \
+  /usr/include/c++/16/bits/stl_tempbuf.h \
+  /usr/include/c++/16/bits/stl_uninitialized.h \
+  /usr/include/c++/16/bits/stl_vector.h \
+  /usr/include/c++/16/bits/streambuf.tcc \
+  /usr/include/c++/16/bits/streambuf_iterator.h \
+  /usr/include/c++/16/bits/string_view.tcc \
+  /usr/include/c++/16/bits/stringfwd.h \
+  /usr/include/c++/16/bits/uniform_int_dist.h \
+  /usr/include/c++/16/bits/unique_ptr.h \
+  /usr/include/c++/16/bits/uses_allocator.h \
+  /usr/include/c++/16/bits/uses_allocator_args.h \
+  /usr/include/c++/16/bits/utility.h \
+  /usr/include/c++/16/bits/vector.tcc \
+  /usr/include/c++/16/bits/version.h \
+  /usr/include/c++/16/cctype \
+  /usr/include/c++/16/cerrno \
+  /usr/include/c++/16/clocale \
+  /usr/include/c++/16/cmath \
+  /usr/include/c++/16/compare \
+  /usr/include/c++/16/concepts \
+  /usr/include/c++/16/cstddef \
+  /usr/include/c++/16/cstdio \
+  /usr/include/c++/16/cstdlib \
+  /usr/include/c++/16/cwchar \
+  /usr/include/c++/16/cwctype \
+  /usr/include/c++/16/debug/assertions.h \
+  /usr/include/c++/16/debug/debug.h \
+  /usr/include/c++/16/exception \
+  /usr/include/c++/16/ext/aligned_buffer.h \
+  /usr/include/c++/16/ext/alloc_traits.h \
+  /usr/include/c++/16/ext/atomicity.h \
+  /usr/include/c++/16/ext/concurrence.h \
+  /usr/include/c++/16/ext/numeric_traits.h \
+  /usr/include/c++/16/ext/string_conversions.h \
+  /usr/include/c++/16/ext/type_traits.h \
+  /usr/include/c++/16/initializer_list \
+  /usr/include/c++/16/ios \
+  /usr/include/c++/16/iosfwd \
+  /usr/include/c++/16/iostream \
+  /usr/include/c++/16/istream \
+  /usr/include/c++/16/limits \
+  /usr/include/c++/16/memory \
+  /usr/include/c++/16/new \
+  /usr/include/c++/16/numbers \
+  /usr/include/c++/16/ostream \
+  /usr/include/c++/16/pstl/execution_defs.h \
+  /usr/include/c++/16/pstl/glue_algorithm_defs.h \
+  /usr/include/c++/16/pstl/glue_memory_defs.h \
+  /usr/include/c++/16/pstl/pstl_config.h \
+  /usr/include/c++/16/source_location \
+  /usr/include/c++/16/stdexcept \
+  /usr/include/c++/16/streambuf \
+  /usr/include/c++/16/string \
+  /usr/include/c++/16/string_view \
+  /usr/include/c++/16/system_error \
+  /usr/include/c++/16/tr1/bessel_function.tcc \
+  /usr/include/c++/16/tr1/beta_function.tcc \
+  /usr/include/c++/16/tr1/ell_integral.tcc \
+  /usr/include/c++/16/tr1/exp_integral.tcc \
+  /usr/include/c++/16/tr1/gamma.tcc \
+  /usr/include/c++/16/tr1/hypergeometric.tcc \
+  /usr/include/c++/16/tr1/legendre_function.tcc \
+  /usr/include/c++/16/tr1/modified_bessel_func.tcc \
+  /usr/include/c++/16/tr1/poly_hermite.tcc \
+  /usr/include/c++/16/tr1/poly_laguerre.tcc \
+  /usr/include/c++/16/tr1/riemann_zeta.tcc \
+  /usr/include/c++/16/tr1/special_function_util.h \
+  /usr/include/c++/16/tuple \
+  /usr/include/c++/16/type_traits \
+  /usr/include/c++/16/typeinfo \
+  /usr/include/c++/16/utility \
+  /usr/include/c++/16/vector \
+  /usr/include/c++/16/x86_64-redhat-linux/bits/atomic_word.h \
+  /usr/include/c++/16/x86_64-redhat-linux/bits/c++allocator.h \
+  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
+  /usr/include/c++/16/x86_64-redhat-linux/bits/c++locale.h \
+  /usr/include/c++/16/x86_64-redhat-linux/bits/cpu_defines.h \
+  /usr/include/c++/16/x86_64-redhat-linux/bits/ctype_base.h \
+  /usr/include/c++/16/x86_64-redhat-linux/bits/ctype_inline.h \
+  /usr/include/c++/16/x86_64-redhat-linux/bits/error_constants.h \
+  /usr/include/c++/16/x86_64-redhat-linux/bits/gthr-default.h \
+  /usr/include/c++/16/x86_64-redhat-linux/bits/gthr.h \
+  /usr/include/c++/16/x86_64-redhat-linux/bits/os_defines.h \
+  /usr/include/ctype.h \
+  /usr/include/endian.h \
+  /usr/include/errno.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/linux/errno.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/sched/types.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/linux/types.h \
+  /usr/include/locale.h \
+  /usr/include/math.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdio.h \
+  /usr/include/stdlib.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/sys/select.h \
+  /usr/include/sys/single_threaded.h \
+  /usr/include/sys/types.h \
+  /usr/include/time.h \
+  /usr/include/wchar.h \
+  /usr/include/wctype.h \
+  /usr/lib/gcc/x86_64-redhat-linux/16/include/stdarg.h \
+  /usr/lib/gcc/x86_64-redhat-linux/16/include/stddef.h
+
 CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o: /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp \
   /home/anechka/CG_coursework_IU7_2028/concepts/concepts.h \
   /home/anechka/CG_coursework_IU7_2028/exceptions/BaseException.h \
@@ -9716,6 +10028,7 @@ CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o: /home/anech
   /home/anechka/CG_coursework_IU7_2028/materials/Material.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/SphereImpl.h \
   /home/anechka/CG_coursework_IU7_2028/strategies/projection/BaseProjectionStrategy.h \
+  /home/anechka/CG_coursework_IU7_2028/strategies/render/BaseRenderStrategy.h \
   /home/anechka/CG_coursework_IU7_2028/component/composite/Composite.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/InvisibleObject.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/BaseCamera.h \
@@ -10097,14 +10410,15 @@ PlanetSystemDesigner: /lib64/ld-linux-x86-64.so.2 \
   CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o \
+  CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrategy.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o
 
 
 CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o:
 
-CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o:
+CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrategy.cpp.o:
 
-CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o:
+CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o:
 
 CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o:
 
@@ -10164,11 +10478,11 @@ CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilatio
 
 /usr/lib64/libbz2.so.1:
 
-/usr/include/qt6/QtGui/qtguiglobal.h:
+/usr/lib64/libbrotlidec.so.1:
 
-/home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.h:
+/usr/lib64/libb2.so.1:
 
-CMakeFiles/4.3.0/CMakeSystem.cmake:
+/usr/lib64/libXext.so.6:
 
 /usr/include/qt6/QtCore/qversiontagging.h:
 
@@ -10234,16 +10548,6 @@ CMakeFiles/4.3.0/CMakeSystem.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake:
 
-/usr/include/qt6/QtCore/qobjectdefs.h:
-
-/usr/include/limits.h:
-
-/usr/lib64/libpcre2-8.so.0:
-
-/usr/include/qt6/QtCore/qglobalstatic.h:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake:
-
 /usr/include/qt6/QtCore/qobject.h:
 
 /usr/include/qt6/QtCore/qnumeric.h:
@@ -10255,10 +10559,6 @@ CMakeFiles/4.3.0/CMakeSystem.cmake:
 /usr/lib64/libc.so:
 
 /usr/lib/gcc/x86_64-redhat-linux/16/crtend.o:
-
-/usr/include/qt6/QtGui/qcolor.h:
-
-/usr/include/qt6/QtCore/qlogging.h:
 
 /usr/include/bits/stdint-uintn.h:
 
@@ -10334,8 +10634,6 @@ CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o:
 
 /usr/include/qt6/QtCore/QElapsedTimer:
 
-/usr/include/linux/types.h:
-
 /usr/include/linux/stddef.h:
 
 /usr/include/c++/16/vector:
@@ -10353,6 +10651,14 @@ CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o:
 /usr/include/qt6/QtCore/qtypes.h:
 
 /usr/include/c++/16/atomic:
+
+/usr/include/qt6/QtCore/qobjectdefs.h:
+
+/usr/lib64/libpcre2-8.so.0:
+
+/usr/include/qt6/QtCore/qglobalstatic.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake:
 
 /usr/include/qt6/QtCore/qtversionchecks.h:
 
@@ -10426,6 +10732,10 @@ CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o:
 
 /usr/include/c++/16/streambuf:
 
+/usr/lib64/libatomic.so.1.2.0:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QWaylandXdgShellIntegrationPluginAdditionalTargetInfo.cmake:
+
 /usr/include/c++/16/sstream:
 
 /home/anechka/CG_coursework_IU7_2028/exceptions/composite/CompositeException.cpp:
@@ -10459,8 +10769,6 @@ CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o:
 /usr/lib64/libicui18n.so.77:
 
 /usr/include/c++/16/chrono:
-
-/usr/include/c++/16/functional:
 
 /home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.cpp:
 
@@ -10530,8 +10838,6 @@ CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o:
 
 /usr/include/c++/16/bits/streambuf.tcc:
 
-/usr/lib64/libbrotlidec.so.1:
-
 /usr/include/c++/16/bits/stream_iterator.h:
 
 /usr/include/bits/types/__mbstate_t.h:
@@ -10574,7 +10880,21 @@ CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o:
 
 /usr/include/c++/16/ext/numeric_traits.h:
 
-/usr/include/qt6/QtCore/qspan.h:
+/usr/include/c++/16/x86_64-redhat-linux/bits/gthr.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets.cmake:
+
+/usr/include/c++/16/bits/stl_heap.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/c++/16/bits/stl_function.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/16/bits/stl_iterator_base_funcs.h:
+
+/usr/include/c++/16/bits/stl_algobase.h:
 
 /usr/include/bits/pthreadtypes.h:
 
@@ -10591,16 +10911,6 @@ CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o:
 /usr/include/bits/locale.h:
 
 /usr/lib64/cmake/Qt6/FindWrapVulkanHeaders.cmake:
-
-/usr/include/qt6/QtCore/qstdlibdetection.h:
-
-/usr/include/bits/errno.h:
-
-/usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake:
-
-/usr/include/bits/timex.h:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginAdditionalTargetInfo.cmake:
 
 /usr/include/bits/endianness.h:
 
@@ -10619,6 +10929,10 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/camera/CameraManager.cpp.o:
 /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginConfig.cmake:
 
 /usr/include/c++/16/x86_64-redhat-linux/bits/ctype_base.h:
+
+/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp:
+
+/usr/include/c++/16/bits/stl_algo.h:
 
 /usr/include/bits/endian.h:
 
@@ -10666,10 +10980,6 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginTargetsPrecheck.cmake:
 
-/usr/include/qt6/QtCore/qxptype_traits.h:
-
-/usr/include/c++/16/version:
-
 /home/anechka/CG_coursework_IU7_2028/vector/Vec3.hpp:
 
 /usr/include/qt6/QtGui/qpalette.h:
@@ -10686,11 +10996,39 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /home/anechka/CG_coursework_IU7_2028/qt/inc/plane.h:
 
-/usr/include/c++/16/x86_64-redhat-linux/bits/time_members.h:
+/home/anechka/CG_coursework_IU7_2028/strategies/render/creators/RenderStrategyCreator.hpp:
 
-/usr/include/bits/types/clockid_t.h:
+/usr/include/qt6/QtWidgets/qtwidgets-config.h:
 
-/usr/include/c++/16/bits/stl_heap.h:
+/usr/include/c++/16/bits/monostate.h:
+
+/usr/include/qt6/QtCore/qxptype_traits.h:
+
+/usr/include/c++/16/version:
+
+/usr/include/qt6/QtCore/qcontainerinfo.h:
+
+/home/anechka/CG_coursework_IU7_2028/CMakeLists.txt:
+
+/usr/include/qt6/QtCore/qcontiguouscache.h:
+
+/usr/include/qt6/QtCore/q20functional.h:
+
+/usr/share/cmake/Modules/Compiler/GNU-CXX.cmake:
+
+/usr/include/c++/16/functional:
+
+/home/anechka/CG_coursework_IU7_2028/strategies/render/BaseRenderStrategy.h:
+
+/usr/include/qt6/QtCore/qstdlibdetection.h:
+
+/usr/include/bits/errno.h:
+
+/usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake:
+
+/usr/include/bits/timex.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginAdditionalTargetInfo.cmake:
 
 /home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/DefaultConvertCoordinatesStrategy.h:
 
@@ -10715,8 +11053,6 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 /usr/include/c++/16/ext/atomicity.h:
 
 /usr/lib64/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
-
-/usr/include/c++/16/bits/stl_algobase.h:
 
 /home/anechka/CG_coursework_IU7_2028/scene/Scene.h:
 
@@ -10746,13 +11082,47 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /home/anechka/CG_coursework_IU7_2028/strategies/projection/creators/ProjectionStrategyCreator.hpp:
 
+/usr/include/c++/16/debug/assertions.h:
+
+/usr/include/c++/16/debug/debug.h:
+
+/usr/include/c++/16/bits/functional_hash.h:
+
+/usr/include/qt6/QtGui/QPen:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginConfig.cmake:
+
+/home/anechka/CG_coursework_IU7_2028/qt/src/mainwindow.cpp:
+
 /usr/include/bits/cpu-set.h:
 
 /home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.h:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginConfig.cmake:
 
+/usr/include/bits/types/mbstate_t.h:
+
+/usr/include/qt6/QtCore/qiodevicebase.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginConfig.cmake:
+
+/home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.h:
+
+/usr/include/qt6/QtCore/q20type_traits.h:
+
+/usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake:
+
 /usr/include/qt6/QtCore/qcoreapplication_platform.h:
+
+CMakeFiles/4.3.0/CMakeSystem.cmake:
+
+/usr/include/qt6/QtCore/qlogging.h:
+
+/usr/include/qt6/QtGui/qcolor.h:
 
 /usr/include/qt6/QtCore/qttranslation.h:
 
@@ -10772,6 +11142,22 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake:
 
+/home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.cpp:
+
+/usr/include/c++/16/tr1/gamma.tcc:
+
+/usr/include/asm-generic/posix_types.h:
+
+/usr/lib64/cmake/Qt6/QtPublicAndroidHelpers.cmake:
+
+/usr/include/linux/types.h:
+
+/usr/include/limits.h:
+
+/home/anechka/CG_coursework_IU7_2028/factories/sphere/SphereFactory.h:
+
+/home/anechka/CG_coursework_IU7_2028/factories/draw/BaseDrawFactory.h:
+
 /home/anechka/CG_coursework_IU7_2028/exceptions/managers/BaseManagerException.h:
 
 /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/CelestialBody.h:
@@ -10784,17 +11170,11 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /lib64/libgcc_s.so.1:
 
-/usr/include/qt6/QtCore/qcontainerinfo.h:
-
-/home/anechka/CG_coursework_IU7_2028/CMakeLists.txt:
-
-/usr/include/qt6/QtCore/qcontiguouscache.h:
-
-/usr/include/qt6/QtCore/q20functional.h:
-
-/usr/share/cmake/Modules/Compiler/GNU-CXX.cmake:
-
 /usr/include/qt6/QtCore/qbasictimer.h:
+
+/usr/lib64/libbrotlicommon.so.1:
+
+/usr/include/qt6/QtGui/qfontvariableaxis.h:
 
 /usr/include/qt6/QtCore/qpair.h:
 
@@ -10812,13 +11192,7 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /home/anechka/CG_coursework_IU7_2028/facade/Facade.h:
 
-/usr/lib64/cmake/Qt6Gui/Qt6QWaylandAdwaitaDecorationPluginAdditionalTargetInfo.cmake:
-
-/usr/include/bits/stdio_lim.h:
-
-/usr/include/qt6/QtCore/qurl.h:
-
-/home/anechka/CG_coursework_IU7_2028/component/BaseObject.h:
+/usr/include/c++/16/x86_64-redhat-linux/bits/time_members.h:
 
 /usr/include/qt6/QtCore/qcontainerfwd.h:
 
@@ -10826,13 +11200,13 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/16/bits/list.tcc:
 
-/usr/include/c++/16/x86_64-redhat-linux/bits/gthr.h:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets.cmake:
-
 /usr/include/qt6/QtCore/qcompare.h:
 
 /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp:
+
+/usr/lib64/libXau.so.6:
+
+/usr/include/qt6/QtCore/qbytearray.h:
 
 /usr/include/qt6/QtWidgets/QHBoxLayout:
 
@@ -10851,22 +11225,6 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 /usr/include/c++/16/bits/binders.h:
 
 /usr/include/qt6/QtCore/qfunctionpointer.h:
-
-/usr/include/qt6/QtCore/qcheckedint_impl.h:
-
-/usr/include/asm/errno.h:
-
-/usr/lib64/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake:
-
-/usr/include/qt6/QtCore/qcontainertools_impl.h:
-
-/usr/include/qt6/QtGui/qfont.h:
-
-/usr/include/c++/16/bits/new_throw.h:
-
-/usr/include/c++/16/bits/atomic_wait.h:
-
-/usr/lib64/cmake/Qt6/QtPublicSbomPythonHelpers.cmake:
 
 /usr/include/qt6/QtCore/qforeach.h:
 
@@ -10899,8 +11257,6 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 /home/anechka/CG_coursework_IU7_2028/strategies/conversion/BaseCoordinateConvertStrategy.h:
 
 /usr/include/c++/16/bits/ranges_cmp.h:
-
-/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp:
 
 /usr/include/c++/16/bits/version.h:
 
@@ -11014,15 +11370,11 @@ PlanetSystemDesigner_autogen/moc_predefs.h:
 
 /usr/include/qt6/QtCore/QSizeF:
 
-/usr/lib64/libXext.so.6:
-
-/usr/include/qt6/QtCore/q20type_traits.h:
-
-/home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.h:
-
-/usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake:
-
 /usr/include/bits/types/struct_itimerspec.h:
+
+/home/anechka/CG_coursework_IU7_2028/strategies/render/default/DefaultRenderStrategy.cpp:
+
+/usr/include/bits/waitflags.h:
 
 /usr/include/qt6/QtCore/qshareddata.h:
 
@@ -11032,15 +11384,11 @@ PlanetSystemDesigner_autogen/moc_predefs.h:
 
 /usr/include/c++/16/ext/type_traits.h:
 
+/home/anechka/CG_coursework_IU7_2028/strategies/render/creators/RenderStrategyCreator.h:
+
 /usr/include/c++/16/x86_64-redhat-linux/bits/cpu_defines.h:
 
 /usr/include/qt6/QtCore/qcoreapplication.h:
-
-/usr/include/qt6/QtGui/qfontmetrics.h:
-
-/usr/include/bits/time.h:
-
-/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/InvisibleObject.h:
 
 /usr/include/qt6/QtCore/qhash.h:
 
@@ -11074,29 +11422,7 @@ PlanetSystemDesigner_autogen/moc_predefs.h:
 
 /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/CameraAdapter.cpp:
 
-/usr/include/bits/stdint-least.h:
-
-/usr/include/c++/16/bits/shared_ptr_base.h:
-
-/home/anechka/CG_coursework_IU7_2028/factories/draw/BaseDrawFactory.h:
-
-/usr/include/qt6/QtCore/qbytearray.h:
-
-/usr/lib64/libXau.so.6:
-
-/home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.cpp:
-
-/usr/include/c++/16/bits/stl_function.h:
-
-/usr/include/c++/16/bits/atomic_base.h:
-
-/usr/lib64/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake:
-
 /usr/include/bits/select.h:
-
-/usr/lib64/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake:
-
-/usr/include/qt6/QtCore/qprocessordetection.h:
 
 /usr/include/qt6/QtGui/qvectornd.h:
 
@@ -11110,17 +11436,13 @@ PlanetSystemDesigner_autogen/moc_predefs.h:
 
 /usr/include/bits/floatn-common.h:
 
+/usr/include/c++/16/bits/align.h:
+
+/usr/include/qt6/QtWidgets/qtabwidget.h:
+
 /usr/include/qt6/QtWidgets/qspinbox.h:
 
 /usr/include/qt6/QtGui/qevent.h:
-
-/usr/include/c++/16/istream:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QWaylandEglClientBufferPluginAdditionalTargetInfo.cmake:
-
-/usr/include/qt6/QtGui/qfontinfo.h:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginTargets-relwithdebinfo.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginTargets-relwithdebinfo.cmake:
 
@@ -11144,6 +11466,22 @@ PlanetSystemDesigner_autogen/moc_predefs.h:
 
 /usr/share/cmake/Modules/CheckLibraryExists.cmake:
 
+CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o:
+
+/home/anechka/CG_coursework_IU7_2028/strategies/render/default/DefaultRenderStrategy.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginTargetsPrecheck.cmake:
+
+/usr/include/qt6/QtWidgets/qgridlayout.h:
+
+/usr/lib64/libfreetype.so.6:
+
+/usr/include/qt6/QtWidgets/QVBoxLayout:
+
+/usr/include/bits/types/struct_sched_param.h:
+
+/usr/include/c++/16/cwctype:
+
 /home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.cpp:
 
 /home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.cpp:
@@ -11158,13 +11496,45 @@ PlanetSystemDesigner_autogen/moc_predefs.h:
 
 /usr/include/c++/16/bits/ranges_util.h:
 
-/home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.cpp:
+/usr/include/c++/16/bits/shared_ptr_base.h:
 
-/usr/include/c++/16/tr1/gamma.tcc:
+/usr/include/bits/stdint-least.h:
 
-/usr/include/asm-generic/posix_types.h:
+/usr/include/qt6/QtCore/qcheckedint_impl.h:
 
-/usr/lib64/cmake/Qt6/QtPublicAndroidHelpers.cmake:
+/usr/include/asm/errno.h:
+
+/usr/lib64/cmake/Qt6/QtPublicSbomGenerationCycloneDXHelpers.cmake:
+
+/usr/include/qt6/QtCore/qcontainertools_impl.h:
+
+/usr/lib64/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake:
+
+/usr/include/c++/16/bits/atomic_base.h:
+
+/usr/include/c++/16/bits/atomic_wait.h:
+
+/usr/lib64/cmake/Qt6/QtPublicSbomPythonHelpers.cmake:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QWaylandAdwaitaDecorationPluginAdditionalTargetInfo.cmake:
+
+/usr/include/bits/stdio_lim.h:
+
+/usr/include/qt6/QtCore/qurl.h:
+
+/home/anechka/CG_coursework_IU7_2028/component/BaseObject.h:
+
+/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/InvisibleObject.h:
+
+/usr/include/bits/time.h:
+
+/usr/include/qt6/QtCore/qprocessordetection.h:
+
+/usr/lib64/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake:
+
+/home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.cpp:
+
+/usr/include/qt6/QtCore/qspan.h:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginAdditionalTargetInfo.cmake:
 
@@ -11216,12 +11586,6 @@ CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o:
 
 /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake:
 
-/usr/include/bits/types/mbstate_t.h:
-
-/usr/include/qt6/QtCore/qiodevicebase.h:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginConfig.cmake:
-
 /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsTargets-relwithdebinfo.cmake:
 
 /usr/include/bits/types/sigset_t.h:
@@ -11230,11 +11594,13 @@ CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o:
 
 /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp:
 
-/usr/include/qt6/QtGui/qcursor.h:
+/usr/include/c++/16/bits/memory_resource.h:
+
+/home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.h:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginConfig.cmake:
 
-/usr/include/c++/16/bits/memory_resource.h:
+/usr/include/qt6/QtGui/qcursor.h:
 
 /usr/include/c++/16/algorithm:
 
@@ -11261,16 +11627,6 @@ CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o:
 /usr/lib/gcc/x86_64-redhat-linux/16/include/stdbool.h:
 
 /usr/lib64/libQt6Gui.so.6.11.1:
-
-/usr/lib64/libfreetype.so.6:
-
-/usr/include/qt6/QtWidgets/QVBoxLayout:
-
-/usr/include/bits/types/struct_sched_param.h:
-
-/usr/include/c++/16/cwctype:
-
-/home/anechka/CG_coursework_IU7_2028/qt/src/mainwindow.cpp:
 
 /usr/include/qt6/QtCore/qiterable.h:
 
@@ -11332,8 +11688,6 @@ CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginTargets.cmake:
 
-/usr/include/bits/waitflags.h:
-
 /usr/include/qt6/QtGui/qtextformat.h:
 
 /usr/include/c++/16/stdexcept:
@@ -11371,14 +11725,6 @@ CMakeFiles/PlanetSystemDesigner.dir/exceptions/scene/SceneException.cpp.o:
 /usr/include/c++/16/backward/binders.h:
 
 /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake:
-
-/usr/include/qt6/QtWidgets/qtwidgets-config.h:
-
-/usr/include/qt6/QtWidgets/qtabwidget.h:
-
-/usr/include/c++/16/bits/align.h:
-
-/usr/include/c++/16/bits/monostate.h:
 
 /usr/include/c++/16/bits/allocated_ptr.h:
 
@@ -11472,10 +11818,6 @@ PlanetSystemDesigner_autogen/mocs_compilation.cpp:
 
 /usr/include/qt6/QtGui/qaction.h:
 
-/usr/include/c++/16/bits/functional_hash.h:
-
-/usr/include/qt6/QtGui/QPen:
-
 /usr/include/qt6/QtCore/qabstracteventdispatcher.h:
 
 /usr/lib64/cmake/Qt6Gui/Qt6GuiPlugins.cmake:
@@ -11540,27 +11882,25 @@ PlanetSystemDesigner_autogen/mocs_compilation.cpp:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginConfig.cmake:
 
-/usr/lib64/libb2.so.1:
-
 /usr/include/c++/16/span:
 
 /usr/include/c++/16/bits/stdexcept_throw.h:
 
-/usr/include/c++/16/bits/stl_algo.h:
+/usr/include/c++/16/bits/new_throw.h:
 
-/usr/include/asm-generic/int-ll64.h:
+/usr/include/qt6/QtGui/qfont.h:
 
-/usr/include/c++/16/bits/stl_iterator_base_funcs.h:
+/usr/include/qt6/QtGui/qtguiglobal.h:
 
-/usr/include/c++/16/debug/assertions.h:
+/usr/include/c++/16/istream:
 
-/usr/include/c++/16/debug/debug.h:
+/usr/lib64/cmake/Qt6Gui/Qt6QWaylandEglClientBufferPluginAdditionalTargetInfo.cmake:
 
-/usr/include/asm-generic/types.h:
+/usr/include/qt6/QtGui/qfontinfo.h:
 
-/usr/include/asm-generic/bitsperlong.h:
+/usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginTargets-relwithdebinfo.cmake:
 
-/usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginConfig.cmake:
+/usr/include/qt6/QtGui/qfontmetrics.h:
 
 /usr/include/qt6/QtGui/qkeysequence.h:
 
@@ -12052,10 +12392,6 @@ CMakeFiles/PlanetSystemDesigner.dir/exceptions/BaseException.cpp.o:
 
 /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake:
 
-/usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginTargetsPrecheck.cmake:
-
-/usr/include/qt6/QtWidgets/qgridlayout.h:
-
 /usr/include/c++/16/optional:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QWaylandWlShellIntegrationPluginAdditionalTargetInfo.cmake:
@@ -12154,9 +12490,9 @@ PlanetSystemDesigner_autogen/KVXSJM6DYM/moc_mainwindow.cpp:
 
 /usr/lib64/cmake/Qt6OpenGL/Qt6OpenGLTargets.cmake:
 
-/home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.h:
-
 /usr/include/c++/16/bits/stl_bvector.h:
+
+/home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.h:
 
 /usr/lib64/cmake/Qt6OpenGL/Qt6OpenGLTargetsPrecheck.cmake:
 
@@ -12419,11 +12755,3 @@ CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/
 /usr/lib64/libQt6OpenGL.so.6.11.1:
 
 /usr/lib64/libQt6Widgets.so.6.11.1:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QWaylandXdgShellIntegrationPluginAdditionalTargetInfo.cmake:
-
-/usr/lib64/libatomic.so.1.2.0:
-
-/usr/include/qt6/QtGui/qfontvariableaxis.h:
-
-/usr/lib64/libbrotlicommon.so.1:

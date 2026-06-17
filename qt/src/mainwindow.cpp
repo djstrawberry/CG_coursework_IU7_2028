@@ -148,7 +148,10 @@ void MainWindow::initializeScene()
     
     auto camera = std::make_shared<CameraAdapter>(cameraImpl);
     ManagerProvider::getCameraManager()->addCamera(camera);
-    ManagerProvider::getDrawManager()->setLightColor(1.0f, 0.9f, 0.4f, 1.0f);
+
+    auto drawManager = ManagerProvider::getDrawManager();
+    drawManager->setCameraImpl(cameraImpl);
+    drawManager->setLightColor(1.0f, 0.9f, 0.4f, 1.0f);
 
     onStarParamsChanged();
     startOrbitAnimation();
@@ -197,7 +200,6 @@ void MainWindow::onStarParamsChanged()
     mat.diffuse = static_cast<float>(m_matDiffuseBox->value());
     mat.specular = static_cast<float>(m_matSpecularBox->value());
     mat.luminous = true;
-    // ...
 
     const Vec3<double> starCenter = getStarCenter();
     const double starRadius = m_starRadiusBox->value();
@@ -264,7 +266,7 @@ void MainWindow::onLightColorChanged()
     QColor color = QColorDialog::getColor(m_currentLightColor, this, "Pick Ambient Solar Light Color");
     if (color.isValid())
     {
-        m_currentLightColor = color;  // ← Сохраняем!
+        m_currentLightColor = color;
         
         ManagerProvider::getDrawManager()->setLightColor(
             static_cast<float>(color.redF()),
@@ -289,13 +291,9 @@ void MainWindow::onCameraResetPressed()
     auto activeCam = cameraManager->getActiveCamera();
     if (activeCam)
     {
-        auto impl = activeCam->getImpl();
-        if (impl)
-        {
-            impl->setPosition({0.0, 15.0, 30.0});
-            impl->setTarget({0.0, 0.0, 0.0});
-            impl->setFov(60.0);
-        }
+        activeCam->setPosition({0.0, 15.0, 30.0});
+        activeCam->setTarget({0.0, 0.0, 0.0});
+        activeCam->setFov(60.0);
     }
     m_viewport->update();
 }

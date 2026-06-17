@@ -198,12 +198,14 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.o: \
  /usr/include/c++/16/bits/stl_map.h \
  /usr/include/c++/16/bits/stl_multimap.h \
  /home/anechka/CG_coursework_IU7_2028/managers/scene/../../materials/Material.h \
- /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/CelestialBody.h \
- /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/../BaseModel.h \
- /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/../../VisibleObject.h \
- /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/../../../Primitive.h \
- /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/../impl/SphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../factories/sphere/SphereFactory.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/SphereImpl.h \
  /usr/include/c++/16/vector /usr/include/c++/16/bits/stl_vector.h \
  /usr/include/c++/16/bits/stl_bvector.h \
  /usr/include/c++/16/bits/vector.tcc \
- /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/CelestialBody.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/../BaseModel.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/../../VisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/visible/model/celestial/../../../Primitive.h

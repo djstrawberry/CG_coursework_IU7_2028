@@ -63,6 +63,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PlanetSystemDesigner.dir/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp.o.d"
   "CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o"
   "CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProjectionStrategy.cpp.o.d"
+  "CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrategy.cpp.o"
+  "CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrategy.cpp.o.d"
   "CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o"
   "CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o.d"
   "PlanetSystemDesigner"

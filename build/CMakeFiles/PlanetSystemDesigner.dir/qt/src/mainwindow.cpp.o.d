@@ -435,6 +435,10 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/SceneManager.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../scene/Scene.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../materials/Material.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../factories/sphere/SphereFactory.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/SphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/draw/DrawManager.h \
  /usr/include/qt6/QtGui/QPainter \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/invisible/camera/CameraAdapter.h \
@@ -446,7 +450,6 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/CelestialBody.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/../BaseModel.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/../../VisibleObject.h \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/../impl/SphereImpl.h \
  /usr/include/qt6/QtWidgets/QVBoxLayout \
  /usr/include/qt6/QtWidgets/QHBoxLayout \
  /usr/include/qt6/QtWidgets/QColorDialog \

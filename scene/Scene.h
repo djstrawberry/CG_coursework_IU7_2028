@@ -9,7 +9,7 @@ public:
     using iterator = std::map<size_t, std::shared_ptr<BaseObject>>::iterator;
     using objectMap = std::map<size_t, std::shared_ptr<BaseObject>>;
 
-    static std::shared_ptr<Scene> getInstance();
+    static Scene& getInstance() noexcept;
 
     size_t addObject(const std::shared_ptr<BaseObject>& obj);
     void removeObject(size_t id);

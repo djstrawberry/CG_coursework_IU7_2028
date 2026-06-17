@@ -89,6 +89,7 @@ set(PROJECT_SOURCES
     factories/draw/qt/QtDrawFactory.cpp
     factories/draw/qt/products/QtPainter.h
     factories/draw/qt/products/QtPainter.cpp
+    factories/sphere/SphereFactory.h
     
     # Strategies - Projection
     strategies/projection/BaseProjectionStrategy.h
@@ -103,6 +104,13 @@ set(PROJECT_SOURCES
     strategies/conversion/creator/ConvertCoordsStrategyCreator.hpp
     strategies/conversion/default/DefaultConvertCoordinatesStrategy.h
     strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp
+
+    # Strategies - Render
+    strategies/render/BaseRenderStrategy.h
+    strategies/render/creators/RenderStrategyCreator.h
+    strategies/render/creators/RenderStrategyCreator.hpp
+    strategies/render/default/DefaultRenderStrategy.h
+    strategies/render/default/DefaultRenderStrategy.cpp
     
     # Exceptions
     exceptions/BaseException.h

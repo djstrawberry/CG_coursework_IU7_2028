@@ -4,6 +4,7 @@
 #include "../../visitors/BaseVisitor.h"
 #include "../../vector/Vec3.h"
 #include "../../materials/Material.h"
+#include "../../factories/sphere/SphereFactory.h"
 #include <map>
 #include <memory>
 
@@ -22,11 +23,13 @@ public:
     void advanceOrbits(double deltaSeconds);
     void setCelestialMaterial(size_t id, const Material &mat);
     void transformCelestial(size_t id, double orbitRadius, double orbitSpeed);
+    void setSphereFactory(std::shared_ptr<SphereFactory> factory);
 
     void accept(std::shared_ptr<BaseVisitor> visitor);
     const std::map<size_t, std::shared_ptr<BaseObject>>& getObjects() const;
     Vec3<double> getPrimaryLightPosition() const;
 
 private:
-    std::shared_ptr<Scene> m_scene;
+    Scene& m_scene;
+    std::shared_ptr<SphereFactory> m_sphereFactory;
 };

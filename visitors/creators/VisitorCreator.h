@@ -3,6 +3,7 @@
 #include "../../concepts/concepts.h"
 #include "../../strategies/projection/BaseProjectionStrategy.h"
 #include "../../strategies/conversion/BaseCoordinateConvertStrategy.h"
+#include "../../strategies/render/BaseRenderStrategy.h"
 #include "../../factories/draw/products/BasePainter.h"
 #include "../../component/primitive/invisible/camera/impl/CameraImpl.h"
 #include "../../vector/Vec3.h"
@@ -34,6 +35,7 @@ using DrawVisitorCreator = VisitorCreator<
     DrawVisitor,
     std::shared_ptr<BaseProjectionStrategy>,
     std::shared_ptr<BaseCoordinateConvertStrategy>,
+    std::shared_ptr<BaseRenderStrategy>,
     std::shared_ptr<BasePainter>,
     std::shared_ptr<CameraImpl>,
     std::vector<float>,
