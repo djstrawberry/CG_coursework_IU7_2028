@@ -40,4 +40,9 @@ public:
                             double x1, double y1,
                             double x2, double y2,
                             int r, int g, int b, int a = 255) override;
+    void drawGouraudTriangle(double x0, double y0, double x1, double y1, double x2, double y2,
+                                 int r0, int g0, int b0,
+                                 int r1, int g1, int b1,
+                                 int r2, int g2, int b2,
+                                 int a) override;
 };

@@ -121,3 +121,46 @@ void QtPainter::drawFilledTriangle(double x0, double y0,
     polygon << QPointF(x0, y0) << QPointF(x1, y1) << QPointF(x2, y2);
     m_scene->addPolygon(polygon, QPen(Qt::NoPen), QBrush(QColor(r, g, b, a)));
 }
+
+void QtPainter::drawGouraudTriangle(double x0, double y0, double x1, double y1, double x2, double y2,
+                                     int r0, int g0, int b0,
+                                     int r1, int g1, int b1,
+                                     int r2, int g2, int b2,
+                                     int a)
+{
+    Q_UNUSED(a);
+    int minX = static_cast<int>(std::max(0.0, std::min({x0, x1, x2})));
+    int maxX = static_cast<int>(std::min(static_cast<double>(m_width - 1), std::max({x0, x1, x2})));
+    int minY = static_cast<int>(std::max(0.0, std::min({y0, y1, y2})));
+    int maxY = static_cast<int>(std::min(static_cast<double>(m_height - 1), std::max({y0, y1, y2})));
+
+    if (minX > maxX || minY > maxY) return;
+
+    QImage img(maxX - minX + 1, maxY - minY + 1, QImage::Format_ARGB32);
+    img.fill(Qt::transparent);
+
+    auto edge = [](double x0, double y0, double x1, double y1, double px, double py) {
+        return (x1 - x0) * (py - y0) - (y1 - y0) * (px - x0);
+    };
+
+    double area = edge(x0, y0, x1, y1, x2, y2);
+    if (std::abs(area) < 1e-6) return;
+
+    for (int y = minY; y <= maxY; ++y) {
+        for (int x = minX; x <= maxX; ++x) {
+            double px = x + 0.5, py = y + 0.5;
+            double w0 = edge(x1, y1, x2, y2, px, py);
+            double w1 = edge(x2, y2, x0, y0, px, py);
+            double w2 = edge(x0, y0, x1, y1, px, py);
+            if ((w0 >= 0 && w1 >= 0 && w2 >= 0) || (w0 <= 0 && w1 <= 0 && w2 <= 0)) {
+                w0 /= area; w1 /= area; w2 /= area;
+                int r = std::clamp(static_cast<int>(r0 * w0 + r1 * w1 + r2 * w2), 0, 255);
+                int g = std::clamp(static_cast<int>(g0 * w0 + g1 * w1 + g2 * w2), 0, 255);
+                int b = std::clamp(static_cast<int>(b0 * w0 + b1 * w1 + b2 * w2), 0, 255);
+                img.setPixelColor(x - minX, y - minY, QColor(r, g, b));
+            }
+        }
+    }
+
+    m_scene->addPixmap(QPixmap::fromImage(img))->setPos(minX, minY);
+}

@@ -76,7 +76,11 @@ void DefaultRenderStrategy::renderTrianglePasses(std::shared_ptr<BasePainter> pa
     std::sort(sorted.begin(), sorted.end(),
               [](const auto& a, const auto& b) { return a.depth > b.depth; });
     for (const auto& t : sorted)
-        painter->drawFilledTriangle(t.x0, t.y0, t.x1, t.y1, t.x2, t.y2, t.r, t.g, t.b, t.a);
+        painter->drawGouraudTriangle(t.x0, t.y0, t.x1, t.y1, t.x2, t.y2,
+                                     t.r0, t.g0, t.b0,
+                                     t.r1, t.g1, t.b1,
+                                     t.r2, t.g2, t.b2,
+                                     t.a);
 }
 
 void DefaultRenderStrategy::computeLitColor(const Material& mat, const Vec3<double>& normal,
@@ -160,10 +164,9 @@ void DefaultRenderStrategy::processTriangle(const std::vector<Vec3<double>>& pro
     Vec3<double> v1 = (camPos - vertices[i1]).normalized();
     Vec3<double> v2 = (camPos - vertices[i2]).normalized();
 
-    Vec3<double> l0, l1, l2;
-    l0 = (lightSourcePos - vertices[i0]).normalized();
-    l1 = (lightSourcePos - vertices[i1]).normalized();
-    l2 = (lightSourcePos - vertices[i2]).normalized();
+    Vec3<double> l0 = (lightSourcePos - vertices[i0]).normalized();
+    Vec3<double> l1 = (lightSourcePos - vertices[i1]).normalized();
+    Vec3<double> l2 = (lightSourcePos - vertices[i2]).normalized();
 
     int r0, g0, b0, r1, g1, b1, r2, g2, b2;
     computeLitColor(mat, n0, v0, l0, r0, g0, b0, light);
@@ -175,9 +178,9 @@ void DefaultRenderStrategy::processTriangle(const std::vector<Vec3<double>>& pro
     t.x1 = projected[i1].getX(); t.y1 = projected[i1].getY();
     t.x2 = projected[i2].getX(); t.y2 = projected[i2].getY();
     t.depth = (projected[i0].getZ() + projected[i1].getZ() + projected[i2].getZ()) / 3.0;
-    t.r = (r0 + r1 + r2) / 3; 
-    t.g = (g0 + g1 + g2) / 3; 
-    t.b = (b0 + b1 + b2) / 3; 
+    t.r0 = r0; t.g0 = g0; t.b0 = b0;
+    t.r1 = r1; t.g1 = g1; t.b1 = b1;
+    t.r2 = r2; t.g2 = g2; t.b2 = b2;
     t.a = 255;
     m_trianglePasses.push_back(t);
 }

@@ -19,7 +19,10 @@ private:
     struct TrianglePass {
         double x0 = 0.0, y0 = 0.0, x1 = 0.0, y1 = 0.0, x2 = 0.0, y2 = 0.0;
         double depth = 0.0;
-        int r = 0, g = 0, b = 0, a = 255; 
+        int r0 = 0, g0 = 0, b0 = 0;
+        int r1 = 0, g1 = 0, b1 = 0;
+        int r2 = 0, g2 = 0, b2 = 0;
+        int a = 255; 
     };
 
     mutable std::vector<GlowPass> m_glowPasses;
