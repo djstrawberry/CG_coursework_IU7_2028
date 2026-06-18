@@ -173,8 +173,9 @@ CMakeFiles/PlanetSystemDesigner.dir/strategies/projection/default/DefaultProject
  /usr/include/c++/16/tr1/modified_bessel_func.tcc \
  /usr/include/c++/16/tr1/poly_hermite.tcc \
  /usr/include/c++/16/tr1/poly_laguerre.tcc \
- /usr/include/c++/16/tr1/riemann_zeta.tcc /usr/include/c++/16/memory \
- /usr/include/c++/16/bits/stl_tempbuf.h \
+ /usr/include/c++/16/tr1/riemann_zeta.tcc \
+ /home/anechka/CG_coursework_IU7_2028/strategies/projection/default/../../../component/primitive/invisible/camera/impl/../../../../../visitors/BaseVisitor.h \
+ /usr/include/c++/16/memory /usr/include/c++/16/bits/stl_tempbuf.h \
  /usr/include/c++/16/bits/stl_uninitialized.h \
  /usr/include/c++/16/bits/stl_raw_storage_iter.h \
  /usr/include/c++/16/bits/align.h /usr/include/c++/16/bits/unique_ptr.h \

@@ -174,6 +174,7 @@ CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/param
  /usr/include/c++/16/tr1/poly_laguerre.tcc \
  /usr/include/c++/16/tr1/riemann_zeta.tcc \
  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/../../../../../../materials/Material.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/../../../../../../visitors/BaseVisitor.h \
  /usr/include/c++/16/memory /usr/include/c++/16/bits/stl_tempbuf.h \
  /usr/include/c++/16/bits/stl_uninitialized.h \
  /usr/include/c++/16/bits/stl_raw_storage_iter.h \

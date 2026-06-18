@@ -347,6 +347,7 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../vector/../exceptions/vector/VectorException.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../vector/../exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../visitors/BaseVisitor.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/visible/model/impl/SphereImpl.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/visible/model/impl/../../../../../materials/Material.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../default/DefaultProjectionStrategy.h \
@@ -362,7 +363,6 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/render/creators/RenderStrategyCreator.hpp \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/VisitorCreator.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/../draw/DrawVisitor.h \
- /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/../draw/../BaseVisitor.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/VisitorCreator.hpp \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../ManagerProvider.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../camera/CameraManager.h \

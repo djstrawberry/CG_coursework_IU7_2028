@@ -197,6 +197,7 @@ CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrat
  /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../materials/Material.h \
  /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../factories/draw/products/BasePainter.h \
  /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../component/primitive/visible/model/impl/SphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../component/primitive/visible/model/impl/../../../../../visitors/BaseVisitor.h \
  /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../component/primitive/invisible/camera/impl/CameraImpl.h \
  /usr/include/c++/16/algorithm /usr/include/c++/16/bits/stl_algo.h \
  /usr/include/c++/16/bits/algorithmfwd.h \

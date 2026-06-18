@@ -1,6 +1,7 @@
 #pragma once
 
 #include "../../../../../vector/Vec3.h"
+#include "../../../../../visitors/BaseVisitor.h"
 #include <memory>
 
 class CameraImpl
@@ -22,4 +23,10 @@ public:
     
     virtual void rotateAroundTarget(double angleX, double angleY) = 0;
     virtual void zoom(double amount) = 0;
+
+    virtual void accept(std::shared_ptr<BaseVisitor> visitor)
+    {
+        if (visitor)
+            visitor->visit(*this);
+    }
 };

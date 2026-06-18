@@ -2,6 +2,7 @@
 
 #include "../../../../../vector/Vec3.h"
 #include "../../../../../materials/Material.h"
+#include "../../../../../visitors/BaseVisitor.h"
 #include <memory>
 #include <vector>
 
@@ -31,4 +32,10 @@ public:
     virtual const std::vector<std::pair<size_t, size_t>>& getEdges() const = 0;
 
     virtual void generateMesh() = 0;
+
+    virtual void accept(std::shared_ptr<BaseVisitor> visitor)
+    {
+        if (visitor)
+            visitor->visit(*this);
+    }
 };

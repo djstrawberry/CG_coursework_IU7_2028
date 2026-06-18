@@ -87,8 +87,8 @@ Vec3<double> CelestialBody::getCenter() const noexcept {
 }
 
 void CelestialBody::accept(std::shared_ptr<BaseVisitor> visitor) {
-    if (visitor) {
-        visitor->visit(*m_impl);  
+    if (m_impl) {
+        m_impl->accept(visitor);  
     }
 }
 
