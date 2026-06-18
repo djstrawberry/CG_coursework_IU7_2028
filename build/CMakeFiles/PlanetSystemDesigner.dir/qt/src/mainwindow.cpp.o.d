@@ -448,11 +448,10 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../commands/object/ObjectCommand.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../commands/object/../BaseCommand.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../commands/camera/CameraCommand.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../commands/light/LightCommand.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/CelestialBody.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/../BaseModel.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/../../VisibleObject.h \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/invisible/light/default/DefaultLight.h \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/invisible/light/default/../impl/LightImpl.h \
  /usr/include/qt6/QtWidgets/QVBoxLayout \
  /usr/include/qt6/QtWidgets/QHBoxLayout \
  /usr/include/qt6/QtWidgets/QColorDialog \

@@ -8,6 +8,8 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
   /home/anechka/CG_coursework_IU7_2028/commands/BaseCommand.h \
   /home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.cpp \
   /home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.h \
+  /home/anechka/CG_coursework_IU7_2028/commands/light/LightCommand.cpp \
+  /home/anechka/CG_coursework_IU7_2028/commands/light/LightCommand.h \
   /home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.cpp \
   /home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.h \
   /home/anechka/CG_coursework_IU7_2028/component/BaseObject.cpp \
@@ -1352,8 +1354,6 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/lib64/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake:
 
-/usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:
-
 /usr/lib64/cmake/Qt6Core/Qt6CoreConfigVersion.cmake:
 
 /usr/lib64/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake:
@@ -1515,6 +1515,8 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 /usr/include/qt6/QtCore/qyieldcpu.h:
 
 /usr/include/qt6/QtCore/qxptype_traits.h:
+
+/usr/include/qt6/QtCore/qvariant.h:
 
 /usr/include/c++/16/bits/locale_classes.h:
 
@@ -1870,8 +1872,6 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/include/c++/16/ratio:
 
-/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/QtDrawFactory.h:
-
 /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake:
 
 /home/anechka/CG_coursework_IU7_2028/strategies/projection/default/DefaultProjectionStrategy.h:
@@ -1886,8 +1886,6 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/include/c++/16/bits/ostream_insert.h:
 
-/usr/include/qt6/QtCore/qvariant.h:
-
 /usr/include/bits/waitflags.h:
 
 /usr/include/c++/16/bits/allocator.h:
@@ -1899,6 +1897,66 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/BaseLight.h:
 
 /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h:
+
+/usr/include/qt6/QtCore/qversiontagging.h:
+
+/usr/include/c++/16/bits/stringfwd.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/wctype-wchar.h:
+
+/usr/include/c++/16/bits/ranges_util.h:
+
+/home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.cpp:
+
+/usr/include/c++/16/bits/postypes.h:
+
+/usr/include/c++/16/bits/node_handle.h:
+
+/home/anechka/CG_coursework_IU7_2028/exceptions/camera/CameraException.cpp:
+
+/home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.cpp:
+
+/usr/lib64/cmake/Qt6/QtPublicTestHelpers.cmake:
+
+/home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.cpp:
+
+/usr/include/qt6/QtWidgets/qwidget.h:
+
+/home/anechka/CG_coursework_IU7_2028/component/primitive/Primitive.h:
+
+/usr/include/c++/16/limits:
+
+/usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake:
+
+/home/anechka/CG_coursework_IU7_2028/commands/light/LightCommand.h:
+
+/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/default/DefaultCamera.h:
+
+/usr/share/cmake/Modules/Linker/GNU-CXX.cmake:
+
+/usr/include/c++/16/bits/cxxabi_init_exception.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargetsPrecheck.cmake:
+
+/usr/include/qt6/QtGui/qimage.h:
+
+/usr/include/c++/16/tr1/poly_hermite.tcc:
+
+/home/anechka/CG_coursework_IU7_2028/component/BaseObject.cpp:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginTargets.cmake:
+
+/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/VisibleObject.h:
+
+/usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake:
+
+/home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp:
+
+/usr/include/bits/posix2_lim.h:
+
+/home/anechka/CG_coursework_IU7_2028/strategies/conversion/BaseCoordinateConvertStrategy.h:
 
 /usr/include/sys/single_threaded.h:
 
@@ -1943,48 +2001,6 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp:
 
 /usr/include/qt6/QtCore/qcompare.h:
-
-/usr/include/c++/16/bits/node_handle.h:
-
-/home/anechka/CG_coursework_IU7_2028/exceptions/camera/CameraException.cpp:
-
-/home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.cpp:
-
-/usr/lib64/cmake/Qt6/QtPublicTestHelpers.cmake:
-
-/home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.cpp:
-
-/usr/share/cmake/Modules/FindPackageMessage.cmake:
-
-/usr/include/c++/16/bits/sstream.tcc:
-
-/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/default/DefaultCamera.h:
-
-/usr/share/cmake/Modules/CheckLibraryExists.cmake:
-
-/usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsTargets-relwithdebinfo.cmake:
-
-/usr/include/c++/16/bits/stl_list.h:
-
-/usr/share/cmake/Modules/Linker/GNU-CXX.cmake:
-
-/usr/include/c++/16/bits/cxxabi_init_exception.h:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargetsPrecheck.cmake:
-
-/usr/include/qt6/QtGui/qimage.h:
-
-/usr/include/c++/16/tr1/poly_hermite.tcc:
-
-/home/anechka/CG_coursework_IU7_2028/component/BaseObject.cpp:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginTargets.cmake:
-
-/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/VisibleObject.h:
-
-/usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake:
-
-/home/anechka/CG_coursework_IU7_2028/strategies/conversion/default/DefaultConvertCoordinatesStrategy.cpp:
 
 /usr/include/c++/16/backward/auto_ptr.h:
 
@@ -2038,17 +2054,7 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /home/anechka/CG_coursework_IU7_2028/strategies/conversion/creator/ConvertCoordsStrategyCreator.hpp:
 
-/home/anechka/CG_coursework_IU7_2028/strategies/conversion/BaseCoordinateConvertStrategy.h:
-
-/usr/include/bits/posix2_lim.h:
-
 /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/impl/LightImpl.cpp:
-
-/usr/include/qt6/QtWidgets/qwidget.h:
-
-/home/anechka/CG_coursework_IU7_2028/component/primitive/Primitive.h:
-
-/usr/include/c++/16/limits:
 
 PlanetSystemDesigner_autogen/moc_predefs.h:
 
@@ -2079,6 +2085,24 @@ PlanetSystemDesigner_autogen/moc_predefs.h:
 /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/impl/CameraImpl.h:
 
 /usr/include/qt6/QtCore/qalloc.h:
+
+/usr/share/cmake/Modules/CheckLibraryExists.cmake:
+
+/usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsTargets-relwithdebinfo.cmake:
+
+/usr/include/c++/16/bits/stl_list.h:
+
+/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/QtDrawFactory.h:
+
+/home/anechka/CG_coursework_IU7_2028/commands/light/LightCommand.cpp:
+
+/usr/include/c++/16/bits/uses_allocator_args.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginTargets.cmake:
+
+/usr/include/c++/16/bits/new_allocator.h:
+
+/home/anechka/CG_coursework_IU7_2028/visitors/creators/VisitorCreator.hpp:
 
 /home/anechka/CG_coursework_IU7_2028/commands/BaseCommand.h:
 
@@ -2144,19 +2168,9 @@ PlanetSystemDesigner_autogen/moc_predefs.h:
 
 /usr/include/asm/bitsperlong.h:
 
-/usr/include/qt6/QtCore/qversiontagging.h:
+/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/impl/LightImpl.h:
 
-/usr/include/c++/16/bits/stringfwd.h:
-
-/usr/include/bits/stdint-intn.h:
-
-/usr/include/bits/wctype-wchar.h:
-
-/usr/include/c++/16/bits/ranges_util.h:
-
-/home/anechka/CG_coursework_IU7_2028/exceptions/scene/SceneException.cpp:
-
-/usr/include/c++/16/bits/postypes.h:
+/usr/include/qt6/QtCore/qassert.h:
 
 /usr/include/c++/16/bits/list.tcc:
 
@@ -2165,10 +2179,6 @@ PlanetSystemDesigner_autogen/moc_predefs.h:
 /usr/include/time.h:
 
 /usr/include/qt6/QtCore/qlocale.h:
-
-/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/impl/LightImpl.h:
-
-/usr/include/qt6/QtCore/qassert.h:
 
 /usr/include/bits/typesizes.h:
 
@@ -2207,8 +2217,6 @@ PlanetSystemDesigner_autogen/moc_predefs.h:
 /usr/include/c++/16/bits/hashtable.h:
 
 /home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.cpp:
-
-/usr/include/c++/16/bits/specfun.h:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginAdditionalTargetInfo.cmake:
 
@@ -2344,12 +2352,6 @@ CMakeFiles/4.3.0/CMakeSystem.cmake:
 
 /usr/include/c++/16/bits/unique_ptr.h:
 
-/usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginTargets.cmake:
-
-/usr/include/c++/16/bits/new_allocator.h:
-
-/home/anechka/CG_coursework_IU7_2028/visitors/creators/VisitorCreator.hpp:
-
 /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginAdditionalTargetInfo.cmake:
 
 /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.h:
@@ -2429,6 +2431,12 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 /usr/include/qt6/QtWidgets/QGraphicsScene:
 
 /usr/include/bits/long-double.h:
+
+/usr/include/c++/16/bits/specfun.h:
+
+/usr/share/cmake/Modules/FindPackageMessage.cmake:
+
+/usr/include/c++/16/bits/sstream.tcc:
 
 /usr/include/c++/16/bits/std_abs.h:
 
@@ -2523,8 +2531,6 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 /usr/include/c++/16/ext/alloc_traits.h:
 
 /usr/include/c++/16/bits/unordered_set.h:
-
-/usr/include/c++/16/bits/uses_allocator_args.h:
 
 /usr/include/c++/16/bits/utility.h:
 

@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o"
   "CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o.d"
+  "CMakeFiles/PlanetSystemDesigner.dir/commands/light/LightCommand.cpp.o"
+  "CMakeFiles/PlanetSystemDesigner.dir/commands/light/LightCommand.cpp.o.d"
   "CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o"
   "CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o.d"
   "CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o"

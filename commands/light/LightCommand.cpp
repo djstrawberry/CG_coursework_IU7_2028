@@ -3,7 +3,8 @@
 #include "../../managers/scene/SceneManager.h"
 
 AddLightCommand::AddLightCommand(const Vec3<double>& pos, const std::vector<float>& color)
-    : m_sceneManager(ManagerProvider::getSceneManager())
+    : m_action(&SceneManager::addLight)
+    , m_sceneManager(ManagerProvider::getSceneManager())
     , m_position(pos)
     , m_color(color)
 { }
@@ -14,7 +15,8 @@ void AddLightCommand::execute()
 }
 
 UpdateLightCommand::UpdateLightCommand(const Vec3<double>& pos, const std::vector<float>& color)
-    : m_sceneManager(ManagerProvider::getSceneManager())
+    : m_action(&SceneManager::updateLight)
+    , m_sceneManager(ManagerProvider::getSceneManager())
     , m_position(pos)
     , m_color(color)
 { }

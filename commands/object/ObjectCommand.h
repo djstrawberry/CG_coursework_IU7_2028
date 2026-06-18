@@ -46,7 +46,7 @@ private:
 
     std::shared_ptr<SceneManager> m_sceneManager;
 
-    mutable size_t m_assignedId = std::numeric_limits<size_t>::max();
+    size_t m_assignedId = std::numeric_limits<size_t>::max();
 
 public:
     AddPlanetCommand(const std::string &name, double radius,

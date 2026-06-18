@@ -65,7 +65,7 @@ public:
     DefaultRenderStrategy() = default;
     ~DefaultRenderStrategy() override = default;
 
-    void setLight(const Vec3<double>& pos, const std::vector<float>& color);
+    void setLight(const Vec3<double>& pos, const std::vector<float>& color) override;
     void beginScene() override;
     void renderSphere(const SphereImpl& sphere,
                       std::vector<Vec3<double>> projected,

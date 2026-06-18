@@ -2,6 +2,7 @@
 #include "../../component/primitive/visible/model/celestial/CelestialBody.h"
 #include "../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h"
 #include "../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h"
+#include "../../component/primitive/invisible/light/default/DefaultLight.h"
 #include "../../component/primitive/invisible/light/BaseLight.h"
 
 SceneManager::SceneManager() : m_scene(Scene::getInstance()) {}

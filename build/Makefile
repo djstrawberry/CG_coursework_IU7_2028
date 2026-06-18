@@ -203,6 +203,30 @@ commands/camera/CameraCommand.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.s
 .PHONY : commands/camera/CameraCommand.cpp.s
 
+commands/light/LightCommand.o: commands/light/LightCommand.cpp.o
+.PHONY : commands/light/LightCommand.o
+
+# target to build an object file
+commands/light/LightCommand.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/commands/light/LightCommand.cpp.o
+.PHONY : commands/light/LightCommand.cpp.o
+
+commands/light/LightCommand.i: commands/light/LightCommand.cpp.i
+.PHONY : commands/light/LightCommand.i
+
+# target to preprocess a source file
+commands/light/LightCommand.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/commands/light/LightCommand.cpp.i
+.PHONY : commands/light/LightCommand.cpp.i
+
+commands/light/LightCommand.s: commands/light/LightCommand.cpp.s
+.PHONY : commands/light/LightCommand.s
+
+# target to generate assembly for a file
+commands/light/LightCommand.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/commands/light/LightCommand.cpp.s
+.PHONY : commands/light/LightCommand.cpp.s
+
 commands/object/ObjectCommand.o: commands/object/ObjectCommand.cpp.o
 .PHONY : commands/object/ObjectCommand.o
 
@@ -988,6 +1012,9 @@ help:
 	@echo "... commands/camera/CameraCommand.o"
 	@echo "... commands/camera/CameraCommand.i"
 	@echo "... commands/camera/CameraCommand.s"
+	@echo "... commands/light/LightCommand.o"
+	@echo "... commands/light/LightCommand.i"
+	@echo "... commands/light/LightCommand.s"
 	@echo "... commands/object/ObjectCommand.o"
 	@echo "... commands/object/ObjectCommand.i"
 	@echo "... commands/object/ObjectCommand.s"

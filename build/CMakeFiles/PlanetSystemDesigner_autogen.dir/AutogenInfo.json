@@ -503,6 +503,12 @@
 			null
 		],
 		[
+			"/home/anechka/CG_coursework_IU7_2028/commands/light/LightCommand.h",
+			"MU",
+			"JSSWLMUQGD/moc_LightCommand.cpp",
+			null
+		],
+		[
 			"/home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.h",
 			"MU",
 			"GFKIAHM5DR/moc_ObjectCommand.cpp",
@@ -921,6 +927,11 @@
 	[
 		[
 			"/home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/anechka/CG_coursework_IU7_2028/commands/light/LightCommand.cpp",
 			"MU",
 			null
 		],

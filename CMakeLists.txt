@@ -23,6 +23,8 @@ set(PROJECT_SOURCES
     commands/object/ObjectCommand.cpp
     commands/camera/CameraCommand.h
     commands/camera/CameraCommand.cpp
+    commands/light/LightCommand.h
+    commands/light/LightCommand.cpp
     
     # Component - base
     component/BaseObject.h

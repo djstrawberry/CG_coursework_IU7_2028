@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "PlanetSystemDesigner_autogen/timestamp" "custom" "PlanetSystemDesigner_autogen/deps"
   "/home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/mocs_compilation.cpp" "CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilation.cpp.o.d"
   "/home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.cpp" "CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o" "gcc" "CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o.d"
+  "/home/anechka/CG_coursework_IU7_2028/commands/light/LightCommand.cpp" "CMakeFiles/PlanetSystemDesigner.dir/commands/light/LightCommand.cpp.o" "gcc" "CMakeFiles/PlanetSystemDesigner.dir/commands/light/LightCommand.cpp.o.d"
   "/home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.cpp" "CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o" "gcc" "CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o.d"
   "/home/anechka/CG_coursework_IU7_2028/component/BaseObject.cpp" "CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o" "gcc" "CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o.d"
   "/home/anechka/CG_coursework_IU7_2028/component/composite/Composite.cpp" "CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o" "gcc" "CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o.d"

@@ -7,6 +7,7 @@ PlanetSystemDesigner: \
   CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o \
+  CMakeFiles/PlanetSystemDesigner.dir/commands/light/LightCommand.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/component/composite/Composite.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.o \
@@ -125,6 +126,8 @@ CMakeFiles/PlanetSystemDesigner.dir/facade/Facade.cpp.o:
 CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o:
 
 CMakeFiles/PlanetSystemDesigner.dir/commands/camera/CameraCommand.cpp.o:
+
+CMakeFiles/PlanetSystemDesigner.dir/commands/light/LightCommand.cpp.o:
 
 CMakeFiles/PlanetSystemDesigner.dir/component/BaseObject.cpp.o:
 

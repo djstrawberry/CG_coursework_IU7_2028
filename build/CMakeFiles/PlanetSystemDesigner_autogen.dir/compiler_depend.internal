@@ -9,6 +9,8 @@
  /home/anechka/CG_coursework_IU7_2028/commands/BaseCommand.h
  /home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.cpp
  /home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.h
+ /home/anechka/CG_coursework_IU7_2028/commands/light/LightCommand.cpp
+ /home/anechka/CG_coursework_IU7_2028/commands/light/LightCommand.h
  /home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.cpp
  /home/anechka/CG_coursework_IU7_2028/commands/object/ObjectCommand.h
  /home/anechka/CG_coursework_IU7_2028/component/BaseObject.cpp
