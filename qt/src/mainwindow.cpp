@@ -132,16 +132,14 @@ void MainWindow::onPlanetColorClicked()
 
 void MainWindow::initializeScene()
 {
-    auto cameraImpl = std::make_shared<DefaultCameraImpl>();
-    cameraImpl->setPosition({0.0, 15.0, 30.0});
-    cameraImpl->setTarget({0.0, 0.0, 0.0});
-    cameraImpl->setFov(60.0);
+    auto camera = std::make_shared<CameraAdapter>(std::make_shared<DefaultCameraImpl>());
+    camera->setPosition({0.0, 15.0, 30.0});
+    camera->setTarget({0.0, 0.0, 0.0});
+    camera->setFov(60.0);
     
-    auto camera = std::make_shared<CameraAdapter>(cameraImpl);
     ManagerProvider::getCameraManager()->addCamera(camera);
 
     auto drawManager = ManagerProvider::getDrawManager();
-    drawManager->setCameraImpl(cameraImpl);
 
     onStarParamsChanged();
     startOrbitAnimation();
