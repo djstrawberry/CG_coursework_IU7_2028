@@ -23,6 +23,16 @@ void DefaultLight::setColor(const std::vector<float>& color) {
     }
 }
 
+std::shared_ptr<BaseObject> DefaultLight::clone() const {
+    auto implClone = std::make_shared<LightImpl>(getPosition(), getColor());
+    return std::make_shared<DefaultLight>(implClone);
+}
+
+Vec3<double> DefaultLight::getCenter() const noexcept
+{ 
+    return getPosition(); 
+}
+
 void DefaultLight::accept(std::shared_ptr<BaseVisitor> visitor) {
     if (m_impl) {
         m_impl->accept(visitor);

@@ -73,6 +73,18 @@
 },
 {
   "directory": "/home/anechka/CG_coursework_IU7_2028/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include -I/home/anechka/CG_coursework_IU7_2028 -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtOpenGLWidgets -isystem /usr/include/qt6/QtOpenGL -g -std=gnu++20 -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/impl/LightImpl.cpp.o -c /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/impl/LightImpl.cpp",
+  "file": "/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/impl/LightImpl.cpp",
+  "output": "CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/impl/LightImpl.cpp.o"
+},
+{
+  "directory": "/home/anechka/CG_coursework_IU7_2028/build",
+  "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include -I/home/anechka/CG_coursework_IU7_2028 -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtOpenGLWidgets -isystem /usr/include/qt6/QtOpenGL -g -std=gnu++20 -o CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/default/DefaultLight.cpp.o -c /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/DefaultLight.cpp",
+  "file": "/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/DefaultLight.cpp",
+  "output": "CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/default/DefaultLight.cpp.o"
+},
+{
+  "directory": "/home/anechka/CG_coursework_IU7_2028/build",
   "command": "/usr/bin/c++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_OPENGLWIDGETS_LIB -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -I/home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include -I/home/anechka/CG_coursework_IU7_2028 -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtOpenGLWidgets -isystem /usr/include/qt6/QtOpenGL -g -std=gnu++20 -o CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o -c /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp",
   "file": "/home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp",
   "output": "CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o"

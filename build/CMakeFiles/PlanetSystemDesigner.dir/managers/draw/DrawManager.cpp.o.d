@@ -363,6 +363,7 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/render/creators/RenderStrategyCreator.hpp \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/VisitorCreator.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/../draw/DrawVisitor.h \
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../component/primitive/invisible/light/impl/LightImpl.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../visitors/creators/VisitorCreator.hpp \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../ManagerProvider.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../camera/CameraManager.h \
@@ -374,4 +375,5 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../scene/../../scene/Scene.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../scene/../../factories/sphere/SphereFactory.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../scene/../../factories/sphere/../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
- /home/anechka/CG_coursework_IU7_2028/managers/draw/../scene/../../factories/sphere/../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../scene/../../factories/sphere/../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../scene/../../component/primitive/invisible/light/BaseLight.h

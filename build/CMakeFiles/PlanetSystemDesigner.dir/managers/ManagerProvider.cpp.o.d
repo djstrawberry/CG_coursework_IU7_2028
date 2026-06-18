@@ -206,10 +206,11 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o: \
  /usr/include/c++/16/bits/vector.tcc \
  /home/anechka/CG_coursework_IU7_2028/managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
  /home/anechka/CG_coursework_IU7_2028/managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/invisible/light/BaseLight.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/invisible/light/../InvisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/scene/../../component/primitive/invisible/light/../../Primitive.h \
  /home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.h \
  /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/BaseCamera.h \
- /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../InvisibleObject.h \
- /home/anechka/CG_coursework_IU7_2028/managers/camera/../../component/primitive/invisible/camera/../../Primitive.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.h \
  /usr/include/c++/16/array /usr/include/qt6/QtGui/QPainter \
  /usr/include/qt6/QtGui/qpainter.h /usr/include/qt6/QtGui/qtguiglobal.h \

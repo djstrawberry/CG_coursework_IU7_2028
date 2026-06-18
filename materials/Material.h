@@ -6,5 +6,4 @@ struct Material {
     float diffuse = 0.8f;
     float specular = 0.6f;
     float shininess = 40.0f;
-    bool luminous = false;
 };

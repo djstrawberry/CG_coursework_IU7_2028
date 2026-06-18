@@ -12,16 +12,12 @@ DrawVisitor::DrawVisitor(std::shared_ptr<BaseProjectionStrategy> projStrategy,
                 std::shared_ptr<BaseCoordinateConvertStrategy> convertStrategy,
                 std::shared_ptr<BaseRenderStrategy> renderStrategy,
                 std::shared_ptr<BasePainter> painter,
-                std::shared_ptr<CameraImpl> camera,
-                std::vector<float> lightColor,
-                const Vec3<double>& lightSourcePos)
+                std::shared_ptr<CameraImpl> camera)
     : m_painter(std::move(painter))
     , m_camera(std::move(camera))
     , m_projStrategy(std::move(projStrategy))
     , m_convertStrategy(std::move(convertStrategy))
     , m_renderStrategy(std::move(renderStrategy))
-    , m_lightColor(lightColor)
-    , m_lightSourcePos(lightSourcePos)
 { }
 
 void DrawVisitor::visit(SphereImpl& sphere) const
@@ -35,14 +31,15 @@ void DrawVisitor::visit(SphereImpl& sphere) const
     
     std::vector<Vec3<double>> projected;
     m_projStrategy->project(sphere, *m_camera, projected);
-    m_convertStrategy->convertPoint(projected, width, height);
-
-    const float *light = m_lightColor.empty() ? nullptr : m_lightColor.data();
-    
-    m_renderStrategy->renderSphere(sphere, projected, m_camera, light, m_lightSourcePos, width, height);
+    m_convertStrategy->convertPoint(projected, width, height);    
+    m_renderStrategy->renderSphere(sphere, projected, m_camera, width, height);
 }
 
 void DrawVisitor::visit(CameraImpl& camera) const
 {
     (void)camera;
+}
+
+void DrawVisitor::visit(LightImpl& light) const{
+    m_renderStrategy->setLight(light.getPosition(), light.getColor());
 }

@@ -1,8 +1,12 @@
-CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o: \
- /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp \
+CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/default/DefaultLight.cpp.o: \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/DefaultLight.cpp \
  /usr/include/stdc-predef.h \
- /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.h \
- /home/anechka/CG_coursework_IU7_2028/visitors/draw/../BaseVisitor.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/DefaultLight.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/../BaseLight.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/../../InvisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/../../../Primitive.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/../../../../BaseObject.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/../../../../../visitors/BaseVisitor.h \
  /usr/include/c++/16/memory /usr/include/c++/16/bits/memoryfwd.h \
  /usr/include/c++/16/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -161,17 +165,16 @@ CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o: \
  /usr/include/c++/16/bits/ranges_algobase.h \
  /usr/include/c++/16/pstl/glue_memory_defs.h \
  /usr/include/c++/16/pstl/execution_defs.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../factories/draw/products/BasePainter.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../factories/draw/products/../../../vector/Vec3.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../factories/draw/products/../../../vector/../concepts/concepts.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/../../../../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/../../../../../vector/../concepts/concepts.h \
  /usr/include/c++/16/utility /usr/include/c++/16/bits/stl_relops.h \
  /usr/include/c++/16/bits/intcmp.h /usr/include/c++/16/iostream \
  /usr/include/c++/16/ostream /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../factories/draw/products/../../../vector/Vec3.hpp \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../factories/draw/products/../../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../factories/draw/products/../../../vector/../exceptions/vector/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/../../../../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/../../../../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/../../../../../vector/../exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
@@ -191,33 +194,12 @@ CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o: \
  /usr/include/c++/16/tr1/modified_bessel_func.tcc \
  /usr/include/c++/16/tr1/poly_hermite.tcc \
  /usr/include/c++/16/tr1/poly_laguerre.tcc \
- /usr/include/c++/16/tr1/riemann_zeta.tcc \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/projection/BaseProjectionStrategy.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/projection/../../component/primitive/invisible/camera/impl/CameraImpl.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/projection/../../component/primitive/visible/model/impl/SphereImpl.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/projection/../../component/primitive/visible/model/impl/../../../../../materials/Material.h \
- /usr/include/c++/16/vector /usr/include/c++/16/bits/stl_vector.h \
- /usr/include/c++/16/bits/stl_bvector.h \
- /usr/include/c++/16/bits/vector.tcc \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/conversion/BaseCoordinateConvertStrategy.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/render/BaseRenderStrategy.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../component/primitive/invisible/light/impl/LightImpl.h \
- /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/celestial/CelestialBody.h \
- /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/celestial/../BaseModel.h \
- /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/celestial/../../VisibleObject.h \
- /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/celestial/../../../Primitive.h \
- /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/celestial/../../../../BaseObject.h \
- /usr/include/c++/16/map /usr/include/c++/16/bits/stl_tree.h \
+ /usr/include/c++/16/tr1/riemann_zeta.tcc /usr/include/c++/16/map \
+ /usr/include/c++/16/bits/stl_tree.h \
  /usr/include/c++/16/bits/node_handle.h \
  /usr/include/c++/16/bits/stl_map.h \
- /usr/include/c++/16/bits/stl_multimap.h \
- /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/invisible/camera/CameraAdapter.h \
- /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/invisible/camera/BaseCamera.h \
- /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/invisible/camera/../InvisibleObject.h \
- /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/composite/Composite.h \
- /usr/include/c++/16/algorithm /usr/include/c++/16/bits/stl_algo.h \
- /usr/include/c++/16/bits/algorithmfwd.h \
- /usr/include/c++/16/bits/stl_heap.h \
- /usr/include/c++/16/bits/uniform_int_dist.h \
- /usr/include/c++/16/bits/ranges_algo.h \
- /usr/include/c++/16/pstl/glue_algorithm_defs.h /usr/include/c++/16/array
+ /usr/include/c++/16/bits/stl_multimap.h /usr/include/c++/16/vector \
+ /usr/include/c++/16/bits/stl_vector.h \
+ /usr/include/c++/16/bits/stl_bvector.h \
+ /usr/include/c++/16/bits/vector.tcc \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/../impl/LightImpl.h

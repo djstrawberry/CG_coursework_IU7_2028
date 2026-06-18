@@ -8,6 +8,7 @@
 #include "../../component/primitive/invisible/camera/default/DefaultCamera.h"
 #include "../../commands/object/ObjectCommand.h"
 #include "../../commands/camera/CameraCommand.h"
+#include "../../commands/light/LightCommand.h"
 #include "../../component/primitive/visible/model/celestial/CelestialBody.h"
 #include <QVBoxLayout>
 #include <QHBoxLayout>
@@ -42,16 +43,15 @@ MainWindow::MainWindow(QWidget *parent)
     m_planetOrbitSpeedBox   = ui->spinBox_planetOrbitSpeed;
 
     m_planetColorButton     = ui->button_pickPlanetColor;
-    m_lightColorPickerBtn = ui->button_pickColor;
+    m_lightColorPickerBtn   = ui->button_pickColor;
 
     m_planetCountLabel      = ui->label_planetCount;
 
     m_addPlanetBtn          = ui->button_addPlanet;
     m_removePlanetBtn       = ui->button_removePlanet;
-    m_lightColorPickerBtn   = ui->button_pickColor;
     m_resetCameraBtn        = ui->button_resetView;
 
-    m_currentPlanetColor = QColor(51, 128, 230);  // BLUE
+    m_currentPlanetColor = QColor(51, 128, 230);
     updatePlanetColorButton();
     updateLightColorButton();
 
@@ -60,10 +60,7 @@ MainWindow::MainWindow(QWidget *parent)
     initializeScene();
 }
 
-MainWindow::~MainWindow()
-{
-    delete ui;
-}
+MainWindow::~MainWindow() { delete ui; }
 
 void MainWindow::setupWidgetLimits()
 {
@@ -100,7 +97,6 @@ void MainWindow::setupConnections()
     connect(m_starPosXBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
     connect(m_starPosYBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
     connect(m_starPosZBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
-
     connect(m_matAmbientBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
     connect(m_matDiffuseBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
     connect(m_matSpecularBox, QOverload<double>::of(&QDoubleSpinBox::valueChanged), this, &MainWindow::onStarParamsChanged);
@@ -116,24 +112,19 @@ void MainWindow::updatePlanetColorButton()
 {
     m_planetColorButton->setStyleSheet(
         QString("background-color: rgb(%1, %2, %3); color: white; font-weight: bold;")
-            .arg(m_currentPlanetColor.red())
-            .arg(m_currentPlanetColor.green())
-            .arg(m_currentPlanetColor.blue())
-    );
+            .arg(m_currentPlanetColor.red()).arg(m_currentPlanetColor.green()).arg(m_currentPlanetColor.blue()));
 }
 
 void MainWindow::updateLightColorButton()
 {
     m_lightColorPickerBtn->setStyleSheet(
-        "background-color: rgb(255, 230, 102); color: black; font-weight: bold;"
-    );
+        "background-color: rgb(255, 230, 102); color: black; font-weight: bold;");
 }
 
 void MainWindow::onPlanetColorClicked()
 {
     QColor color = QColorDialog::getColor(m_currentPlanetColor, this, "Pick Planet Color");
-    if (color.isValid())
-    {
+    if (color.isValid()) {
         m_currentPlanetColor = color;
         updatePlanetColorButton();
     }
@@ -151,7 +142,6 @@ void MainWindow::initializeScene()
 
     auto drawManager = ManagerProvider::getDrawManager();
     drawManager->setCameraImpl(cameraImpl);
-    drawManager->setLightColor(1.0f, 0.9f, 0.4f, 1.0f);
 
     onStarParamsChanged();
     startOrbitAnimation();
@@ -174,18 +164,13 @@ void MainWindow::onOrbitTick()
 
 Vec3<double> MainWindow::getStarCenter() const
 {
-    return Vec3<double>(
-        m_starPosXBox->value(),
-        m_starPosYBox->value(),
-        m_starPosZBox->value()
-    );
+    return Vec3<double>(m_starPosXBox->value(), m_starPosYBox->value(), m_starPosZBox->value());
 }
 
 void MainWindow::syncPlanetOrbitCenters(const Vec3<double>& starCenter)
 {
-    for (size_t planetId : m_planetIds) {
+    for (size_t planetId : m_planetIds)
         m_facade->execute(std::make_shared<SetOrbitCenterCommand>(planetId, starCenter));
-    }
 }
 
 void MainWindow::onStarParamsChanged()
@@ -199,21 +184,22 @@ void MainWindow::onStarParamsChanged()
     mat.ambient = static_cast<float>(m_matAmbientBox->value());
     mat.diffuse = static_cast<float>(m_matDiffuseBox->value());
     mat.specular = static_cast<float>(m_matSpecularBox->value());
-    mat.luminous = true;
 
     const Vec3<double> starCenter = getStarCenter();
     const double starRadius = m_starRadiusBox->value();
     auto sceneManager = ManagerProvider::getSceneManager();
 
-    if (sceneManager->getObject(kStarObjectId)) {
-        m_facade->execute(std::make_shared<UpdateCelestialBodyCommand>(
-            kStarObjectId, starRadius, starCenter, mat
-        ));
-    } else {
-        m_facade->execute(std::make_shared<AddCelestialBodyCommand>(
-            "Central Star", starRadius, starCenter, mat
-        ));
-    }
+    if (sceneManager->getObject(kStarObjectId))
+        m_facade->execute(std::make_shared<UpdateCelestialBodyCommand>(kStarObjectId, starRadius, starCenter, mat));
+    else
+        m_facade->execute(std::make_shared<AddCelestialBodyCommand>("Central Star", starRadius, starCenter, mat));
+
+    std::vector<float> lightColorVec = {mat.r, mat.g, mat.b, 1.0f};
+    auto light = sceneManager->getLightSource();
+    if (!light)
+        m_facade->execute(std::make_shared<AddLightCommand>(starCenter, lightColorVec));
+    else
+        m_facade->execute(std::make_shared<UpdateLightCommand>(starCenter, lightColorVec));
 
     syncPlanetOrbitCenters(starCenter);
     m_viewport->update();
@@ -228,20 +214,15 @@ void MainWindow::onAddPlanetPressed()
     mat.ambient = 0.15f;
     mat.diffuse = 0.85f;
     mat.specular = 0.45f;
-    mat.luminous = false;
 
     const Vec3<double> starCenter = getStarCenter();
     const size_t planetIndex = m_planetIds.size() + 1;
 
     auto addPlanetCmd = std::make_shared<AddPlanetCommand>(
         "Planet " + std::to_string(planetIndex),
-        m_planetRadiusBox->value(),
-        starCenter,
-        m_planetOrbitRadiusBox->value(),
-        m_planetOrbitAngleBox->value(),
-        m_planetOrbitSpeedBox->value(),
-        mat
-    );
+        m_planetRadiusBox->value(), starCenter,
+        m_planetOrbitRadiusBox->value(), m_planetOrbitAngleBox->value(),
+        m_planetOrbitSpeedBox->value(), mat);
 
     m_facade->execute(addPlanetCmd);
     m_planetIds.push_back(addPlanetCmd->getAssignedId());
@@ -251,9 +232,7 @@ void MainWindow::onAddPlanetPressed()
 
 void MainWindow::onRemovePlanetPressed()
 {
-    if (m_planetIds.empty())
-        return;
-
+    if (m_planetIds.empty()) return;
     const size_t planetId = m_planetIds.back();
     m_facade->execute(std::make_shared<RemoveCelestialBodyCommand>(planetId));
     m_planetIds.pop_back();
@@ -264,23 +243,20 @@ void MainWindow::onRemovePlanetPressed()
 void MainWindow::onLightColorChanged()
 {
     QColor color = QColorDialog::getColor(m_currentLightColor, this, "Pick Ambient Solar Light Color");
-    if (color.isValid())
-    {
+    if (color.isValid()) {
         m_currentLightColor = color;
         
-        ManagerProvider::getDrawManager()->setLightColor(
-            static_cast<float>(color.redF()),
-            static_cast<float>(color.greenF()),
-            static_cast<float>(color.blueF()),
-            1.0f
-        );
+        auto light = ManagerProvider::getSceneManager()->getLightSource();
+        if (light) {
+            light->setColor({static_cast<float>(color.redF()), static_cast<float>(color.greenF()),
+                             static_cast<float>(color.blueF()), 1.0f});
+        }
         
         m_lightColorPickerBtn->setStyleSheet(
             QString("background-color: rgb(%1, %2, %3); color: black; font-weight: bold;")
-                .arg(color.red()).arg(color.green()).arg(color.blue())
-        );
+                .arg(color.red()).arg(color.green()).arg(color.blue()));
         
-        onStarParamsChanged(); 
+        onStarParamsChanged();
         m_viewport->update();
     }
 }
@@ -289,8 +265,7 @@ void MainWindow::onCameraResetPressed()
 {
     auto cameraManager = ManagerProvider::getCameraManager();
     auto activeCam = cameraManager->getActiveCamera();
-    if (activeCam)
-    {
+    if (activeCam) {
         activeCam->setPosition({0.0, 15.0, 30.0});
         activeCam->setTarget({0.0, 0.0, 0.0});
         activeCam->setFov(60.0);

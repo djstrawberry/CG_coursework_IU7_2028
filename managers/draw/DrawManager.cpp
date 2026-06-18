@@ -18,18 +18,6 @@ void DrawManager::setCameraImpl(std::shared_ptr<CameraImpl> impl)
     m_cameraImpl = impl;
 }
 
-void DrawManager::setLightColor(float r, float g, float b, float intensity)
-{
-    m_lightColor[0] = r;
-    m_lightColor[1] = g;
-    m_lightColor[2] = b;
-    m_lightColor[3] = intensity;
-}
-
-std::vector<float>  DrawManager::getLightColor() const noexcept { 
-    return m_lightColor; 
-}
-
 void DrawManager::draw()
 {
     if (!m_painter)
@@ -47,7 +35,6 @@ void DrawManager::draw()
     auto renderStrategy = DefaultRenderStrategyCreator::create();
 
     auto sceneManager = ManagerProvider::getSceneManager();
-    const Vec3<double> lightSourcePos = sceneManager->getPrimaryLightPosition();
 
     renderStrategy->beginScene();
 
@@ -56,9 +43,7 @@ void DrawManager::draw()
         std::move(convertStrategy),
         renderStrategy,
         m_painter,
-        m_cameraImpl,
-        m_lightColor,
-        lightSourcePos
+        m_cameraImpl
     );
 
     sceneManager->accept(drawVisitor);

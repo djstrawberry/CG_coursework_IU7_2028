@@ -66,7 +66,6 @@ void CelestialBody::setBaseCenter(const Vec3<double>& center) {
     updatePosition();
 }
 
-// CelestialBody.cpp:
 void CelestialBody::setRadius(double r) {
     if (m_impl) {
         m_impl->setRadius(r);

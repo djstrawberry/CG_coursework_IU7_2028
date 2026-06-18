@@ -323,6 +323,54 @@ component/primitive/invisible/camera/default/DefaultCamera.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.s
 .PHONY : component/primitive/invisible/camera/default/DefaultCamera.cpp.s
 
+component/primitive/invisible/light/default/DefaultLight.o: component/primitive/invisible/light/default/DefaultLight.cpp.o
+.PHONY : component/primitive/invisible/light/default/DefaultLight.o
+
+# target to build an object file
+component/primitive/invisible/light/default/DefaultLight.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/default/DefaultLight.cpp.o
+.PHONY : component/primitive/invisible/light/default/DefaultLight.cpp.o
+
+component/primitive/invisible/light/default/DefaultLight.i: component/primitive/invisible/light/default/DefaultLight.cpp.i
+.PHONY : component/primitive/invisible/light/default/DefaultLight.i
+
+# target to preprocess a source file
+component/primitive/invisible/light/default/DefaultLight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/default/DefaultLight.cpp.i
+.PHONY : component/primitive/invisible/light/default/DefaultLight.cpp.i
+
+component/primitive/invisible/light/default/DefaultLight.s: component/primitive/invisible/light/default/DefaultLight.cpp.s
+.PHONY : component/primitive/invisible/light/default/DefaultLight.s
+
+# target to generate assembly for a file
+component/primitive/invisible/light/default/DefaultLight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/default/DefaultLight.cpp.s
+.PHONY : component/primitive/invisible/light/default/DefaultLight.cpp.s
+
+component/primitive/invisible/light/impl/LightImpl.o: component/primitive/invisible/light/impl/LightImpl.cpp.o
+.PHONY : component/primitive/invisible/light/impl/LightImpl.o
+
+# target to build an object file
+component/primitive/invisible/light/impl/LightImpl.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/impl/LightImpl.cpp.o
+.PHONY : component/primitive/invisible/light/impl/LightImpl.cpp.o
+
+component/primitive/invisible/light/impl/LightImpl.i: component/primitive/invisible/light/impl/LightImpl.cpp.i
+.PHONY : component/primitive/invisible/light/impl/LightImpl.i
+
+# target to preprocess a source file
+component/primitive/invisible/light/impl/LightImpl.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/impl/LightImpl.cpp.i
+.PHONY : component/primitive/invisible/light/impl/LightImpl.cpp.i
+
+component/primitive/invisible/light/impl/LightImpl.s: component/primitive/invisible/light/impl/LightImpl.cpp.s
+.PHONY : component/primitive/invisible/light/impl/LightImpl.s
+
+# target to generate assembly for a file
+component/primitive/invisible/light/impl/LightImpl.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/impl/LightImpl.cpp.s
+.PHONY : component/primitive/invisible/light/impl/LightImpl.cpp.s
+
 component/primitive/visible/model/celestial/CelestialBody.o: component/primitive/visible/model/celestial/CelestialBody.cpp.o
 .PHONY : component/primitive/visible/model/celestial/CelestialBody.o
 
@@ -955,6 +1003,12 @@ help:
 	@echo "... component/primitive/invisible/camera/default/DefaultCamera.o"
 	@echo "... component/primitive/invisible/camera/default/DefaultCamera.i"
 	@echo "... component/primitive/invisible/camera/default/DefaultCamera.s"
+	@echo "... component/primitive/invisible/light/default/DefaultLight.o"
+	@echo "... component/primitive/invisible/light/default/DefaultLight.i"
+	@echo "... component/primitive/invisible/light/default/DefaultLight.s"
+	@echo "... component/primitive/invisible/light/impl/LightImpl.o"
+	@echo "... component/primitive/invisible/light/impl/LightImpl.i"
+	@echo "... component/primitive/invisible/light/impl/LightImpl.s"
 	@echo "... component/primitive/visible/model/celestial/CelestialBody.o"
 	@echo "... component/primitive/visible/model/celestial/CelestialBody.i"
 	@echo "... component/primitive/visible/model/celestial/CelestialBody.s"

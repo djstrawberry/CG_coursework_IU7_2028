@@ -25,6 +25,9 @@ private:
     mutable std::vector<GlowPass> m_glowPasses;
     mutable std::vector<TrianglePass> m_trianglePasses;
 
+    Vec3<double> m_lightPos{0, 0, 0};
+    std::vector<float> m_lightColor{1.0f, 0.9f, 0.4f, 1.0f};
+
     int clampChannel(double value) const;
     bool isFrontFacing(const Vec3<double>& v0, const Vec3<double>& v1,
                               const Vec3<double>& v2, const Vec3<double>& camPos,
@@ -62,12 +65,11 @@ public:
     DefaultRenderStrategy() = default;
     ~DefaultRenderStrategy() override = default;
 
+    void setLight(const Vec3<double>& pos, const std::vector<float>& color);
     void beginScene() override;
     void renderSphere(const SphereImpl& sphere,
                       std::vector<Vec3<double>> projected,
                       const std::shared_ptr<CameraImpl>& camera,
-                      const float* lightColor,
-                      const Vec3<double>& lightSourcePos,
                       size_t screenWidth,
                       size_t screenHeight) override;
     void flushScene(std::shared_ptr<BasePainter> painter) override;

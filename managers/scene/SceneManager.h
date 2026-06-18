@@ -5,6 +5,7 @@
 #include "../../vector/Vec3.h"
 #include "../../materials/Material.h"
 #include "../../factories/sphere/SphereFactory.h"
+#include "../../component/primitive/invisible/light/BaseLight.h"
 #include <map>
 #include <memory>
 
@@ -25,9 +26,13 @@ public:
     void transformCelestial(size_t id, double orbitRadius, double orbitSpeed);
     void setSphereFactory(std::shared_ptr<SphereFactory> factory);
 
+    void addLightSource(std::shared_ptr<BaseLight> light);
+    std::shared_ptr<BaseLight> getLightSource() const;
+    void addLight(const Vec3<double>& pos, const std::vector<float>& color);
+    void updateLight(const Vec3<double>& pos, const std::vector<float>& color);
+
     void accept(std::shared_ptr<BaseVisitor> visitor);
     const std::map<size_t, std::shared_ptr<BaseObject>>& getObjects() const;
-    Vec3<double> getPrimaryLightPosition() const;
 
 private:
     Scene& m_scene;

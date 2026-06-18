@@ -20,8 +20,6 @@ bool DefaultRenderStrategy::isFrontFacing(const Vec3<double>& v0, const Vec3<dou
 void DefaultRenderStrategy::renderSphere(const SphereImpl& sphere,
                       std::vector<Vec3<double>> projected,
                       const std::shared_ptr<CameraImpl>& camera,
-                      const float* lightColor,
-                      const Vec3<double>& lightSourcePos,
                       size_t screenWidth,
                       size_t screenHeight)
 {
@@ -37,13 +35,20 @@ void DefaultRenderStrategy::renderSphere(const SphereImpl& sphere,
     if (vertices.empty() || projected.size() != vertices.size()) return;
 
     const double fov = camera->getFov();
+    const float* lightColor = m_lightColor.data();
 
     auto [screenCenter, screenRadius] = computeScreenCenterAndRadius(projected, sphere.getRadius(), fov, screenHeight);
     if (screenRadius == 0) return;
 
     addGlowPass(screenCenter, screenRadius, mat, lightColor);
     processAllTriangles(projected, vertices, center, camPos, mat,
-                        sphere.getSlices(), sphere.getStacks(), lightColor, lightSourcePos);
+                        sphere.getSlices(), sphere.getStacks(), lightColor, m_lightPos);
+}
+
+void DefaultRenderStrategy::setLight(const Vec3<double>& pos, const std::vector<float>& color)
+{
+    m_lightPos = pos;
+    if (!color.empty()) m_lightColor = color;
 }
 
 void DefaultRenderStrategy::beginScene()
@@ -83,11 +88,10 @@ void DefaultRenderStrategy::computeLitColor(const Material& mat, const Vec3<doub
     Vec3<double> reflect = normal * (2.0 * nDotL) - lightDir;
     double rDotV = std::max(0.0, reflect.normalized().dot(viewDir));
     double spec = mat.specular * std::pow(rDotV, mat.shininess / 10.0);
-    double emissiveTerm = mat.luminous ? (0.12 + mat.ambient * 0.45 + mat.diffuse * 0.35) * intensity : 0.0;
     double shading = mat.ambient + mat.diffuse * nDotL + spec;
-    r = clampChannel((mat.r * lr * shading + mat.r * lr * emissiveTerm) * 255.0);
-    g = clampChannel((mat.g * lg * shading + mat.g * lg * emissiveTerm) * 255.0);
-    b = clampChannel((mat.b * lb * shading + mat.b * lb * emissiveTerm) * 255.0);
+    r = clampChannel(mat.r * lr * shading * 255.0);
+    g = clampChannel(mat.g * lg * shading * 255.0);
+    b = clampChannel(mat.b * lb * shading * 255.0);
 }
 
 void DefaultRenderStrategy::correctAspectRatio(std::vector<Vec3<double>>& projected,
@@ -130,7 +134,6 @@ std::pair<Vec3<double>, double> DefaultRenderStrategy::computeScreenCenterAndRad
 void DefaultRenderStrategy::addGlowPass(const Vec3<double>& c, double r,
                                          const Material& mat, const float* light)
 {
-    if (!mat.luminous) return;
     GlowPass g;
     g.x = c.getX(); g.y = c.getY(); g.radius = r;
     g.r = clampChannel(mat.r * light[0] * 255);
@@ -158,14 +161,9 @@ void DefaultRenderStrategy::processTriangle(const std::vector<Vec3<double>>& pro
     Vec3<double> v2 = (camPos - vertices[i2]).normalized();
 
     Vec3<double> l0, l1, l2;
-    if (mat.luminous) {
-        Vec3<double> cd = (camPos - center).normalized();
-        l0 = l1 = l2 = cd;
-    } else {
-        l0 = (lightSourcePos - vertices[i0]).normalized();
-        l1 = (lightSourcePos - vertices[i1]).normalized();
-        l2 = (lightSourcePos - vertices[i2]).normalized();
-    }
+    l0 = (lightSourcePos - vertices[i0]).normalized();
+    l1 = (lightSourcePos - vertices[i1]).normalized();
+    l2 = (lightSourcePos - vertices[i2]).normalized();
 
     int r0, g0, b0, r1, g1, b1, r2, g2, b2;
     computeLitColor(mat, n0, v0, l0, r0, g0, b0, light);

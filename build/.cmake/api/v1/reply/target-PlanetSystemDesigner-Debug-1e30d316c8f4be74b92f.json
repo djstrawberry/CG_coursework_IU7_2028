@@ -46,7 +46,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 139,
+				"line" : 146,
 				"parent" : 0
 			},
 			{
@@ -70,7 +70,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 141,
+				"line" : 148,
 				"parent" : 0
 			},
 			{
@@ -188,7 +188,7 @@
 			{
 				"command" : 12,
 				"file" : 1,
-				"line" : 140,
+				"line" : 147,
 				"parent" : 0
 			}
 		]
@@ -323,26 +323,28 @@
 				23,
 				26,
 				29,
+				32,
 				34,
-				36,
-				38,
-				40,
-				42,
-				44,
-				52,
-				54,
-				60,
+				39,
+				41,
+				43,
+				45,
+				47,
+				49,
+				57,
+				59,
 				65,
 				70,
-				72,
-				74,
-				76,
-				78,
-				80,
-				82,
-				84,
-				86,
-				88
+				75,
+				77,
+				79,
+				81,
+				83,
+				85,
+				87,
+				89,
+				91,
+				93
 			]
 		}
 	],
@@ -467,26 +469,28 @@
 				23,
 				26,
 				29,
+				32,
 				34,
-				36,
-				38,
-				40,
-				42,
-				44,
-				52,
-				54,
-				60,
+				39,
+				41,
+				43,
+				45,
+				47,
+				49,
+				57,
+				59,
 				65,
 				70,
-				72,
-				74,
-				76,
-				78,
-				80,
-				82,
-				84,
-				86,
-				88
+				75,
+				77,
+				79,
+				81,
+				83,
+				85,
+				87,
+				89,
+				91,
+				93
 			]
 		},
 		{
@@ -513,26 +517,25 @@
 				28,
 				30,
 				31,
-				32,
 				33,
 				35,
+				36,
 				37,
-				39,
-				41,
-				43,
-				45,
+				38,
+				40,
+				42,
+				44,
 				46,
-				47,
 				48,
-				49,
 				50,
 				51,
+				52,
 				53,
+				54,
 				55,
 				56,
-				57,
 				58,
-				59,
+				60,
 				61,
 				62,
 				63,
@@ -542,30 +545,34 @@
 				68,
 				69,
 				71,
+				72,
 				73,
-				75,
-				77,
-				79,
-				81,
-				83,
-				85,
-				87,
-				90
+				74,
+				76,
+				78,
+				80,
+				82,
+				84,
+				86,
+				88,
+				90,
+				92,
+				95
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				89,
-				91
+				94,
+				96
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				92
+				97
 			]
 		}
 	],
@@ -732,6 +739,33 @@
 			"backtrace" : 4,
 			"compileGroupIndex" : 0,
 			"path" : "component/primitive/invisible/camera/default/DefaultCamera.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "component/primitive/invisible/light/BaseLight.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "component/primitive/invisible/light/impl/LightImpl.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "component/primitive/invisible/light/impl/LightImpl.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "component/primitive/invisible/light/default/DefaultLight.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "component/primitive/invisible/light/default/DefaultLight.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

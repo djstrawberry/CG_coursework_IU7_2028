@@ -14,6 +14,8 @@ PlanetSystemDesigner: \
   CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o \
+  CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/impl/LightImpl.cpp.o \
+  CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/default/DefaultLight.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o \
@@ -137,6 +139,10 @@ CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tesse
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/CameraAdapter.cpp.o:
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o:
+
+CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/impl/LightImpl.cpp.o:
+
+CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/default/DefaultLight.cpp.o:
 
 CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o:
 

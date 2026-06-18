@@ -2,7 +2,7 @@
 #include "../../component/primitive/visible/model/celestial/CelestialBody.h"
 #include "../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h"
 #include "../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h"
-
+#include "../../component/primitive/invisible/light/BaseLight.h"
 
 SceneManager::SceneManager() : m_scene(Scene::getInstance()) {}
 
@@ -40,7 +40,6 @@ size_t SceneManager::addCelestialBody(const std::string &name, double radius, co
     auto sphereImpl = m_sphereFactory->createSphere(radius, center);
     auto body = std::make_shared<CelestialBody>(name, sphereImpl);
     Material mat = material;
-    mat.luminous = true;
     body->setMaterial(mat);
     body->setBaseCenter(center);
     return addObject(body);
@@ -59,7 +58,6 @@ size_t SceneManager::addPlanet(const std::string &name, double radius, const Vec
     auto sphereImpl = m_sphereFactory->createSphere(radius, initialPos);
     auto body = std::make_shared<CelestialBody>(name, sphereImpl);
     Material mat = material;
-    mat.luminous = false;
     body->setMaterial(mat);
     body->setBaseCenter(orbitCenter);
     body->setOrbitRadius(orbitRadius);
@@ -84,11 +82,15 @@ void SceneManager::updateCelestialBody(size_t id, double radius, const Vec3<doub
 void SceneManager::advanceOrbits(double deltaSeconds)
 {
     if (deltaSeconds <= 0.0) return;
-    const Vec3<double> starCenter = getPrimaryLightPosition();
-    for (const auto &[id, obj] : getObjects()) {
+
+    auto light = getLightSource();
+    if (!light) return;
+    const Vec3<double> starCenter = light->getPosition();
+
+    for (const auto& [id, obj] : getObjects()) {
         (void)id;
         auto body = std::dynamic_pointer_cast<CelestialBody>(obj);
-        if (!body || body->getMaterial().luminous || body->getOrbitRadius() <= 0.0) continue;
+        if (!body || body->getOrbitRadius() <= 0.0) continue;
         double speed = body->getOrbitSpeed();
         if (speed <= 0.0) continue;
         body->setBaseCenter(starCenter);
@@ -116,6 +118,42 @@ void SceneManager::transformCelestial(size_t id, double orbitRadius, double orbi
     }
 }
 
+void SceneManager::addLightSource(std::shared_ptr<BaseLight> light)
+{
+    for (auto& [id, obj] : m_scene.getObjects()) {
+        if (std::dynamic_pointer_cast<BaseLight>(obj)) {
+            m_scene.removeObject(id);
+            break;
+        }
+    }
+    m_scene.addObject(light);
+}
+
+std::shared_ptr<BaseLight> SceneManager::getLightSource() const
+{
+    for (const auto& [id, obj] : m_scene.getObjects()) {
+        auto light = std::dynamic_pointer_cast<BaseLight>(obj);
+        if (light) return light;
+    }
+    return nullptr;
+}
+
+void SceneManager::addLight(const Vec3<double>& pos, const std::vector<float>& color)
+{
+    auto impl = std::make_shared<LightImpl>(pos, color);
+    auto light = std::make_shared<DefaultLight>(impl);
+    addLightSource(light);
+}
+
+void SceneManager::updateLight(const Vec3<double>& pos, const std::vector<float>& color)
+{
+    auto light = getLightSource();
+    if (light) {
+        light->setPosition(pos);
+        light->setColor(color);
+    }
+}
+
 void SceneManager::accept(std::shared_ptr<BaseVisitor> visitor) {
     for (auto& [id, obj] : m_scene.getObjects()) {
         if (obj) {
@@ -126,14 +164,4 @@ void SceneManager::accept(std::shared_ptr<BaseVisitor> visitor) {
 
 const std::map<size_t, std::shared_ptr<BaseObject>>& SceneManager::getObjects() const {
     return m_scene.getObjects();
-}
-
-Vec3<double> SceneManager::getPrimaryLightPosition() const {
-    for (const auto& [id, obj] : m_scene.getObjects()) {
-        auto body = std::dynamic_pointer_cast<CelestialBody>(obj);
-        if (body && body->getMaterial().luminous) {
-            return body->getCenter();
-        }
-    }
-    return Vec3<double>{};
 }

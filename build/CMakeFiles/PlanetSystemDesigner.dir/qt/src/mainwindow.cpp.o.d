@@ -439,6 +439,7 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/SphereImpl.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../component/primitive/invisible/light/BaseLight.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/draw/DrawManager.h \
  /usr/include/qt6/QtGui/QPainter \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/invisible/camera/CameraAdapter.h \
@@ -450,6 +451,8 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/CelestialBody.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/../BaseModel.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/visible/model/celestial/../../VisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/invisible/light/default/DefaultLight.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../component/primitive/invisible/light/default/../impl/LightImpl.h \
  /usr/include/qt6/QtWidgets/QVBoxLayout \
  /usr/include/qt6/QtWidgets/QHBoxLayout \
  /usr/include/qt6/QtWidgets/QColorDialog \

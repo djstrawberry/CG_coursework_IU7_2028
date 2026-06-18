@@ -209,7 +209,9 @@ CMakeFiles/PlanetSystemDesigner.dir/commands/object/ObjectCommand.cpp.o: \
  /usr/include/c++/16/bits/vector.tcc \
  /home/anechka/CG_coursework_IU7_2028/commands/object/../../managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
  /home/anechka/CG_coursework_IU7_2028/commands/object/../../managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../managers/scene/../../component/primitive/invisible/light/BaseLight.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../managers/scene/../../component/primitive/invisible/light/../InvisibleObject.h \
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../managers/scene/../../component/primitive/invisible/light/../../Primitive.h \
  /home/anechka/CG_coursework_IU7_2028/commands/object/../../component/primitive/visible/model/celestial/CelestialBody.h \
  /home/anechka/CG_coursework_IU7_2028/commands/object/../../component/primitive/visible/model/celestial/../BaseModel.h \
- /home/anechka/CG_coursework_IU7_2028/commands/object/../../component/primitive/visible/model/celestial/../../VisibleObject.h \
- /home/anechka/CG_coursework_IU7_2028/commands/object/../../component/primitive/visible/model/celestial/../../../Primitive.h
+ /home/anechka/CG_coursework_IU7_2028/commands/object/../../component/primitive/visible/model/celestial/../../VisibleObject.h

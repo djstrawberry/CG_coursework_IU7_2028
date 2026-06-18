@@ -50,6 +50,13 @@ set(PROJECT_SOURCES
     component/primitive/invisible/camera/impl/CameraImpl.h
     component/primitive/invisible/camera/default/DefaultCamera.h
     component/primitive/invisible/camera/default/DefaultCamera.cpp
+
+    # Component - invisible light
+    component/primitive/invisible/light/BaseLight.h
+    component/primitive/invisible/light/impl/LightImpl.h
+    component/primitive/invisible/light/impl/LightImpl.cpp
+    component/primitive/invisible/light/default/DefaultLight.h
+    component/primitive/invisible/light/default/DefaultLight.cpp
     
     # Visitors
     visitors/BaseVisitor.h
