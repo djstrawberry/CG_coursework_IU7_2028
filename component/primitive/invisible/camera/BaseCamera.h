@@ -11,7 +11,7 @@ class BaseCamera : public InvisibleObject
 protected:
     std::shared_ptr<CameraImpl> m_impl;
 public:
-    BaseCamera(std::shared_ptr<CameraImpl> impl) : m_impl(std::move(impl)) {};
+    explicit BaseCamera(std::shared_ptr<CameraImpl> impl) : m_impl(std::move(impl)) {};
     ~BaseCamera() override = default;
     
     virtual Vec3<double> getPosition() const = 0;
