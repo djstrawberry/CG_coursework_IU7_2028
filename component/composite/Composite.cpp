@@ -18,7 +18,6 @@ Composite::const_iterator Composite::end() const noexcept {
     return m_objects.end();
 }
 
-
 bool Composite::isComposite() const noexcept {
     return true;
 }
@@ -26,7 +25,6 @@ bool Composite::isComposite() const noexcept {
 bool Composite::isVisible() const noexcept {
     return true;
 }
-
 
 bool Composite::add(const std::shared_ptr<BaseObject>& obj) {
     if (!obj) return false;
@@ -51,7 +49,7 @@ std::shared_ptr<BaseObject> Composite::getObject(const size_t id) const {
     
     for (const auto& [childId, child] : m_objects) {
         if (child->isComposite()) {
-            auto found =child->getObject(id);
+            auto found = child->getObject(id);
             if (found) return found;
         }
     }
@@ -59,12 +57,12 @@ std::shared_ptr<BaseObject> Composite::getObject(const size_t id) const {
     return nullptr;
 }
 
-Vec3<double> Composite::getCenter() const noexcept {
+Point Composite::getCenter() const noexcept {
     if (m_objects.empty()) {
-        return Vec3<double>{0, 0, 0};
+        return Point{0, 0, 0};
     }
     
-    Vec3<double> sum{0, 0, 0};
+    Point sum{0, 0, 0};
     size_t count = 0;
     
     for (const auto& [id, child] : m_objects) {
@@ -75,12 +73,11 @@ Vec3<double> Composite::getCenter() const noexcept {
     }
     
     if (count == 0) {
-        return Vec3<double>{0, 0, 0};
+        return Point{0, 0, 0};
     }
     
-    return Vec3<double>(sum.getX() / count, sum.getY() / count, sum.getZ() / count);
+    return Point(sum.getX() / count, sum.getY() / count, sum.getZ() / count);
 }
-
 
 void Composite::accept(std::shared_ptr<BaseVisitor> visitor) {
     if (!visitor)

@@ -164,16 +164,21 @@ CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrat
  /usr/include/c++/16/bits/stl_vector.h \
  /usr/include/c++/16/bits/stl_bvector.h \
  /usr/include/c++/16/bits/vector.tcc \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../vector/Vec3.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../vector/../concepts/concepts.h \
- /usr/include/c++/16/utility /usr/include/c++/16/bits/stl_relops.h \
- /usr/include/c++/16/bits/intcmp.h /usr/include/c++/16/iostream \
- /usr/include/c++/16/ostream /usr/include/c++/16/bits/ostream_print.h \
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../point/Point.h \
+ /usr/include/c++/16/iostream /usr/include/c++/16/ostream \
+ /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../vector/Vec3.hpp \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../vector/../exceptions/vector/../BaseException.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../component/primitive/visible/model/vertex/Vertex.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../materials/Material.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../factories/draw/products/BasePainter.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../factories/draw/products/../../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../factories/draw/products/../../../vector/../concepts/concepts.h \
+ /usr/include/c++/16/utility /usr/include/c++/16/bits/stl_relops.h \
+ /usr/include/c++/16/bits/intcmp.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../factories/draw/products/../../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../factories/draw/products/../../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../factories/draw/products/../../../vector/../exceptions/vector/../BaseException.h \
  /usr/include/c++/16/source_location /usr/include/c++/16/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
@@ -194,10 +199,9 @@ CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrat
  /usr/include/c++/16/tr1/poly_hermite.tcc \
  /usr/include/c++/16/tr1/poly_laguerre.tcc \
  /usr/include/c++/16/tr1/riemann_zeta.tcc \
- /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../materials/Material.h \
- /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../factories/draw/products/BasePainter.h \
  /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../component/primitive/visible/model/impl/SphereImpl.h \
  /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../component/primitive/visible/model/impl/../../../../../visitors/BaseVisitor.h \
+ /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../component/primitive/visible/model/impl/../edge/Edge.h \
  /home/anechka/CG_coursework_IU7_2028/strategies/render/default/../../../component/primitive/invisible/camera/impl/CameraImpl.h \
  /usr/include/c++/16/algorithm /usr/include/c++/16/bits/stl_algo.h \
  /usr/include/c++/16/bits/algorithmfwd.h \

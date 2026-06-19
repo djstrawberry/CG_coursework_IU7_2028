@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../BaseCommand.h"
-#include "../../vector/Vec3.h"
+#include "../../point/Point.h"
 #include <memory>
 
 class CameraManager;
@@ -9,15 +9,15 @@ class CameraManager;
 class MoveActiveCameraCommand : public BaseCommand
 {
 private:
-    using Action = void (CameraManager::*)(const Vec3<double> &);
+    using Action = void (CameraManager::*)(const Point &);
 
     Action m_action;
-    Vec3<double> m_disp;
+    Point m_disp;
 
     std::shared_ptr<CameraManager> m_camManager;
 
 public:
-    MoveActiveCameraCommand(const Vec3<double> &displacement);
+    MoveActiveCameraCommand(const Point &displacement);
     ~MoveActiveCameraCommand() override = default;
 
     void execute() override;
@@ -26,17 +26,17 @@ public:
 class SetActiveCameraDetailsCommand : public BaseCommand
 {
 private:
-    using Action = void (CameraManager::*)(const Vec3<double> &, const Vec3<double> &, double);
+    using Action = void (CameraManager::*)(const Point &, const Point &, double);
 
     Action m_action;
-    Vec3<double> m_pos;
-    Vec3<double> m_target;
+    Point m_pos;
+    Point m_target;
     double m_fov;
 
     std::shared_ptr<CameraManager> m_camManager;
 
 public:
-    SetActiveCameraDetailsCommand(const Vec3<double> &pos, const Vec3<double> &target, double fov);
+    SetActiveCameraDetailsCommand(const Point &pos, const Point &target, double fov);
     ~SetActiveCameraDetailsCommand() override = default;
 
     void execute() override;

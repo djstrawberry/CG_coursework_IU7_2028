@@ -1,15 +1,14 @@
 #pragma once
 
 #include "../impl/CameraImpl.h"
-#include "../../../../../vector/Vec3.h"
-
+#include "../../../../../point/Point.h"
 
 class DefaultCameraImpl final : public CameraImpl
 {
 private:
-    Vec3<double> m_position;
-    Vec3<double> m_target;
-    Vec3<double> m_up;
+    Point m_position;
+    Point m_target;
+    Point m_up;
     double m_fov;
     double m_near;
     double m_far;
@@ -20,11 +19,11 @@ public:
 
     std::shared_ptr<CameraImpl> clone() const override;
     
-    Vec3<double> getPosition() const override;
-    void setPosition(const Vec3<double>& pos) override;
+    Point getPosition() const override;
+    void setPosition(const Point& pos) override;
     
-    Vec3<double> getTarget() const override;
-    void setTarget(const Vec3<double>& target) override;
+    Point getTarget() const override;
+    void setTarget(const Point& target) override;
     
     double getFov() const override;
     void setFov(double fov) override;

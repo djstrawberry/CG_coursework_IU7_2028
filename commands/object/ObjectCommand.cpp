@@ -6,7 +6,7 @@
 #include <cmath>
 
 AddCelestialBodyCommand::AddCelestialBodyCommand(const std::string &name, double radius,
-                                                 const Vec3<double> &center, const Material &material) :
+                                                 const Point &center, const Material &material) :
     m_action(&SceneManager::addCelestialBody),
     m_name(name), m_radius(radius), m_center(center), m_material(material),
     m_sceneManager(ManagerProvider::getSceneManager())
@@ -18,7 +18,7 @@ void AddCelestialBodyCommand::execute()
 }
 
 AddPlanetCommand::AddPlanetCommand(const std::string &name, double radius,
-                                   const Vec3<double> &orbitCenter, double orbitRadius,
+                                   const Point &orbitCenter, double orbitRadius,
                                    double orbitAngle, double orbitSpeed, const Material &material) :
     m_action(&SceneManager::addPlanet),
     m_name(name), m_radius(radius), m_orbitCenter(orbitCenter),
@@ -45,7 +45,7 @@ void RemoveCelestialBodyCommand::execute()
 }
 
 UpdateCelestialBodyCommand::UpdateCelestialBodyCommand(size_t objectId, double radius,
-                                                       const Vec3<double> &center, const Material &material) :
+                                                       const Point &center, const Material &material) :
     m_action(&SceneManager::updateCelestialBody),
     m_id(objectId), m_radius(radius), m_center(center), m_material(material),
     m_sceneManager(ManagerProvider::getSceneManager())
@@ -67,7 +67,7 @@ void AdvanceOrbitsCommand::execute()
     ((*m_sceneManager).*m_action)(m_deltaSeconds);
 }
 
-SetOrbitCenterCommand::SetOrbitCenterCommand(size_t objectId, const Vec3<double> &orbitCenter) :
+SetOrbitCenterCommand::SetOrbitCenterCommand(size_t objectId, const Point &orbitCenter) :
     m_action(&SceneManager::setOrbitCenter),
     m_id(objectId), m_orbitCenter(orbitCenter),
     m_sceneManager(ManagerProvider::getSceneManager())

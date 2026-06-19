@@ -1,12 +1,8 @@
 /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/moc_mainwindow.cpp: /home/anechka/CG_coursework_IU7_2028/qt/inc/mainwindow.h \
   /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/moc_predefs.h \
-  /home/anechka/CG_coursework_IU7_2028/concepts/concepts.h \
-  /home/anechka/CG_coursework_IU7_2028/exceptions/BaseException.h \
-  /home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.h \
   /home/anechka/CG_coursework_IU7_2028/facade/Facade.h \
+  /home/anechka/CG_coursework_IU7_2028/point/Point.h \
   /home/anechka/CG_coursework_IU7_2028/qt/inc/plane.h \
-  /home/anechka/CG_coursework_IU7_2028/vector/Vec3.h \
-  /home/anechka/CG_coursework_IU7_2028/vector/Vec3.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -255,7 +251,6 @@
   /usr/include/c++/16/pstl/pstl_config.h \
   /usr/include/c++/16/ratio \
   /usr/include/c++/16/set \
-  /usr/include/c++/16/source_location \
   /usr/include/c++/16/sstream \
   /usr/include/c++/16/stdexcept \
   /usr/include/c++/16/streambuf \

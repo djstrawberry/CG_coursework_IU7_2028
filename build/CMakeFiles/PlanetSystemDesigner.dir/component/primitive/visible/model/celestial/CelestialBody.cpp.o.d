@@ -165,17 +165,22 @@ CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/
  /usr/include/c++/16/bits/ranges_algobase.h \
  /usr/include/c++/16/pstl/glue_memory_defs.h \
  /usr/include/c++/16/pstl/execution_defs.h \
- /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../../../../vector/Vec3.h \
- /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../../../../vector/../concepts/concepts.h \
- /usr/include/c++/16/utility /usr/include/c++/16/bits/stl_relops.h \
- /usr/include/c++/16/bits/intcmp.h /usr/include/c++/16/iostream \
- /usr/include/c++/16/ostream /usr/include/c++/16/bits/ostream_print.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../../../../point/Point.h \
+ /usr/include/c++/16/iostream /usr/include/c++/16/ostream \
+ /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
- /usr/include/c++/16/bits/istream.tcc \
- /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../../../../vector/Vec3.hpp \
- /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../../../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../../../../../vector/../exceptions/vector/../BaseException.h \
- /usr/include/c++/16/source_location /usr/include/c++/16/cmath \
+ /usr/include/c++/16/bits/istream.tcc /usr/include/c++/16/map \
+ /usr/include/c++/16/bits/stl_tree.h \
+ /usr/include/c++/16/bits/node_handle.h \
+ /usr/include/c++/16/bits/stl_map.h \
+ /usr/include/c++/16/bits/stl_multimap.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../impl/SphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../impl/../../../../../materials/Material.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../impl/../vertex/Vertex.h \
+ /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../impl/../edge/Edge.h \
+ /usr/include/c++/16/vector /usr/include/c++/16/bits/stl_vector.h \
+ /usr/include/c++/16/bits/stl_bvector.h \
+ /usr/include/c++/16/bits/vector.tcc /usr/include/c++/16/cmath \
  /usr/include/math.h /usr/include/bits/math-vector.h \
  /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
@@ -194,13 +199,4 @@ CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/
  /usr/include/c++/16/tr1/modified_bessel_func.tcc \
  /usr/include/c++/16/tr1/poly_hermite.tcc \
  /usr/include/c++/16/tr1/poly_laguerre.tcc \
- /usr/include/c++/16/tr1/riemann_zeta.tcc /usr/include/c++/16/map \
- /usr/include/c++/16/bits/stl_tree.h \
- /usr/include/c++/16/bits/node_handle.h \
- /usr/include/c++/16/bits/stl_map.h \
- /usr/include/c++/16/bits/stl_multimap.h \
- /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../impl/SphereImpl.h \
- /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/../impl/../../../../../materials/Material.h \
- /usr/include/c++/16/vector /usr/include/c++/16/bits/stl_vector.h \
- /usr/include/c++/16/bits/stl_bvector.h \
- /usr/include/c++/16/bits/vector.tcc
+ /usr/include/c++/16/tr1/riemann_zeta.tcc

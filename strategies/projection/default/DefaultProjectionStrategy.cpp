@@ -1,60 +1,58 @@
 #include "DefaultProjectionStrategy.h"
 #include <cmath>
 
-bool projectPoint(const Vec3<double>& point,
-                  const Vec3<double>& camPos,
-                  const Vec3<double>& forward,
-                  const Vec3<double>& right,
-                  const Vec3<double>& up,
-                  double scale,
-                  Vec3<double>& out)
+static bool projectPoint(const Point& point,
+                         const Point& camPos,
+                         const Point& forward,
+                         const Point& right,
+                         const Point& up,
+                         double scale,
+                         Point& out)
 {
-    Vec3<double> relative = point - camPos;
+    Point relative = point - camPos;
     double camZ = relative.dot(forward);
     if (camZ <= 0.01)
         return false;
 
     double camX = relative.dot(right);
     double camY = relative.dot(up);
-    out.setX((camX / camZ) * scale);
-    out.setY((camY / camZ) * scale);
-    out.setZ(camZ);
+    out = Point((camX / camZ) * scale, (camY / camZ) * scale, camZ);
     return true;
 }
 
 void DefaultProjectionStrategy::project(const SphereImpl& sphere,
-                         const CameraImpl& camera, std::vector<Vec3<double>> &projected)
+                         const CameraImpl& camera, std::vector<Point>& projected)
 {
     projected.clear();
 
-    Vec3<double> camPos = camera.getPosition();
-    Vec3<double> camTarget = camera.getTarget();
+    Point camPos = camera.getPosition();
+    Point camTarget = camera.getTarget();
     double fov = camera.getFov();
 
-    Vec3<double> forward = (camTarget - camPos).normalized();
-    Vec3<double> worldUp = Vec3<double>::up();
-    Vec3<double> right = forward.cross(worldUp).normalized();
+    Point forward = (camTarget - camPos).normalized();
+    Point worldUp = Point::up();
+    Point right = forward.cross(worldUp).normalized();
     if (right.length() < 1e-6)
-        right = Vec3<double>::right();
-    Vec3<double> up = right.cross(forward).normalized();
+        right = Point::right();
+    Point up = right.cross(forward).normalized();
 
     double scale = 1.0 / (2.0 * std::tan(fov * M_PI / 360.0));
 
-    const auto& vertices = sphere.getVertices();
+    const auto& vertices = sphere.getVertices();  
     if (!vertices.empty()) {
         projected.reserve(vertices.size());
         for (const auto& vertex : vertices) {
-            Vec3<double> point;
-            if (projectPoint(vertex, camPos, forward, right, up, scale, point))
+            Point point(vertex.getX(), vertex.getY(), vertex.getZ());
+            if (projectPoint(point, camPos, forward, right, up, scale, point))
                 projected.push_back(point);
             else
-                projected.push_back({0.0, 0.0, -1.0});
+                projected.push_back(Point(0.0, 0.0, -1.0));
         }
         return;
     }
 
-    Vec3<double> center = sphere.getCenter();
-    Vec3<double> point;
+    Point center(sphere.getCenter().getX(), sphere.getCenter().getY(), sphere.getCenter().getZ());
+    Point point;
     if (projectPoint(center, camPos, forward, right, up, scale, point))
         projected.push_back(point);
 }

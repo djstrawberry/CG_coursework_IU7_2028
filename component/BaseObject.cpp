@@ -37,7 +37,7 @@ std::shared_ptr<BaseObject> BaseObject::getObject(size_t id) const
     return nullptr;
 }
 
-Vec3<double> BaseObject::getCenter() const noexcept
+Point BaseObject::getCenter() const noexcept
 {
-    return { 0, 0, 0 }; 
+    return Point{0, 0, 0};
 }

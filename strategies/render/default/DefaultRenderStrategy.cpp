@@ -2,23 +2,28 @@
 #include "../../../component/primitive/visible/model/impl/SphereImpl.h"
 #include "../../../component/primitive/invisible/camera/impl/CameraImpl.h"
 #include <algorithm>
+#include <cmath>
 
 int DefaultRenderStrategy::clampChannel(double value) const
 {
     return static_cast<int>(std::clamp(value, 0.0, 255.0));
 }
 
-bool DefaultRenderStrategy::isFrontFacing(const Vec3<double>& v0, const Vec3<double>& v1,
-                                           const Vec3<double>& v2, const Vec3<double>& camPos,
-                                           const Vec3<double>& sphereCenter)
+bool DefaultRenderStrategy::isFrontFacing(const Vertex& v0, const Vertex& v1,
+                                           const Vertex& v2, const Point& camPos,
+                                           const Point& sphereCenter)
 {
-    Vec3<double> triCenter = (v0 + v1 + v2) / 3.0;
-    Vec3<double> normal = (triCenter - sphereCenter).normalized();
+    Point p0(v0.getX(), v0.getY(), v0.getZ());
+    Point p1(v1.getX(), v1.getY(), v1.getZ());
+    Point p2(v2.getX(), v2.getY(), v2.getZ());
+
+    Point triCenter = (p0 + p1 + p2) / 3.0;
+    Point normal = (triCenter - sphereCenter).normalized();
     return normal.dot(camPos - triCenter) > 0.0;
 }
 
 void DefaultRenderStrategy::renderSphere(const SphereImpl& sphere,
-                      std::vector<Vec3<double>> projected,
+                      std::vector<Point> projected,          
                       const std::shared_ptr<CameraImpl>& camera,
                       size_t screenWidth,
                       size_t screenHeight)
@@ -28,10 +33,10 @@ void DefaultRenderStrategy::renderSphere(const SphereImpl& sphere,
     correctAspectRatio(projected, screenWidth, screenHeight);
 
     const Material mat = sphere.getMaterial();
-    const Vec3<double> center = sphere.getCenter();
-    const Vec3<double> camPos = camera->getPosition();
+    Point center(sphere.getCenter().getX(), sphere.getCenter().getY(), sphere.getCenter().getZ());
+    Point camPos = camera->getPosition();   
 
-    const auto& vertices = sphere.getVertices();
+    const auto& vertices = sphere.getVertices();   
     if (vertices.empty() || projected.size() != vertices.size()) return;
 
     const double fov = camera->getFov();
@@ -40,12 +45,14 @@ void DefaultRenderStrategy::renderSphere(const SphereImpl& sphere,
     auto [screenCenter, screenRadius] = computeScreenCenterAndRadius(projected, sphere.getRadius(), fov, screenHeight);
     if (screenRadius == 0) return;
 
-    addGlowPass(screenCenter, screenRadius, mat, lightColor);
+    if (mat.isStar()) {
+        addGlowPass(screenCenter, screenRadius * 1.5, mat, lightColor, 1.0);
+    }
     processAllTriangles(projected, vertices, center, camPos, mat,
                         sphere.getSlices(), sphere.getStacks(), lightColor, m_lightPos);
 }
 
-void DefaultRenderStrategy::setLight(const Vec3<double>& pos, const std::vector<float>& color)
+void DefaultRenderStrategy::setLight(const Point& pos, const std::vector<float>& color)
 {
     m_lightPos = pos;
     if (!color.empty()) m_lightColor = color;
@@ -83,36 +90,57 @@ void DefaultRenderStrategy::renderTrianglePasses(std::shared_ptr<BasePainter> pa
                                      t.a);
 }
 
-void DefaultRenderStrategy::computeLitColor(const Material& mat, const Vec3<double>& normal,
-                                            const Vec3<double>& viewDir, const Vec3<double>& lightDir,
+void DefaultRenderStrategy::computeLitColor(const Material& mat, const Point& normal,
+                                            const Point& viewDir, const Point& lightDir,
                                             int& r, int& g, int& b, const float* light) const
 {
+    if (mat.isStar()) {
+        double nDotV = std::max(0.0, normal.dot(viewDir));
+
+        double coreR = 255.0;
+        double coreG = 255.0;
+        double coreB = 210.0;
+
+        double edgeR = mat.r() * 255.0;
+        double edgeG = mat.g() * 255.0 * 0.4;
+        double edgeB = 0.0;
+
+        double factor = std::pow(nDotV, 1.2);
+
+        r = clampChannel(edgeR + (coreR - edgeR) * factor);
+        g = clampChannel(edgeG + (coreG - edgeG) * factor);
+        b = clampChannel(edgeB + (coreB - edgeB) * factor);
+        return;
+    }
+
     double lr = light[0], lg = light[1], lb = light[2], intensity = light[3];
     double nDotL = std::max(0.0, normal.dot(lightDir));
-    Vec3<double> reflect = normal * (2.0 * nDotL) - lightDir;
+    Point reflect = normal * (2.0 * nDotL) - lightDir;      
     double rDotV = std::max(0.0, reflect.normalized().dot(viewDir));
-    double spec = mat.specular * std::pow(rDotV, mat.shininess / 10.0);
-    double shading = mat.ambient + mat.diffuse * nDotL + spec;
-    r = clampChannel(mat.r * lr * shading * 255.0);
-    g = clampChannel(mat.g * lg * shading * 255.0);
-    b = clampChannel(mat.b * lb * shading * 255.0);
+    double spec = mat.specular() * std::pow(rDotV, mat.shininess() / 10.0);
+    double shading = mat.ambient() + mat.diffuse() * nDotL + spec;
+    r = clampChannel(mat.r() * lr * shading * 255.0);
+    g = clampChannel(mat.g() * lg * shading * 255.0);
+    b = clampChannel(mat.b() * lb * shading * 255.0);
 }
 
-void DefaultRenderStrategy::correctAspectRatio(std::vector<Vec3<double>>& projected,
+void DefaultRenderStrategy::correctAspectRatio(std::vector<Point>& projected,
                                                 size_t w, size_t h) const
 {
     double ar = static_cast<double>(w) / static_cast<double>(h);
     if (ar > 1.0) {
         double ox = w * (1.0 - 1.0 / ar) / 2.0;
-        for (auto& p : projected) p = Vec3<double>(p.getX() / ar + ox, p.getY(), p.getZ());
+        for (auto& p : projected)
+            p = Point(p.getX() / ar + ox, p.getY(), p.getZ());
     } else {
         double oy = h * (1.0 - ar) / 2.0;
-        for (auto& p : projected) p = Vec3<double>(p.getX(), p.getY() * ar + oy, p.getZ());
+        for (auto& p : projected)
+            p = Point(p.getX(), p.getY() * ar + oy, p.getZ());
     }
 }
 
-std::pair<Vec3<double>, double> DefaultRenderStrategy::computeScreenCenterAndRadius(
-    const std::vector<Vec3<double>>& projected, double sphereRadius, double fov, size_t height) const
+std::pair<Point, double> DefaultRenderStrategy::computeScreenCenterAndRadius(
+    const std::vector<Point>& projected, double sphereRadius, double fov, size_t height) const
 {
     double sx = 0, sy = 0;
     size_t n = 0;
@@ -120,8 +148,8 @@ std::pair<Vec3<double>, double> DefaultRenderStrategy::computeScreenCenterAndRad
         if (p.getZ() <= 0) continue;
         sx += p.getX(); sy += p.getY(); ++n;
     }
-    if (n == 0) return {{0,0,0}, 0};
-    Vec3<double> c(sx / n, sy / n, 0);
+    if (n == 0) return {Point{0,0,0}, 0};
+    Point c(sx / n, sy / n, 0);
     double r = 0;
     for (const auto& p : projected) {
         if (p.getZ() <= 0) continue;
@@ -135,38 +163,44 @@ std::pair<Vec3<double>, double> DefaultRenderStrategy::computeScreenCenterAndRad
     return {c, r};
 }
 
-void DefaultRenderStrategy::addGlowPass(const Vec3<double>& c, double r,
-                                         const Material& mat, const float* light)
+void DefaultRenderStrategy::addGlowPass(const Point& c, double r,
+                 const Material& mat, const float* light,
+                 double intensityFactor)
 {
     GlowPass g;
     g.x = c.getX(); g.y = c.getY(); g.radius = r;
-    g.r = clampChannel(mat.r * light[0] * 255);
-    g.g = clampChannel(mat.g * light[1] * 255);
-    g.b = clampChannel(mat.b * light[2] * 255);
-    g.intensity = light[3] * (0.65 + mat.ambient * 0.25 + mat.diffuse * 0.2);
+    g.r = clampChannel(mat.r() * light[0] * 255);
+    g.g = clampChannel(mat.g() * light[1] * 255);
+    g.b = clampChannel(mat.b() * light[2] * 255);
+    g.intensity = light[3] * (0.65 + mat.ambient() * 0.25 + mat.diffuse() * 0.2) * intensityFactor;
     m_glowPasses.push_back(g);
 }
 
-void DefaultRenderStrategy::processTriangle(const std::vector<Vec3<double>>& projected,
-                                            const std::vector<Vec3<double>>& vertices,
-                                            const Vec3<double>& center, const Vec3<double>& camPos,
+void DefaultRenderStrategy::processTriangle(const std::vector<Point>& projected,
+                                            const std::vector<Vertex>& vertices,
+                                            const Point& center, const Point& camPos,
                                             const Material& mat, size_t i0, size_t i1, size_t i2,
-                                            const float* light, const Vec3<double>& lightSourcePos)
+                                            const float* light, const Point& lightSourcePos)
 {
     if (i0 >= projected.size() || i1 >= projected.size() || i2 >= projected.size()) return;
     if (projected[i0].getZ() <= 0 || projected[i1].getZ() <= 0 || projected[i2].getZ() <= 0) return;
+
+    Point p0(vertices[i0].getX(), vertices[i0].getY(), vertices[i0].getZ());
+    Point p1(vertices[i1].getX(), vertices[i1].getY(), vertices[i1].getZ());
+    Point p2(vertices[i2].getX(), vertices[i2].getY(), vertices[i2].getZ());
+
     if (!isFrontFacing(vertices[i0], vertices[i1], vertices[i2], camPos, center)) return;
 
-    Vec3<double> n0 = (vertices[i0] - center).normalized();
-    Vec3<double> n1 = (vertices[i1] - center).normalized();
-    Vec3<double> n2 = (vertices[i2] - center).normalized();
-    Vec3<double> v0 = (camPos - vertices[i0]).normalized();
-    Vec3<double> v1 = (camPos - vertices[i1]).normalized();
-    Vec3<double> v2 = (camPos - vertices[i2]).normalized();
+    Point n0 = (p0 - center).normalized();
+    Point n1 = (p1 - center).normalized();
+    Point n2 = (p2 - center).normalized();
+    Point v0 = (camPos - p0).normalized();
+    Point v1 = (camPos - p1).normalized();
+    Point v2 = (camPos - p2).normalized();
 
-    Vec3<double> l0 = (lightSourcePos - vertices[i0]).normalized();
-    Vec3<double> l1 = (lightSourcePos - vertices[i1]).normalized();
-    Vec3<double> l2 = (lightSourcePos - vertices[i2]).normalized();
+    Point l0 = (lightSourcePos - p0).normalized();
+    Point l1 = (lightSourcePos - p1).normalized();
+    Point l2 = (lightSourcePos - p2).normalized();
 
     int r0, g0, b0, r1, g1, b1, r2, g2, b2;
     computeLitColor(mat, n0, v0, l0, r0, g0, b0, light);
@@ -185,11 +219,11 @@ void DefaultRenderStrategy::processTriangle(const std::vector<Vec3<double>>& pro
     m_trianglePasses.push_back(t);
 }
 
-void DefaultRenderStrategy::processAllTriangles(const std::vector<Vec3<double>>& projected,
-                                                const std::vector<Vec3<double>>& vertices,
-                                                const Vec3<double>& center, const Vec3<double>& camPos,
+void DefaultRenderStrategy::processAllTriangles(const std::vector<Point>& projected,
+                                                const std::vector<Vertex>& vertices,
+                                                const Point& center, const Point& camPos,
                                                 const Material& mat, size_t slices, size_t stacks,
-                                                const float* light, const Vec3<double>& lightSourcePos)
+                                                const float* light, const Point& lightSourcePos)
 {
     for (size_t t = 0; t < stacks; ++t)
         for (size_t s = 0; s < slices; ++s) {

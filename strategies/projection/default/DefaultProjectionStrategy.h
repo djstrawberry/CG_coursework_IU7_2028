@@ -1,4 +1,5 @@
 #include "../BaseProjectionStrategy.h"
+#include "../../../point/Point.h"
 
 #include <vector>
 
@@ -9,5 +10,5 @@ public:
     virtual ~DefaultProjectionStrategy() override = default;
 
     void project(const SphereImpl& sphere,
-                         const CameraImpl& camera, std::vector<Vec3<double>> &projected) override;
+                         const CameraImpl& camera, std::vector<Point> &projected) override;
 };

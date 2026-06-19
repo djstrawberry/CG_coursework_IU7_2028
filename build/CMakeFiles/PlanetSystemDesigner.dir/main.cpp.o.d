@@ -397,10 +397,5 @@ CMakeFiles/PlanetSystemDesigner.dir/main.cpp.o: \
  /usr/include/qt6/QtWidgets/qgraphicsscene.h \
  /usr/include/qt6/QtGui/qpen.h \
  /home/anechka/CG_coursework_IU7_2028/qt/inc/../../facade/Facade.h \
- /home/anechka/CG_coursework_IU7_2028/qt/inc/../../vector/Vec3.h \
- /home/anechka/CG_coursework_IU7_2028/qt/inc/../../vector/../concepts/concepts.h \
- /usr/include/c++/16/iostream \
- /home/anechka/CG_coursework_IU7_2028/qt/inc/../../vector/Vec3.hpp \
- /home/anechka/CG_coursework_IU7_2028/qt/inc/../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/CG_coursework_IU7_2028/qt/inc/../../vector/../exceptions/vector/../BaseException.h \
- /usr/include/c++/16/source_location
+ /home/anechka/CG_coursework_IU7_2028/qt/inc/../../point/Point.h \
+ /usr/include/c++/16/iostream

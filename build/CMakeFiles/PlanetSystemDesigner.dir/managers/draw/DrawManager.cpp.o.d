@@ -338,18 +338,21 @@ CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../concepts/concepts.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../BaseProjectionStrategy.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/CameraImpl.h \
- /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../point/Point.h \
  /usr/include/c++/16/iostream /usr/include/c++/16/ostream \
  /usr/include/c++/16/bits/ostream_print.h \
  /usr/include/c++/16/bits/ostream.tcc /usr/include/c++/16/istream \
  /usr/include/c++/16/bits/istream.tcc \
- /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../vector/Vec3.hpp \
- /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../vector/../exceptions/vector/../BaseException.h \
- /usr/include/c++/16/source_location \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/invisible/camera/impl/../../../../../visitors/BaseVisitor.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/visible/model/impl/SphereImpl.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/visible/model/impl/../../../../../materials/Material.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/visible/model/impl/../vertex/Vertex.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../component/primitive/visible/model/impl/../edge/Edge.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../../../vector/../exceptions/vector/../BaseException.h \
+ /usr/include/c++/16/source_location \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/../default/DefaultProjectionStrategy.h \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/projection/creators/ProjectionStrategyCreator.hpp \
  /home/anechka/CG_coursework_IU7_2028/managers/draw/../../strategies/conversion/creator/ConvertCoordsStrategyCreator.h \

@@ -1,26 +1,27 @@
 #include "LightImpl.h"
-#include "../../../../../visitors/BaseVisitor.h" 
+#include "../../../../../visitors/BaseVisitor.h"
 
-LightImpl::LightImpl(const Vec3<double>& position, const std::vector<float>& color)
+LightImpl::LightImpl(const Point& position, const std::vector<float>& color)
     : m_position(position), m_color(color) {}
 
 void LightImpl::accept(std::shared_ptr<BaseVisitor> visitor) {
     if (visitor) {
-        visitor->visit(*const_cast<LightImpl*>(this));
+        visitor->visit(*this);
     }
 }
 
-Vec3<double> LightImpl::getPosition() const 
-{
-    return m_position; 
-}
-void LightImpl::setPosition(const Vec3<double>& pos) { 
-    m_position = pos; 
+Point LightImpl::getPosition() const {
+    return m_position;
 }
 
-std::vector<float> LightImpl::getColor() const { 
-    return m_color; 
+void LightImpl::setPosition(const Point& pos) {
+    m_position = pos;
 }
-void LightImpl::setColor(const std::vector<float>& color) { 
-    m_color = color; 
+
+std::vector<float> LightImpl::getColor() const {
+    return m_color;
+}
+
+void LightImpl::setColor(const std::vector<float>& color) {
+    m_color = color;
 }

@@ -1,5 +1,6 @@
 #include "CameraAdapter.h"
 #include "impl/CameraImpl.h"
+#include <stdexcept>
 
 CameraAdapter::CameraAdapter(std::shared_ptr<CameraImpl> impl)
     : BaseCamera(std::move(impl)) {
@@ -7,19 +8,19 @@ CameraAdapter::CameraAdapter(std::shared_ptr<CameraImpl> impl)
         throw std::invalid_argument("Camera implementation cannot be null!");
 }
 
-Vec3<double> CameraAdapter::getPosition() const {
+Point CameraAdapter::getPosition() const {
     return m_impl->getPosition();
 }
 
-void CameraAdapter::setPosition(const Vec3<double>& pos) {
+void CameraAdapter::setPosition(const Point& pos) {
     m_impl->setPosition(pos);
 }
 
-Vec3<double> CameraAdapter::getTarget() const {
+Point CameraAdapter::getTarget() const {
     return m_impl->getTarget();
 }
 
-void CameraAdapter::setTarget(const Vec3<double>& target) {
+void CameraAdapter::setTarget(const Point& target) {
     m_impl->setTarget(target);
 }
 
@@ -39,8 +40,8 @@ void CameraAdapter::zoom(double amount) {
     m_impl->zoom(amount);
 }
 
-Vec3<double> CameraAdapter::getCenter() const noexcept {
-    return m_impl ? m_impl->getPosition() : Vec3<double>();
+Point CameraAdapter::getCenter() const noexcept {
+    return m_impl ? m_impl->getPosition() : Point{0,0,0};
 }
 
 void CameraAdapter::accept(std::shared_ptr<BaseVisitor> visitor) {

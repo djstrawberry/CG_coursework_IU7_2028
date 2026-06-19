@@ -194,8 +194,11 @@ CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o: \
  /usr/include/c++/16/tr1/riemann_zeta.tcc \
  /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/projection/BaseProjectionStrategy.h \
  /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/projection/../../component/primitive/invisible/camera/impl/CameraImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/projection/../../component/primitive/invisible/camera/impl/../../../../../point/Point.h \
  /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/projection/../../component/primitive/visible/model/impl/SphereImpl.h \
  /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/projection/../../component/primitive/visible/model/impl/../../../../../materials/Material.h \
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/projection/../../component/primitive/visible/model/impl/../vertex/Vertex.h \
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/../../../strategies/projection/../../component/primitive/visible/model/impl/../edge/Edge.h \
  /usr/include/c++/16/vector /usr/include/c++/16/bits/stl_vector.h \
  /usr/include/c++/16/bits/stl_bvector.h \
  /usr/include/c++/16/bits/vector.tcc \
@@ -211,6 +214,8 @@ CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o: \
  /usr/include/c++/16/bits/node_handle.h \
  /usr/include/c++/16/bits/stl_map.h \
  /usr/include/c++/16/bits/stl_multimap.h \
+ /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
  /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/invisible/camera/CameraAdapter.h \
  /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/invisible/camera/BaseCamera.h \
  /home/anechka/CG_coursework_IU7_2028/visitors/draw/../../component/primitive/invisible/camera/../InvisibleObject.h \

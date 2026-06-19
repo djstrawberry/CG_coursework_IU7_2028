@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../BaseObject.h"
-#include "../../vector/Vec3.h"
+#include "../../point/Point.h"
 #include <map>
 
 class Composite : public BaseObject {
@@ -27,5 +27,5 @@ public:
     bool add(const std::shared_ptr<BaseObject>& obj) override;
     bool remove(const size_t id) noexcept override;
     std::shared_ptr<BaseObject> getObject(const size_t id) const override;
-    Vec3<double> getCenter() const noexcept override;
+    Point getCenter() const noexcept override;
 };

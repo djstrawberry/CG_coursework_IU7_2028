@@ -7,9 +7,64 @@
 	"CMAKE_LIST_FILES" : 
 	[
 		"/home/anechka/CG_coursework_IU7_2028/CMakeLists.txt",
+		"/usr/share/cmake/Modules/CMakeDetermineSystem.cmake",
+		"/usr/share/cmake/Modules/CMakeSystem.cmake.in",
 		"/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/4.3.0/CMakeSystem.cmake",
+		"/usr/share/cmake/Modules/CMakeUnixFindMake.cmake",
 		"/usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake",
 		"/usr/share/cmake/Modules/Platform/Linux-Initialize.cmake",
+		"/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake",
+		"/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake",
+		"/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake",
+		"/usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake",
+		"/usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake",
+		"/usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake",
+		"/usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
+		"/usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
+		"/usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake",
+		"/usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake",
+		"/usr/share/cmake/Modules/CMakeFindBinUtils.cmake",
+		"/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake",
+		"/usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in",
 		"/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/4.3.0/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake",
 		"/usr/share/cmake/Modules/CMakeGenericSystem.cmake",
@@ -24,6 +79,19 @@
 		"/usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake",
 		"/usr/share/cmake/Modules/Platform/Linux-GNU.cmake",
 		"/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake",
+		"/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake",
+		"/usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake",
+		"/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake",
+		"/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake",
+		"/usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake",
+		"/usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake",
+		"/usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake",
+		"/usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake",
+		"/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp",
+		"/usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake",
+		"/usr/share/cmake/Modules/Internal/FeatureTesting.cmake",
+		"/usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in",
+		"/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/4.3.0/CMakeCXXCompiler.cmake",
 		"/usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake",
 		"/usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake",
 		"/usr/share/cmake/Modules/Linker/GNU-CXX.cmake",
@@ -31,6 +99,8 @@
 		"/usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake",
 		"/usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake",
 		"/usr/share/cmake/Modules/Platform/Linker/GNU.cmake",
+		"/usr/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake",
+		"/usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in",
 		"/usr/lib64/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/usr/lib64/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/usr/lib64/cmake/Qt6/Qt6Config.cmake",
@@ -599,6 +669,12 @@
 			null
 		],
 		[
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/edge/Edge.h",
+			"MU",
+			"VPR4TDXM4T/moc_Edge.cpp",
+			null
+		],
+		[
 			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/SphereImpl.h",
 			"MU",
 			"63DZSM4NJT/moc_SphereImpl.cpp",
@@ -614,6 +690,12 @@
 			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h",
 			"MU",
 			"QJ5AJDWWV5/moc_TessellatedSphereImpl.cpp",
+			null
+		],
+		[
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/vertex/Vertex.h",
+			"MU",
+			"VZZLLLXOGO/moc_Vertex.cpp",
 			null
 		],
 		[
@@ -731,6 +813,12 @@
 			null
 		],
 		[
+			"/home/anechka/CG_coursework_IU7_2028/point/Point.h",
+			"MU",
+			"M7F3CKOWJJ/moc_Point.cpp",
+			null
+		],
+		[
 			"/home/anechka/CG_coursework_IU7_2028/qt/inc/mainwindow.h",
 			"MU",
 			"KVXSJM6DYM/moc_mainwindow.cpp",
@@ -839,6 +927,12 @@
 			null
 		],
 		[
+			"/home/anechka/CG_coursework_IU7_2028/visitors/animation/AnimationVisitor.h",
+			"MU",
+			"UULIOEA4H4/moc_AnimationVisitor.cpp",
+			null
+		],
+		[
 			"/home/anechka/CG_coursework_IU7_2028/visitors/creators/VisitorCreator.h",
 			"MU",
 			"DVCZ2NGCGY/moc_VisitorCreator.cpp",
@@ -855,6 +949,12 @@
 			"MU",
 			"EWRW257UVJ/moc_DrawVisitor.cpp",
 			null
+		],
+		[
+			"/home/anechka/CG_coursework_IU7_2028/visitors/params/SetParamsVisitor.h",
+			"MU",
+			"XOMV7ONGGR/moc_SetParamsVisitor.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -864,6 +964,7 @@
 	[
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
 		"QT_OPENGLWIDGETS_LIB",
 		"QT_OPENGL_LIB",
 		"QT_WIDGETS_LIB"
@@ -976,12 +1077,22 @@
 			null
 		],
 		[
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/edge/Edge.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp",
 			"MU",
 			null
 		],
 		[
 			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/vertex/Vertex.cpp",
 			"MU",
 			null
 		],
@@ -1052,6 +1163,7 @@
 			"MU",
 			null
 		],
+		[ "/home/anechka/CG_coursework_IU7_2028/point/Point.cpp", "MU", null ],
 		[
 			"/home/anechka/CG_coursework_IU7_2028/qt/src/mainwindow.cpp",
 			"MU",
@@ -1075,7 +1187,17 @@
 			null
 		],
 		[
+			"/home/anechka/CG_coursework_IU7_2028/visitors/animation/AnimationVisitor.cpp",
+			"MU",
+			null
+		],
+		[
 			"/home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/anechka/CG_coursework_IU7_2028/visitors/params/SetParamsVisitor.cpp",
 			"MU",
 			null
 		]

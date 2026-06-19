@@ -374,16 +374,17 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/plane.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../Primitive.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../BaseObject.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../visitors/BaseVisitor.h \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/Vec3.h \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/../concepts/concepts.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../point/Point.h \
  /usr/include/c++/16/iostream \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/Vec3.hpp \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/camera/../../component/primitive/invisible/camera/../../../../vector/../exceptions/vector/../BaseException.h \
- /usr/include/c++/16/source_location \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/QtDrawFactory.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/../BaseDrawFactory.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/../products/BasePainter.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/../products/../../../vector/Vec3.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/../products/../../../vector/../concepts/concepts.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/../products/../../../vector/Vec3.hpp \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/../products/../../../vector/../exceptions/vector/VectorException.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/../products/../../../vector/../exceptions/vector/../BaseException.h \
+ /usr/include/c++/16/source_location \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../factories/draw/qt/products/QtPainter.h \
  /usr/include/qt6/QtGui/QMouseEvent /usr/include/qt6/QtGui/qevent.h \
  /usr/include/qt6/QtCore/qcoreevent.h \

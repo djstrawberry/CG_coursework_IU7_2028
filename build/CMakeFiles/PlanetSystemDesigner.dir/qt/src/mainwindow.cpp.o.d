@@ -389,13 +389,8 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: \
  /usr/include/qt6/QtWidgets/qgraphicsscene.h \
  /usr/include/qt6/QtGui/qpen.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../facade/Facade.h \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../vector/Vec3.h \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../vector/../concepts/concepts.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../point/Point.h \
  /usr/include/c++/16/iostream \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../vector/Vec3.hpp \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/CG_coursework_IU7_2028/qt/src/../inc/../../vector/../exceptions/vector/../BaseException.h \
- /usr/include/c++/16/source_location \
  /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/include/ui_mainwindow.h \
  /usr/include/qt6/QtCore/QVariant /usr/include/qt6/QtWidgets/QApplication \
  /usr/include/qt6/QtWidgets/qapplication.h \
@@ -437,6 +432,8 @@ CMakeFiles/PlanetSystemDesigner.dir/qt/src/mainwindow.cpp.o: \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../materials/Material.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../factories/sphere/SphereFactory.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/SphereImpl.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/../vertex/Vertex.h \
+ /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/../edge/Edge.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../factories/sphere/../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
  /home/anechka/CG_coursework_IU7_2028/qt/src/../../managers/scene/../../component/primitive/invisible/light/BaseLight.h \

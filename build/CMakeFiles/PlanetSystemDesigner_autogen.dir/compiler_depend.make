@@ -33,11 +33,15 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/BaseModel.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/CelestialBody.cpp \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/celestial/CelestialBody.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/edge/Edge.cpp \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/edge/Edge.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/SphereImpl.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp \
   /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/vertex/Vertex.cpp \
+  /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/vertex/Vertex.h \
   /home/anechka/CG_coursework_IU7_2028/concepts/concepts.h \
   /home/anechka/CG_coursework_IU7_2028/exceptions/BaseException.cpp \
   /home/anechka/CG_coursework_IU7_2028/exceptions/BaseException.h \
@@ -72,6 +76,8 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
   /home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.cpp \
   /home/anechka/CG_coursework_IU7_2028/managers/scene/SceneManager.h \
   /home/anechka/CG_coursework_IU7_2028/materials/Material.h \
+  /home/anechka/CG_coursework_IU7_2028/point/Point.cpp \
+  /home/anechka/CG_coursework_IU7_2028/point/Point.h \
   /home/anechka/CG_coursework_IU7_2028/qt/inc/mainwindow.h \
   /home/anechka/CG_coursework_IU7_2028/qt/inc/plane.h \
   /home/anechka/CG_coursework_IU7_2028/qt/src/mainwindow.cpp \
@@ -97,10 +103,14 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
   /home/anechka/CG_coursework_IU7_2028/vector/Vec3.h \
   /home/anechka/CG_coursework_IU7_2028/vector/Vec3.hpp \
   /home/anechka/CG_coursework_IU7_2028/visitors/BaseVisitor.h \
+  /home/anechka/CG_coursework_IU7_2028/visitors/animation/AnimationVisitor.cpp \
+  /home/anechka/CG_coursework_IU7_2028/visitors/animation/AnimationVisitor.h \
   /home/anechka/CG_coursework_IU7_2028/visitors/creators/VisitorCreator.h \
   /home/anechka/CG_coursework_IU7_2028/visitors/creators/VisitorCreator.hpp \
   /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp \
   /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.h \
+  /home/anechka/CG_coursework_IU7_2028/visitors/params/SetParamsVisitor.cpp \
+  /home/anechka/CG_coursework_IU7_2028/visitors/params/SetParamsVisitor.h \
   /usr/bin/cmake \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -350,7 +360,6 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
   /usr/include/c++/16/pstl/pstl_config.h \
   /usr/include/c++/16/ratio \
   /usr/include/c++/16/set \
-  /usr/include/c++/16/source_location \
   /usr/include/c++/16/sstream \
   /usr/include/c++/16/stdexcept \
   /usr/include/c++/16/streambuf \
@@ -954,22 +963,81 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
   /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
   /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargetsPrecheck.cmake \
   /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
+  /usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in \
+  /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp \
   /usr/share/cmake/Modules/CMakeCXXInformation.cmake \
   /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
   /usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake \
+  /usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake \
+  /usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake \
+  /usr/share/cmake/Modules/CMakeDetermineCompiler.cmake \
+  /usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake \
+  /usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake \
+  /usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake \
+  /usr/share/cmake/Modules/CMakeDetermineSystem.cmake \
+  /usr/share/cmake/Modules/CMakeFindBinUtils.cmake \
   /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake \
   /usr/share/cmake/Modules/CMakeGenericSystem.cmake \
   /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake \
   /usr/share/cmake/Modules/CMakeLanguageInformation.cmake \
+  /usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake \
+  /usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake \
+  /usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake \
+  /usr/share/cmake/Modules/CMakeSystem.cmake.in \
   /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake \
   /usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake \
+  /usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake \
+  /usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake \
+  /usr/share/cmake/Modules/CMakeUnixFindMake.cmake \
   /usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake \
   /usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake \
   /usr/share/cmake/Modules/CheckIncludeFileCXX.cmake \
   /usr/share/cmake/Modules/CheckLibraryExists.cmake \
+  /usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake \
   /usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
+  /usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake \
+  /usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake \
   /usr/share/cmake/Modules/Compiler/GNU-CXX.cmake \
+  /usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake \
   /usr/share/cmake/Modules/Compiler/GNU.cmake \
+  /usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake \
+  /usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake \
+  /usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake \
   /usr/share/cmake/Modules/FindOpenGL.cmake \
   /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake \
   /usr/share/cmake/Modules/FindPackageMessage.cmake \
@@ -978,15 +1046,19 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
   /usr/share/cmake/Modules/GNUInstallDirs.cmake \
   /usr/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake \
   /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake \
+  /usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake \
+  /usr/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake \
   /usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake \
   /usr/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake \
   /usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake \
+  /usr/share/cmake/Modules/Internal/FeatureTesting.cmake \
   /usr/share/cmake/Modules/Linker/GNU-CXX.cmake \
   /usr/share/cmake/Modules/Linker/GNU.cmake \
   /usr/share/cmake/Modules/MacroAddFileDependencies.cmake \
   /usr/share/cmake/Modules/Platform/Linker/GNU.cmake \
   /usr/share/cmake/Modules/Platform/Linker/Linux-GNU-CXX.cmake \
   /usr/share/cmake/Modules/Platform/Linker/Linux-GNU.cmake \
+  /usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake \
   /usr/share/cmake/Modules/Platform/Linux-GNU-CXX.cmake \
   /usr/share/cmake/Modules/Platform/Linux-GNU.cmake \
   /usr/share/cmake/Modules/Platform/Linux-Initialize.cmake \
@@ -1012,21 +1084,79 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:
 
+/usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake:
+
 /usr/share/cmake/Modules/Compiler/GNU.cmake:
 
-/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake:
+/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake:
+
+/usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake:
+
+/usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake:
 
 /usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake:
 
 /usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake:
 
+/usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake:
+
+/usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/CMakeUnixFindMake.cmake:
+
+/usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake:
+
 /usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:
+
+/usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/CMakeSystem.cmake.in:
+
+/usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake:
+
+/usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake:
 
 /usr/share/cmake/Modules/CMakeLanguageInformation.cmake:
 
 /usr/share/cmake/Modules/CMakeInitializeConfigs.cmake:
 
 /usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake:
+
+/usr/share/cmake/Modules/CMakeFindBinUtils.cmake:
+
+/usr/share/cmake/Modules/CMakeDetermineCompilerSupport.cmake:
+
+/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:
 
 /usr/share/cmake/Modules/CMakeCXXInformation.cmake:
 
@@ -1084,8 +1214,6 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/lib64/cmake/Qt6Gui/Qt6VulkanServerBufferPluginTargets.cmake:
 
-/usr/lib64/cmake/Qt6Gui/Qt6VulkanServerBufferPluginConfig.cmake:
-
 /usr/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6ShmServerBufferPluginTargetsPrecheck.cmake:
@@ -1106,19 +1234,29 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginTargetsPrecheck.cmake:
 
+/usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake:
+
+/usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake:
+
 /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginConfig.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginAdditionalTargetInfo.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets.cmake:
 
+/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp:
+
 /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets-relwithdebinfo.cmake:
+
+/usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginAdditionalTargetInfo.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QWaylandXdgShellIntegrationPluginConfig.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QWaylandWlShellIntegrationPluginTargetsPrecheck.cmake:
+
+/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QWaylandWlShellIntegrationPluginTargets.cmake:
 
@@ -1134,6 +1272,8 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/lib64/cmake/Qt6Gui/Qt6QWaylandFullScreenShellV1IntegrationPluginTargetsPrecheck.cmake:
 
+/usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake:
+
 /usr/lib64/cmake/Qt6Gui/Qt6QWaylandFullScreenShellV1IntegrationPluginTargets.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QWaylandFullScreenShellV1IntegrationPluginTargets-relwithdebinfo.cmake:
@@ -1147,6 +1287,8 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 /usr/lib64/cmake/Qt6Gui/Qt6QWaylandEglClientBufferPluginTargets-relwithdebinfo.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QWaylandBradientDecorationPluginTargetsPrecheck.cmake:
+
+/usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6ShmServerBufferPluginConfig.cmake:
 
@@ -1236,6 +1378,8 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginTargets.cmake:
 
+/usr/share/cmake/Modules/Compiler/Renesas-DetermineCompiler.cmake:
+
 /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginTargets-relwithdebinfo.cmake:
 
 /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake:
@@ -1249,6 +1393,8 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets-relwithdebinfo.cmake:
+
+/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginConfig.cmake:
 
@@ -1350,6 +1496,8 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake:
 
+/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake:
+
 /usr/lib64/cmake/Qt6Core/Qt6CoreTargetsPrecheck.cmake:
 
 /usr/lib64/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake:
@@ -1362,11 +1510,9 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/lib64/cmake/Qt6/QtPublicToolHelpers.cmake:
 
+/usr/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:
+
 /usr/lib64/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake:
-
-/usr/lib64/cmake/Qt6/QtPublicSbomPurlHelpers.cmake:
 
 /usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake:
 
@@ -1384,10 +1530,6 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/lib64/cmake/Qt6/QtPublicSbomBuildToolHelpers.cmake:
 
-/usr/lib64/cmake/Qt6DBus/Qt6DBusConfig.cmake:
-
-/usr/lib64/cmake/Qt6/QtPublicPluginHelpers.cmake:
-
 /usr/lib64/cmake/Qt6/QtPublicGitHelpers.cmake:
 
 /usr/lib64/cmake/Qt6/QtPublicFindPackageHelpers.cmake:
@@ -1395,6 +1537,8 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 /usr/lib64/cmake/Qt6/QtPublicFinalizerHelpers.cmake:
 
 /usr/lib64/cmake/Qt6/QtPublicDependencyHelpers.cmake:
+
+/usr/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake:
 
 /usr/lib64/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake:
 
@@ -1446,13 +1590,13 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/include/stdc-predef.h:
 
-/usr/include/qt6/QtWidgets/qtwidgetsglobal.h:
-
 /usr/include/qt6/QtWidgets/qtwidgetsexports.h:
 
 /usr/include/qt6/QtWidgets/qsizepolicy.h:
 
 /usr/include/qt6/QtWidgets/qpushbutton.h:
+
+/usr/share/cmake/Modules/Internal/FeatureTesting.cmake:
 
 /usr/include/qt6/QtWidgets/qmainwindow.h:
 
@@ -1471,6 +1615,8 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 /usr/include/qt6/QtWidgets/QMainWindow:
 
 /usr/include/qt6/QtWidgets/QDoubleSpinBox:
+
+/usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake:
 
 /usr/include/qt6/QtGui/qvalidator.h:
 
@@ -1518,21 +1664,23 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/include/qt6/QtCore/qvariant.h:
 
-/usr/include/c++/16/bits/locale_classes.h:
+/usr/share/cmake/Modules/Platform/UnixPaths.cmake:
 
-/usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginConfig.cmake:
+/usr/include/qt6/QtCore/qutf8stringview.h:
 
-/usr/lib64/cmake/Qt6/QtPublicExternalProjectHelpers.cmake:
+/usr/include/qt6/QtCore/qurl.h:
 
-/usr/include/c++/16/concepts:
+/usr/lib64/cmake/Qt6/Qt6VersionlessAliasTargets.cmake:
 
-/usr/lib64/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
+/usr/include/qt6/QtCore/qtversionchecks.h:
 
-/usr/include/c++/16/bits/ranges_uninitialized.h:
+/usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake:
 
-/usr/include/c++/16/bits/stl_raw_storage_iter.h:
+/usr/include/qt6/QtCore/qttypetraits.h:
 
 /usr/include/c++/16/bits/range_access.h:
+
+/usr/share/cmake/Modules/Platform/Linux-Determine-CXX.cmake:
 
 /usr/include/c++/16/bits/parse_numbers.h:
 
@@ -1555,6 +1703,20 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 /usr/include/c++/16/map:
 
 /home/anechka/CG_coursework_IU7_2028/exceptions/managers/camera/CameraManagerException.cpp:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake:
+
+/usr/lib64/cmake/Qt6/QtPublicSbomPurlHelpers.cmake:
+
+/home/anechka/CG_coursework_IU7_2028/visitors/params/SetParamsVisitor.cpp:
+
+/usr/include/c++/16/bits/locale_classes.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginConfig.cmake:
+
+/usr/lib64/cmake/Qt6/QtPublicExternalProjectHelpers.cmake:
+
+/usr/include/c++/16/concepts:
 
 /usr/lib64/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake:
 
@@ -1652,8 +1814,6 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/include/qt6/QtCore/qsharedpointer.h:
 
-/usr/include/c++/16/bits/ranges_base.h:
-
 /usr/include/bits/xopen_lim.h:
 
 /usr/include/c++/16/bits/stl_construct.h:
@@ -1685,10 +1845,6 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 /usr/include/bits/types/wint_t.h:
 
 /usr/include/c++/16/new:
-
-/usr/lib64/cmake/Qt6Gui/Qt6ShmServerBufferPluginTargets.cmake:
-
-/usr/include/c++/16/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/16/unordered_map:
 
@@ -1750,10 +1906,6 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/include/bits/types/clock_t.h:
 
-/usr/include/bits/types/__fpos64_t.h:
-
-/usr/include/c++/16/string_view:
-
 /home/anechka/CG_coursework_IU7_2028/visitors/BaseVisitor.h:
 
 /usr/include/c++/16/bits/istream.tcc:
@@ -1810,6 +1962,10 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/include/c++/16/bits/atomic_wait.h:
 
+/usr/include/qt6/QtWidgets/qtwidgetsglobal.h:
+
+/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/vertex/Vertex.cpp:
+
 /usr/include/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/16/bits/atomic_base.h:
@@ -1842,31 +1998,37 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/include/bits/pthreadtypes.h:
 
-/usr/include/c++/16/bits/chrono_io.h:
+/usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginTargets.cmake:
 
-/usr/include/c++/16/bits/exception.h:
+/usr/include/c++/16/bits/new_allocator.h:
 
-/usr/include/c++/16/bits/std_function.h:
+/home/anechka/CG_coursework_IU7_2028/visitors/creators/VisitorCreator.hpp:
 
-/usr/include/c++/16/iterator:
+/usr/lib64/cmake/Qt6/FindWrapVulkanHeaders.cmake:
 
-/usr/include/endian.h:
+/usr/include/bits/locale.h:
 
-/usr/include/qt6/QtCore/qstringbuilder.h:
+/usr/include/c++/16/bits/stl_pair.h:
 
-/usr/lib64/cmake/Qt6Gui/Qt6GuiConfig.cmake:
+/usr/include/c++/16/bits/iterator_concepts.h:
 
-/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.cpp:
+/usr/lib64/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
 
-/usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake:
+/usr/include/bits/local_lim.h:
 
-/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/QtDrawFactory.cpp:
+/usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake:
 
-/usr/include/bits/types/error_t.h:
+/usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in:
 
-/usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginTargets-relwithdebinfo.cmake:
+/usr/include/qt6/QtCore/qtcoreexports.h:
 
-/usr/include/qt6/QtCore/qstringalgorithms.h:
+/usr/lib64/cmake/Qt6Gui/Qt6VulkanServerBufferPluginTargets-relwithdebinfo.cmake:
+
+/usr/include/qt6/QtCore/qtresource.h:
+
+/usr/include/bits/libc-header-start.h:
+
+/usr/include/bits/endianness.h:
 
 /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/CameraAdapter.cpp:
 
@@ -1886,21 +2048,11 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/include/c++/16/bits/ostream_insert.h:
 
-/usr/include/bits/waitflags.h:
-
-/usr/include/c++/16/bits/allocator.h:
-
-/home/anechka/CG_coursework_IU7_2028/strategies/render/default/DefaultRenderStrategy.cpp:
-
 /usr/include/c++/16/bits/alloc_traits.h:
 
 /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/BaseLight.h:
 
 /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h:
-
-/usr/include/qt6/QtCore/qversiontagging.h:
-
-/usr/include/c++/16/bits/stringfwd.h:
 
 /usr/include/bits/stdint-intn.h:
 
@@ -1918,6 +2070,8 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /home/anechka/CG_coursework_IU7_2028/exceptions/vector/VectorException.cpp:
 
+/usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake:
+
 /usr/lib64/cmake/Qt6/QtPublicTestHelpers.cmake:
 
 /home/anechka/CG_coursework_IU7_2028/managers/camera/CameraManager.cpp:
@@ -1932,19 +2086,13 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /home/anechka/CG_coursework_IU7_2028/commands/light/LightCommand.h:
 
+/usr/share/cmake/Modules/Compiler/Diab-DetermineCompiler.cmake:
+
 /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/default/DefaultCamera.h:
 
 /usr/share/cmake/Modules/Linker/GNU-CXX.cmake:
 
 /usr/include/c++/16/bits/cxxabi_init_exception.h:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargetsPrecheck.cmake:
-
-/usr/include/qt6/QtGui/qimage.h:
-
-/usr/include/c++/16/tr1/poly_hermite.tcc:
-
-/home/anechka/CG_coursework_IU7_2028/component/BaseObject.cpp:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginTargets.cmake:
 
@@ -1957,6 +2105,20 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 /usr/include/bits/posix2_lim.h:
 
 /home/anechka/CG_coursework_IU7_2028/strategies/conversion/BaseCoordinateConvertStrategy.h:
+
+/usr/include/bits/types/__fpos64_t.h:
+
+/usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake:
+
+/usr/include/c++/16/string_view:
+
+/usr/include/c++/16/backward/auto_ptr.h:
+
+/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/InvisibleObject.h:
+
+/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/default/DefaultCamera.cpp:
+
+/usr/include/c++/16/x86_64-redhat-linux/bits/cpu_defines.h:
 
 /usr/include/sys/single_threaded.h:
 
@@ -1976,13 +2138,33 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/include/qt6/QtCore/QPoint:
 
-/usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets-relwithdebinfo.cmake:
+/usr/include/bits/floatn.h:
 
-/usr/include/c++/16/bits/ranges_algobase.h:
+/usr/include/c++/16/bits/vector.tcc:
 
-/home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.h:
+/usr/include/c++/16/x86_64-redhat-linux/bits/atomic_word.h:
+
+PlanetSystemDesigner_autogen/moc_predefs.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginConfig.cmake:
+
+/usr/lib64/cmake/Qt6/QtFeatureCommon.cmake:
+
+/usr/include/c++/16/x86_64-redhat-linux/bits/error_constants.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QWaylandEglClientBufferPluginAdditionalTargetInfo.cmake:
+
+/usr/include/qt6/QtWidgets/qframe.h:
+
+/usr/include/qt6/QtCore/qbytearrayalgorithms.h:
 
 /home/anechka/CG_coursework_IU7_2028/ui/mainwindow.ui:
+
+/usr/include/bits/types/struct_itimerspec.h:
+
+/home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.cpp:
+
+/home/anechka/CG_coursework_IU7_2028/visitors/params/SetParamsVisitor.h:
 
 /home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h:
 
@@ -1998,25 +2180,19 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /usr/include/qt6/QtCore/qbytearray.h:
 
+/home/anechka/CG_coursework_IU7_2028/visitors/animation/AnimationVisitor.h:
+
 /home/anechka/CG_coursework_IU7_2028/visitors/draw/DrawVisitor.cpp:
 
 /usr/include/qt6/QtCore/qcompare.h:
 
-/usr/include/c++/16/backward/auto_ptr.h:
-
-/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/InvisibleObject.h:
-
-/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/default/DefaultCamera.cpp:
-
-/usr/include/c++/16/x86_64-redhat-linux/bits/cpu_defines.h:
-
-/usr/include/bits/types/struct_itimerspec.h:
-
-/home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.cpp:
+/usr/share/cmake/Modules/Compiler/TIClang-DetermineCompiler.cmake:
 
 /usr/include/c++/16/ext/type_traits.h:
 
 /usr/include/bits/uio_lim.h:
+
+/usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake:
 
 /home/anechka/CG_coursework_IU7_2028/exceptions/BaseException.h:
 
@@ -2054,37 +2230,53 @@ PlanetSystemDesigner_autogen/timestamp: /home/anechka/CG_coursework_IU7_2028/CMa
 
 /home/anechka/CG_coursework_IU7_2028/strategies/conversion/creator/ConvertCoordsStrategyCreator.hpp:
 
+/usr/include/bits/endian.h:
+
+CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
+
 /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/impl/LightImpl.cpp:
 
-PlanetSystemDesigner_autogen/moc_predefs.h:
+/usr/include/c++/16/bits/chrono_io.h:
 
-/usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginConfig.cmake:
+/usr/include/c++/16/bits/exception.h:
 
-/usr/lib64/cmake/Qt6/QtFeatureCommon.cmake:
+/usr/include/c++/16/bits/std_function.h:
 
-/usr/include/c++/16/x86_64-redhat-linux/bits/error_constants.h:
+/usr/include/c++/16/iterator:
 
-/usr/lib64/cmake/Qt6Gui/Qt6QWaylandEglClientBufferPluginAdditionalTargetInfo.cmake:
+/usr/include/endian.h:
 
-/usr/include/qt6/QtWidgets/qframe.h:
+/usr/include/qt6/QtCore/qstringbuilder.h:
 
-/usr/include/qt6/QtCore/qbytearrayalgorithms.h:
+/home/anechka/CG_coursework_IU7_2028/visitors/animation/AnimationVisitor.cpp:
 
-/usr/include/bits/floatn.h:
+/usr/lib64/cmake/Qt6/QtPublicSbomExternalReferenceHelpers.cmake:
 
-/usr/include/c++/16/bits/vector.tcc:
+/usr/include/qt6/QtGui/qpixmap.h:
 
-/usr/include/c++/16/x86_64-redhat-linux/bits/atomic_word.h:
+/usr/include/qt6/QtCore/qstringconverter_base.h:
 
-/usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginAdditionalTargetInfo.cmake:
+/usr/lib64/cmake/Qt6DBus/Qt6DBusConfig.cmake:
 
-/usr/include/c++/16/bits/refwrap.h:
+/usr/lib64/cmake/Qt6/QtPublicPluginHelpers.cmake:
+
+/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/edge/Edge.h:
+
+/usr/lib64/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake:
+
+/usr/include/c++/16/bits/ranges_uninitialized.h:
+
+/usr/include/c++/16/bits/stl_raw_storage_iter.h:
 
 /usr/include/c++/16/bits/version.h:
 
 /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/impl/CameraImpl.h:
 
 /usr/include/qt6/QtCore/qalloc.h:
+
+/usr/include/qt6/QtCore/qtypeinfo.h:
+
+/usr/include/c++/16/bit:
 
 /usr/share/cmake/Modules/CheckLibraryExists.cmake:
 
@@ -2097,12 +2289,6 @@ PlanetSystemDesigner_autogen/moc_predefs.h:
 /home/anechka/CG_coursework_IU7_2028/commands/light/LightCommand.cpp:
 
 /usr/include/c++/16/bits/uses_allocator_args.h:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginTargets.cmake:
-
-/usr/include/c++/16/bits/new_allocator.h:
-
-/home/anechka/CG_coursework_IU7_2028/visitors/creators/VisitorCreator.hpp:
 
 /home/anechka/CG_coursework_IU7_2028/commands/BaseCommand.h:
 
@@ -2123,6 +2309,10 @@ PlanetSystemDesigner_autogen/moc_predefs.h:
 /home/anechka/CG_coursework_IU7_2028/scene/Scene.cpp:
 
 /usr/include/qt6/QtCore/qobject_impl.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6VulkanServerBufferPluginConfig.cmake:
+
+/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/vertex/Vertex.h:
 
 /usr/include/qt6/QtCore/qtversion.h:
 
@@ -2166,19 +2356,61 @@ PlanetSystemDesigner_autogen/moc_predefs.h:
 
 /usr/include/qt6/QtCore/qabstracteventdispatcher.h:
 
+/usr/include/qt6/QtWidgets/QGraphicsScene:
+
+/usr/include/bits/long-double.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QWaylandBradientDecorationPluginAdditionalTargetInfo.cmake:
+
+/usr/include/c++/16/tr1/gamma.tcc:
+
+/home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.h:
+
+/usr/include/qt6/QtCore/qrefcount.h:
+
+/usr/share/cmake/Modules/Compiler/GNU-CXX.cmake:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginConfig.cmake:
+
+/home/anechka/CG_coursework_IU7_2028/CMakeLists.txt:
+
+/usr/include/qt6/QtCore/qcontainerinfo.h:
+
+/usr/include/bits/types/error_t.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginTargetsPrecheck.cmake:
+
+/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/QtDrawFactory.cpp:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargetsPrecheck.cmake:
+
+/usr/include/qt6/QtGui/qimage.h:
+
+/home/anechka/CG_coursework_IU7_2028/component/BaseObject.cpp:
+
+/usr/include/c++/16/tr1/poly_hermite.tcc:
+
+/usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginTargets-relwithdebinfo.cmake:
+
+/usr/include/qt6/QtCore/qstringalgorithms.h:
+
 /usr/include/asm/bitsperlong.h:
+
+/usr/include/c++/16/version:
 
 /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/impl/LightImpl.h:
 
 /usr/include/qt6/QtCore/qassert.h:
 
-/usr/include/c++/16/bits/list.tcc:
+/usr/include/bits/waitflags.h:
 
-/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.h:
+/usr/include/c++/16/bits/allocator.h:
 
-/usr/include/time.h:
+/home/anechka/CG_coursework_IU7_2028/strategies/render/default/DefaultRenderStrategy.cpp:
 
-/usr/include/qt6/QtCore/qlocale.h:
+/usr/lib64/cmake/Qt6Gui/Qt6GuiConfig.cmake:
+
+/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.cpp:
 
 /usr/include/bits/typesizes.h:
 
@@ -2236,6 +2468,16 @@ CMakeFiles/4.3.0/CMakeSystem.cmake:
 
 /usr/include/bits/types/mbstate_t.h:
 
+/usr/include/c++/16/bits/list.tcc:
+
+/home/anechka/CG_coursework_IU7_2028/factories/draw/qt/products/QtPainter.h:
+
+/usr/include/time.h:
+
+/usr/include/qt6/QtCore/qlocale.h:
+
+/usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake:
+
 /usr/include/c++/16/bits/cxxabi_forced.h:
 
 /home/anechka/CG_coursework_IU7_2028/qt/src/mainwindow.cpp:
@@ -2258,17 +2500,7 @@ CMakeFiles/4.3.0/CMakeSystem.cmake:
 
 /usr/include/qt6/QtCore/qtpreprocessorsupport.h:
 
-/usr/include/c++/16/bit:
-
-/usr/include/qt6/QtCore/qtypeinfo.h:
-
 /home/anechka/CG_coursework_IU7_2028/qt/src/plane.cpp:
-
-/usr/lib64/cmake/Qt6Gui/Qt6DrmEglServerBufferPluginAdditionalTargetInfo.cmake:
-
-/usr/include/c++/16/bits/requires_hosted.h:
-
-/usr/include/qt6/QtCore/qeventloop.h:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets-relwithdebinfo.cmake:
 
@@ -2279,14 +2511,6 @@ CMakeFiles/4.3.0/CMakeSystem.cmake:
 /home/anechka/CG_coursework_IU7_2028/exceptions/camera/CameraException.h:
 
 /home/anechka/CG_coursework_IU7_2028/scene/Scene.h:
-
-/usr/include/c++/16/bits/iterator_concepts.h:
-
-/usr/lib64/cmake/Qt6/QtPublicWalkLibsHelpers.cmake:
-
-/usr/include/bits/local_lim.h:
-
-/usr/include/qt6/QtCore/qtcoreexports.h:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginTargets-relwithdebinfo.cmake:
 
@@ -2316,15 +2540,7 @@ CMakeFiles/4.3.0/CMakeSystem.cmake:
 
 /usr/include/c++/16/functional:
 
-/usr/share/cmake/Modules/Compiler/GNU-CXX.cmake:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginConfig.cmake:
-
-/home/anechka/CG_coursework_IU7_2028/CMakeLists.txt:
-
-/usr/include/qt6/QtCore/qcontainerinfo.h:
-
-/usr/include/c++/16/version:
+/usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake:
 
 /usr/include/c++/16/bits/align.h:
 
@@ -2372,6 +2588,8 @@ CMakeFiles/4.3.0/CMakeSystem.cmake:
 
 /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsTargetsPrecheck.cmake:
 
+/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/edge/Edge.cpp:
+
 /usr/include/c++/16/clocale:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QWaylandAdwaitaDecorationPluginAdditionalTargetInfo.cmake:
@@ -2384,9 +2602,9 @@ CMakeFiles/4.3.0/CMakeSystem.cmake:
 
 /usr/include/qt6/QtCore/qconfig.h:
 
-CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
+/usr/share/cmake/Modules/CheckIncludeFileCXX.cmake:
 
-/usr/include/bits/endian.h:
+/home/anechka/CG_coursework_IU7_2028/point/Point.h:
 
 /usr/include/c++/16/bits/stl_algo.h:
 
@@ -2396,9 +2614,9 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/16/optional:
 
-/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/BaseCamera.h:
-
 /usr/include/c++/16/x86_64-redhat-linux/bits/ctype_base.h:
+
+/home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/camera/BaseCamera.h:
 
 /usr/include/asm/types.h:
 
@@ -2412,25 +2630,31 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/include/qt6/QtCore/qarraydatapointer.h:
 
-/usr/include/bits/endianness.h:
+/usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets-relwithdebinfo.cmake:
 
-/usr/lib64/cmake/Qt6/FindWrapVulkanHeaders.cmake:
+/home/anechka/CG_coursework_IU7_2028/commands/camera/CameraCommand.h:
 
-/usr/include/bits/locale.h:
+/usr/include/c++/16/bits/ranges_algobase.h:
 
-/usr/include/c++/16/bits/stl_pair.h:
+/usr/include/c++/16/bits/ranges_base.h:
 
-/usr/lib64/cmake/Qt6Gui/Qt6QWaylandBradientDecorationPluginAdditionalTargetInfo.cmake:
+/usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginAdditionalTargetInfo.cmake:
 
-/usr/include/c++/16/tr1/gamma.tcc:
+/usr/include/c++/16/bits/refwrap.h:
 
-/home/anechka/CG_coursework_IU7_2028/managers/draw/DrawManager.h:
+/usr/lib64/cmake/Qt6Gui/Qt6DrmEglServerBufferPluginAdditionalTargetInfo.cmake:
 
-/usr/include/qt6/QtCore/qrefcount.h:
+/usr/include/c++/16/bits/requires_hosted.h:
 
-/usr/include/qt6/QtWidgets/QGraphicsScene:
+/usr/include/qt6/QtCore/qeventloop.h:
 
-/usr/include/bits/long-double.h:
+/usr/include/qt6/QtCore/qversiontagging.h:
+
+/usr/include/c++/16/bits/stringfwd.h:
+
+/usr/lib64/cmake/Qt6Gui/Qt6ShmServerBufferPluginTargets.cmake:
+
+/usr/include/c++/16/bits/shared_ptr_atomic.h:
 
 /usr/include/c++/16/bits/specfun.h:
 
@@ -2469,6 +2693,8 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 /usr/include/c++/16/x86_64-redhat-linux/bits/gthr.h:
 
 /usr/include/c++/16/ext/numeric_traits.h:
+
+/usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake:
 
 /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake:
 
@@ -2534,6 +2760,8 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/16/bits/utility.h:
 
+/usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake:
+
 /usr/include/c++/16/cassert:
 
 /usr/lib64/cmake/Qt6Core/Qt6CoreConfigExtras.cmake:
@@ -2578,6 +2806,8 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/16/cwchar:
 
+/usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake:
+
 /usr/include/linux/sched/types.h:
 
 /usr/include/c++/16/pstl/execution_defs.h:
@@ -2604,6 +2834,8 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/16/initializer_list:
 
+/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:
+
 /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake:
 
 /usr/include/bits/types/timer_t.h:
@@ -2614,19 +2846,25 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/16/iostream:
 
+/usr/share/cmake/Modules/Internal/CMakeInspectCXXLinker.cmake:
+
 /usr/lib64/cmake/Qt6Gui/Qt6DmaBufServerBufferPluginTargets.cmake:
 
 /usr/include/c++/16/istream:
 
 /usr/include/qt6/QtCore/qpoint.h:
 
+/usr/include/qt6/QtCore/qttranslation.h:
+
+/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/BaseModel.h:
+
+/usr/include/c++/16/list:
+
 /usr/include/c++/16/memory:
 
 /usr/include/c++/16/pstl/glue_numeric_defs.h:
 
 /usr/include/c++/16/set:
-
-/usr/include/c++/16/source_location:
 
 /home/anechka/CG_coursework_IU7_2028/exceptions/composite/CompositeException.cpp:
 
@@ -2690,9 +2928,9 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake:
 
-/usr/include/c++/16/bits/shared_ptr.h:
-
 /home/anechka/CG_coursework_IU7_2028/managers/ManagerProvider.cpp:
+
+/usr/include/c++/16/bits/shared_ptr.h:
 
 /usr/include/c++/16/type_traits:
 
@@ -2718,17 +2956,9 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/include/qt6/QtCore/qconstructormacros.h:
 
-/usr/share/cmake/Modules/Platform/UnixPaths.cmake:
-
-/usr/include/qt6/QtCore/qutf8stringview.h:
-
 /usr/include/errno.h:
 
 /usr/include/gnu/stubs-64.h:
-
-/usr/lib64/cmake/Qt6/Qt6VersionlessAliasTargets.cmake:
-
-/usr/include/qt6/QtCore/qtversionchecks.h:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake:
 
@@ -2740,7 +2970,11 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/include/c++/16/atomic:
 
+/home/anechka/CG_coursework_IU7_2028/point/Point.cpp:
+
 /usr/include/qt6/QtCore/qatomic.h:
+
+/usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake:
 
 /usr/include/qt6/QtCore/qtypes.h:
 
@@ -2798,6 +3032,8 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/include/qt6/QtCore/qchar.h:
 
+/usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake:
+
 /usr/include/qt6/QtCore/qcomparehelpers.h:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginConfig.cmake:
@@ -2833,8 +3069,6 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 /usr/include/c++/16/bits/uniform_int_dist.h:
 
 /usr/include/qt6/QtCore/qelapsedtimer.h:
-
-/usr/include/qt6/QtCore/qurl.h:
 
 /home/anechka/CG_coursework_IU7_2028/component/primitive/invisible/light/default/DefaultLight.cpp:
 
@@ -2882,6 +3116,8 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/include/qt6/QtCore/qmetatype.h:
 
+/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:
+
 /usr/include/qt6/QtCore/qnamespace.h:
 
 /usr/include/qt6/QtCore/qnumeric.h:
@@ -2914,12 +3150,6 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/include/qt6/QtCore/qstringconverter.h:
 
-/usr/lib64/cmake/Qt6/QtPublicSbomExternalReferenceHelpers.cmake:
-
-/usr/include/qt6/QtGui/qpixmap.h:
-
-/usr/include/qt6/QtCore/qstringconverter_base.h:
-
 /usr/include/qt6/QtCore/qstringlist.h:
 
 /usr/include/assert.h:
@@ -2948,6 +3178,8 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 
 /usr/include/qt6/QtCore/qtenvironmentvariables.h:
 
+/usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake:
+
 /usr/include/qt6/QtCore/qtextstream.h:
 
 /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake:
@@ -2959,19 +3191,3 @@ CMakeFiles/4.3.0/CMakeCXXCompiler.cmake:
 /usr/include/qt6/QtCore/qtformat_impl.h:
 
 /usr/include/qt6/QtCore/qtimer.h:
-
-/usr/lib64/cmake/Qt6Gui/Qt6VulkanServerBufferPluginTargets-relwithdebinfo.cmake:
-
-/usr/include/bits/libc-header-start.h:
-
-/usr/include/qt6/QtCore/qtresource.h:
-
-/home/anechka/CG_coursework_IU7_2028/component/primitive/visible/model/BaseModel.h:
-
-/usr/include/c++/16/list:
-
-/usr/include/qt6/QtCore/qttranslation.h:
-
-/usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargetsPrecheck.cmake:
-
-/usr/include/qt6/QtCore/qttypetraits.h:

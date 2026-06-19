@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../visitors/BaseVisitor.h"
-#include "../vector/Vec3.h"
+#include "../point/Point.h"
 #include <memory>
 #include <map>
 
@@ -36,5 +36,5 @@ public:
     virtual bool remove(const size_t id) noexcept;
 
     virtual std::shared_ptr<BaseObject> getObject(const size_t id) const;
-    virtual Vec3<double> getCenter() const noexcept;
+    virtual Point getCenter() const noexcept;
 };

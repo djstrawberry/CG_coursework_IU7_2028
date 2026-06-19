@@ -1,10 +1,5 @@
 #pragma once
 
-// Adapter (интерфейс)	BaseCamera
-// ConAdapter (конкретный адаптер)	CameraAdapter
-// BaseAdaptee (интерфейс адаптируемого)	CameraImpl
-// ConAdaptee (конкретная реализация)	DefaultCameraImpl
-
 #include "BaseCamera.h"
 
 class CameraAdapter final: public BaseCamera {
@@ -13,11 +8,11 @@ public:
     explicit CameraAdapter(std::shared_ptr<CameraImpl> impl);
     ~CameraAdapter() override = default;
 
-    Vec3<double> getPosition() const override;
-    void setPosition(const Vec3<double>& pos) override;
+    Point getPosition() const override;
+    void setPosition(const Point& pos) override;
 
-    Vec3<double> getTarget() const override;
-    void setTarget(const Vec3<double>& target) override;
+    Point getTarget() const override;
+    void setTarget(const Point& target) override;
 
     double getFov() const override;
     void setFov(double fov) override;
@@ -26,6 +21,6 @@ public:
     void zoom(double amount) override;
 
     void accept(std::shared_ptr<BaseVisitor> visitor) override;
-    Vec3<double> getCenter() const noexcept override;
+    Point getCenter() const noexcept override;
     std::shared_ptr<BaseObject> clone() const override;
 };

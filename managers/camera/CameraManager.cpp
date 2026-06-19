@@ -23,17 +23,16 @@ std::shared_ptr<BaseCamera> CameraManager::getActiveCamera() const {
     return nullptr;
 }
 
-
-void CameraManager::moveActiveCamera(const Vec3<double> &displacement)
+void CameraManager::moveActiveCamera(const Point &displacement)
 {
     auto activeCamera = getActiveCamera();
     if (activeCamera) {
-        Vec3<double> oldPos = activeCamera->getPosition();
+        Point oldPos = activeCamera->getPosition();
         activeCamera->setPosition(oldPos + displacement);
     }
 }
 
-void CameraManager::setActiveCameraDetails(const Vec3<double> &pos, const Vec3<double> &target, double fov)
+void CameraManager::setActiveCameraDetails(const Point &pos, const Point &target, double fov)
 {
     auto activeCamera = getActiveCamera();
     if (activeCamera) {

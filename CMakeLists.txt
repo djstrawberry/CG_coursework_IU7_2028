@@ -59,6 +59,16 @@ set(PROJECT_SOURCES
     component/primitive/invisible/light/impl/LightImpl.cpp
     component/primitive/invisible/light/default/DefaultLight.h
     component/primitive/invisible/light/default/DefaultLight.cpp
+
+    # Component - vertex, edge
+    component/primitive/visible/model/vertex/Vertex.h
+    component/primitive/visible/model/vertex/Vertex.cpp
+    component/primitive/visible/model/edge/Edge.h
+    component/primitive/visible/model/edge/Edge.cpp
+
+    # Point
+    point/Point.h
+    point/Point.cpp
     
     # Visitors
     visitors/BaseVisitor.h
@@ -66,6 +76,10 @@ set(PROJECT_SOURCES
     visitors/creators/VisitorCreator.hpp
     visitors/draw/DrawVisitor.h
     visitors/draw/DrawVisitor.cpp
+    visitors/animation/AnimationVisitor.h
+    visitors/animation/AnimationVisitor.cpp
+    visitors/params/SetParamsVisitor.h
+    visitors/params/SetParamsVisitor.cpp
     
     # Scene
     scene/Scene.h

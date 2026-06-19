@@ -1,6 +1,8 @@
 #include "DrawVisitor.h"
 #include "../../materials/Material.h"
 #include "../../component/primitive/visible/model/celestial/CelestialBody.h"
+#include "../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h"
+#include "../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h"
 #include "../../component/primitive/invisible/camera/CameraAdapter.h"
 #include "../../component/composite/Composite.h"
 #include <algorithm>
@@ -29,7 +31,7 @@ void DrawVisitor::visit(SphereImpl& sphere) const
 
     if (width == 0 || height == 0) return;
     
-    std::vector<Vec3<double>> projected;
+    std::vector<Point> projected;
     m_projStrategy->project(sphere, *m_camera, projected);
     m_convertStrategy->convertPoint(projected, width, height);    
     m_renderStrategy->renderSphere(sphere, projected, m_camera, width, height);
@@ -42,4 +44,12 @@ void DrawVisitor::visit(CameraImpl& camera) const
 
 void DrawVisitor::visit(LightImpl& light) const{
     m_renderStrategy->setLight(light.getPosition(), light.getColor());
+}
+
+void DrawVisitor::visit(ParametricSphereImpl& sphere) const {
+    visit(static_cast<SphereImpl&>(sphere));
+}
+
+void DrawVisitor::visit(TessellatedSphereImpl& sphere) const {
+    visit(static_cast<SphereImpl&>(sphere));
 }

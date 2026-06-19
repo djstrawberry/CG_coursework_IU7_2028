@@ -63,7 +63,7 @@ void Plane::mouseMoveEvent(QMouseEvent *event) {
 
         auto camera = ManagerProvider::getCameraManager()->getActiveCamera();
         if (camera) {
-            Vec3<double> pos = camera->getPosition();
+            Point pos = camera->getPosition();
             
             double radius = pos.length();
             double theta = std::atan2(pos.getZ(), pos.getX());
@@ -78,7 +78,7 @@ void Plane::mouseMoveEvent(QMouseEvent *event) {
             double newY = radius * std::cos(phi);
             double newZ = radius * std::sin(phi) * std::sin(theta);
 
-            camera->setPosition(Vec3<double>(newX, newY, newZ));
+            camera->setPosition(Point(newX, newY, newZ));
             update(); 
         }
 

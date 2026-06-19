@@ -10,6 +10,7 @@
 #include "../../commands/camera/CameraCommand.h"
 #include "../../commands/light/LightCommand.h"
 #include "../../component/primitive/visible/model/celestial/CelestialBody.h"
+#include "../../point/Point.h"
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QColorDialog>
@@ -162,12 +163,12 @@ void MainWindow::onOrbitTick()
     m_viewport->update();
 }
 
-Vec3<double> MainWindow::getStarCenter() const
+Point MainWindow::getStarCenter() const
 {
-    return Vec3<double>(m_starPosXBox->value(), m_starPosYBox->value(), m_starPosZBox->value());
+    return Point(m_starPosXBox->value(), m_starPosYBox->value(), m_starPosZBox->value());
 }
 
-void MainWindow::syncPlanetOrbitCenters(const Vec3<double>& starCenter)
+void MainWindow::syncPlanetOrbitCenters(const Point& starCenter)
 {
     for (size_t planetId : m_planetIds)
         m_facade->execute(std::make_shared<SetOrbitCenterCommand>(planetId, starCenter));
@@ -178,14 +179,15 @@ void MainWindow::onStarParamsChanged()
     QColor lightColor = m_currentLightColor.isValid() ? m_currentLightColor : QColor(255, 230, 102);
     
     Material mat;
-    mat.r = static_cast<float>(lightColor.redF());
-    mat.g = static_cast<float>(lightColor.greenF());
-    mat.b = static_cast<float>(lightColor.blueF());
-    mat.ambient = static_cast<float>(m_matAmbientBox->value());
-    mat.diffuse = static_cast<float>(m_matDiffuseBox->value());
-    mat.specular = static_cast<float>(m_matSpecularBox->value());
+    mat.setR(static_cast<float>(lightColor.redF()));
+    mat.setG(static_cast<float>(lightColor.greenF()));
+    mat.setB(static_cast<float>(lightColor.blueF()));
+    mat.setAmbient(static_cast<float>(m_matAmbientBox->value()));
+    mat.setDiffuse(static_cast<float>(m_matDiffuseBox->value()));
+    mat.setSpecular(static_cast<float>(m_matSpecularBox->value()));
+    mat.setIsStar(true);
 
-    const Vec3<double> starCenter = getStarCenter();
+    const Point starCenter = getStarCenter();
     const double starRadius = m_starRadiusBox->value();
     auto sceneManager = ManagerProvider::getSceneManager();
 
@@ -194,7 +196,7 @@ void MainWindow::onStarParamsChanged()
     else
         m_facade->execute(std::make_shared<AddCelestialBodyCommand>("Central Star", starRadius, starCenter, mat));
 
-    std::vector<float> lightColorVec = {mat.r, mat.g, mat.b, 1.0f};
+    std::vector<float> lightColorVec = {mat.r(), mat.g(), mat.b(), 1.0f};
     auto light = sceneManager->getLightSource();
     if (!light)
         m_facade->execute(std::make_shared<AddLightCommand>(starCenter, lightColorVec));
@@ -208,14 +210,14 @@ void MainWindow::onStarParamsChanged()
 void MainWindow::onAddPlanetPressed()
 {
     Material mat;
-    mat.r = static_cast<float>(m_currentPlanetColor.redF());
-    mat.g = static_cast<float>(m_currentPlanetColor.greenF());
-    mat.b = static_cast<float>(m_currentPlanetColor.blueF());
-    mat.ambient = 0.15f;
-    mat.diffuse = 0.85f;
-    mat.specular = 0.45f;
+    mat.setR(static_cast<float>(m_currentPlanetColor.redF()));
+    mat.setG(static_cast<float>(m_currentPlanetColor.greenF()));
+    mat.setB(static_cast<float>(m_currentPlanetColor.blueF()));
+    mat.setAmbient(0.15f);
+    mat.setDiffuse(0.85f);
+    mat.setSpecular(0.45f);
 
-    const Vec3<double> starCenter = getStarCenter();
+    const Point starCenter = getStarCenter();
     const size_t planetIndex = m_planetIds.size() + 1;
 
     auto addPlanetCmd = std::make_shared<AddPlanetCommand>(

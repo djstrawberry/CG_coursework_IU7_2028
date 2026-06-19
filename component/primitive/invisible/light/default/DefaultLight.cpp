@@ -3,11 +3,11 @@
 DefaultLight::DefaultLight(std::shared_ptr<LightImpl> impl)
     : BaseLight(std::move(impl)) {}
 
-Vec3<double> DefaultLight::getPosition() const {
-    return m_impl ? m_impl->getPosition() : Vec3<double>{0.0, 0.0, 0.0};
+Point DefaultLight::getPosition() const {
+    return m_impl ? m_impl->getPosition() : Point{0.0, 0.0, 0.0};
 }
 
-void DefaultLight::setPosition(const Vec3<double>& pos) {
+void DefaultLight::setPosition(const Point& pos) {
     if (m_impl) {
         m_impl->setPosition(pos);
     }
@@ -28,7 +28,7 @@ std::shared_ptr<BaseObject> DefaultLight::clone() const {
     return std::make_shared<DefaultLight>(implClone);
 }
 
-Vec3<double> DefaultLight::getCenter() const noexcept
+Point DefaultLight::getCenter() const noexcept
 { 
     return getPosition(); 
 }

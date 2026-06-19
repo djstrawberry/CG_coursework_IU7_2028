@@ -72,7 +72,7 @@ PlanetSystemDesigner_autogen/timestamp: /usr/lib64/qt6/libexec/moc
 PlanetSystemDesigner_autogen/timestamp: /usr/lib64/qt6/libexec/uic
 PlanetSystemDesigner_autogen/timestamp: CMakeFiles/PlanetSystemDesigner_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target PlanetSystemDesigner"
-	/usr/bin/cmake -E cmake_autogen /home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/PlanetSystemDesigner_autogen.dir/AutogenInfo.json Debug
+	/usr/bin/cmake -E cmake_autogen /home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/PlanetSystemDesigner_autogen.dir/AutogenInfo.json ""
 	/usr/bin/cmake -E touch /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/timestamp
 
 CMakeFiles/PlanetSystemDesigner_autogen.dir/codegen:

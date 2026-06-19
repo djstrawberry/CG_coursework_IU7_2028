@@ -33,5 +33,7 @@ public:
     void visit(CameraImpl& camera) const override;
     void visit(SphereImpl& sphere) const override;
     void visit(LightImpl& light) const override;
+    void visit(ParametricSphereImpl& parametricSphere) const override;
+    void visit(TessellatedSphereImpl& tessellatedSphere) const override;
 };
 

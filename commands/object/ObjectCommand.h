@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../BaseCommand.h"
-#include "../../vector/Vec3.h"
+#include "../../point/Point.h"
 #include "../../materials/Material.h"
 #include <string>
 #include <memory>
@@ -12,19 +12,19 @@ class SceneManager;
 class AddCelestialBodyCommand : public BaseCommand
 {
 private:
-    using Action = size_t (SceneManager::*)(const std::string &, double, const Vec3<double> &, const Material &);
+    using Action = size_t (SceneManager::*)(const std::string &, double, const Point &, const Material &);
 
     Action m_action;
     std::string m_name;
     double m_radius;
-    Vec3<double> m_center;
+    Point m_center;
     Material m_material;
 
     std::shared_ptr<SceneManager> m_sceneManager;
 
 public:
     AddCelestialBodyCommand(const std::string &name, double radius,
-                            const Vec3<double> &center, const Material &material);
+                            const Point &center, const Material &material);
     ~AddCelestialBodyCommand() override = default;
 
     void execute() override;
@@ -33,12 +33,12 @@ public:
 class AddPlanetCommand : public BaseCommand
 {
 private:
-    using Action = size_t (SceneManager::*)(const std::string &, double, const Vec3<double> &, double, double, double, const Material &);
+    using Action = size_t (SceneManager::*)(const std::string &, double, const Point &, double, double, double, const Material &);
 
     Action m_action;
     std::string m_name;
     double m_radius;
-    Vec3<double> m_orbitCenter;
+    Point m_orbitCenter;
     double m_orbitRadius;
     double m_orbitAngle;
     double m_orbitSpeed;
@@ -50,7 +50,7 @@ private:
 
 public:
     AddPlanetCommand(const std::string &name, double radius,
-                     const Vec3<double> &orbitCenter, double orbitRadius,
+                     const Point &orbitCenter, double orbitRadius,
                      double orbitAngle, double orbitSpeed, const Material &material);
     ~AddPlanetCommand() override = default;
 
@@ -78,19 +78,19 @@ public:
 class UpdateCelestialBodyCommand : public BaseCommand
 {
 private:
-    using Action = void (SceneManager::*)(size_t, double, const Vec3<double> &, const Material &);
+    using Action = void (SceneManager::*)(size_t, double, const Point &, const Material &);
 
     Action m_action;
     size_t m_id;
     double m_radius;
-    Vec3<double> m_center;
+    Point m_center;
     Material m_material;
 
     std::shared_ptr<SceneManager> m_sceneManager;
 
 public:
     UpdateCelestialBodyCommand(size_t objectId, double radius,
-                               const Vec3<double> &center, const Material &material);
+                               const Point &center, const Material &material);
     ~UpdateCelestialBodyCommand() override = default;
 
     void execute() override;
@@ -116,16 +116,16 @@ public:
 class SetOrbitCenterCommand : public BaseCommand
 {
 private:
-    using Action = void (SceneManager::*)(size_t, const Vec3<double> &);
+    using Action = void (SceneManager::*)(size_t, const Point &);
 
     Action m_action;
     size_t m_id;
-    Vec3<double> m_orbitCenter;
+    Point m_orbitCenter;
 
     std::shared_ptr<SceneManager> m_sceneManager;
 
 public:
-    SetOrbitCenterCommand(size_t objectId, const Vec3<double> &orbitCenter);
+    SetOrbitCenterCommand(size_t objectId, const Point &orbitCenter);
     ~SetOrbitCenterCommand() override = default;
 
     void execute() override;

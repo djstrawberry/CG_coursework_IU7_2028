@@ -419,6 +419,30 @@ component/primitive/visible/model/celestial/CelestialBody.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/celestial/CelestialBody.cpp.s
 .PHONY : component/primitive/visible/model/celestial/CelestialBody.cpp.s
 
+component/primitive/visible/model/edge/Edge.o: component/primitive/visible/model/edge/Edge.cpp.o
+.PHONY : component/primitive/visible/model/edge/Edge.o
+
+# target to build an object file
+component/primitive/visible/model/edge/Edge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/edge/Edge.cpp.o
+.PHONY : component/primitive/visible/model/edge/Edge.cpp.o
+
+component/primitive/visible/model/edge/Edge.i: component/primitive/visible/model/edge/Edge.cpp.i
+.PHONY : component/primitive/visible/model/edge/Edge.i
+
+# target to preprocess a source file
+component/primitive/visible/model/edge/Edge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/edge/Edge.cpp.i
+.PHONY : component/primitive/visible/model/edge/Edge.cpp.i
+
+component/primitive/visible/model/edge/Edge.s: component/primitive/visible/model/edge/Edge.cpp.s
+.PHONY : component/primitive/visible/model/edge/Edge.s
+
+# target to generate assembly for a file
+component/primitive/visible/model/edge/Edge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/edge/Edge.cpp.s
+.PHONY : component/primitive/visible/model/edge/Edge.cpp.s
+
 component/primitive/visible/model/impl/parametric/ParametricSphereImpl.o: component/primitive/visible/model/impl/parametric/ParametricSphereImpl.cpp.o
 .PHONY : component/primitive/visible/model/impl/parametric/ParametricSphereImpl.o
 
@@ -466,6 +490,30 @@ component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.s: comp
 component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.s
 .PHONY : component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.cpp.s
+
+component/primitive/visible/model/vertex/Vertex.o: component/primitive/visible/model/vertex/Vertex.cpp.o
+.PHONY : component/primitive/visible/model/vertex/Vertex.o
+
+# target to build an object file
+component/primitive/visible/model/vertex/Vertex.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/vertex/Vertex.cpp.o
+.PHONY : component/primitive/visible/model/vertex/Vertex.cpp.o
+
+component/primitive/visible/model/vertex/Vertex.i: component/primitive/visible/model/vertex/Vertex.cpp.i
+.PHONY : component/primitive/visible/model/vertex/Vertex.i
+
+# target to preprocess a source file
+component/primitive/visible/model/vertex/Vertex.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/vertex/Vertex.cpp.i
+.PHONY : component/primitive/visible/model/vertex/Vertex.cpp.i
+
+component/primitive/visible/model/vertex/Vertex.s: component/primitive/visible/model/vertex/Vertex.cpp.s
+.PHONY : component/primitive/visible/model/vertex/Vertex.s
+
+# target to generate assembly for a file
+component/primitive/visible/model/vertex/Vertex.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/vertex/Vertex.cpp.s
+.PHONY : component/primitive/visible/model/vertex/Vertex.cpp.s
 
 exceptions/BaseException.o: exceptions/BaseException.cpp.o
 .PHONY : exceptions/BaseException.o
@@ -827,6 +875,30 @@ managers/scene/SceneManager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/managers/scene/SceneManager.cpp.s
 .PHONY : managers/scene/SceneManager.cpp.s
 
+point/Point.o: point/Point.cpp.o
+.PHONY : point/Point.o
+
+# target to build an object file
+point/Point.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/point/Point.cpp.o
+.PHONY : point/Point.cpp.o
+
+point/Point.i: point/Point.cpp.i
+.PHONY : point/Point.i
+
+# target to preprocess a source file
+point/Point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/point/Point.cpp.i
+.PHONY : point/Point.cpp.i
+
+point/Point.s: point/Point.cpp.s
+.PHONY : point/Point.s
+
+# target to generate assembly for a file
+point/Point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/point/Point.cpp.s
+.PHONY : point/Point.cpp.s
+
 qt/src/mainwindow.o: qt/src/mainwindow.cpp.o
 .PHONY : qt/src/mainwindow.o
 
@@ -971,6 +1043,30 @@ strategies/render/default/DefaultRenderStrategy.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/strategies/render/default/DefaultRenderStrategy.cpp.s
 .PHONY : strategies/render/default/DefaultRenderStrategy.cpp.s
 
+visitors/animation/AnimationVisitor.o: visitors/animation/AnimationVisitor.cpp.o
+.PHONY : visitors/animation/AnimationVisitor.o
+
+# target to build an object file
+visitors/animation/AnimationVisitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/visitors/animation/AnimationVisitor.cpp.o
+.PHONY : visitors/animation/AnimationVisitor.cpp.o
+
+visitors/animation/AnimationVisitor.i: visitors/animation/AnimationVisitor.cpp.i
+.PHONY : visitors/animation/AnimationVisitor.i
+
+# target to preprocess a source file
+visitors/animation/AnimationVisitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/visitors/animation/AnimationVisitor.cpp.i
+.PHONY : visitors/animation/AnimationVisitor.cpp.i
+
+visitors/animation/AnimationVisitor.s: visitors/animation/AnimationVisitor.cpp.s
+.PHONY : visitors/animation/AnimationVisitor.s
+
+# target to generate assembly for a file
+visitors/animation/AnimationVisitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/visitors/animation/AnimationVisitor.cpp.s
+.PHONY : visitors/animation/AnimationVisitor.cpp.s
+
 visitors/draw/DrawVisitor.o: visitors/draw/DrawVisitor.cpp.o
 .PHONY : visitors/draw/DrawVisitor.o
 
@@ -994,6 +1090,30 @@ visitors/draw/DrawVisitor.s: visitors/draw/DrawVisitor.cpp.s
 visitors/draw/DrawVisitor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.s
 .PHONY : visitors/draw/DrawVisitor.cpp.s
+
+visitors/params/SetParamsVisitor.o: visitors/params/SetParamsVisitor.cpp.o
+.PHONY : visitors/params/SetParamsVisitor.o
+
+# target to build an object file
+visitors/params/SetParamsVisitor.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/visitors/params/SetParamsVisitor.cpp.o
+.PHONY : visitors/params/SetParamsVisitor.cpp.o
+
+visitors/params/SetParamsVisitor.i: visitors/params/SetParamsVisitor.cpp.i
+.PHONY : visitors/params/SetParamsVisitor.i
+
+# target to preprocess a source file
+visitors/params/SetParamsVisitor.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/visitors/params/SetParamsVisitor.cpp.i
+.PHONY : visitors/params/SetParamsVisitor.cpp.i
+
+visitors/params/SetParamsVisitor.s: visitors/params/SetParamsVisitor.cpp.s
+.PHONY : visitors/params/SetParamsVisitor.s
+
+# target to generate assembly for a file
+visitors/params/SetParamsVisitor.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PlanetSystemDesigner.dir/build.make CMakeFiles/PlanetSystemDesigner.dir/visitors/params/SetParamsVisitor.cpp.s
+.PHONY : visitors/params/SetParamsVisitor.cpp.s
 
 # Help Target
 help:
@@ -1039,12 +1159,18 @@ help:
 	@echo "... component/primitive/visible/model/celestial/CelestialBody.o"
 	@echo "... component/primitive/visible/model/celestial/CelestialBody.i"
 	@echo "... component/primitive/visible/model/celestial/CelestialBody.s"
+	@echo "... component/primitive/visible/model/edge/Edge.o"
+	@echo "... component/primitive/visible/model/edge/Edge.i"
+	@echo "... component/primitive/visible/model/edge/Edge.s"
 	@echo "... component/primitive/visible/model/impl/parametric/ParametricSphereImpl.o"
 	@echo "... component/primitive/visible/model/impl/parametric/ParametricSphereImpl.i"
 	@echo "... component/primitive/visible/model/impl/parametric/ParametricSphereImpl.s"
 	@echo "... component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.o"
 	@echo "... component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.i"
 	@echo "... component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.s"
+	@echo "... component/primitive/visible/model/vertex/Vertex.o"
+	@echo "... component/primitive/visible/model/vertex/Vertex.i"
+	@echo "... component/primitive/visible/model/vertex/Vertex.s"
 	@echo "... exceptions/BaseException.o"
 	@echo "... exceptions/BaseException.i"
 	@echo "... exceptions/BaseException.s"
@@ -1090,6 +1216,9 @@ help:
 	@echo "... managers/scene/SceneManager.o"
 	@echo "... managers/scene/SceneManager.i"
 	@echo "... managers/scene/SceneManager.s"
+	@echo "... point/Point.o"
+	@echo "... point/Point.i"
+	@echo "... point/Point.s"
 	@echo "... qt/src/mainwindow.o"
 	@echo "... qt/src/mainwindow.i"
 	@echo "... qt/src/mainwindow.s"
@@ -1108,9 +1237,15 @@ help:
 	@echo "... strategies/render/default/DefaultRenderStrategy.o"
 	@echo "... strategies/render/default/DefaultRenderStrategy.i"
 	@echo "... strategies/render/default/DefaultRenderStrategy.s"
+	@echo "... visitors/animation/AnimationVisitor.o"
+	@echo "... visitors/animation/AnimationVisitor.i"
+	@echo "... visitors/animation/AnimationVisitor.s"
 	@echo "... visitors/draw/DrawVisitor.o"
 	@echo "... visitors/draw/DrawVisitor.i"
 	@echo "... visitors/draw/DrawVisitor.s"
+	@echo "... visitors/params/SetParamsVisitor.o"
+	@echo "... visitors/params/SetParamsVisitor.i"
+	@echo "... visitors/params/SetParamsVisitor.s"
 .PHONY : help
 
 

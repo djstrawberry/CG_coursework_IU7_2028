@@ -1,7 +1,8 @@
 #pragma once
 
 #include "../BaseRenderStrategy.h"
-#include "../../../vector/Vec3.h"
+#include "../../../point/Point.h"  
+#include "../../../component/primitive/visible/model/vertex/Vertex.h"        
 #include "../../../materials/Material.h"
 #include "../../../factories/draw/products/BasePainter.h"
 #include <memory>
@@ -22,44 +23,46 @@ private:
         int r0 = 0, g0 = 0, b0 = 0;
         int r1 = 0, g1 = 0, b1 = 0;
         int r2 = 0, g2 = 0, b2 = 0;
-        int a = 255; 
+        int a = 255;
     };
 
     mutable std::vector<GlowPass> m_glowPasses;
     mutable std::vector<TrianglePass> m_trianglePasses;
 
-    Vec3<double> m_lightPos{0, 0, 0};
+    Point m_lightPos{0, 0, 0};                     
     std::vector<float> m_lightColor{1.0f, 0.9f, 0.4f, 1.0f};
 
     int clampChannel(double value) const;
-    bool isFrontFacing(const Vec3<double>& v0, const Vec3<double>& v1,
-                              const Vec3<double>& v2, const Vec3<double>& camPos,
-                              const Vec3<double>& sphereCenter);
 
-    void computeLitColor(const Material& mat, const Vec3<double>& normal,
-                         const Vec3<double>& viewDir, const Vec3<double>& lightDir,
+    bool isFrontFacing(const Vertex& v0, const Vertex& v1,
+                              const Vertex& v2, const Point& camPos,
+                              const Point& sphereCenter);
+
+    void computeLitColor(const Material& mat, const Point& normal,
+                         const Point& viewDir, const Point& lightDir,
                          int& r, int& g, int& b, const float* light) const;
 
-    void correctAspectRatio(std::vector<Vec3<double>>& projected, size_t w, size_t h) const;
+    void correctAspectRatio(std::vector<Point>& projected, size_t w, size_t h) const;
 
-    std::pair<Vec3<double>, double> computeScreenCenterAndRadius(
-        const std::vector<Vec3<double>>& projected, double sphereRadius,
+    std::pair<Point, double> computeScreenCenterAndRadius(
+        const std::vector<Point>& projected, double sphereRadius,
         double fov, size_t height) const;
 
-    void addGlowPass(const Vec3<double>& center, double radius,
-                     const Material& mat, const float* light);
+    void addGlowPass(const Point& c, double r,
+                 const Material& mat, const float* light,
+                 double intensityFactor = 1.0);
 
-    void processTriangle(const std::vector<Vec3<double>>& projected,
-                         const std::vector<Vec3<double>>& vertices,
-                         const Vec3<double>& center, const Vec3<double>& camPos,
+    void processTriangle(const std::vector<Point>& projected,
+                         const std::vector<Vertex>& vertices,
+                         const Point& center, const Point& camPos,
                          const Material& mat, size_t i0, size_t i1, size_t i2,
-                         const float* light, const Vec3<double>& lightSourcePos);
+                         const float* light, const Point& lightSourcePos);
 
-    void processAllTriangles(const std::vector<Vec3<double>>& projected,
-                             const std::vector<Vec3<double>>& vertices,
-                             const Vec3<double>& center, const Vec3<double>& camPos,
+    void processAllTriangles(const std::vector<Point>& projected,
+                             const std::vector<Vertex>& vertices,
+                             const Point& center, const Point& camPos,
                              const Material& mat, size_t slices, size_t stacks,
-                             const float* light, const Vec3<double>& lightSourcePos);
+                             const float* light, const Point& lightSourcePos);
 
     void renderGlowPasses(std::shared_ptr<BasePainter> painter) const;
     void renderTrianglePasses(std::shared_ptr<BasePainter> painter) const;
@@ -68,10 +71,10 @@ public:
     DefaultRenderStrategy() = default;
     ~DefaultRenderStrategy() override = default;
 
-    void setLight(const Vec3<double>& pos, const std::vector<float>& color) override;
+    void setLight(const Point& pos, const std::vector<float>& color) override;
     void beginScene() override;
     void renderSphere(const SphereImpl& sphere,
-                      std::vector<Vec3<double>> projected,
+                      std::vector<Point> projected,
                       const std::shared_ptr<CameraImpl>& camera,
                       size_t screenWidth,
                       size_t screenHeight) override;

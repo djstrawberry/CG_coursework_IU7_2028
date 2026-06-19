@@ -390,13 +390,8 @@ CMakeFiles/PlanetSystemDesigner.dir/PlanetSystemDesigner_autogen/mocs_compilatio
  /usr/include/qt6/QtWidgets/qgraphicsscene.h \
  /usr/include/qt6/QtGui/qpen.h \
  /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/../../facade/Facade.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/../../vector/Vec3.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/../../vector/../concepts/concepts.h \
- /usr/include/c++/16/iostream \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/../../vector/Vec3.hpp \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/../../vector/../exceptions/vector/VectorException.h \
- /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/../../vector/../exceptions/vector/../BaseException.h \
- /usr/include/c++/16/source_location /usr/include/qt6/QtGui/qtextcursor.h \
+ /home/anechka/CG_coursework_IU7_2028/build/PlanetSystemDesigner_autogen/KVXSJM6DYM/../../../qt/inc/../../point/Point.h \
+ /usr/include/c++/16/iostream /usr/include/qt6/QtGui/qtextcursor.h \
  /usr/include/qt6/QtGui/qtextformat.h \
  /usr/include/qt6/QtGui/qtextoption.h \
  /usr/include/qt6/QtCore/qtmochelpers.h \

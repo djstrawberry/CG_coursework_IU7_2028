@@ -2,48 +2,16 @@
 
 #include "../BaseModel.h"
 #include "../impl/SphereImpl.h"
-#include "../../../../../vector/Vec3.h"
+#include "../../../../../point/Point.h"
 #include <string>
 
 class CelestialBody final: public BaseModel {
-private:
-    std::string m_name;
-    Material m_material;
-    double m_orbitRadius = 0.0;
-    double m_orbitSpeed = 0.0;
-    double m_orbitAngle = 0.0;
-    double m_orbitInclination = 0.0;
-    Vec3<double> m_baseCenter;
-
 public:
     CelestialBody() = delete;
-    explicit CelestialBody(const std::string& name, std::shared_ptr<SphereImpl> impl);
+    explicit CelestialBody(std::shared_ptr<SphereImpl> impl);
     ~CelestialBody() override = default;
 
     void accept(std::shared_ptr<BaseVisitor> visitor) override;
     std::shared_ptr<BaseObject> clone() const override;
-    Vec3<double> getCenter() const noexcept override;
-
-    std::string getName() const;
-    void setName(const std::string& name);
-    
-    Material getMaterial() const;
-    void setMaterial(const Material& mat);
-
-    double getOrbitRadius() const;
-    void setOrbitRadius(double radius);
-
-    double getOrbitSpeed() const;
-    void setOrbitSpeed(double speed);
-
-    double getOrbitAngle() const;
-    void setOrbitAngle(double angle);
-
-    Vec3<double> getBaseCenter() const;
-    void setBaseCenter(const Vec3<double>& center);
-
-    void setRadius(double r);
-    void setCenter(const Vec3<double>& c);
-
-    void updatePosition();
+    Point getCenter() const noexcept override;
 };

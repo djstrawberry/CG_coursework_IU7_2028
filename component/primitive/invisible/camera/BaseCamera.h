@@ -1,7 +1,7 @@
 #pragma once
 
 #include "../InvisibleObject.h"
-#include "../../../../vector/Vec3.h"
+#include "../../../../point/Point.h"
 #include <memory>
 
 class CameraImpl;
@@ -14,11 +14,11 @@ public:
     explicit BaseCamera(std::shared_ptr<CameraImpl> impl) : m_impl(std::move(impl)) {};
     ~BaseCamera() override = default;
     
-    virtual Vec3<double> getPosition() const = 0;
-    virtual void setPosition(const Vec3<double>& pos) = 0;
+    virtual Point getPosition() const = 0;
+    virtual void setPosition(const Point& pos) = 0;
     
-    virtual Vec3<double> getTarget() const = 0;
-    virtual void setTarget(const Vec3<double>& target) = 0;
+    virtual Point getTarget() const = 0;
+    virtual void setTarget(const Point& target) = 0;
 
     virtual double getFov() const = 0;
     virtual void setFov(double fov) = 0;

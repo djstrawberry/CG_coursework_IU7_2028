@@ -11,7 +11,7 @@
 #include <cstddef>
 #include "plane.h"
 #include "../../facade/Facade.h"
-#include "../../vector/Vec3.h"
+#include "../../point/Point.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -47,8 +47,8 @@ private:
     void onPlanetColorClicked();
     void updatePlanetColorButton();
     void updateLightColorButton();
-    Vec3<double> getStarCenter() const;
-    void syncPlanetOrbitCenters(const Vec3<double>& starCenter);
+    Point getStarCenter() const;
+    void syncPlanetOrbitCenters(const Point& starCenter);
 
     static constexpr size_t kStarObjectId = 0;
 
@@ -86,4 +86,3 @@ private:
     QTimer* m_orbitTimer;
     QElapsedTimer m_frameTimer;
 };
-

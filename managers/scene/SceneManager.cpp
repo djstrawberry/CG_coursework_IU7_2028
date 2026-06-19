@@ -1,9 +1,9 @@
 #include "SceneManager.h"
-#include "../../component/primitive/visible/model/celestial/CelestialBody.h"
-#include "../../component/primitive/visible/model/impl/parametric/ParametricSphereImpl.h"
-#include "../../component/primitive/visible/model/impl/tessellated/TessellatedSphereImpl.h"
+#include "../../visitors/params/SetParamsVisitor.h"
+#include "../../visitors/animation/AnimationVisitor.h"
 #include "../../component/primitive/invisible/light/default/DefaultLight.h"
 #include "../../component/primitive/invisible/light/BaseLight.h"
+#include "../../component/primitive/visible/model/celestial/CelestialBody.h"
 
 SceneManager::SceneManager() : m_scene(Scene::getInstance()) {}
 
@@ -27,96 +27,79 @@ std::shared_ptr<BaseObject> SceneManager::getObject(size_t id) {
     return nullptr;
 }
 
-void SceneManager::setOrbitCenter(size_t id, const Vec3<double> &orbitCenter)
-{
-    auto obj = getObject(id);
-    auto body = std::dynamic_pointer_cast<CelestialBody>(obj);
-    if (body) {
-        body->setBaseCenter(orbitCenter);
-    }
+void SceneManager::setObjectName(size_t id, const std::string& name) {
+    m_names[id] = name;
 }
 
-size_t SceneManager::addCelestialBody(const std::string &name, double radius, const Vec3<double> &center, const Material &material)
+std::string SceneManager::getObjectName(size_t id) const {
+    auto it = m_names.find(id);
+    return it != m_names.end() ? it->second : "Unnamed";
+}
+
+void SceneManager::setOrbitCenter(size_t id, const Point &orbitCenter)
+{
+    auto obj = getObject(id);
+    if (!obj) return;
+    auto visitor = std::make_shared<SetParamsVisitor>(orbitCenter);
+    obj->accept(visitor);
+}
+
+size_t SceneManager::addCelestialBody(const std::string &name, double radius, const Point &center, const Material &material)
 {
     auto sphereImpl = m_sphereFactory->createSphere(radius, center);
-    auto body = std::make_shared<CelestialBody>(name, sphereImpl);
-    Material mat = material;
-    body->setMaterial(mat);
-    body->setBaseCenter(center);
-    return addObject(body);
+    auto body = std::make_shared<CelestialBody>(sphereImpl); 
+    auto initVisitor = std::make_shared<SetParamsVisitor>(material, center);
+    body->accept(initVisitor);
+    size_t id = addObject(body);
+    setObjectName(id, name);
+    return id;
 }
 
-size_t SceneManager::addPlanet(const std::string &name, double radius, const Vec3<double> &orbitCenter,
+size_t SceneManager::addPlanet(const std::string &name, double radius, const Point &orbitCenter,
                                 double orbitRadius, double orbitAngle, double orbitSpeed, const Material &material)
 {
-    const double rad = orbitAngle * M_PI / 180.0;
-    const Vec3<double> initialPos(
-        orbitCenter.getX() + orbitRadius * std::cos(rad),
-        orbitCenter.getY(),
-        orbitCenter.getZ() + orbitRadius * std::sin(rad)
-    );
-
-    auto sphereImpl = m_sphereFactory->createSphere(radius, initialPos);
-    auto body = std::make_shared<CelestialBody>(name, sphereImpl);
-    Material mat = material;
-    body->setMaterial(mat);
-    body->setBaseCenter(orbitCenter);
-    body->setOrbitRadius(orbitRadius);
-    body->setOrbitAngle(orbitAngle);
-    body->setOrbitSpeed(orbitSpeed);
-
-    return addObject(body);
+    size_t id = addCelestialBody(name, radius, Point{0.0, 0.0, 0.0}, Material{});
+    auto obj = getObject(id);
+    if (!obj) return id;
+    auto orbitVisitor = std::make_shared<SetParamsVisitor>(orbitRadius, orbitSpeed, orbitAngle, orbitCenter, material);
+    obj->accept(orbitVisitor);
+    return id;
 }
 
-void SceneManager::updateCelestialBody(size_t id, double radius, const Vec3<double>& center, const Material& material)
+void SceneManager::updateCelestialBody(size_t id, double radius, const Point& center, const Material& material)
 {
     auto obj = getObject(id);
-    auto body = std::dynamic_pointer_cast<CelestialBody>(obj);
-    if (!body) return;
-
-    body->setMaterial(material);
-    body->setBaseCenter(center);
-    body->setRadius(radius);
-    body->setCenter(center);
+    if (!obj) return;
+    auto visitor = std::make_shared<SetParamsVisitor>(radius, center, material);
+    obj->accept(visitor);
 }
 
 void SceneManager::advanceOrbits(double deltaSeconds)
 {
     if (deltaSeconds <= 0.0) return;
-
     auto light = getLightSource();
-    if (!light) return;
-    const Vec3<double> starCenter = light->getPosition();
-
-    for (const auto& [id, obj] : getObjects()) {
-        (void)id;
-        auto body = std::dynamic_pointer_cast<CelestialBody>(obj);
-        if (!body || body->getOrbitRadius() <= 0.0) continue;
-        double speed = body->getOrbitSpeed();
-        if (speed <= 0.0) continue;
-        body->setBaseCenter(starCenter);
-        double angle = std::fmod(body->getOrbitAngle() + speed * deltaSeconds, 360.0);
-        if (angle < 0.0) angle += 360.0;
-        body->setOrbitAngle(angle);
+    Point starCenter = light ? light->getPosition() : Point{0.0, 0.0, 0.0};
+    auto visitor = std::make_shared<AnimationVisitor>(deltaSeconds, starCenter);
+    for (auto& [id, obj] : m_scene.getObjects()) {
+        if (obj && obj->isVisible())
+            obj->accept(visitor);
     }
 }
 
 void SceneManager::setCelestialMaterial(size_t id, const Material &mat)
 {
     auto obj = getObject(id);
-    auto body = std::dynamic_pointer_cast<CelestialBody>(obj);
-    if (body) body->setMaterial(mat);
+    if (!obj) return;
+    auto visitor = std::make_shared<SetParamsVisitor>(mat);
+    obj->accept(visitor);
 }
 
 void SceneManager::transformCelestial(size_t id, double orbitRadius, double orbitSpeed)
 {
     auto obj = getObject(id);
-    auto body = std::dynamic_pointer_cast<CelestialBody>(obj);
-    if (body) {
-        body->setOrbitRadius(orbitRadius);
-        body->setOrbitSpeed(orbitSpeed);
-        body->updatePosition();
-    }
+    if (!obj) return;
+    auto visitor = std::make_shared<SetParamsVisitor>(orbitRadius, orbitSpeed);
+    obj->accept(visitor);
 }
 
 void SceneManager::addLightSource(std::shared_ptr<BaseLight> light)
@@ -139,14 +122,14 @@ std::shared_ptr<BaseLight> SceneManager::getLightSource() const
     return nullptr;
 }
 
-void SceneManager::addLight(const Vec3<double>& pos, const std::vector<float>& color)
+void SceneManager::addLight(const Point& pos, const std::vector<float>& color)
 {
     auto impl = std::make_shared<LightImpl>(pos, color);
     auto light = std::make_shared<DefaultLight>(impl);
     addLightSource(light);
 }
 
-void SceneManager::updateLight(const Vec3<double>& pos, const std::vector<float>& color)
+void SceneManager::updateLight(const Point& pos, const std::vector<float>& color)
 {
     auto light = getLightSource();
     if (light) {

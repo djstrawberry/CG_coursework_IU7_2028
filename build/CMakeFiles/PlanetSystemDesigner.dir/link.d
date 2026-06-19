@@ -17,7 +17,12 @@ PlanetSystemDesigner: \
   CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/camera/default/DefaultCamera.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/impl/LightImpl.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/default/DefaultLight.cpp.o \
+  CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/vertex/Vertex.cpp.o \
+  CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/edge/Edge.cpp.o \
+  CMakeFiles/PlanetSystemDesigner.dir/point/Point.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o \
+  CMakeFiles/PlanetSystemDesigner.dir/visitors/animation/AnimationVisitor.cpp.o \
+  CMakeFiles/PlanetSystemDesigner.dir/visitors/params/SetParamsVisitor.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/managers/ManagerProvider.cpp.o \
   CMakeFiles/PlanetSystemDesigner.dir/managers/draw/DrawManager.cpp.o \
@@ -147,7 +152,17 @@ CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/impl/Lig
 
 CMakeFiles/PlanetSystemDesigner.dir/component/primitive/invisible/light/default/DefaultLight.cpp.o:
 
+CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/vertex/Vertex.cpp.o:
+
+CMakeFiles/PlanetSystemDesigner.dir/component/primitive/visible/model/edge/Edge.cpp.o:
+
+CMakeFiles/PlanetSystemDesigner.dir/point/Point.cpp.o:
+
 CMakeFiles/PlanetSystemDesigner.dir/visitors/draw/DrawVisitor.cpp.o:
+
+CMakeFiles/PlanetSystemDesigner.dir/visitors/animation/AnimationVisitor.cpp.o:
+
+CMakeFiles/PlanetSystemDesigner.dir/visitors/params/SetParamsVisitor.cpp.o:
 
 CMakeFiles/PlanetSystemDesigner.dir/scene/Scene.cpp.o:
 

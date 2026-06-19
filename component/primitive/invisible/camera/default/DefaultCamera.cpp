@@ -2,10 +2,10 @@
 #include <cmath>
 
 DefaultCameraImpl::DefaultCameraImpl()
-    : m_position(0, 10, 20)    
-    , m_target(0, 0, 0)        
-    , m_up(0, 1, 0)            
-    , m_fov(60.0)               
+    : m_position(0, 10, 20)
+    , m_target(0, 0, 0)
+    , m_up(0, 1, 0)
+    , m_fov(60.0)
     , m_near(0.1)
     , m_far(1000.0)
 { }
@@ -22,13 +22,13 @@ std::shared_ptr<CameraImpl> DefaultCameraImpl::clone() const
     return cloned;
 }
 
-Vec3<double> DefaultCameraImpl::getPosition() const { return m_position; }
+Point DefaultCameraImpl::getPosition() const { return m_position; }
 
-void DefaultCameraImpl::setPosition(const Vec3<double>& pos) { m_position = pos; }
+void DefaultCameraImpl::setPosition(const Point& pos) { m_position = pos; }
 
-Vec3<double> DefaultCameraImpl::getTarget() const { return m_target; }
+Point DefaultCameraImpl::getTarget() const { return m_target; }
 
-void DefaultCameraImpl::setTarget(const Vec3<double>& target) { m_target = target; }
+void DefaultCameraImpl::setTarget(const Point& target) { m_target = target; }
 
 double DefaultCameraImpl::getFov() const { return m_fov; }
 
@@ -36,11 +36,11 @@ void DefaultCameraImpl::setFov(double fov) { m_fov = fov; }
 
 void DefaultCameraImpl::rotateAroundTarget(double angleX, double angleY)
 {
-    Vec3<double> direction = m_position - m_target;
+    Point direction = m_position - m_target;
     double distance = direction.length();
     
     double radX = angleX * M_PI / 180.0;
-    Vec3<double> right = m_up.cross(direction.normalized()).normalized();
+    Point right = m_up.cross(direction.normalized()).normalized();
     
     double cosX = std::cos(radX);
     double sinX = std::sin(radX);
@@ -56,11 +56,11 @@ void DefaultCameraImpl::rotateAroundTarget(double angleX, double angleY)
 
 void DefaultCameraImpl::zoom(double amount)
 {
-    Vec3<double> direction = (m_target - m_position).normalized();
+    Point direction = (m_target - m_position).normalized();
     double distance = (m_position - m_target).length();
     double newDistance = distance - amount;
     
-    if (newDistance < 1.0) newDistance = 1.0; 
+    if (newDistance < 1.0) newDistance = 1.0;
     
     m_position = m_target - direction * newDistance;
 }
