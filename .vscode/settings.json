@@ -1,0 +1,40 @@
+{
+  "files.encoding": "utf8",
+  "editor.wordWrap": "on",
+  "cmake.sourceDirectory": "${workspaceFolder}/program",
+  "cmake.buildDirectory": "${workspaceFolder}/program/build",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.outDir": "%DIR%/build",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "РПЗ: XeLaTeX и библиография",
+      "tools": ["rpz-xelatex", "rpz-biber", "rpz-xelatex", "rpz-xelatex"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "rpz-xelatex",
+      "command": "xelatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-halt-on-error",
+        "-file-line-error",
+        "-output-directory=%OUTDIR%",
+        "%DOC%"
+      ]
+    },
+    {
+      "name": "rpz-biber",
+      "command": "biber",
+      "args": [
+        "--input-directory=build",
+        "--output-directory=build",
+        "%DOCFILE%"
+      ]
+    }
+  ],
+  "latex-workshop.view.pdf.viewer": "tab",
+  "latex-workshop.view.pdf.tab.editorGroup": "right"
+}

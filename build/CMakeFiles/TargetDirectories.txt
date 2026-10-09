@@ -1,5 +1,0 @@
-/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/PlanetSystemDesigner.dir
-/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/edit_cache.dir
-/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/rebuild_cache.dir
-/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/PlanetSystemDesigner_autogen_timestamp_deps.dir
-/home/anechka/CG_coursework_IU7_2028/build/CMakeFiles/PlanetSystemDesigner_autogen.dir
